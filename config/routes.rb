@@ -1,4 +1,9 @@
 Curiousbear::Application.routes.draw do
+
+  get "session/signin"
+
+   root :to => 'session#signin'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
