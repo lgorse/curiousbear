@@ -10,14 +10,13 @@ class SessionController < ApplicationController
 	end
 
 	def login
-		session['oauth'] = Koala::Facebook::OAuth.new(APP_ID, APP_SECRET, SITE_URL + '/welcome')
-		redirect_to session['oauth'].url_for_oauth_code()
+	
 	end
 
 
 	def welcome
-		session['access_token'] = session['oauth'].get_access_token(params[:code])
-		@access_token = session['access_token']
+		@facebook_cookies ||= Koala::Facebook::OAuth.new(APP_ID, APP_SECRET).get_user_info_from_cookie(cookies)
+		@access_token = @facebook_cookies['access_token']
 		@graph = Koala::Facebook::GraphAPI.new(@access_token)
 		@me = @graph.get_object("me")
 	end
@@ -25,6 +24,7 @@ class SessionController < ApplicationController
 	def logout
 	session['oauth'] = nil
     session['access_token'] = nil
-    redirect_to root_path
+    reset_session
+    redirect_to root_url
 	end
 end
