@@ -8,7 +8,9 @@
 </head>
 <body>
 	<% unless controller_name == "session" && action_name == "signin" %>
-<%= link_to 'Logout', '/logout' %>
+	<div id="fb-root"></div>
+	<%= render 'layouts/facebook_logout' %>
+<button id="fb-logout" onclick="logout()">Log out</button>
 <% end %>
 
 <%= yield %>
