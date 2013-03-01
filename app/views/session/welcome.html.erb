@@ -2,12 +2,15 @@
 <button id="fb-logout" onclick="logout()">Log out</button>
 <%= link_to 'other page', '/super' %>
 
+
 <script>
 	function logout(){	
 		FB.logout(function(response) {
-			window.top.location = "http://127.0.0.1:3000/"
+			
+			window.top.location = "../logout"
 		});
 	}
+
 
 window.fbAsyncInit = function() {
 	    FB.init({

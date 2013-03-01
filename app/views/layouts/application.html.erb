@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<% unless controller_name == "session" && action_name == "signin" %>
+<%= link_to 'Logout', '/logout' %>
+<% end %>
 
 <%= yield %>
 

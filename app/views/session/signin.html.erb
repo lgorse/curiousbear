@@ -5,12 +5,13 @@
 	function login() {
 	    FB.login(function(response) {
 	        if (response.authResponse) {
-				window.top.location = "http://127.0.0.1:3000/welcome";
+				window.top.location = "../welcome";
 	        } else {
 	            
 	        }
 	    });
 	}
+
   
 	window.fbAsyncInit = function() {
 	    FB.init({
@@ -24,9 +25,10 @@
 	    FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
 		    // connected
-		   window.top.location = "http://127.0.0.1:3000/welcome";
+		  // window.top.location = "http://127.0.0.1:3000/welcome";
 
 		  } else if (response.status === 'not_authorized') {
+		  	login();
 		    
 		  } else {
 		    
@@ -45,8 +47,17 @@
      ref.parentNode.insertBefore(js, ref);
    }(document));
 
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=344309455673537";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
 </script>
 
 <h1>Hello, world</h1>
 <p>I am a signin page</p>
 <button onclick="login()">Log in</button>
+<div class="fb-facepile" data-max-rows="5" data-width="300"></div>

@@ -8,24 +8,29 @@ class SessionController < ApplicationController
 
 	def parse_facebook_cookies
 		facebook_cookies ||= Koala::Facebook::OAuth.new(APP_ID, APP_SECRET).get_user_info_from_cookie(cookies)
-		session[:fb_cookie] = facebook_cookies if facebook_cookies.present?
+		session['fb_cookie'] = facebook_cookies if facebook_cookies.present?
 	end
 
 	def signin
-		
+		redirect_to welcome_path if session['fb_cookie'].present?
 	end
 
 	
 	def welcome
-		@access_token = session[:fb_cookie]["access_token"]
+		@access_token = session['fb_cookie']["access_token"]
 		@graph = Koala::Facebook::GraphAPI.new(@access_token)
 		@me = @graph.get_object("me")
 	end
 
 	def super
-		@access_token = session[:fb_cookie]["access_token"]
+		@access_token = session['fb_cookie']["access_token"]
 		@graph = Koala::Facebook::GraphAPI.new(@access_token)
 		@hero = @graph.get_object("me")
-    	
+	end
+
+	def logout
+		session['fb_cookie'] = nil
+    reset_session
+    redirect_to root_url
 	end
 end
