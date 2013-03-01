@@ -5,7 +5,7 @@
 	function login() {
 	    FB.login(function(response) {
 	        if (response.authResponse) {
-				window.top.location = "../welcome";
+				window.top.location = "../home";
 	        } else {
 	            
 	        }
@@ -24,7 +24,7 @@
 
 	    FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
-		  	window.top.location = "../welcome";
+		  	window.top.location = "../home";
 		  } else if (response.status === 'not_authorized') {
 		  	//login();    
 		  } else {
