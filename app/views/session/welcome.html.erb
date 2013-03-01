@@ -1,4 +1,53 @@
-<h1>You made it</h1>
-<h2><%= @me %></h2>
+<div id="fb-root"></div>
+<button id="fb-logout" onclick="logout()">Log out</button>
+<%= link_to 'other page', '/super' %>
 
-<%= link_to 'logout', '/logout' %>
+<script>
+	function logout(){	
+		FB.logout(function(response) {
+			window.top.location = "http://127.0.0.1:3000/"
+		});
+	}
+
+window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '344309455673537', // App ID
+	      channelUrl : '//127.0.0.1:3000/channel.html', // Channel File
+	      status     : true, // check login status
+	      cookie     : true, // enable cookies to allow the server to access the session
+	      xfbml      : true  // parse XFBML
+	    });
+
+	    FB.getLoginStatus(function(response) {
+		  if (response.status === 'connected') {
+		    // connected
+		  document.getElementById('fb-logout').style.display = 'block';
+
+		  } else if (response.status === 'not_authorized') {
+		  	window.top.location = "http://127.0.0.1:3000/";
+		    
+		  } else {
+		  	window.top.location = "http://127.0.0.1:3000/";
+		  	document.getElementById('fb-logout').style.display = 'block';  
+		  }
+		});
+
+   		// Additional init code here
+	};
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+
+</script>
+
+<h1>You made it</h1>
+<h2><%= @me["name"] %></h2>
+
+
+

@@ -1,9 +1,7 @@
 <div id="fb-root"></div>
 <script>
   // Additional JS functions here
-  function darn(){
-  	alert("Boom");
-  }
+  
 	function login() {
 	    FB.login(function(response) {
 	        if (response.authResponse) {
@@ -29,11 +27,9 @@
 		   window.top.location = "http://127.0.0.1:3000/welcome";
 
 		  } else if (response.status === 'not_authorized') {
-		    // not_authorized
-		    //login();
+		    
 		  } else {
-		    // not_logged_in
-		    //login();
+		    
 		  }
 		});
 
@@ -53,5 +49,4 @@
 
 <h1>Hello, world</h1>
 <p>I am a signin page</p>
-<input type = "button" onclick="login()">
-<a href = "" onclick="darn()">Click me</a>
+<button onclick="login()">Log in</button>
