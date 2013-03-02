@@ -16,14 +16,4 @@ describe SessionController do
 
   end
 
-  describe "GET 'home'" do
-  	it "returns http success" do
-  	get 'home'
-  	response.should redirect_to root_path
-  end
-
-
-  end
-
-
 end

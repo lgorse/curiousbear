@@ -3,11 +3,11 @@ Curiousbear::Application.routes.draw do
   get "session/signin"
 
    root :to => 'session#signin'
+   resources :user
 
    match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"
    match '/logout', :to => "session#logout"
-   match '/register_user', :to => "session#register_user"
    match '/register', :to => "session#register"
 
 
