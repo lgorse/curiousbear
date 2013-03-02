@@ -28,7 +28,7 @@ class SessionController < ApplicationController
 	def logout
 		session['fb_cookie'] = nil
 		reset_session
-		redirect_to root_url
+		redirect_to root_path
 	end
 
 	def redirect_to_signin
