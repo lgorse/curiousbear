@@ -1,11 +1,11 @@
 <div id="fb-root"></div>
-<%= link_to 'other page', '/super' %>
+<%= link_to "edit", edit_user_path(@user) %>
 
-<h1>You made it</h1>
+<h1><%= @title %></h1>
 <h2><%= @me["name"] %></h2>
 <%= @me["id"] %>
 
-<%= link_to "Hello", new_user_path %>
+
 
 
 

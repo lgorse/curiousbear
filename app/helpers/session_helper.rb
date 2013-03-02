@@ -21,14 +21,14 @@ module SessionHelper
 
 	def check_token_expiration
 		if session['fb_cookie'] != nil
-			session.delete('fb_cookie') if token_expired?
+			session['fb_cookie'] = nil if token_expired?
 		end
 	end
 
 	
 	def token_expired?
 		new_time = session['fb_cookie']["expires"]
-		Time.at(new_time.to_i) < Time.now
+		Time.at(new_time.to_i) > Time.now
 	end
 
 	def redirect_to_signin
@@ -36,13 +36,19 @@ module SessionHelper
 	end
 
 	def set_session
-		session['user_id'] ||= User.find_by_fb_id(@me['id']).id
-		@user = User.find_by_id(session['user_id'])
+		@user = User.find_by_fb_id(@me['id'])
+		redirect_to register_path and return if @user.nil?
+		session['user_id'] ||= @user.id
 	end
 
 	def authenticate
 		parse_facebook_cookies
 		set_session
+	end
+
+	def reset_user_session
+		session['user_id'] = nil
+		session['fb_cookie'] = nil
 	end
 
 end

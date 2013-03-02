@@ -4,6 +4,7 @@ class SessionController < ApplicationController
 	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
 	before_filter :authenticate, :only=>[:home]
+	after_filter :reset_user_session, :only=>[:signin]
 	
 	
 	
@@ -18,12 +19,13 @@ class SessionController < ApplicationController
 
 	
 	def home
+		@title = "Search the world, "+@user.first_name
 
 	end
 
 	
 	def logout
-		session['fb_cookie'] = nil
+		reset_user_session
 		reset_session
 		redirect_to root_path
 	end
