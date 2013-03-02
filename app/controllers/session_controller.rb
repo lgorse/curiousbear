@@ -3,7 +3,7 @@ class SessionController < ApplicationController
 	
 	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
-	before_filter :parse_facebook_cookies, :except=>[:signin, :logout, :update_token, :register, :super]
+	before_filter :parse_facebook_cookies, :except=>[:signin, :logout, :update_token, :register, :register_user]
 
 	
 	def signin
@@ -19,7 +19,7 @@ class SessionController < ApplicationController
 		
 	end
 
-	def super
+	def register_user
 		signed_request = params['signed_request']
 		@signed_request = decode_data(signed_request)
 
