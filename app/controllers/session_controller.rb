@@ -1,17 +1,17 @@
 class SessionController < ApplicationController
-	rescue_from NoMethodError, :with => :redirect_to_signin
+	include SessionHelper
+	
+	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
-	before_filter :parse_facebook_cookies, :except=>[:signin, :logout, :update_token]
+	before_filter :parse_facebook_cookies, :except=>[:signin, :logout, :update_token, :register, :super]
 
-	def parse_facebook_cookies
-		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
-		@access_token = session['fb_cookie']["access_token"]
-		@graph = Koala::Facebook::GraphAPI.new(@access_token)
-		@me = @graph.get_object("me")
+	
+	def signin
+
 	end
 
-	def signin
-	
+	def register
+
 	end
 
 	
@@ -20,22 +20,20 @@ class SessionController < ApplicationController
 	end
 
 	def super
-		
+		signed_request = params['signed_request']
+		@signed_request = decode_data(signed_request)
+
 	end
 
 	def logout
 		session['fb_cookie'] = nil
-    reset_session
-    redirect_to root_url
+		reset_session
+		redirect_to root_url
 	end
 
 	def redirect_to_signin
 		redirect_to root_path
 	end
 
-	def update_token
-		session.delete('fb_cookie')
-		parse_facebook_cookies
-		
-	end
+	
 end

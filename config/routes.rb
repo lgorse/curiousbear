@@ -4,9 +4,11 @@ Curiousbear::Application.routes.draw do
 
    root :to => 'session#signin'
 
+   match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"
    match '/logout', :to => "session#logout"
    match '/super', :to => "session#super"
+   match '/register', :to => "session#register"
 
 
   # The priority is based upon order of creation:

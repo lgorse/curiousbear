@@ -1,5 +1,6 @@
 <%= render 'session/facebook_signin' %>
 
 <h1>Hello, world</h1>
-<button onclick="login()">Log in with Facebook</button>
 <div class="fb-facepile" data-max-rows="5" data-width="300"></div>
+<fb:login-button
+registration-url="../register" onlogin="login()" />

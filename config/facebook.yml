@@ -1,11 +1,11 @@
 development:
  app_id: 344309455673537
  secret_key: a01e34ab6ab6083c660c76adc56c9a8d
- callback_url: http://localhost:3000/
+ callback_url: http://127.0.0.1:3000/
 test:
  app_id: 344309455673537
  secret_key: a01e34ab6ab6083c660c76adc56c9a8d
- callback_url: http://localhost:3000/
+ callback_url: http://127.0.0.1:3000/
 production:
  app_id: 344309455673537
  secret_key: a01e34ab6ab6083c660c76adc56c9a8d
