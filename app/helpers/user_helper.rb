@@ -10,4 +10,13 @@ module UserHelper
 		end
 	end
 
+	def delete_user_facebook
+		url = URI.parse("https://graph.facebook.com/me/permissions?"+"access_token="+session["fb_cookie"]["access_token"])
+		http = Net::HTTP.new(url.host, url.port)
+		http.use_ssl = true
+		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+		request = Net::HTTP::Delete.new(url.request_uri)
+		response = http.request(request)
+	end
+
 end

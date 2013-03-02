@@ -5,6 +5,7 @@ class UserController < ApplicationController
 	before_filter :authenticate, :except => [:create]
 	before_filter :new_user_facebook, :only => [:create]
 
+
 def create
 end
 
@@ -22,7 +23,9 @@ end
 
 def destroy
 	User.find(params[:id]).destroy
-	redirect_to logout_path
+	delete_user_facebook
+	reset_user_session
+	redirect_to root_path
 end
 
 end

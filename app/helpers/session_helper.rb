@@ -49,6 +49,7 @@ module SessionHelper
 	def reset_user_session
 		session['user_id'] = nil
 		session['fb_cookie'] = nil
+		reset_session
 	end
 
 end
