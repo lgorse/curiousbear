@@ -3,12 +3,17 @@ Curiousbear::Application.routes.draw do
   get "session/signin"
 
    root :to => 'session#signin'
-   resources :users
+   resources :users do
+    member do
+      get 'facebook_friends'
+    end
+   end
 
    match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"
    match '/logout', :to => "session#logout"
    match '/register', :to => "session#register"
+   
 
 
   # The priority is based upon order of creation:

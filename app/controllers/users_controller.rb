@@ -30,4 +30,9 @@ def destroy
 	redirect_to root_path
 end
 
+def facebook_friends
+	@friends = @graph.get_connections("me", "friends")
+
+end
+
 end

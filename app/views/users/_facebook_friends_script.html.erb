@@ -1,0 +1,15 @@
+        
+    <script>
+
+    function invite(friend_id){
+      // assume we are already logged in
+      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
+
+      FB.ui({
+        to: friend_id,
+          method: 'send',
+          name: 'People Argue Just to Win',
+          link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+          });
+    }
+     </script>

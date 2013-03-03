@@ -17,6 +17,7 @@ module SessionHelper
 		@access_token = session['fb_cookie']["access_token"]
 		@graph = Koala::Facebook::GraphAPI.new(@access_token)
 		@me = @graph.get_object("me")
+		cookies['profile_pic'] ||= @graph.get_picture("me")
 	end
 
 	def check_token_expiration
@@ -49,6 +50,7 @@ module SessionHelper
 	def reset_user_session
 		session['user_id'] = nil
 		session['fb_cookie'] = nil
+		cookies.delete(:profile_pic)
 		reset_session
 	end
 
