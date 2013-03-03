@@ -3,7 +3,9 @@
 
 <h1><%= @title %></h1>
 <h2><%= @me["name"] %></h2>
-<%= @me["id"] %>
+<%= token_expired? %>
+<%= session["fb_cookie"]["expires"] %>
+<%= Time.now.to_i - session["fb_cookie"]["issued_at"].to_i %>
 
 
 

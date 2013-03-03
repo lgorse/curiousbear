@@ -1,1 +1,8 @@
-<%= "trusts list" %>
+<ul><%= "trusts list" %>
+<% @trusted_facebook_ids = @user.following.collect{|following| following.fb_id} %>
+<% @following = @graph.get_objects(@trusted_facebook_ids, "fields" => "picture, name") %>
+<% @following.each do |key, value| %>
+<li><%= image_tag value["picture"]["data"]["url"] %><%= value["name"] %></li>
+<% end %>
+</ul>
+

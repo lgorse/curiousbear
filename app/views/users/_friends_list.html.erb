@@ -1,9 +1,11 @@
-<% @profile = @graph.fql_query(("select uid, name, pic_square from user where uid in (select uid2 from friend where uid1 = me())")) %>
-<ul>Facebook Friends</ul>
-<% @profile.reject{|profile| User.find_by_fb_id(profile["uid"])}.each do |profile| %>
-<% @friend_id = profile["uid"] %>
+<% @profile = @graph.get_connections("me", "friends", :fields => "name, id, picture")%>
+
+<ul>Facebook Friends
+<% @profile.reject{|profile| User.find_by_fb_id(profile["id"])}.each do |profile| %>
+<% @friend_id = profile["id"] %>
 <li>
-	<%= image_tag profile["pic_square"] %><%= profile["name"] %>
-	<button id="invite_friend" onclick="invite(<%= profile['uid'].to_s %>)">Invite</button>
+	<%= image_tag profile["picture"]["data"]["url"] %><%= profile["name"] %>
+	<button id="invite_friend" onclick="invite(<%= profile['id'].to_s %>)">Invite</button>
 </li>
 <% end %>
+</ul>

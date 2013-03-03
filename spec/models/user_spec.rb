@@ -77,7 +77,64 @@ describe User do
 
 		end
 
-		describe 'valid order' do
+		
+
+	end
+
+	describe "following" do
+		before(:each) do
+			@attr_follower = {:name => "Laurent Gorse", :first_name => "Laurent", :birthday => '1979-05-28'.to_date,
+				:gender => "male", :e_mail => "lgorse@stanford.edu", :fb_id => 123456789}
+  			@attr_followed = {:name => "Peter Solace", :first_name => "Peter", :birthday => '1979-05-28'.to_date,
+				:gender => "male", :e_mail => "pSolace@stanford.edu", :fb_id => 768954}
+			@follower = User.create!(@attr_follower)
+			@followed = User.create!(@attr_followed)
+		end
+
+		describe "follow a user" do
+
+			it "should have a following method" do
+				@follower.should respond_to(:following)
+			end
+
+			it "should have a follow! method" do
+				@follower.should respond_to(:follow!)
+			end
+
+
+			it "should include the new followed user in the followed_users array" do
+				@follower.follow!(@followed)
+				@follower.following.should include (@followed)
+
+			end
+
+			it "should be following the other user" do
+				@follower.follow!(@followed)
+				@follower.should be_following(@followed)
+
+			end
+
+		end
+
+		describe "unfollow a user" do
+
+			it "should have an unfollow! method" do
+				@follower.should respond_to(:unfollow!)
+
+			end
+
+			it "should unfollow a user" do
+				@follower.follow!(@followed)
+				@follower.unfollow!(@followed)
+				@follower.should_not be_following(@followed)
+
+			end
+
+			it "should not include the followed user in the followed_users array" do
+				@follower.follow!(@followed)
+				@follower.unfollow!(@followed)
+				@follower.following.should_not include (@followed)
+				end
 
 		end
 
