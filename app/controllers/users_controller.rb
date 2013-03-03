@@ -35,4 +35,8 @@ def facebook_friends
 
 end
 
+def unfollow
+
+end
+
 end
