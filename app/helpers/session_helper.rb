@@ -28,8 +28,7 @@ module SessionHelper
 
 	
 	def token_expired?
-		expiration_time = session['fb_cookie']["expires"].to_i + session['fb_cookie']['issued_at'].to_i
-		Time.at(expiration_time) < Time.now
+		session['fb_cookie']["expires"].to_i <= Time.now.to_i - session['fb_cookie']['issued_at'].to_i
 	end
 
 	def redirect_to_signin

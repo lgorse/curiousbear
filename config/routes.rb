@@ -1,7 +1,5 @@
 Curiousbear::Application.routes.draw do
 
-  get "session/signin"
-
    root :to => 'session#signin'
    resources :users do
     member do

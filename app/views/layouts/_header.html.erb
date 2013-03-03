@@ -1,4 +1,4 @@
-<% unless controller_name == "session" && action_name == "signin" %>
+<% if @user %>
 	<div id="fb-root"></div>
 	<%= render 'layouts/facebook_app_scripts' %>
 	<%= link_to 'user', user_path(@user) %>
