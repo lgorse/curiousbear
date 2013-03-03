@@ -1,7 +1,7 @@
 <% unless controller_name == "session" && action_name == "signin" %>
 	<div id="fb-root"></div>
 	<%= render 'layouts/facebook_app_scripts' %>
-	<%= button_to 'user', user_path(@user) %>
+	<%= link_to 'user', user_path(@user) %>
 	<%= link_to "edit", edit_user_path(@user) %>
 	<button id="fb-logout" onclick="logout()">Log out</button>
 <% end %>

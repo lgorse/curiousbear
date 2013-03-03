@@ -1,5 +1,5 @@
 class SessionController < ApplicationController
-	include UserHelper
+	include UsersHelper
 	
 	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout

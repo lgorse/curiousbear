@@ -1,6 +1,5 @@
-class UserController < ApplicationController
-	include UserHelper
-	include SessionHelper
+class UsersController < ApplicationController
+	include UsersHelper
 
 	before_filter :authenticate, :except => [:create]
 	before_filter :new_user_facebook, :only => [:create]

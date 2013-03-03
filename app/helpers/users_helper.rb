@@ -1,4 +1,4 @@
-module UserHelper
+module UsersHelper
 
 	def new_user_facebook
 		if params['signed_request']
