@@ -13,6 +13,9 @@ def edit
 
 end
 
+def show
+end
+
 def update
 	if @user.update_attributes(params[:user])
 		redirect_to home_path

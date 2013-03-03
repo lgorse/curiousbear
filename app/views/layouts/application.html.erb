@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Curiousbear</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>Curiousbear</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-	<% unless controller_name == "session" && action_name == "signin" %>
-	<div id="fb-root"></div>
-	<%= render 'layouts/facebook_app_scripts' %>
-<button id="fb-logout" onclick="logout()">Log out</button>
-
-<% end %>
-
-<%= yield %>
+	<%= render 'layouts/header' %>
+	
+	<%= yield %>
 
 </body>
 </html>
