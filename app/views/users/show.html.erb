@@ -2,6 +2,6 @@
 <%= link_to "Add friends", facebook_friends_user_path %>
 
 <table><tr><td>
-<div id = "trusts">Trusts</div></td>
-<td><div id = "trusted_by">Trusted by</div></td></tr></table>
-<div id = "relationship_list"><%= render 'trusts' %></div>
+<%= link_to "Trusts", "#follows", :id => "trusts_list_button", :remote => true%></td>
+<td><%= link_to "Trusted by", "#followers" , :id => "trusted_list_button", :remote => true %></td></tr></table>
+<div id = "relationship_list"><%= render 'follows' %></div>

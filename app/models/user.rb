@@ -15,7 +15,7 @@
 #
 
 class User < ActiveRecord::Base
-	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name
+	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name, :fb_pic
 
 	email_format = /[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -37,8 +37,8 @@ class User < ActiveRecord::Base
 			:e_mail => signed_request['registration']['email'], :fb_id => signed_request['user_id'].to_i}
 	end
 
-	def follow!(followed)
-		self.relationships.create!(:followed_id => followed.id)
+	def follow!(followed_id)
+		self.relationships.create!(:followed_id => followed_id)
 	end
 
 	def unfollow!(followed)

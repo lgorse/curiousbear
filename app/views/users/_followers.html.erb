@@ -1,0 +1,9 @@
+<ul><%= "Trusted by list" %>
+<% @user.followers.each do |follower| %>
+<li><%= image_tag follower.fb_pic %>
+	<%= follower.name %>
+	<%= link_to "follow", follow_user_path(follower), :id => "follow_button", :remote => true  %>
+</li>
+<% end %>
+</ul>
+

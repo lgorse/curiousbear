@@ -104,13 +104,13 @@ describe User do
 
 
 			it "should include the new followed user in the followed_users array" do
-				@follower.follow!(@followed)
+				@follower.follow!(@followed.id)
 				@follower.following.should include (@followed)
 
 			end
 
 			it "should be following the other user" do
-				@follower.follow!(@followed)
+				@follower.follow!(@followed.id)
 				@follower.should be_following(@followed)
 
 			end
@@ -125,14 +125,14 @@ describe User do
 			end
 
 			it "should unfollow a user" do
-				@follower.follow!(@followed)
+				@follower.follow!(@followed.id)
 				@follower.unfollow!(@followed)
 				@follower.should_not be_following(@followed)
 
 			end
 
 			it "should not include the followed user in the followed_users array" do
-				@follower.follow!(@followed)
+				@follower.follow!(@followed.id)
 				@follower.unfollow!(@followed)
 				@follower.following.should_not include (@followed)
 				end
