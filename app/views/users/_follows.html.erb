@@ -1,9 +1,6 @@
 <ul><%= "trusts list" %>
 <% @user.following.each do |followed| %>
-<li><%= image_tag followed.fb_pic %>
-	<%= followed.name %>
-	<%= link_to "unfollow", unfollow_user_path(followed), :id => "unfollow_button", :remote => true  %>
-</li>
+<%= render "users/user_profile_summary", :id => followed.id, :fb_pic => followed.fb_pic, :fb_id => followed.fb_id, :name => followed.name %>
 <% end %>
 </ul>
 

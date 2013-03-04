@@ -3,9 +3,7 @@
 <ul>Facebook Friends
 <% @profile.reject{|profile| User.find_by_fb_id(profile["id"])}.each do |profile| %>
 <% @friend_id = profile["id"] %>
-<li>
-	<%= image_tag profile["picture"]["data"]["url"] %><%= profile["name"] %>
-	<button id="invite_friend" onclick="invite(<%= profile['id'].to_s %>)">Invite</button>
-</li>
+<%= render "users/user_profile_summary", :id => nil, :fb_pic => profile["picture"]["data"]["url"], :fb_id => profile["id"], :name => profile["name"]%>
+
 <% end %>
 </ul>

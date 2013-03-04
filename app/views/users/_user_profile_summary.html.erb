@@ -1,0 +1,12 @@
+<li>
+	<%= image_tag fb_pic %><%= name %>
+	<% if id.nil? %>
+		<%= render 'users/buttons/invite_button', :fb_id => fb_id %>
+	<% else %>
+		<% if @user.following?(id) %>
+			<%= render 'users/buttons/unfollow_button', :followed => id %>
+		<% else %>
+			<%= render 'users/buttons/follow_button', :follower => id %>
+		<% end %>
+	<% end %>
+</li>
