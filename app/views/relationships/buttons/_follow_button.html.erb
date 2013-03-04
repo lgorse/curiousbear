@@ -1,0 +1,1 @@
+<%= button_to "follow", {:controller => :relationships, :action => :create, :user_id => @user.id, :followed_id => followed}, :method => :post,:id => "follow_button", :remote => true  %>

@@ -13,6 +13,10 @@ def edit
 end
 
 def show
+	respond_to do |format|
+		format.html
+		format.js
+	end
 end
 
 def update
@@ -35,21 +39,19 @@ def facebook_friends
 
 end
 
-def unfollow
-	@user.unfollow!(params[:id])
-	respond_to do |format|
-		format.html
-		format.js
-	end
-
-end
-
-def follow
-	@user.follow!(params[:id])
+def following
 	respond_to do |format|
 		format.html
 		format.js
 	end
 end
+
+def followers
+	respond_to do |format|
+		format.html
+		format.js
+	end
+end
+
 
 end

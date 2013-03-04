@@ -2,8 +2,9 @@ Curiousbear::Application.routes.draw do
 
    root :to => 'session#signin'
    resources :users do
+    resources :relationships, :only => [:create, :destroy]
     member do
-      get 'facebook_friends', 'unfollow', 'follow'
+      get 'facebook_friends', :following, :followers
     end
    end
 

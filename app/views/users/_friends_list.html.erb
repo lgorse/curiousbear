@@ -1,9 +1,0 @@
-<% @profile = @graph.get_connections("me", "friends", :fields => "name, id, picture")%>
-
-<ul>Facebook Friends
-<% @profile.reject{|profile| User.find_by_fb_id(profile["id"])}.each do |profile| %>
-<% @friend_id = profile["id"] %>
-<%= render "users/user_profile_summary", :id => nil, :fb_pic => profile["picture"]["data"]["url"], :fb_id => profile["id"], :name => profile["name"]%>
-
-<% end %>
-</ul>

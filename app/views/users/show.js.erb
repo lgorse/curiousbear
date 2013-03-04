@@ -1,8 +1,0 @@
-$(function(){
-	$("#trusts_list_button").click(function(){
-		$("#relationship_list").html("<%= escape_javascript(render 'follows') %>");
-	});
-	$("#trusted_list_button").click(function(){
-		$("#relationship_list").html("<%= escape_javascript(render 'followers') %>");
-	});
-});
