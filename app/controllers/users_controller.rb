@@ -36,6 +36,11 @@ def facebook_friends
 end
 
 def unfollow
+	@user.unfollow!(params[:id])
+	respond_to do |format|
+		format.html
+		format.js
+	end
 
 end
 

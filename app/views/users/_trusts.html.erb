@@ -1,10 +1,9 @@
 <ul><%= "trusts list" %>
-<% @trusted_facebook_ids = @user.following.collect{|following| following.fb_id} %>
-<% @following = @graph.get_objects(@trusted_facebook_ids, "fields" => "picture, name") %>
-<% @following.each do |key, value| %>
-<li><%= image_tag value["picture"]["data"]["url"] %>
-	<%= value["name"] %>
-	<%= button_to "unfollow", home_path  %>
+<% @followed = @user.following.collect{|following| following} %>
+<% @followed.each do |followed| %>
+<li><%= image_tag followed.fb_pic %>
+	<%= followed.name %>
+	<%= link_to "unfollow", unfollow_user_path(followed),:id => "unfollow_button", :remote => true  %>
 </li>
 <% end %>
 </ul>
