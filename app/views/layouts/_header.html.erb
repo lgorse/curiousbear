@@ -3,6 +3,6 @@
 	<%= render 'layouts/facebook_app_scripts' %>
 	<%= link_to 'user', user_path(@user) %>
 	<%= link_to "edit", edit_user_path(@user) %>
-	<%= image_tag cookies['profile_pic'] %>
+	<%= image_tag @user.fb_pic %>
 	<button id="fb-logout" onclick="logout()">Log out</button>
 <% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130303060919) do
+ActiveRecord::Schema.define(:version => 20130304002657) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130303060919) do
     t.integer  "fb_id",      :limit => 8, :null => false
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
+    t.string   "fb_pic"
   end
 
   add_index "users", ["fb_id"], :name => "index_users_on_fb_id"

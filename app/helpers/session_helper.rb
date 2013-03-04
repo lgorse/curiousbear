@@ -11,13 +11,20 @@ module SessionHelper
 		data = ActiveSupport::JSON.decode base64_url_decode(payload)
 	end
 
-	def parse_facebook_cookies
-		check_token_expiration
+	
+	def set_access_token
 		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
 		@access_token = session['fb_cookie']["access_token"]
+
+	end
+
+	def set_facebook_graph
 		@graph = Koala::Facebook::GraphAPI.new(@access_token)
 		@me = @graph.get_object("me")
-		cookies['profile_pic'] ||= @graph.get_picture("me")
+	end
+
+	def set_user_picture
+		@user.fb_pic ||= @graph.get_picture("me")
 	end
 
 	def check_token_expiration
@@ -26,7 +33,6 @@ module SessionHelper
 		end
 	end
 
-	
 	def token_expired?
 		session['fb_cookie']["expires"].to_i <= Time.now.to_i - session['fb_cookie']['issued_at'].to_i
 	end
@@ -41,9 +47,16 @@ module SessionHelper
 		session['user_id'] ||= @user.id
 	end
 
+	def parse_facebook_cookies
+		check_token_expiration
+		set_access_token
+		set_facebook_graph
+	end
+
 	def authenticate
 		parse_facebook_cookies
 		set_session
+		set_user_picture
 	end
 
 	def reset_user_session

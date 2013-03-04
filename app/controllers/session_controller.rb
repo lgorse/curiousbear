@@ -6,6 +6,8 @@ class SessionController < ApplicationController
 	before_filter :authenticate, :only=>[:home]
 	after_filter :reset_user_session, :only=>[:signin]
 	
+
+	
 	
 	
 	
