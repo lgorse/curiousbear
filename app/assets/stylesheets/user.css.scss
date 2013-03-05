@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 #facebook_friends{
 	float: left;
 
@@ -11,3 +13,63 @@
 	float: left;
 
 }
+
+div#user_info{
+	width: 500px;
+
+	#user_large_pic{
+		position: absolute;
+		left: 500px;
+	}
+}
+
+nav#follow_buttons{
+	position: absolute;
+	top: 200px;
+	margin-left: 20px;
+	a{
+
+	}
+
+	#add_friends_button{
+		padding-left: 200px;
+	}
+
+}
+
+div#relationship_list{
+	position: absolute;
+	top: 220px;
+
+	li#user_summary{
+		width: 400px;
+		position: relative;
+
+		a.user_name_link{
+			position: relative;
+			top: 25px;
+
+		}
+
+		div.summary_right{
+			position: relative;
+			margin: 0px;
+			padding: 0px;
+			left: 300px;
+			width: 80px;
+
+		}
+
+		.follow_button{
+			text-align: center;
+		}
+
+		.user_small_pic{
+			display: block;
+			margin: auto;
+
+
+		}
+	}
+}
+

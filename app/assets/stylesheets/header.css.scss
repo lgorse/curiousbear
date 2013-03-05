@@ -1,0 +1,48 @@
+
+
+
+header#app_header{
+	height: 50px;
+	border: black 1px;
+
+}
+
+#app_header_left{
+	display: inline-block;
+	margin-left: 10px;
+	position: absolute;
+	width: 150px;
+	top: 10px;
+
+}
+
+#app_header_right{
+	display: inline-block;
+	position: absolute;
+	width: 150px;
+	left: 500px;
+	top: 10px;
+
+
+	#my_small_pic{
+		vertical-align: middle;
+		padding-right: 5px;
+	}
+
+	#my_account_button{
+		padding-left: 5px;
+		padding-right: 5px;
+
+
+	}
+
+	#fb-logout{
+		
+		
+
+	}
+}
+
+#container{
+	position: absolute;
+}
