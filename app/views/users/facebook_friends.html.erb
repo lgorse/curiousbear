@@ -9,7 +9,7 @@
 </ul></div>
 <div id = "facebook_friends_enrolled">
 	<ul>Friends on KweeKweg
-			<% @facebook_friends_enrolled.reject{|friend| @current_user.following.include?(friend)}.each do |friend| %>	
+			<% @facebook_friends_enrolled.reject{|friend| @user.following.include?(friend)}.each do |friend| %>	
 			<% @attr = {:id => friend.id, :fb_pic => friend.fb_pic, :fb_id => friend.fb_id, :name => friend.name} %>
 			<%= render "users/user_profile_summary", :user => friend %>
 			<% end %>

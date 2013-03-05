@@ -1,7 +1,5 @@
-<%= @current_user.name %>
-<%= link_to "Add friends", facebook_friends_user_path %>
-
-<table><tr><td>
-<%= link_to "Trusts", following_user_path(@current_user), :id => "follows_list_button", :remote => true%></td>
-<td><%= link_to "Trusted by", followers_user_path(@current_user) , :id => "followed_list_button", :remote => true %></td></tr></table>
-<div id = "relationship_list"><%= render 'follows' %></div>
+<% if @user == @current_user %>
+	<%= render 'users/show_current_user' %>
+<% else %>
+	<%= render 'users/show_user' %>
+<% end %>

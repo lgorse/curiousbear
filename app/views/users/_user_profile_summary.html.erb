@@ -1,13 +1,18 @@
 <li id="user_summary">
-	<%= image_tag user.fb_pic %><%= user.name %>
+	<%= image_tag user.fb_pic %>
+<% if user.id.nil? %>
+	<%= user.name %>
 	<div id="button_<%= user.id %>">
-	<% if user.id.nil? %>
 		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id %>
-	<% else %>
-		<% if @current_user.following?(user.id) %>
+	</div>
+<% else %>
+	<%= link_to user.name, user_path(user) %>
+	<div id="button_<%= user.id %>">
+		<% if @user.following?(user.id) %>
 			<%= render 'relationships/buttons/unfollow_button', :followed_id => user.id %>
 		<% else %>
 			<%= render 'relationships/buttons/follow_button', :followed_id => user.id %>
 		<% end %>
-	<% end %></div>
+		</div>
+<% end %>
 </li>

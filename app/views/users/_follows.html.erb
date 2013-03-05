@@ -1,5 +1,5 @@
 <ul><%= "trusts list" %>
-<% @current_user.following.each do |followed| %>
+<% @user.following.each do |followed| %>
 <%= render "users/user_profile_summary", :user => followed %>
 <% end %>
 </ul>

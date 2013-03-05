@@ -13,6 +13,7 @@ def edit
 end
 
 def show
+	@user = User.find(params[:id])
 	respond_to do |format|
 		format.html
 		format.js
@@ -36,11 +37,13 @@ end
 
 def facebook_friends
 	@title = "Follow your friends"
+	@user = @current_user
 	@facebook_friends = @graph.get_connections("me", "friends", :fields => "name, id, picture")
 	set_friend_lists
 end
 
 def following
+	@user = User.find(params[:id])
 	respond_to do |format|
 		format.html
 		format.js
@@ -48,6 +51,7 @@ def following
 end
 
 def followers
+	@user = User.find(params[:id])
 	respond_to do |format|
 		format.html
 		format.js
