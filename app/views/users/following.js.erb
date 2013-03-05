@@ -1,9 +1,3 @@
 $(function(){
 		$("#relationship_list").html("<%= escape_javascript(render 'follows') %>");
-		$(".unfollow_form").submit(function(){
-			$(this).closest('.button').html("<%= escape_javascript(render 'relationships/buttons/follow_button', :id => @id) %>");
-		});
-		$(".follow_form").submit(function(){
-			$(this).closest('.button').html("<%= escape_javascript(render 'relationships/buttons/unfollow_button', :id => @id) %>");
-		});
 	});

@@ -1,11 +1,9 @@
 class RelationshipsController < ApplicationController
 
-	before_filter :authenticate
-
 	def create
-		@followed = User.find_by_id(params[:id])
-		@user.follow!(params[:id])
-		@id = params[:id]
+		@user = User.find(params[:user_id])
+		@followed_id = params[:id]
+		@user.follow!(@followed_id)
 		respond_to do |format|
 			format.html {redirect_to user_path(@user)}
 			format.js 
@@ -14,9 +12,9 @@ class RelationshipsController < ApplicationController
 
 
 	def destroy
-		@followed = User.find_by_id(params[:id])
-		@user.unfollow!(params[:id])
-		@id = params[:id]
+		@user = User.find(params[:user_id])
+		@followed_id = params[:id]
+		@user.unfollow!(@followed_id)
 		respond_to do |format|
 			format.html {redirect_to user_path(@user)}
 			format.js
