@@ -22,7 +22,7 @@ module UsersHelper
 	def set_friend_lists
 		@facebook_friends_invite = []
 		@facebook_friends_enrolled = []
-		@facebook_friends.each do |profile|
+		@facebook_friends.reject{|profile| profile["id"] == @current_user.id}.each do |profile|
 			user = User.find_by_fb_id(profile["id"])
 			user.nil? ? @facebook_friends_invite << profile : @facebook_friends_enrolled << user
 		end
