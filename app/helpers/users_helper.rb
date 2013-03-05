@@ -4,8 +4,8 @@ module UsersHelper
 		if params['signed_request']
 			signed_request = params['signed_request']
 			@signed_request = decode_data(signed_request)
-			@user_attributes = User.set_user_attributes(@signed_request)
-			@user = User.where(:fb_id => @signed_request['user_id'].to_i).first_or_create!(@user_attributes)
+			@current_user_attributes = User.set_user_attributes(@signed_request)
+			@current_user = User.where(:fb_id => @signed_request['user_id'].to_i).first_or_create!(@current_user_attributes)
 			redirect_to root_path
 		end
 	end
@@ -19,4 +19,14 @@ module UsersHelper
 		response = http.request(request)
 	end
 
+	def set_friend_lists
+		@facebook_friends_invite = []
+		@facebook_friends_enrolled = []
+		@facebook_friends.each do |profile|
+			user = User.find_by_fb_id(profile["id"])
+			user.nil? ? @facebook_friends_invite << profile : @facebook_friends_enrolled << user
+		end
+	end
+
+	
 end

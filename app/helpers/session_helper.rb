@@ -24,7 +24,7 @@ module SessionHelper
 	end
 
 	def set_user_picture
-		@user.update_attributes(:fb_pic => @graph.get_picture("me")) if @user.fb_pic.nil?
+		@current_user.update_attributes(:fb_pic => @graph.get_picture("me")) if @current_user.fb_pic.nil?
 	end
 
 	def check_token_expiration
@@ -42,9 +42,9 @@ module SessionHelper
 	end
 
 	def set_session
-		@user = User.find_by_fb_id(@me['id'])
-		redirect_to register_path and return if @user.nil?
-		session['user_id'] ||= @user.id
+		@current_user = User.find_by_fb_id(@me['id'])
+		redirect_to register_path and return if @current_user.nil?
+		session['user_id'] ||= @current_user.id
 	end
 
 	def parse_facebook_cookies

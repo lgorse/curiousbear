@@ -21,7 +21,7 @@ class SessionController < ApplicationController
 
 	
 	def home
-		@title = "Search the world, "+@user.first_name
+		@title = "Search the world, "+@current_user.first_name
 
 	end
 

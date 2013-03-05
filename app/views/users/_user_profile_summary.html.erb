@@ -4,7 +4,7 @@
 	<% if user.id.nil? %>
 		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id %>
 	<% else %>
-		<% if @user.following?(user.id) %>
+		<% if @current_user.following?(user.id) %>
 			<%= render 'relationships/buttons/unfollow_button', :followed_id => user.id %>
 		<% else %>
 			<%= render 'relationships/buttons/follow_button', :followed_id => user.id %>

@@ -1,8 +1,9 @@
-<% if @user %>
+<% if @current_user %>
 	<div id="fb-root"></div>
 	<%= render 'layouts/facebook_app_scripts' %>
-	<%= link_to 'user', user_path(@user) %>
-	<%= link_to "edit", edit_user_path(@user) %>
-	<%= image_tag @user.fb_pic %>
+	<%= link_to 'home', home_path %>
+	<%= link_to 'user', user_path(@current_user) %>
+	<%= link_to "edit", edit_user_path(@current_user) %>
+	<%= image_tag @current_user.fb_pic %>
 	<button id="fb-logout" onclick="logout()">Log out</button>
 <% end %>

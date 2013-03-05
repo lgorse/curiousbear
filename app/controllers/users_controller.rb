@@ -20,7 +20,7 @@ def show
 end
 
 def update
-	if @user.update_attributes(params[:user])
+	if @current_user.update_attributes(params[:user])
 		redirect_to home_path
 	else
 		render 'edit'
@@ -35,8 +35,9 @@ def destroy
 end
 
 def facebook_friends
-	@friends = @graph.get_connections("me", "friends")
-
+	@title = "Follow your friends"
+	@facebook_friends = @graph.get_connections("me", "friends", :fields => "name, id, picture")
+	set_friend_lists
 end
 
 def following

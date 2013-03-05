@@ -1,10 +1,19 @@
 <%= render 'facebook_friends_script' %>
-<% @profile = @graph.get_connections("me", "friends", :fields => "name, id, picture")%>
+<div id = "facebook_friends">
 <ul>Facebook Friends
-<% @profile.reject{|profile| User.find_by_fb_id(profile["id"])}.each do |profile| %>
-<% @friend_id = profile["id"] %>
+<% @facebook_friends_invite.each do |profile| %>
 <% @attr = {:id => nil, :fb_pic => profile["picture"]["data"]["url"], :fb_id => profile["id"], :name => profile["name"]} %>
 <%= render "users/user_profile_summary", :user => User.new(@attr)%>
 
 <% end %>
-</ul>
+</ul></div>
+<div id = "facebook_friends_enrolled">
+	<ul>Friends on KweeKweg
+			<% @facebook_friends_enrolled.reject{|friend| @current_user.following.include?(friend)}.each do |friend| %>	
+			<% @attr = {:id => friend.id, :fb_pic => friend.fb_pic, :fb_id => friend.fb_id, :name => friend.name} %>
+			<%= render "users/user_profile_summary", :user => friend %>
+			<% end %>
+	</ul>
+
+</div
+>

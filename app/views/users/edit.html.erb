@@ -1,5 +1,5 @@
-<%= form_for(@user) do |f| %>
+<%= form_for(@current_user) do |f| %>
 <%= render 'user_edit_fields', :f => f %>
 <%= f.submit "update" %>
 <% end %>
-<%= link_to 'unsubscribe', @user, :method => :delete, :confirm => "Are you sure?"  %>
+<%= link_to 'unsubscribe', @current_user, :method => :delete, :confirm => "Are you sure?"  %>
