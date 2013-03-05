@@ -1,5 +1,8 @@
 <%= @user.name %>
 <%= link_to "Add friends", facebook_friends_user_path %>
+<% if @user.fb_pic_large %>
+<%= image_tag @user.fb_pic_large %>
+<% end %>
 
 <table><tr><td>
 <%= link_to "Trusts", following_user_path(@user), :id => "follows_list_button", :remote => true%></td>

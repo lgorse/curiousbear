@@ -2,16 +2,17 @@
 #
 # Table name: users
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)      not null
-#  first_name :string(255)
-#  birthday   :date             not null
-#  gender     :string(255)
-#  e_mail     :string(255)
-#  fb_id      :integer          not null
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  fb_pic     :string(255)
+#  id           :integer          not null, primary key
+#  name         :string(255)      not null
+#  first_name   :string(255)
+#  birthday     :date             not null
+#  gender       :string(255)
+#  e_mail       :string(255)
+#  fb_id        :integer          not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  fb_pic       :string(255)
+#  fb_pic_large :string(255)
 #
 
 require 'spec_helper'
