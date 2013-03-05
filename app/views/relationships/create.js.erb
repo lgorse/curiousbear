@@ -1,3 +1,4 @@
 $(function(){
-	$("#button").html("<%= escape_javascript(render 'relationships/buttons/unfollow_button', :followed => @followed.id) %>");
+	$("#button").html("<%= escape_javascript(render 'relationships/buttons/unfollow_button') %>");
+	
 });

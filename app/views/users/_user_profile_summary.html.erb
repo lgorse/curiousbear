@@ -1,14 +1,13 @@
 <li id="user_summary">
 	<%= image_tag fb_pic %><%= name %>
-	<div id="button">
+	<div class="button">
 	<% if id.nil? %>
 		<%= render 'relationships/buttons/invite_button', :fb_id => fb_id %>
 	<% else %>
+	<% @id = id %>
 		<% if @user.following?(id) %>
-		<% @id = id %>
 			<%= render 'relationships/buttons/unfollow_button', :followed => id %>
 		<% else %>
-		<% @id = id %>
 			<%= render 'relationships/buttons/follow_button', :followed => id %>
 		<% end %>
 	<% end %></div>
