@@ -2,20 +2,21 @@
 #
 # Table name: users
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)      not null
-#  first_name :string(255)
-#  birthday   :date             not null
-#  gender     :string(255)
-#  e_mail     :string(255)
-#  fb_id      :integer          not null
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  fb_pic     :string(255)
+#  id           :integer          not null, primary key
+#  name         :string(255)      not null
+#  first_name   :string(255)
+#  birthday     :date             not null
+#  gender       :string(255)
+#  e_mail       :string(255)
+#  fb_id        :integer          not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  fb_pic       :string(255)
+#  fb_pic_large :string(255)
 #
 
 class User < ActiveRecord::Base
-	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name, :fb_pic
+	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name, :fb_pic, :fb_pic_large
 
 	email_format = /[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 

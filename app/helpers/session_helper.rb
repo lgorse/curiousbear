@@ -25,6 +25,7 @@ module SessionHelper
 
 	def set_user_picture
 		@current_user.update_attributes(:fb_pic => @graph.get_picture("me")) if @current_user.fb_pic.nil?
+		@current_user.update_attributes(:fb_pic_large => @graph.get_picture("me", :type => "normal")) if @current_user.fb_pic_large.nil?
 	end
 
 	def check_token_expiration
