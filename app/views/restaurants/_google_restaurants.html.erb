@@ -1,0 +1,9 @@
+<%= @result.count %>
+
+<ul>
+	<% @result.each do |result| %>
+	<li><%= result.name %></li>
+	<li><%= result.formatted_address %></li>
+	<% end %>
+	<li><%= @result.count %></li>
+</ul>

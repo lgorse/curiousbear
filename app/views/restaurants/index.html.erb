@@ -1,5 +1,9 @@
+
 <ul>
-	<li><%= @result.count %></li>
-<li><%= @result.first.name %></li>
-<li><%= @detail.street_number %></li>
+	<li><%= "OTHER URL "+ @other_url.to_s %></li>
+	<li><%="URL "+ @url.to_s %></li>
 </ul>
+<% @parse["results"].each do |result| %>
+<%= result["name"] %>
+<% end %>
+

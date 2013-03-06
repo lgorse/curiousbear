@@ -4,9 +4,11 @@
 	<title>Curiousbear</title>
 	<%= stylesheet_link_tag    "application", :media => "all" %>
 	<%= javascript_include_tag "application" %>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%= GOOGLE_API_KEY %>&libraries=places&sensor=false"></script>
 	<%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="initialize()">
+
 	<%= render 'layouts/header' %>
 	<div id = 'container'>
 	
