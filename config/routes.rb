@@ -1,12 +1,15 @@
 Curiousbear::Application.routes.draw do
 
    root :to => 'session#signin'
+   
    resources :users do
     resources :relationships, :only => [:create, :destroy]
     member do
       get 'facebook_friends', :following, :followers
     end
    end
+
+   resources :restaurants
 
    match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"

@@ -9,6 +9,7 @@ gem 'pg'
 gem 'annotate'
 gem 'will_paginate'
 gem 'koala'
+gem 'google_places'
 
 
 # Gems used only for assets and not required
