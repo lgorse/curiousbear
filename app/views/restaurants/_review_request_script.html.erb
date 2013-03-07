@@ -1,0 +1,25 @@
+ <script> 
+      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
+
+      function postToFeed(venue_json) {
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+         // redirect_uri: '<%= Facebook::SITE_URL.to_s %>',
+          link: 'https://developers.facebook.com/docs/reference/dialogs/',
+          picture: 'http://fbrell.com/f8.jpg',
+          name: 'Facebook Dialogs',
+          caption: 'Reference Documentation',
+          description: 'Looking for a review of <b>'+venue_json["name"]+'</b>'
+        };
+
+        function callback(response) {
+        	if (response['post_id']){
+        		document.getElementById('msg').innerHTML = "Request posted!";
+        	}
+        }
+
+        FB.ui(obj, callback);
+      }
+    
+    </script>

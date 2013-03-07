@@ -3,7 +3,7 @@
 
 <h1><%= @title %></h1>
 
-<%= form_tag google_search_restaurants_path,:method => 'get' do %>
+<%= form_tag google_search_restaurants_path,:method => 'get', :remote => true, :id => 'search_form' do %>
 <%= text_field_tag :search, '', :size => 45%>
 <%= submit_tag "Find" %>
 <% end %>

@@ -11,5 +11,8 @@
 		<%= link_to "edit", edit_user_path(@current_user) , :id => "my_account_button"%>
 		<button id="fb-logout" onclick="logout()">Log out</button>
 	</nav>
+	<% flash.each do |key, value| %>
+			<div class = "flash", id = "<%= key %>"><%= value %></div>
+			<% end %>
 </header>
 <% end %>

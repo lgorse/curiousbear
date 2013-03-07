@@ -8,7 +8,17 @@ def index
 end
 
 def google_search
-	@google_results = parse_google_search
+	begin
+		@google_results = parse_google_search
+	rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
+	       Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
+	       URI::InvalidURIError => e
+	       flash.now[:error] = "Oops!" + e.message + "! That's not good."
+	end
+	respond_to do |format|
+		format.html
+		format.js
+	end
 end
 
 def new
