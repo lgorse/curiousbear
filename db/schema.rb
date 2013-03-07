@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130307012716) do
+ActiveRecord::Schema.define(:version => 20130307025505) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20130307012716) do
   end
 
   add_index "restaurants", ["google_id"], :name => "index_restaurants_on_google_id"
+  add_index "restaurants", ["google_rating"], :name => "index_restaurants_on_google_rating"
 
   create_table "users", :force => true do |t|
     t.string   "name",                      :null => false

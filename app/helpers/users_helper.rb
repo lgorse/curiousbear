@@ -28,5 +28,9 @@ module UsersHelper
 		end
 	end
 
+	def set_attr_from_fb(profile)
+@attr = {:id => nil, :fb_pic => profile["picture"]["data"]["url"], :fb_id => profile["id"], :name => profile["name"]}
+	end
+
 	
 end

@@ -8,3 +8,46 @@
 	width: 400px;
 	height: 400px;
 }
+
+li#restaurant_summary{
+
+	width: 550px;
+	height: 90px;
+	position: relative;
+	margin-bottom: 10px;
+
+
+	#restaurant_summary_left{
+		width: 400;
+		position: relative;
+
+		ul{
+			padding: 0px;
+			position: relative;
+
+			li{
+				margin-bottom: 5px;
+			}
+
+			#venue_name{
+				font-weight: bold;
+			}
+
+			#venue_formatted_address{
+				font-size: 14px;
+				margin-bottom: 0px;
+			}
+			
+		}
+
+	}
+
+	#google_rating{
+		position: relative;
+		left: 400px;
+		bottom: 35px;
+		width: 150px;
+		margin: 0px;
+		display: block;
+	}
+}

@@ -1,9 +1,6 @@
-<%= @result.count %>
-
 <ul>
-	<% @result.each do |result| %>
-	<li><%= result.name %></li>
-	<li><%= result.formatted_address %></li>
+	<% @google_results.sort_by{|result| result["rating"].to_i}.reverse.each do |result| %>
+	<%= render 'restaurants/restaurant_summary', :result => result, :venue => Restaurant.new(set_attr_from_google(result).merge(:id => nil)) %>
+	
 	<% end %>
-	<li><%= @result.count %></li>
 </ul>

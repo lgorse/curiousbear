@@ -9,7 +9,11 @@ Curiousbear::Application.routes.draw do
     end
    end
 
-   resources :restaurants
+   resources :restaurants do
+    collection do
+      get 'google_search'
+    end
+   end
 
    match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"

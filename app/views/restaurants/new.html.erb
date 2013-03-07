@@ -1,0 +1,7 @@
+<p>Hello, world</p>
+<%= @search = Base64.decode64(params[:search]) %>
+<% @venue = Base64.urlsafe_decode64(params[:venue]) %>
+<% @attr = JSON.parse(@venue) %>
+<%= @attr[:name] %>
+
+<p></p>
