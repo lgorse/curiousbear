@@ -18,12 +18,13 @@ li#restaurant_summary{
 
 
 	#restaurant_summary_left{
-		width: 400;
+		//width: 400px;
 		position: relative;
 
 		ul{
 			padding: 0px;
 			position: relative;
+			width: 400px;
 
 			li{
 				margin-bottom: 5px;
@@ -43,11 +44,21 @@ li#restaurant_summary{
 	}
 
 	#google_rating{
+		
+	}
+
+	#restaurant_summary_right{
+		position: relative;
+		width: 250px;
 		position: relative;
 		left: 400px;
-		bottom: 35px;
-		width: 150px;
+		bottom: 60px;
 		margin: 0px;
-		display: block;
+		//display: block;
+		#share_button{
+
+		}
 	}
+
+
 }

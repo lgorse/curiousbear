@@ -1,3 +1,4 @@
+
 <% parsed_address = split_formatted_address(venue.formatted_address.to_s) %>
 <li id="restaurant_summary">
 	<div id="restaurant_summary_left">
@@ -7,5 +8,9 @@
 <li id = "venue_formatted_address"><%= parsed_address[1]  %></li>
 </ul>
 	</div>
+<div id = "restaurant_summary_right">
 <div id="google_rating"><%= "Google rating: "+ venue.google_rating.to_s %></div>
+ <a onclick='postToFeed(<%= venue_json %>); return false;' href = "#" id="share_button">Request review</a>
+ <p id='msg'></p>
+</div>
 </li>

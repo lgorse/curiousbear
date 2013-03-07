@@ -2,7 +2,7 @@ module RestaurantsHelper
 
 	def parse_google_search
 		query = URI.escape(params[:search])
-		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types=restaurant|food|establishment|bar|cafe"
+		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
 		url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
 
 		http = Net::HTTP.new(url.host, url.port)
