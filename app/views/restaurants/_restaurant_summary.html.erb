@@ -1,5 +1,6 @@
 
 <% parsed_address = split_formatted_address(venue.formatted_address.to_s) %>
+<% venue_json = {"name" => venue.name}.to_json %>
 <li id="restaurant_summary">
 	<div id="restaurant_summary_left">
 		<ul>
