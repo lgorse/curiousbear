@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130305095222) do
+ActiveRecord::Schema.define(:version => 20130307012716) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -23,6 +23,31 @@ ActiveRecord::Schema.define(:version => 20130305095222) do
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "restaurants", :force => true do |t|
+    t.string   "name",                                                             :null => false
+    t.string   "google_photo"
+    t.integer  "google_price"
+    t.integer  "google_rating"
+    t.float    "lat"
+    t.float    "lng"
+    t.string   "google_id",                                                        :null => false
+    t.string   "google_reference"
+    t.text     "keywords"
+    t.text     "google_types",      :default => "restaurant, establishment, food"
+    t.string   "formatted_address"
+    t.string   "street_number"
+    t.string   "street"
+    t.string   "city"
+    t.string   "admin_area"
+    t.string   "zip"
+    t.string   "country"
+    t.string   "phone"
+    t.datetime "created_at",                                                       :null => false
+    t.datetime "updated_at",                                                       :null => false
+  end
+
+  add_index "restaurants", ["google_id"], :name => "index_restaurants_on_google_id"
 
   create_table "users", :force => true do |t|
     t.string   "name",                      :null => false

@@ -1,9 +1,9 @@
 
 <ul>
-	<li><%= "OTHER URL "+ @other_url.to_s %></li>
-	<li><%="URL "+ @url.to_s %></li>
+	
+	
+	<li><%= address = @detail["result"]["address_components"].first["long_name"] %></li> 
 </ul>
-<% @parse["results"].each do |result| %>
-<%= result["name"] %>
-<% end %>
+
+
 
