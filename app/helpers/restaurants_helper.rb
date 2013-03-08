@@ -45,4 +45,11 @@ module RestaurantsHelper
 	def search_to_keywords
 		@search.gsub(/[^A-Za-z]/, ' ')
 	end
+
+	def handle_google_http_errors
+		case @google_response["status"]
+		when "ZERO_RESULTS" then flash[:error] = "Oops! We came up empty."
+		when "OVER_QUERY_LIMIT" then flash[:error] = "We're more popular than we thought! We are over our query limit for today."
+		end
+	end
 end

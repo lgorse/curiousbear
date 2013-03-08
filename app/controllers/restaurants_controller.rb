@@ -11,10 +11,7 @@ class RestaurantsController < ApplicationController
 		begin
 			@google_response = parse_google_search
 			@google_results = @google_response["results"]
-			if @google_response["status"] == "ZERO_RESULTS"
-				flash.now[:error] = "We're more popular than we thought! We are over our query limit for today."
-				
-			end
+			handle_google_http_errors
 		rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 			Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
 			URI::InvalidURIError => e
@@ -27,13 +24,17 @@ class RestaurantsController < ApplicationController
 	end
 
 	def new
-
+		flash[:error] = "you made it!"
 		@search = Base64.decode64(params[:search])
 		@venue = Base64.urlsafe_decode64(params[:venue])
 		@attr = JSON.parse(@venue)
 		@detail = get_details(@attr)
 		@lat =  @detail["result"]["geometry"]["location"]["lat"]
 		@lng =  @detail["result"]["geometry"]["location"]["lng"]
+		respond_to do |format|
+			format.html
+			format.js
+		end
 
 	end
 

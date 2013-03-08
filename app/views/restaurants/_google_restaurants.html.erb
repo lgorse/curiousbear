@@ -1,8 +1,6 @@
 <%= render 'restaurants/review_request_script' %>
-
-<% if @google_results.blank? %>
-<p>Your search yielded nothing. Try again!</p>
-<% else %>
+<div class = "flash_search"></div>
+<% unless @google_results.blank? %>
 <ul>
 	<% @google_results.each do |result| %>
 	<%= render 'restaurants/restaurant_summary', :result => result, :venue => Restaurant.new(set_attr_from_google(result).merge(:id => nil)) %>
