@@ -1,4 +1,2 @@
 $("#restaurant_list").html("<%=escape_javascript(render 'google_restaurants')%>");
-$('#search_form').live('ajax:error', function(evt, xhr, status, error){
-	alert("error");	
-});
+$('html, body').animate({ scrollTop: 0 }, 5);

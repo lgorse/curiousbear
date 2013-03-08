@@ -13,8 +13,13 @@ module SessionHelper
 
 	
 	def set_access_token
+		begin
 		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
 		@access_token = session['fb_cookie']["access_token"]
+	rescue Koala::Facebook::OAuthTokenRequestError
+		session['fb_cookie'] = nil
+		set_access_token
+	end
 
 	end
 
@@ -29,13 +34,13 @@ module SessionHelper
 	end
 
 	def check_token_expiration
-		if session['fb_cookie'] != nil
+		if session['fb_cookie']
 			session['fb_cookie'] = nil if token_expired?
 		end
 	end
 
 	def token_expired?
-		session['fb_cookie']["expires"].to_i <= Time.now.to_i - session['fb_cookie']['issued_at'].to_i
+		Time.now.to_i - session['fb_cookie']['issued_at'].to_i >= session['fb_cookie']["expires"].to_i
 	end
 
 	def redirect_to_signin

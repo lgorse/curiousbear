@@ -1,5 +1,6 @@
 <%= render 'restaurants/review_request_script' %>
-
+<%= params[:next_token] %>
+<%= @google_response["next_page_token"] %>
 <% if @google_results.blank? %>
 <p>Your search yielded nothing. Try again!</p>
 <% else %>
@@ -8,5 +9,9 @@
 	<%= render 'restaurants/restaurant_summary', :result => result, :venue => Restaurant.new(set_attr_from_google(result).merge(:id => nil)) %>
 	
 	<% end %>
+<% if @google_response["next_page_token"] %>
+<%= link_to "next", :controller => "restaurants", :action => 'google_search', :next_token => @google_response["next_page_token"], :search => params[:search], :remote => true  %>
+<% end %>
 </ul>
 <% end %>
+

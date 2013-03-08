@@ -1,9 +1,11 @@
 module RestaurantsHelper
 
-	def parse_google_search
-		query = URI.escape(params[:search])
-		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
-		url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
+	def parse_google_search		
+			query = URI.escape(params[:search])
+			url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
+			url_params << "&pagetoken="+params[:next_token] if params[:next_token]
+			url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
+		
 
 		http = Net::HTTP.new(url.host, url.port)
 		http.use_ssl = true
@@ -11,7 +13,7 @@ module RestaurantsHelper
 		request = Net::HTTP::Get.new(url.request_uri)
 		
 		result = http.request(request)
-		JSON.parse(result.body)["results"]
+		JSON.parse(result.body)
 
 	end
 
@@ -30,8 +32,8 @@ module RestaurantsHelper
 
 	def set_attr_from_google(google_response)
 		google_attr = { :name => google_response["name"], :formatted_address => google_response["formatted_address"],
-				  :google_rating => google_response["rating"].to_i, :google_id => google_response ["id"].to_i,
-				  :google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"]
+			:google_rating => google_response["rating"].to_i, :google_id => google_response ["id"].to_i,
+			:google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"]
 		}
 	end
 

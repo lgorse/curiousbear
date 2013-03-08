@@ -9,7 +9,8 @@ end
 
 def google_search
 	begin
-		@google_results = parse_google_search
+		@google_response = parse_google_search
+		@google_results = @google_response["results"]
 	rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 	       Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
 	       URI::InvalidURIError => e
