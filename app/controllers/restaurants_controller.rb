@@ -1,30 +1,41 @@
 class RestaurantsController < ApplicationController
 	include RestaurantsHelper
 
-before_filter :authenticate
+	before_filter :authenticate
 
-def index
-	
-end
+	def index
 
-def google_search
-	begin
-		@google_response = parse_google_search
-		@google_results = @google_response["results"]
-	rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
-	       Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
-	       URI::InvalidURIError => e
-	       flash.now[:error] = "Oops!" + e.message + "! That's not good."
 	end
-	respond_to do |format|
-		format.html
-		format.js
-	end
-end
 
-def new
-	
-end
+	def google_search
+		begin
+			@google_response = parse_google_search
+			@google_results = @google_response["results"]
+			if @google_response["status"] == "ZERO_RESULTS"
+				flash.now[:error] = "We're more popular than we thought! We are over our query limit for today."
+				
+			end
+		rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
+			Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
+			URI::InvalidURIError => e
+			flash.now[:error] = "Oops!" + e.message + "! That's not good."
+		end
+		respond_to do |format|
+			format.html
+			format.js
+		end
+	end
+
+	def new
+
+		@search = Base64.decode64(params[:search])
+		@venue = Base64.urlsafe_decode64(params[:venue])
+		@attr = JSON.parse(@venue)
+		@detail = get_details(@attr)
+		@lat =  @detail["result"]["geometry"]["location"]["lat"]
+		@lng =  @detail["result"]["geometry"]["location"]["lng"]
+
+	end
 
 
 

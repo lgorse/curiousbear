@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130307025505) do
+ActiveRecord::Schema.define(:version => 20130308093109) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20130307025505) do
     t.string   "name",                                                             :null => false
     t.string   "google_photo"
     t.integer  "google_price"
-    t.integer  "google_rating"
+    t.float    "google_rating"
     t.float    "lat"
     t.float    "lng"
     t.string   "google_id",                                                        :null => false
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20130307025505) do
     t.datetime "updated_at",                :null => false
     t.string   "fb_pic"
     t.string   "fb_pic_large"
+    t.decimal  "price"
   end
 
   add_index "users", ["fb_id"], :name => "index_users_on_fb_id"

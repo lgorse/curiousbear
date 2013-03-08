@@ -1,7 +1,8 @@
-<p>Hello, world</p>
-<%= @search = Base64.decode64(params[:search]) %>
-<% @venue = Base64.urlsafe_decode64(params[:venue]) %>
-<% @attr = JSON.parse(@venue) %>
-<%= @attr[:name] %>
+<%= render 'restaurants/google_maps_script' %>
+<%= @detail["result"]["geometry"]["location"]["lat"] %>
+<%= javascript_tag do %>
+window.reference = "<%= j @attr["google_reference"] %>";
 
-<p></p>
+<% end %>
+
+<div id="map"></div>

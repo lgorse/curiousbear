@@ -18,7 +18,7 @@ module RestaurantsHelper
 	end
 
 	def get_details(entry)
-		url_params = "json?reference="+ entry["reference"] + "&key=" + GOOGLE_API_KEY + "&sensor=" + false.to_s
+		url_params = "json?reference="+ entry["google_reference"] + "&key=" + GOOGLE_API_KEY + "&sensor=" + false.to_s
 		url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
 
 		http = Net::HTTP.new(url.host, url.port)
@@ -32,8 +32,9 @@ module RestaurantsHelper
 
 	def set_attr_from_google(google_response)
 		google_attr = { :name => google_response["name"], :formatted_address => google_response["formatted_address"],
-			:google_rating => google_response["rating"].to_i, :google_id => google_response ["id"].to_i,
-			:google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"]
+			:google_rating => google_response["rating"].to_f, :google_id => google_response ["id"].to_i,
+			:google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"],
+			:google_price => google_response["price_level"]
 		}
 	end
 

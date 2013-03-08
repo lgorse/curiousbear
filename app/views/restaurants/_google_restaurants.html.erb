@@ -1,6 +1,5 @@
 <%= render 'restaurants/review_request_script' %>
-<%= params[:next_token] %>
-<%= @google_response["next_page_token"] %>
+
 <% if @google_results.blank? %>
 <p>Your search yielded nothing. Try again!</p>
 <% else %>
