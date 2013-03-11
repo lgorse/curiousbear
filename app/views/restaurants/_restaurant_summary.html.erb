@@ -3,7 +3,7 @@
 <li id="restaurant_summary">
 	<div id="restaurant_summary_left">
 		<ul>
-	<li id="venue_name"><%= link_to venue.name, :controller => 'restaurants', :action => 'new', :search => Base64.urlsafe_encode64(params[:search]), :venue => Base64.urlsafe_encode64(venue.attributes.to_json)%></li>
+	<li id="venue_name"><%= link_to venue.name, :controller => 'restaurants', :action => 'new', :search => Base64.urlsafe_encode64(params[:search]), :venue_data => Base64.urlsafe_encode64(venue_basic_params(venue))%></li>
 <li id = "venue_formatted_address"><%= parsed_address[0]  %></li>
 <li id = "venue_formatted_address"><%= parsed_address[1]  %></li>
 </ul>

@@ -32,7 +32,7 @@ module RestaurantsHelper
 
 	def set_attr_from_google(google_response)
 		google_attr = { :name => google_response["name"], :formatted_address => google_response["formatted_address"],
-			:google_rating => google_response["rating"].to_f, :google_id => google_response ["id"].to_i,
+			:google_rating => google_response["rating"].to_f, :google_id => google_response ["id"],
 			:google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"],
 			:google_price => google_response["price_level"], :lat => google_response["geometry"]["location"]["lat"].to_f,
 			:lng => google_response["geometry"]["location"]["lng"].to_f
@@ -52,5 +52,10 @@ module RestaurantsHelper
 		when "ZERO_RESULTS" then flash[:error] = "Oops! We came up empty."
 		when "OVER_QUERY_LIMIT" then flash[:error] = "We're more popular than we thought! We are over our query limit for today."
 		end
+	end
+
+	def venue_basic_params(venue)
+		basic_attr = {:id => venue.id, :google_id => venue.google_id, :reference => venue.google_reference,
+				:lat => venue.lat, :lng => venue.lng}.to_json
 	end
 end

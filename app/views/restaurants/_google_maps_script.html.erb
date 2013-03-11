@@ -3,7 +3,7 @@ var map;
 var service;
 var lat =  <%= @lat %>;
 var lng = <%= @lng %>;
-var infowindow;
+
 
 
 function initialize_map() {
@@ -32,6 +32,7 @@ function initialize_map() {
 }
 
 function callback(results, status) {
+  var infowindow;
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       place = results[i];
@@ -45,12 +46,15 @@ function callback(results, status) {
 
         google.maps.event.addListener(marker, 'click', function() {
           if (infowindow) infowindow.close();
-          contentString = '<a method = "get" href="/restaurants/new?search=<%= URI::encode(@search) %>&venue='+place.name+'">'+place.name+'</a>';
-          infowindow = new google.maps.InfoWindow({
-            content: contentString
-          });
-          infowindow.open(map,marker);
-        });  
+          place_attributes = {google_id: place.id, reference: place.reference,
+            lat: place.geometry.location.lat(), lng: place.geometry.location.lng()};
+            encoded = window.btoa(JSON.stringify(place_attributes));
+            contentString = '<a method = "get" href="/restaurants/new?search=<%= URI::encode(@search) %>&venue_data='+encoded+'">'+place.name+'</a><div>'+place.vicinity+'</div>';
+            infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+            infowindow.open(map,marker);
+          });  
 
         marker.setMap(map);
 
@@ -61,11 +65,19 @@ function callback(results, status) {
 }
 
 function detail_callback(place, status) {
-
   if (status == google.maps.places.PlacesServiceStatus.OK) {
-    photo = place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200});
-    document.getElementById("restaurant_photo").src=photo;   
-
+    if (place.photos){
+      photo = place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200});
+      document.getElementById("restaurant_photo").src=photo;
+    }  
+    document.getElementById("venue_name").innerHTML = place.name;
+    document.getElementById("formatted_address").innerHTML = place.formatted_address;
+    if (place.rating){
+      document.getElementById("google_rating").innerHTML = "Google rating: "+place.rating;
+    }
+    venue_json = {
+      name: place.name};
+    document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(venue_json)+'); return false;');
 
   }
 }

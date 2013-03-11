@@ -1,11 +1,14 @@
 <%= render 'restaurants/google_maps_script' %>
+<%= render 'restaurants/review_request_script' %>
 <%= render 'restaurants/google_searchbox' %>
 <div id = "restaurant_info">
-	<p><%= @venue.name %></p>
-	<p><%= @venue.formatted_address %></p>
-	<p><%= @venue.keywords %></p>
-	<p><%= @venue.google_rating %></p>
+	<div id = "venue_name"></div>
+	<div id = "formatted_address"></div>
+	<div id = "keywords"></div>
+	<div id = "google_rating"></div>
 	<img id = "restaurant_photo"></img>
+	 <a href = "#" id="share_button">Request review</a>
+	 <p id='msg'></p>
 </div>
 
 <div id="map"></div>

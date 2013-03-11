@@ -25,11 +25,10 @@ class RestaurantsController < ApplicationController
 
 	def new
 		@search = Base64.decode64(params[:search])
-		@attr = JSON.parse(Base64.urlsafe_decode64(params[:venue]))
-		@venue = Restaurant.new(@attr)
-		@reference = @attr["google_reference"]
-		@lat =  @venue.lat
-		@lng =  @venue.lng
+		@attr = JSON.parse(Base64.urlsafe_decode64(params[:venue_data]))
+		@reference = @attr["reference"]
+		@lat =  @attr["lat"]
+		@lng =  @attr["lng"]
 		respond_to do |format|
 			format.html
 			format.js
