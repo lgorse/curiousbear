@@ -1,0 +1,11 @@
+<%= render 'restaurants/google_maps_script' %>
+<%= render 'restaurants/google_searchbox' %>
+<div id = "restaurant_info">
+	<p><%= @venue.name %></p>
+	<p><%= @venue.formatted_address %></p>
+	<p><%= @venue.keywords %></p>
+	<p><%= @venue.google_rating %></p>
+	<img id = "restaurant_photo"></img>
+</div>
+
+<div id="map"></div>

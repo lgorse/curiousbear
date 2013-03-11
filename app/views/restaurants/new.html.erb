@@ -1,8 +1,2 @@
-<%= render 'restaurants/google_maps_script' %>
-<%= @detail["result"]["geometry"]["location"]["lat"] %>
-<%= javascript_tag do %>
-window.reference = "<%= j @attr["google_reference"] %>";
+<%= render 'restaurants/restaurant_full_profile' %>
 
-<% end %>
-
-<div id="map"></div>

@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%= GOOGLE_API_KEY %>&libraries=places&sensor=false"></script>
 	<%= csrf_meta_tags %>
 </head>
-<body onload="initialize()">
+<body onload="initialize_map()">
 
 	<%= render 'layouts/header' %>
 	<div id = 'container'>

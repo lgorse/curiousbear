@@ -24,13 +24,12 @@ class RestaurantsController < ApplicationController
 	end
 
 	def new
-		flash[:error] = "you made it!"
 		@search = Base64.decode64(params[:search])
-		@venue = Base64.urlsafe_decode64(params[:venue])
-		@attr = JSON.parse(@venue)
-		@detail = get_details(@attr)
-		@lat =  @detail["result"]["geometry"]["location"]["lat"]
-		@lng =  @detail["result"]["geometry"]["location"]["lng"]
+		@attr = JSON.parse(Base64.urlsafe_decode64(params[:venue]))
+		@venue = Restaurant.new(@attr)
+		@reference = @attr["google_reference"]
+		@lat =  @venue.lat
+		@lng =  @venue.lng
 		respond_to do |format|
 			format.html
 			format.js

@@ -1,42 +1,78 @@
 <script>
 var map;
 var service;
+var lat =  <%= @lat %>;
+var lng = <%= @lng %>;
 var infowindow;
-var lat =  <%= @lat.to_f %>
-var lng = <%= @lng.to_f %>
 
 
-function initialize() {
+function initialize_map() {
   var center = new google.maps.LatLng(lat, lng);
   map = new google.maps.Map(document.getElementById('map'), {
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: center,
-      zoom: 16
-    });
-var request = {
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: center,
+    zoom: 16
+  });
+
+  var request = {
     location: center,
     radius: '1000',
     types: <%= raw GOOGLE_TYPES %>
   };
 
+  var reference = {
+    reference: '<%= @reference %>'
+  };
+
+
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
+  service.getDetails(reference, detail_callback);
+  
 }
 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
-      var place = results[i];
+      place = results[i];
+      (function(map, place){
 
-      var marker = new google.maps.Marker({
-        map: map,
-        position: place.geometry.location,
-        title: place.name
-      });
-      marker.setMap(map);
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          title: place.name
+        });  
+
+        google.maps.event.addListener(marker, 'click', function() {
+          if (infowindow) infowindow.close();
+          contentString = '<a method = "get" href="/restaurants/new?search=<%= URI::encode(@search) %>&venue='+place.name+'">'+place.name+'</a>';
+          infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+          infowindow.open(map,marker);
+        });  
+
+        marker.setMap(map);
+
+      }(map, place));
+      
     }
   }
 }
+
+function detail_callback(place, status) {
+
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    photo = place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200});
+    document.getElementById("restaurant_photo").src=photo;   
+
+
+  }
+}
+
+
+
+
 
 
 
