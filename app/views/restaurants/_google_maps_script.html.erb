@@ -97,17 +97,10 @@ venue = { name: place.name,
           google_rating: place.rating
         };
 
-encoded_venue =  window.btoa(JSON.stringify(venue));
+encoded_venue =  window.btoa(encodeURIComponent(JSON.stringify(venue)));
 
     document.getElementById("search_field").setAttribute("value", '<%= params[:search] %>');
     document.getElementById("venue_field").setAttribute("value", encoded_venue);
   }
 }
-
-
-
-
-
-
-
 </script>

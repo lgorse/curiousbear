@@ -11,6 +11,7 @@ class RestaurantsController < ApplicationController
 		begin
 			@google_response = parse_google_search
 			@google_results = @google_response["results"]
+			@encoded_search = Base64.urlsafe_encode64(params[:search])
 			handle_google_http_errors
 		rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 			Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
