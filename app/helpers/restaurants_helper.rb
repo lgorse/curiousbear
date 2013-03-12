@@ -31,11 +31,15 @@ module RestaurantsHelper
 	end
 
 	def set_attr_from_google(google_response)
-		google_attr = { :name => google_response["name"], :formatted_address => google_response["formatted_address"],
-			:google_rating => google_response["rating"].to_f, :google_id => google_response ["id"],
-			:google_types => google_response ["types"].join(","), :google_reference => google_response ["reference"],
-			:google_price => google_response["price_level"], :lat => google_response["geometry"]["location"]["lat"].to_f,
-			:lng => google_response["geometry"]["location"]["lng"].to_f
+		google_attr = { :name => google_response["name"], 
+						:formatted_address => google_response["formatted_address"],
+						:google_rating => google_response["rating"].to_f, 
+						:google_id => google_response ["id"],
+						:google_types => google_response ["types"].join(","), 
+						:google_reference => google_response ["reference"],
+						:google_price => google_response["price_level"], 
+						:lat => google_response["geometry"]["location"]["lat"].to_f,
+						:lng => google_response["geometry"]["location"]["lng"].to_f
 		}
 	end
 

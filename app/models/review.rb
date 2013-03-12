@@ -13,7 +13,9 @@
 #
 
 class Review < ActiveRecord::Base
-  attr_accessible :keywords, :rating, :rest_id, :text, :user_id
+  attr_accessible :keywords, :rating, :restaurant_id, :text, :user_id
   belongs_to :restaurant 
   belongs_to :user
+
+  
 end

@@ -1,10 +1,10 @@
 <p><%= @venue["name"] %></p>
-<p>Google Rating: <%= @venue["google_rating"] %></p>
+<p>Google Rating: <%= @venue["rating"] %></p>
 
 <%= form_for @review do |f|%>
-
+<%= f.hidden_field :venue, :value => params[:venue_field] %>
 <p><%= f.label "Rating" %>
-<%= select f, :rating, (1..5) %></p>
+<%= f.select :rating, (1..5).step(0.5) %></p>
 <p><%= f.label "Review" %>
 <%= f.text_area :text %></p>
 <p><%= f.label "Key Words" %>
