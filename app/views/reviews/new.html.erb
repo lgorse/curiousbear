@@ -1,0 +1,14 @@
+<p><%= @venue["name"] %></p>
+<p>Google Rating: <%= @venue["google_rating"] %></p>
+
+<%= form_for @review do |f|%>
+<p><%= f.label "Rating" %>
+<%= select f, :rating, (1..5) %></p>
+<p><%= f.label "Review" %>
+<%= f.text_area :text %></p>
+<p><%= f.label "Key Words" %>
+<%= f.text_field :keywords, :value => @search %></p>
+<%= f.submit "Add your review" %>
+
+
+<% end %>

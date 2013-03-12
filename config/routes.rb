@@ -15,8 +15,9 @@ Curiousbear::Application.routes.draw do
     end
    end
 
-   resources :session, :reviews
+   resources :session, :reviews 
 
+  post 'reviews/new' => 'reviews#new'
    match '/signin', :to => "session#signin"
    match '/home', :to => "session#home"
    match '/logout', :to => "session#logout"

@@ -12,7 +12,7 @@
 #  updated_at    :datetime         not null
 #
 
-class Reviews < ActiveRecord::Base
+class Review < ActiveRecord::Base
   attr_accessible :keywords, :rating, :rest_id, :text, :user_id
   belongs_to :restaurant 
   belongs_to :user

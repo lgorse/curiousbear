@@ -37,9 +37,9 @@ function map_callback(results, status) {
   var infowindow;
   
   if (status == google.maps.places.PlacesServiceStatus.OK) {
-    
+
     for (var i = 0; i < results.length; i++) {
-     
+
       place = results[i];
       
       (function(map, place){
@@ -53,7 +53,7 @@ function map_callback(results, status) {
         google.maps.event.addListener(marker, 'click', function() {
           if (infowindow) infowindow.close();
           place_attributes = {google_id: place.id, reference: place.reference,
-                              lat: place.geometry.location.lat(), lng: place.geometry.location.lng()};
+            lat: place.geometry.location.lat(), lng: place.geometry.location.lng()};
             encoded = window.btoa(JSON.stringify(place_attributes));
             contentString = '<a method = "get" href="/restaurants/new?search=<%= params[:search] %>&venue_data='+encoded+'">'+place.name+'</a><div>'+place.vicinity+'</div>';
             infowindow = new google.maps.InfoWindow({
@@ -81,12 +81,28 @@ function detail_callback(place, status) {
     if (place.rating){
       document.getElementById("google_rating").innerHTML = "Google rating: "+place.rating;
     }
-    venue_json = {
-      name: place.name};
-      document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(venue_json)+'); return false;');
+    name_json = {name: place.name};
+    document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(name_json)+'); return false;');
 
-    }
+/* 
+for (i = 0; i< place.address_components.length; i++){
+  alert(place.address_components[i].long_name);
+}
+*/
+venue = { name: place.name,
+          google_id: place.id,
+          formatted_address: place.formatted_address,
+          google_reference: place.reference,
+          google_types: place.types,
+          google_rating: place.rating
+        };
+
+encoded_venue =  window.btoa(JSON.stringify(venue));
+
+    document.getElementById("search_field").setAttribute("value", '<%= params[:search] %>');
+    document.getElementById("venue_field").setAttribute("value", encoded_venue);
   }
+}
 
 
 
@@ -94,4 +110,4 @@ function detail_callback(place, status) {
 
 
 
-  </script>
+</script>
