@@ -28,5 +28,21 @@
 require 'spec_helper'
 
 describe Restaurant do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+  @user_attr = {:name => "Laurent Gorse", :first_name => "Laurent", :birthday => '1979-05-28'.to_date,
+				:gender => "male", :e_mail => "lgorse@stanford.edu", :fb_id => 123456789}
+	User.create!(@user_attr)
+	@restaurant_attr = { :name => "restaurant", 
+						:formatted_address => "Everywhere, Paris, France",
+						:google_rating => 4.5, 
+						:google_id => "xxx",
+						:google_types => "restaurant, bar", 
+						:google_reference => "xsdlgdg",
+						:google_price => 2, 
+						:lat => 0.45,
+						:lng => 20.2
+		}
+		Restaurant.create!(@restaurant_attr)
+
+	end
 end
