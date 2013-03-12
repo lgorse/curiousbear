@@ -6,7 +6,7 @@
 #  name              :string(255)      not null
 #  google_photo      :string(255)
 #  google_price      :integer
-#  google_rating     :integer
+#  google_rating     :float
 #  lat               :float
 #  lng               :float
 #  google_id         :string(255)      not null

@@ -13,6 +13,7 @@
 #  updated_at   :datetime         not null
 #  fb_pic       :string(255)
 #  fb_pic_large :string(255)
+#  price        :decimal(, )
 #
 
 class User < ActiveRecord::Base
@@ -30,6 +31,8 @@ class User < ActiveRecord::Base
 	has_many :reverse_relationships, :foreign_key => "followed_id", :dependent => :destroy, :class_name => "Relationship"
 	has_many :following,  :through => :relationships, :source => :followed
 	has_many :followers, :through => :reverse_relationships, :source => :follower
+
+	has_many :reviews, :dependent => :destroy
 
 
 	def self.set_user_attributes(signed_request)

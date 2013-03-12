@@ -6,7 +6,7 @@
 #  name              :string(255)      not null
 #  google_photo      :string(255)
 #  google_price      :integer
-#  google_rating     :integer
+#  google_rating     :float
 #  lat               :float
 #  lng               :float
 #  google_id         :string(255)      not null
@@ -27,4 +27,5 @@
 
 class Restaurant < ActiveRecord::Base
  attr_protected
+ has_many :reviews, :dependent => :destroy
 end

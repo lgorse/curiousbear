@@ -13,6 +13,7 @@
 #  updated_at   :datetime         not null
 #  fb_pic       :string(255)
 #  fb_pic_large :string(255)
+#  price        :decimal(, )
 #
 
 require 'spec_helper'
