@@ -24,12 +24,14 @@ class RestaurantsController < ApplicationController
 		end
 	end
 
-	def new
+	def new	
 		@search = Base64.decode64(params[:search])
-		@attr = JSON.parse(Base64.urlsafe_decode64(params[:venue_data]))
-		@reference = @attr["reference"]
-		@lat =  @attr["lat"]
-		@lng =  @attr["lng"]
+		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_data])))
+		@reference = @venue["google_reference"]
+		@lat =  @venue["lat"]
+		@lng =  @venue["lng"]
+		@google_id = @venue["google_id"]
+		@restaurant = Restaurant.find_by_google_id(@google_id)
 		respond_to do |format|
 			format.html
 			format.js
@@ -44,6 +46,7 @@ class RestaurantsController < ApplicationController
 		@attr = get_restaurant_from_reference
 		@lat = @attr["geometry"]["location"]["lat"]
 		@lng = @attr["geometry"]["location"]["lng"]
+		@google_id = @restaurant.google_id
 		respond_to do |format|
 			format.html
 			format.js

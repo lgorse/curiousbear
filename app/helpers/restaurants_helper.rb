@@ -38,8 +38,8 @@ module RestaurantsHelper
 						:google_types => google_response ["types"].join(","), 
 						:google_reference => google_response ["reference"],
 						:google_price => google_response["price_level"], 
-						:lat => google_response["geometry"]["location"]["lat"].to_f,
-						:lng => google_response["geometry"]["location"]["lng"].to_f
+						:lat => google_response["geometry"]["location"]["lat"].to_d,
+						:lng => google_response["geometry"]["location"]["lng"].to_d
 		}
 	end
 
@@ -58,11 +58,7 @@ module RestaurantsHelper
 		end
 	end
 
-	def venue_basic_params(venue)
-		basic_attr = {:id => venue.id, :google_id => venue.google_id, :reference => venue.google_reference,
-				:lat => venue.lat, :lng => venue.lng}.to_json
-	end
-
+	
 	def get_restaurant_from_reference
 			url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+@reference
 			url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
@@ -75,5 +71,22 @@ module RestaurantsHelper
 		
 		result = http.request(request)
 		JSON.parse(result.body)["result"]
+	end
+
+	def set_summary_values(result)
+		@venue = set_attr_from_google(result).merge(:id => nil)
+
+		@encoded_venue = Base64.urlsafe_encode64(URI.encode(@venue.to_json))
+		
+		@parsed_address = split_formatted_address(@venue[:formatted_address].to_s)
+		@venue_json = {"name" => @venue[:name]}.to_json
+		@google_id = @venue[:google_id]
+		@restaurant = Restaurant.find_by_google_id(@google_id)
+	end
+
+	def final_restaurant_attributes(venue)
+		venue.merge(:lat => nil, :lng => nil, 
+					:google_price => nil,
+					:google_types => venue["google_types"])
 	end
 end

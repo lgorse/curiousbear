@@ -1,5 +1,5 @@
 <p><%= @venue["name"] %></p>
-<p>Google Rating: <%= @venue["rating"] %></p>
+<p>Google Rating: <%= @venue["google_rating"] %></p>
 
 <%= form_for @review do |f|%>
 <%= f.hidden_field :venue, :value => params[:venue_field] %>

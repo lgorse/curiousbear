@@ -1,17 +1,18 @@
-<% venue = Restaurant.new(set_attr_from_google(result).merge(:id => nil)) %>
-<% parsed_address = split_formatted_address(venue.formatted_address.to_s) %>
-<% venue_json = {"name" => venue.name}.to_json %>
+<% set_summary_values(result) %>
 <li id="restaurant_summary">
 	<div id="restaurant_summary_left">
 		<ul>
-	<li id="venue_name"><%= link_to venue.name, :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => Base64.urlsafe_encode64(venue_basic_params(venue))%></li>
-<li id = "venue_formatted_address"><%= parsed_address[0]  %></li>
-<li id = "venue_formatted_address"><%= parsed_address[1]  %></li>
+	<li id="venue_name">
+		<%= link_to @venue[:name], :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => @encoded_venue %>
+		<%= render 'reviews/add_review' %>
+	</li>
+<li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
+<li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
 </ul>
 	</div>
 <div id = "restaurant_summary_right">
-<div id="google_rating"><%= "Google rating: "+ venue.google_rating.to_s %></div>
- <a onclick='postToFeed(<%= venue_json %>); return false;' href = "#" id="share_button">Request review</a>
+<div id="google_rating"><%= "Google rating: "+ @venue[:google_rating].to_s %></div>
+ <a onclick='postToFeed(<%= @venue_json %>); return false;' href = "#" id="share_button">Request review</a>
  <p id='msg'></p>
 </div>
 </li>

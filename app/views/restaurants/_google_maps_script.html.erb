@@ -52,9 +52,12 @@ function map_callback(results, status) {
 
         google.maps.event.addListener(marker, 'click', function() {
           if (infowindow) infowindow.close();
-          place_attributes = {google_id: place.id, reference: place.reference,
-            lat: place.geometry.location.lat(), lng: place.geometry.location.lng()};
-            encoded = window.btoa(JSON.stringify(place_attributes));
+          place_attributes = {google_id: place.id, 
+                              google_reference: place.reference,
+                              lat: place.geometry.location.lat(), 
+                              lng: place.geometry.location.lng()
+                            };
+            encoded = window.btoa(encodeURIComponent(JSON.stringify(place_attributes)));
             contentString = '<a method = "get" href="/restaurants/new?search=<%= params[:search] %>&venue_data='+encoded+'">'+place.name+'</a><div>'+place.vicinity+'</div>';
             infowindow = new google.maps.InfoWindow({
               content: contentString
@@ -76,6 +79,7 @@ function detail_callback(place, status) {
       photo = place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200});
       document.getElementById("restaurant_photo").src=photo;
     }  
+
     document.getElementById("venue_name").innerHTML = place.name;
     document.getElementById("formatted_address").innerHTML = place.formatted_address;
     if (place.rating){
@@ -88,13 +92,13 @@ venue = { name: place.name,
           google_id: place.id,
           formatted_address: place.formatted_address,
           google_reference: place.reference,
-          google_types: place.types,
+          google_types: place.types.toString(),
           google_rating: place.rating,
           lat: place.geometry.location.lat(),
           lng: place.geometry.location.lng()
         };
 
-encoded_venue =  window.btoa(encodeURIComponent(JSON.stringify(place)));
+encoded_venue =  window.btoa(encodeURIComponent(JSON.stringify(venue)));
 
     document.getElementById("search_field").setAttribute("value", '<%= params[:search] %>');
     document.getElementById("venue_field").setAttribute("value", encoded_venue);
