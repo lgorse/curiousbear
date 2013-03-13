@@ -17,8 +17,8 @@ function initialize_map() {
   var request = {
     location: center,
     radius: '1000',
-    types: <%= raw GOOGLE_TYPES %>,
-    keyword: "<%= @search %>"
+    types: <%= raw GOOGLE_TYPES %>
+    
   };
 
   var reference = {
