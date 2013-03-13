@@ -43,6 +43,16 @@ describe Restaurant do
 
 	end
 
+	describe "model" do
+
+		 it "should not allow duplicate restaurants" do
+		 	@restaurant = Restaurant.create!(@restaurant_attr)
+		 	@restaurant2 = Restaurant.new(@restaurant_attr)
+		 	@restaurant2.should_not be_valid
+
+		 end
+	end
+
 	describe "dependencies" do
 
 		before(:each) do

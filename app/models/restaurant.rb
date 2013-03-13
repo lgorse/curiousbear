@@ -27,5 +27,6 @@
 
 class Restaurant < ActiveRecord::Base
  attr_protected
+ validates :google_id, :uniqueness => {:message => "already exists"}
  has_many :reviews, :dependent => :destroy
 end

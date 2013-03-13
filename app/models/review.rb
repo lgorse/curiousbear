@@ -19,7 +19,7 @@ class Review < ActiveRecord::Base
 
   validates :user_id, :presence => true
   validates :restaurant_id, :presence => true
-  validates :user_id, :uniqueness => {:scope => :restaurant_id}
+  validates :user_id, :uniqueness => {:scope => :restaurant_id, :message => "already reviewed this restaurant"}
 
   
 end

@@ -1,3 +1,4 @@
+<% venue = Restaurant.new(set_attr_from_google(result).merge(:id => nil)) %>
 <% parsed_address = split_formatted_address(venue.formatted_address.to_s) %>
 <% venue_json = {"name" => venue.name}.to_json %>
 <li id="restaurant_summary">
