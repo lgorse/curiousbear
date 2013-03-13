@@ -62,4 +62,18 @@ module RestaurantsHelper
 		basic_attr = {:id => venue.id, :google_id => venue.google_id, :reference => venue.google_reference,
 				:lat => venue.lat, :lng => venue.lng}.to_json
 	end
+
+	def get_restaurant_from_reference
+			url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+@reference
+			url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
+		
+
+		http = Net::HTTP.new(url.host, url.port)
+		http.use_ssl = true
+		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+		request = Net::HTTP::Get.new(url.request_uri)
+		
+		result = http.request(request)
+		JSON.parse(result.body)["result"]
+	end
 end

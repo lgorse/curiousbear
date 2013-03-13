@@ -29,9 +29,6 @@ require 'spec_helper'
 
 describe Restaurant do
   before(:each) do
-  @user_attr = {:name => "Laurent Gorse", :first_name => "Laurent", :birthday => '1979-05-28'.to_date,
-				:gender => "male", :e_mail => "lgorse@stanford.edu", :fb_id => 123456789}
-	User.create!(@user_attr)
 	@restaurant_attr = { :name => "restaurant", 
 						:formatted_address => "Everywhere, Paris, France",
 						:google_rating => 4.5, 
@@ -42,7 +39,25 @@ describe Restaurant do
 						:lat => 0.45,
 						:lng => 20.2
 		}
-		Restaurant.create!(@restaurant_attr)
+	
 
+	end
+
+	describe "dependencies" do
+
+		before(:each) do
+			@restaurant = Restaurant.create!(@restaurant_attr)
+			@review_attr = {:user_id => 2,
+							:restaurant_id => @restaurant.id,
+							:rating => 4.5,
+							:text => "Not bad",
+							:keywords => "romantic, french"
+							}
+		end
+
+		it "should respond to reviews from the user" do
+			@review = Review.create(@review_attr)
+			@restaurant.reviews.should be_present 
+		end
 	end
 end

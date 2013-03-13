@@ -17,7 +17,7 @@ def create
 								:lat => nil, :lng => nil, :google_price => nil)))
 	@attr = set_review_attributes(params[:review], @restaurant.id, @user.id)
 	Review.create!(@attr)
-	#ADD REDIRECT
+	redirect_to restaurant_path(@restaurant)
 end
 
 end

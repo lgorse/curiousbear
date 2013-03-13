@@ -37,6 +37,19 @@ class RestaurantsController < ApplicationController
 
 	end
 
+	def show
+		@restaurant = Restaurant.find(params[:id])
+		@search = @restaurant.keywords
+		@reference = @restaurant.google_reference
+		@attr = get_restaurant_from_reference
+		@lat = @attr["geometry"]["location"]["lat"]
+		@lng = @attr["geometry"]["location"]["lng"]
+		respond_to do |format|
+			format.html
+			format.js
+		end
+	end
+
 
 
 

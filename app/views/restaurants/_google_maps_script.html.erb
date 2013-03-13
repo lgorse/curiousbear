@@ -84,17 +84,14 @@ function detail_callback(place, status) {
     name_json = {name: place.name};
     document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(name_json)+'); return false;');
 
-/* 
-for (i = 0; i< place.address_components.length; i++){
-  alert(place.address_components[i].long_name);
-}
-*/
 venue = { name: place.name,
           google_id: place.id,
           formatted_address: place.formatted_address,
           google_reference: place.reference,
           google_types: place.types,
-          google_rating: place.rating
+          google_rating: place.rating,
+          lat: place.geometry.location.lat(),
+          lng: place.geometry.location.lng()
         };
 
 encoded_venue =  window.btoa(encodeURIComponent(JSON.stringify(place)));

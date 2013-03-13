@@ -143,5 +143,23 @@ describe User do
 
 	end
 
+	describe "dependencies" do
+
+		before(:each) do
+			@user = User.create(@attr)
+			@review_attr = {:user_id => @user.id,
+							:restaurant_id => 2,
+							:rating => 4.5,
+							:text => "Not bad",
+							:keywords => "romantic, french"
+							}
+		end
+
+		it "should respond to reviews from the user" do
+			@review = Review.create(@review_attr)
+			@user.reviews.should be_present 
+		end
+	end
+
   
 end
