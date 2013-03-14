@@ -11,8 +11,6 @@
 		<%= link_to "edit", edit_user_path(@current_user) , :id => "my_account_button"%>
 		<button id="fb-logout" onclick="logout()">Log out</button>
 	</nav>
-	<div class = "flash">
-		
-	</div>
+	<%= render 'layouts/flash', :flash => flash %>
 </header>
 <% end %>
