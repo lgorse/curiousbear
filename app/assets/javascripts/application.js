@@ -16,8 +16,21 @@
 //= require gmap3
 
 $(function() {
-   $('.flash').fadeIn('normal', function() {
-      $(this).delay(2000).animate({opacity: 0.0}, 500, 'linear');
-   });
+	$('.flash').fadeIn('normal', function() {
+		$(this).delay(2000).animate({opacity: 0.0}, 500, 'linear');
+	});
+
 });
-	
+
+$(function(){
+	$("#share_review").click(function(){
+		if (this.checked){
+			alert("It's checked");
+		}else{
+			alert("Not checked");
+		}
+	});
+});
+
+
+

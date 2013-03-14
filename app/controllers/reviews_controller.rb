@@ -24,6 +24,10 @@ class ReviewsController < ApplicationController
 	def edit
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
+		respond_to do |format|
+			format.html
+			format.js
+		end
 	end
 
 	def update
