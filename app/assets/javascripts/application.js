@@ -15,3 +15,9 @@
 //= require_tree .
 //= require gmap3
 
+$(function() {
+   $('.flash').fadeIn('normal', function() {
+      $(this).delay(2000).animate({opacity: 0.0}, 500, 'linear');
+   });
+});
+	

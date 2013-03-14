@@ -11,7 +11,7 @@ header#app_header{
 	display: inline-block;
 	margin-left: 10px;
 	position: absolute;
-	width: 150px;
+	width: auto;
 	top: 10px;
 
 }
@@ -45,4 +45,9 @@ header#app_header{
 
 #container{
 	position: absolute;
+}
+
+.flash{
+	position: absolute;
+	top: 15px;
 }
