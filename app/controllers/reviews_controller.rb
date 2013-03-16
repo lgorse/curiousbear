@@ -3,6 +3,10 @@ class ReviewsController < ApplicationController
 
 	before_filter :authenticate
 
+	def index
+		@user = User.find(params[:user_id])
+	end
+
 	def new
 		@search = Base64.decode64(params[:search_field])
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_field])))

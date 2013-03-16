@@ -4,6 +4,7 @@ Curiousbear::Application.routes.draw do
    
    resources :users do
     resources :relationships, :only => [:create, :destroy]
+    resources :reviews, :only => [:index]
     member do
       get 'facebook_friends', :following, :followers
     end
