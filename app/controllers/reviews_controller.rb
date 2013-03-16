@@ -6,7 +6,7 @@ class ReviewsController < ApplicationController
 	def new
 		@search = Base64.decode64(params[:search_field])
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_field])))
-		@review = Review.new;
+		@review = Review.new	
 	end
 
 	def create
@@ -18,16 +18,15 @@ class ReviewsController < ApplicationController
 		else
 			flash[:error] = review.errors.full_messages.to_sentence
 		end
-		redirect_to restaurant_path(@restaurant)
+		respond_to do |format|
+			format.html {redirect_to @restaurant}
+			format.js 
+		end
 	end
 
 	def edit
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
-		respond_to do |format|
-			format.html
-			format.js
-		end
 	end
 
 	def update
@@ -38,7 +37,10 @@ class ReviewsController < ApplicationController
 		else
 			flash[:error] = @review.errors.full_messages.to_sentence
 		end
-		redirect_to @restaurant
+		respond_to do |format|
+			format.html {redirect_to @restaurant}
+			format.js
+		end
 	end
 
 	def destroy

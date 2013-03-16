@@ -1,7 +1,7 @@
  <script> 
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
 
-      function postToFeed(venue_json) {
+      function reviewToFeed(name, id) {
         // calling the API ...
         var obj = {
           method: 'feed',
@@ -9,13 +9,12 @@
           picture: 'http://fbrell.com/f8.jpg',
           name: 'Facebook Dialogs',
           caption: 'Reference Documentation',
-          description: 'Looking for a review of <b>'+venue_json["name"]+'</b>'
+          description: 'Just reviewed <b>'+name+'</b>',
+          
         };
 
         function callback(response) {
-        	if (response['post_id']){
-        		document.getElementById('msg').innerHTML = "Request posted!";
-        	}
+        		window.location = "<%= Facebook::SITE_URL%>restaurants/"+id;
         }
 
         FB.ui(obj, callback);

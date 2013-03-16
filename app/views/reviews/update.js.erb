@@ -1,0 +1,8 @@
+$(function(){
+	if ($("#share_review").prop('checked')){
+		reviewToFeed("<%= @restaurant.name %>", "<%= @restaurant.id %>");
+	}else{
+		window.location = "/restaurants/<%= @restaurant.id %>";
+	}
+});
+
