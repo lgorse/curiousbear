@@ -1,0 +1,9 @@
+<div class = "review_summary">
+<div id = "review_rating"><%= review.rating %></div>
+<div id="review_text"><%= review.text %></div>
+<div class = "review_summary_left">
+<%= image_tag review.user.fb_pic, :class => 'user_small_pic' %>
+<%= link_to review.user.name, review.user, :id => "reviewer" %></div>
+
+
+</div>
