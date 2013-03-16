@@ -11,6 +11,10 @@
 	<img id = "restaurant_photo"></img>
 	 <a href = "#" id="share_button">Request review</a>
 	 <p id='msg'></p>
+	 <% if @restaurant %>
+	 <%= render 'reviews/review_list' %>
+	 <% end %>
 </div>
+
 
 <div id="map"></div>

@@ -2,9 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#restaurant_info{
+	float: left;
+	width: 550px;
+}
 
 #map{
-	left: 800px;
+	float: left;
 	width: 400px;
 	height: 400px;
 }

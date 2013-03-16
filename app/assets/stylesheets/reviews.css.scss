@@ -2,20 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.review_summary{
+#review_summary{
 	width: 550px;
-	height: auto;
+	position: relative;
 
 	.review_summary_left{
-		left: 20px;
 		position: relative;
-		margin: 0px;
 
 		.user_small_pic{
 			position: relative;
 			display: block;
-			margin-left: 20px;
-
 		}
 
 		#reviewer{
@@ -24,22 +20,17 @@
 	}
 
 	#review_rating{
-		width: 50px;
 		position: relative;
-		left: 120px;
-		top: 40px;
-		margin: 0px;
 	}
 
 	#review_text{
 		position: relative;
-		left: 150px;
-		top: 70px;
+		
 	}
 
 	#detail_friend{
 		position: relative;
-		left: 250px;
+		
 	}
 
 
