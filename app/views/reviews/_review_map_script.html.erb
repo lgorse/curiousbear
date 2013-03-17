@@ -20,47 +20,58 @@ function initialize_map(passed) {
         types: <%= raw GOOGLE_TYPES %>
 
       };
-          
-      (function(request, map){
-          var service = new google.maps.places.PlacesService(map);
-          service.nearbySearch(request, function(results, status) {
-           var infowindow;
-           if (status == google.maps.places.PlacesServiceStatus.OK) {
 
-            for (var i = 0; i < results.length; i++) {
+      (function(request, map, reference, id){
+              var service = new google.maps.places.PlacesService(map);
+              
+              service.nearbySearch(request, function(results, status) {
+               var infowindow;
+               if (status == google.maps.places.PlacesServiceStatus.OK) {
 
-              var place = results[i];
+                for (var i = 0; i < results.length; i++) {
 
-              (function(map, place){
+                  var place = results[i];
 
-                var marker = new google.maps.Marker({
-                  map: map,
-                  position: place.geometry.location,
-                  title: place.name
-                });  
+                  (function(map, place){
 
-                google.maps.event.addListener(marker, 'click', function() {
-                  if (infowindow) infowindow.close();
-                  place_attributes = {google_id: place.id, 
-                                      google_reference: place.reference,
-                                      lat: place.geometry.location.lat(), 
-                                      lng: place.geometry.location.lng()
-                                      };
-                  encoded = window.btoa(encodeURIComponent(JSON.stringify(place_attributes)));
-                  contentString = '<a method = "get" href="/restaurants/new?search=<%= params[:search] %>&venue_data='+encoded+'">'+place.name+'</a><div>'+place.vicinity+'</div>';
-                  infowindow = new google.maps.InfoWindow({content: contentString});
-                  infowindow.open(map,marker);
-                });  
+                    var marker = new google.maps.Marker({
+                      map: map,
+                      position: place.geometry.location,
+                      title: place.name
+                    });  
 
-              marker.setMap(map);
+                    google.maps.event.addListener(marker, 'click', function() {
+                      if (infowindow) infowindow.close();
+                      place_attributes = {google_id: place.id, 
+                                          google_reference: place.reference,
+                                          lat: place.geometry.location.lat(), 
+                                          lng: place.geometry.location.lng()
+                                          };
+                      encoded = window.btoa(encodeURIComponent(JSON.stringify(place_attributes)));
+                      contentString = '<a method = "get" href="/restaurants/new?search=<%= params[:search] %>&venue_data='+encoded+'">'+place.name+'</a><div>'+place.vicinity+'</div>';
+                      infowindow = new google.maps.InfoWindow({content: contentString});
+                      infowindow.open(map,marker);
+                    });  
 
-            }(map, place));
+                  marker.setMap(map);
 
-          }
-        }
-       });
+                }(map, place));
 
-    }(request, map));
+              }
+            }
+           });
+
+          service.getDetails(reference, function(place, status){
+            
+            if (status == google.maps.places.PlacesServiceStatus.OK) {
+              if (place.photos){
+                photo = place.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100});
+                document.getElementById('review_summary_photo_'+id).src=photo;
+              }
+              }  
+          });
+  
+      }(request, map, {reference: map_data["reference"]}, map_data["map_id"]));
 
   }
 

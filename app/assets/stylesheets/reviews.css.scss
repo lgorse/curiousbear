@@ -36,6 +36,16 @@
 
 }
 
+	
+
+div.user_review{
+	
+	margin-bottom: 20px;
+	height: 200px;
+
+	#restaurant_name{
+		font-weight: bold;
+	}
 
 	.map_summary{
 		float: left;
@@ -48,7 +58,16 @@
 		width: 500px;
 	}
 
-div.user_review{
-	margin-bottom: 20px;
-	height: 200px;
+	.review_summary_left{
+		float: left;
+
+	.review_summary_photo{
+		display: block;
+	}
+
+	#button_friend{
+		display: block;
+	}
+}
+
 }

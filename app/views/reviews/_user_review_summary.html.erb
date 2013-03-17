@@ -1,12 +1,15 @@
 <% @map_array << set_review_google_info(review) %>
-<img id = "review_summary_photo_<%= review.id %>"></img>
 <div class = "user_review">
-<ul id = "review_data">
-<li><%= link_to review.restaurant.name, review.restaurant %></li>
-<li><%= review.restaurant.formatted_address %></li>
-<li><%= review.restaurant.reviews.count %> reviews</li>
-	<li><%= review.rating %></li>
-<li><%= review.text %></li>
-</ul>
-<div class = "map_summary" id="map_<%= review.id %>"></div>
+	<div class = "review_summary_left">
+		<img class= "review_summary_photo" id = "review_summary_photo_<%= review.id %>"></img>
+		<button id="detail_friend" onclick="detail(<%= review.user.fb_id.to_s %>)">Ask for details</button>
+	</div>
+	<ul id = "review_data">
+		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
+		<li><%= review.restaurant.formatted_address %></li>
+		<li><%= review.restaurant.reviews.count %> reviews</li>
+		<li>Rating: <%= review.rating %></li>
+		<li><%= review.text %></li>
+	</ul>
+	<div class = "map_summary" id="map_<%= review.id %>"></div>
 </div>
