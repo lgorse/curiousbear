@@ -1,12 +1,9 @@
 <script>
 var map;
 var service;
-var lat =  <%= @lat %>;
-var lng = <%= @lng %>;
 
-
-
-function initialize_map() {
+function initialize_map(lat, lng, ref) {
+  alert(ref);
   var center = new google.maps.LatLng(lat, lng);
   map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -22,7 +19,7 @@ function initialize_map() {
   };
 
   var reference = {
-    reference: '<%= @reference %>'
+    reference: ref
   };
 
 
@@ -35,7 +32,6 @@ function initialize_map() {
 
 function map_callback(results, status) {
   var infowindow;
-  
   if (status == google.maps.places.PlacesServiceStatus.OK) {
 
     for (var i = 0; i < results.length; i++) {

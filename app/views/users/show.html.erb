@@ -1,7 +1,6 @@
+<%= render 'restaurants/google_maps_script' %>
 <div id = "user_info"
 <h3><%= @user.name %></h3>
-
-
 <% if @user.fb_pic_large %>
 <%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>
 <% end %>
