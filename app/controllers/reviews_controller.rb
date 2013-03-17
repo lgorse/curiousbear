@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
-	before_filter :authenticate
+	before_filter :authenticate, :except => [:index]
 
 	def index
 		@user = User.find(params[:user_id])

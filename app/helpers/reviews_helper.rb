@@ -15,5 +15,6 @@ module ReviewsHelper
 		@venue = get_restaurant_from_reference
 		@lat = @venue["geometry"]["location"]["lat"]
 		@lng = @venue["geometry"]["location"]["lng"]
+		@map = {"lat" => @lat, "lng" => @lng, "reference" => @reference, "map_id" => review.id}
 	end
 end

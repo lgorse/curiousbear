@@ -1,7 +1,12 @@
-
-<li><%= review.restaurant.name %></li>
+<% @map_array << set_review_google_info(review) %>
+<img id = "review_summary_photo_<%= review.id %>"></img>
+<div class = "user_review">
+<ul id = "review_data">
+<li><%= link_to review.restaurant.name, review.restaurant %></li>
 <li><%= review.restaurant.formatted_address %></li>
 <li><%= review.restaurant.reviews.count %> reviews</li>
 	<li><%= review.rating %></li>
 <li><%= review.text %></li>
-<div id="map"></div>
+</ul>
+<div class = "map_summary" id="map_<%= review.id %>"></div>
+</div>

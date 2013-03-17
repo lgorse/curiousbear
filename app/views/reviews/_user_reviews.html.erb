@@ -1,5 +1,5 @@
-<ul><% @user.reviews.each do |review| %>
-<% set_review_google_info(review) %>
-<%= render "reviews/user_review_summary", :review => review %></body>
-<%= javascript_tag "initialize_map(#{@lat}, #{@lng}, '#{@reference}')" %>
-<% end %></ul>
+<% @map_array = [] %>
+<% @user.reviews.each do |review| %>
+<%= render "reviews/user_review_summary", :review => review %>
+<% end %>
+<%= javascript_tag "window.onload = initialize_map(#{@map_array.to_json})" %>

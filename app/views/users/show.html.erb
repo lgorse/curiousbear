@@ -1,5 +1,5 @@
-<%= render 'restaurants/google_maps_script' %>
-<div id = "user_info"
+<%= render 'reviews/review_map_script' %>
+<div id = "user_info">
 <h3><%= @user.name %></h3>
 <% if @user.fb_pic_large %>
 <%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>
@@ -7,12 +7,12 @@
 </div>
 <div id = "user_follow_container">
 <nav id = "follow_buttons">
-	<%= link_to "Reviews (#{@user.reviews.count})", user_reviews_path(@user), :id => "user_reviews_button", :remote => true %>
+<%= link_to "Reviews (#{@user.reviews.count})", user_reviews_path(@user), :id => "user_reviews_button", :remote => true %>
 <%= link_to "Trusts (#{@user.following.count})", following_user_path(@user), :id => "follows_list_button", :remote => true%>
 <%= link_to "Trusted by (#{@user.followers.count})", followers_user_path(@user) , :id => "followed_list_button", :remote => true %>
 <% if @user == @current_user %>
 	<%= link_to "Add friends", facebook_friends_user_path, :id => "add_friends_button" %>
 <% end %>
 </nav>
-<div id = "relationship_list"><%= render 'follows' %></div>
+<div id = "relationship_list"><%= render 'reviews/user_reviews' %></div>
 </div>
