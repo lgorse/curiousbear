@@ -17,11 +17,18 @@
 div#user_info{
 	width: 600px;
 
-	#user_large_pic{
+	div#user_info_right{
 		position: absolute;
 		left: 600px;
 	}
 
+	#user_large_pic{
+		display: block;
+	}
+
+	.follow_button{
+		text-align: center;
+	}
 
 }
 

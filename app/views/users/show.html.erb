@@ -2,6 +2,7 @@
 <%= render 'reviews/review_detail_request_script' %>
 <div id = "user_info">
 <h3><%= @user.name %></h3>
+<div id = "user_info_right">
 <% if @user.fb_pic_large %>
 <%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>
 <% end %>
@@ -14,6 +15,7 @@
 		<% end %>
 		</div>
 	<% end %>
+</div>
 </div>
 <div id = "user_follow_container">
 <nav id = "follow_buttons">
