@@ -1,4 +1,6 @@
 $(function(){
-	$("#button_<%= @followed_id %>").html("<%= escape_javascript(render 'relationships/buttons/follow_button', :followed_id => @followed_id) %>");	
+	$("#button_<%= @followed_id %>").html("<%= escape_javascript(render 'relationships/buttons/follow_button', 
+				:followed_id => @followed_id, :current_user_id => @current_user.id, :user_id => @user.id) %>");	
 	$("#follows_list_button").html('<%= "Trusts (#{@user.following.count})" %>')
+	$("#followed_list_button").html('<%= "Trusted by (#{@user.followers.count})" %>')
 });
