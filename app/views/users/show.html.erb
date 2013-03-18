@@ -3,7 +3,7 @@
 <div id = "user_info">
 	<div id = "user_info_left">
 <h3><%= @user.name %></h3>
-<p>Reviews: <%= @user.reviews.count %></p>
+<p><%= pluralize(@user.reviews.count, "review") %></p>
 <p>Average rating: <%= average(@user) %></p>
 </div>
 <div id = "user_info_right">

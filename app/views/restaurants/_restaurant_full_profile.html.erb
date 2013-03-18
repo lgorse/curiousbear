@@ -15,7 +15,7 @@
 		<a id = "google_rating"></a>
 		<% if @restaurant %>
 			<p>KweeQweg rating: <%= average(@restaurant) %></p>
-			<p><%= @restaurant.reviews.count %> reviews</p>
+			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>
 		<% end %>	
 		 <a href = "#" id="share_button">Request review</a>
 	</div>
