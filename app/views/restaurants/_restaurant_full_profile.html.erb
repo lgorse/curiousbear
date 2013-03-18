@@ -2,20 +2,30 @@
 <%= render 'restaurants/google_maps_script' %>
 <%= render 'restaurants/review_request_script' %>
 <%= render 'restaurants/google_searchbox' %>
+
 <div id = "restaurant_info">
-	<div id = "venue_name"></div>
-	<div id = "formatted_address"></div>
+	<div id = "restaurant_info_left">
+		<img id = "restaurant_photo"></img>
+		<div id = "venue_name"></div>
+		<div id = "formatted_address"></div>
+		<%= render 'reviews/add_review' %>	
 	<div id = "keywords"></div>
-	<div id = "google_rating"></div>
-	<%= render 'reviews/add_review' %>
-	
-	<img id = "restaurant_photo"></img>
-	 <a href = "#" id="share_button">Request review</a>
+	</div>
+	<div id = "restaurant_info_right">
+		<a id = "google_rating"></a>
+		<% if @restaurant %>
+			<p>KweeQweg rating: <%= average(@restaurant) %></p>
+			<p><%= @restaurant.reviews.count %> reviews</p>
+		<% end %>	
+		 <a href = "#" id="share_button">Request review</a>
+	</div>
 	 <p id='msg'></p>
+</div>
+	 <div class = "map" id="map"></div>
+
 	 <% if @restaurant %>
 	 <%= render 'reviews/review_list' %>
 	 <% end %>
-</div>
+</body>
 
 
-<div class = "map" id="map"></div></body>

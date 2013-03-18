@@ -1,7 +1,11 @@
 <%= render 'reviews/review_map_script' %>
 <%= render 'reviews/review_detail_request_script' %>
 <div id = "user_info">
+	<div id = "user_info_left">
 <h3><%= @user.name %></h3>
+<p>Reviews: <%= @user.reviews.count %></p>
+<p>Average rating: <%= average(@user) %></p>
+</div>
 <div id = "user_info_right">
 <% if @user.fb_pic_large %>
 <%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>

@@ -3,15 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #restaurant_info{
+	margin-top: 30px;
 	float: left;
 	width: 550px;
+
+	div#restaurant_info_left{
+		float: left;
+	}
+
+	div#restaurant_info_right{
+		float: right;
+	}
+
+	#venue_name{
+		font-weight: bold;
+	}
+
+
+}
+
+ul#restaurant_review_list{
+	position: absolute;
+	width: 600px;
+	top: 300px;
 }
 
 .map{
+	margin-left: 20px;
 	float: left;
 	width: 400px;
 	height: 400px;
 }
+
+
 
 li#restaurant_summary{
 

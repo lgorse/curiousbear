@@ -17,4 +17,8 @@ module ReviewsHelper
 		@lng = @venue["geometry"]["location"]["lng"]
 		@map = {"lat" => @lat, "lng" => @lng, "reference" => @reference, "map_id" => review.id}
 	end
+
+	def average(entity)
+		entity.reviews.average(:rating).to_s
+	end
 end

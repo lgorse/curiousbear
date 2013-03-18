@@ -1,4 +1,4 @@
 <%= render 'reviews/review_detail_request_script' %>
-<ul><% @restaurant.reviews.each do |review| %>
+<ul id = "restaurant_review_list"><% @restaurant.reviews.each do |review| %>
 <%= render 'reviews/review_summary', :review => review %>
 <% end %></ul>

@@ -15,11 +15,16 @@
 }
 
 div#user_info{
-	width: 600px;
+	width: 800px;
+
+	div#user_info_left{
+		float: left;
+		width: 600px;
+	}
 
 	div#user_info_right{
-		position: absolute;
-		left: 600px;
+		position: relative;
+		float: left;
 	}
 
 	#user_large_pic{

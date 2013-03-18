@@ -72,14 +72,18 @@ function map_callback(results, status) {
 function detail_callback(place, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     if (place.photos){
-      photo = place.photos[0].getUrl({'maxWidth': 200, 'maxHeight': 200});
+      photo = place.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150});
       document.getElementById("restaurant_photo").src=photo;
     }  
 
     document.getElementById("venue_name").innerHTML = place.name;
     document.getElementById("formatted_address").innerHTML = place.formatted_address;
     if (place.rating){
-      document.getElementById("google_rating").innerHTML = "Google rating: "+place.rating;
+      //alert(place.url);
+      var rating = document.getElementById("google_rating");
+      rating.setAttribute("href", place.url);
+      rating.setAttribute("target", "_blank");
+      rating.innerHTML = "Google rating: "+place.rating;
     }
     name_json = {name: place.name};
     document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(name_json)+'); return false;');
