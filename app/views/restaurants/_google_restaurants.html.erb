@@ -1,8 +1,7 @@
 <%= render 'restaurants/review_request_script' %>
-<div class = "flash_search"></div>
 <% unless @google_results.blank? %>
 <ul>
-	<%= render :partial => 'restaurants/restaurant_summary', :collection => @google_results, :as => :result %>
+	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_results_except_recommended, :as => :result %>
 	
 <% if @google_response["next_page_token"] %>
 <%= link_to "next", :controller => "restaurants", :action => 'google_search', :next_token => @google_response["next_page_token"], :search => params[:search], :remote => true  %>

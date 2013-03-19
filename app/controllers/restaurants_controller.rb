@@ -5,6 +5,7 @@ class RestaurantsController < ApplicationController
 
 	def index
 		@restaurant_list = Restaurant.trust_search(params[:search], @current_user)
+		@recommended_google_ids = []
 		if @restaurant_list.empty?
 		flash.now[:notice] = "No recommendations from friends. Try Google!"
 	else
@@ -15,8 +16,10 @@ class RestaurantsController < ApplicationController
 
 	def google_search
 		begin
+			@recommended_google_ids = params[:recommended_restaurants]
 			@google_response = parse_google_search
 			@google_results = @google_response["results"]
+			flash.now[:notice] = "Google yielded no results. What you see is what you get!" if google_results_except_recommended.empty?
 			@encoded_search = Base64.urlsafe_encode64(params[:search])
 			handle_google_http_errors
 		rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,

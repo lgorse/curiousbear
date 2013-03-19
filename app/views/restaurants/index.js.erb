@@ -1,8 +1,6 @@
 $("#recommended_restaurant_list").html("<%=escape_javascript(render 'restaurants/recommended_restaurants')%>");
 $('html, body').animate({ scrollTop: 0 }, 5);
-$(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal', function() {
-		$(this).delay(2000).animate({opacity: 0.0}, 500, 'linear');
-	});
+$(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
 $("#restaurant_info").remove();
 $("#map").remove();
 $("#restaurant_review_list").remove();

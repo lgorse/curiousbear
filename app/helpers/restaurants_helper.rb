@@ -90,11 +90,16 @@ module RestaurantsHelper
 		@parsed_address = split_formatted_address(venue.formatted_address.to_s)
 		@venue_json = {"name" => venue.name}.to_json
 		@google_id = venue.google_id
+		@recommended_google_ids << venue.google_id
 	end
 
 	def final_restaurant_attributes(venue)
 		venue.merge(:lat => nil, :lng => nil, 
 					:google_price => nil,
 					:google_types => venue["google_types"])
+	end
+
+	def google_results_except_recommended
+		@google_results_except_recommended = @google_results.reject{|result| @recommended_google_ids.include?(result["id"])}
 	end
 end
