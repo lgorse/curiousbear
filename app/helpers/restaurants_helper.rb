@@ -84,6 +84,14 @@ module RestaurantsHelper
 		@restaurant = Restaurant.find_by_google_id(@google_id)
 	end
 
+	def set_summary_values_from_db(venue)
+		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
+		@restaurant = venue
+		@parsed_address = split_formatted_address(venue.formatted_address.to_s)
+		@venue_json = {"name" => venue.name}.to_json
+		@google_id = venue.google_id
+	end
+
 	def final_restaurant_attributes(venue)
 		venue.merge(:lat => nil, :lng => nil, 
 					:google_price => nil,

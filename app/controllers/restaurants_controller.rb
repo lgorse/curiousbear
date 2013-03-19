@@ -4,6 +4,12 @@ class RestaurantsController < ApplicationController
 	before_filter :authenticate
 
 	def index
+		@restaurant_list = Restaurant.trust_search(params[:search], @current_user)
+		if @restaurant_list.empty?
+		flash.now[:notice] = "No recommendations from friends. Try Google!"
+	else
+		@encoded_search = Base64.urlsafe_encode64(params[:search])
+	end
 
 	end
 

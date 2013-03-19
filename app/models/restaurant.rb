@@ -29,4 +29,10 @@ class Restaurant < ActiveRecord::Base
  attr_protected
  validates :google_id, :uniqueness => {:message => "already exists"}
  has_many :reviews, :dependent => :destroy
+
+def self.trust_search(query, user)
+	reviewer_list = user.following.collect {|friend| friend.id}
+	Restaurant.search(query, :with => {:reviewer_id => reviewer_list << user.id})
+end
+
 end

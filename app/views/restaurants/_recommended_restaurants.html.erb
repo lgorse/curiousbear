@@ -1,0 +1,6 @@
+<% unless @restaurant_list.blank? %>
+<ul>
+	<%= render :partial => 'restaurants/recommended_restaurant_summary', :collection => @restaurant_list, :as => :venue %>
+</ul>
+<% end %>
+<%= render 'restaurants/google_find' %>
