@@ -53,4 +53,5 @@ class User < ActiveRecord::Base
 		self.relationships.find_by_followed_id(followed)
 	end
 
+
 end

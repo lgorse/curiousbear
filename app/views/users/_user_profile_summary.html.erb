@@ -1,9 +1,12 @@
-<li id="user_summary">
+<li class="user_summary">
+<div class = "user_summary_left">
 <% if user.id.nil? %>
 <%= user.name %>
 <% else %>
 <%= link_to user.name, user_path(user), :class => "user_name_link" %>
+<p class = "user_review_count"><%= pluralize(user.reviews.count, "review") %></p>
 <% end %>
+</div>
 
 <div class = "summary_right">
 	<%= image_tag user.fb_pic, :class => 'user_small_pic' %>

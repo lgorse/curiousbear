@@ -37,6 +37,8 @@ div#user_info{
 
 }
 
+
+
 nav#follow_buttons{
 	position: absolute;
 	top: 200px;
@@ -58,23 +60,30 @@ div#relationship_list{
 	top: 250px;
 	width: 1000px;
 
-	li#user_summary{
+	li.user_summary{
 		width: 400px;
+		height: 150px;
 		position: relative;
 
 		a.user_name_link{
 			position: relative;
 			top: 25px;
+		}
 
+		.user_review_count{
+			position: relative;
+			top: 10px;
+		}
+
+		div.user_summary_left{
+			float: left;
+			width: 250px;
 		}
 
 		div.summary_right{
-			position: relative;
+			float: left;
 			margin: 0px;
 			padding: 0px;
-			left: 300px;
-			width: 80px;
-
 		}
 
 		.follow_button{
@@ -84,9 +93,8 @@ div#relationship_list{
 		.user_small_pic{
 			display: block;
 			margin: auto;
-
-
 		}
+
 	}
 }
 

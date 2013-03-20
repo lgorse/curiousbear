@@ -1,5 +1,5 @@
-<ul><%= "trusts list" %>
-<% @user.following.each do |followed| %>
+<ul>
+<% @user.following.sort_by{|user| user.reviews.count}.reverse.each do |followed| %>
 <%= render "users/user_profile_summary", :user => followed %>
 <% end %>
 </ul>
