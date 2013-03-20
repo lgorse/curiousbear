@@ -90,9 +90,7 @@ module RestaurantsHelper
 	end
 
 	def final_restaurant_attributes(venue)
-		venue.merge(:lat => nil, :lng => nil, 
-					:google_price => nil,
-					:google_types => venue["google_types"])
+		venue.merge(:google_types => venue["google_types"])
 	end
 
 	def google_results_except_recommended

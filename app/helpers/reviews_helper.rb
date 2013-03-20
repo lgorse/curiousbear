@@ -11,11 +11,8 @@ module ReviewsHelper
 	end
 
 	def set_review_google_info(review)
-		@reference = review.restaurant.google_reference
-		@venue = get_restaurant_from_reference
-		@lat = @venue["geometry"]["location"]["lat"]
-		@lng = @venue["geometry"]["location"]["lng"]
-		@map = {"lat" => @lat, "lng" => @lng, "reference" => @reference, "map_id" => review.id}
+		@map = {"lat" => review.restaurant.lat, "lng" => review.restaurant.lng, 
+				"reference" => review.restaurant.google_reference, "map_id" => review.id}
 	end
 
 	def average(entity)
