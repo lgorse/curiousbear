@@ -1,10 +1,27 @@
 module RestaurantsHelper
 
+	def search_google_from_params
+		begin
+				@recommended_google_ids = params[:recommended_restaurants]
+				if @recommended_google_ids.nil?
+					flash.now[:notice] = "No recommendations from friends. Try Google!"
+				end
+				@google_response = parse_google_search
+				@google_results = @google_response["results"]
+				flash.now[:notice] = "Google yielded no results. What you see is what you get!" if google_results_except_recommended.empty?
+				@encoded_search = Base64.urlsafe_encode64(params[:search])
+				handle_google_http_errors
+			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
+				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
+				URI::InvalidURIError => e
+				flash.now[:error] = "Oops!" + e.message + "! That's not good."
+			end
+	end
 	def parse_google_search		
-			query = URI.escape(params[:search])
-			url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
-			url_params << "&pagetoken="+params[:next_token] if params[:next_token]
-			url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
+		query = URI.escape(params[:search])
+		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
+		url_params << "&pagetoken="+params[:next_token] if params[:next_token]
+		url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
 		
 
 		http = Net::HTTP.new(url.host, url.port)
@@ -32,14 +49,14 @@ module RestaurantsHelper
 
 	def set_attr_from_google(google_response)
 		google_attr = { :name => google_response["name"], 
-						:formatted_address => google_response["formatted_address"],
-						:google_rating => google_response["rating"], 
-						:google_id => google_response ["id"],
-						:google_types => google_response ["types"].join(","), 
-						:google_reference => google_response ["reference"],
-						:google_price => google_response["price_level"], 
-						:lat => google_response["geometry"]["location"]["lat"].to_d,
-						:lng => google_response["geometry"]["location"]["lng"].to_d
+			:formatted_address => google_response["formatted_address"],
+			:google_rating => google_response["rating"], 
+			:google_id => google_response ["id"],
+			:google_types => google_response ["types"].join(","), 
+			:google_reference => google_response ["reference"],
+			:google_price => google_response["price_level"], 
+			:lat => google_response["geometry"]["location"]["lat"].to_d,
+			:lng => google_response["geometry"]["location"]["lng"].to_d
 		}
 	end
 
@@ -56,8 +73,8 @@ module RestaurantsHelper
 
 	
 	def get_restaurant_from_reference
-			url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+@reference
-			url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
+		url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+@reference
+		url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
 		
 
 		http = Net::HTTP.new(url.host, url.port)
@@ -94,6 +111,10 @@ module RestaurantsHelper
 	end
 
 	def google_results_except_recommended
-		@google_results_except_recommended = @google_results.reject{|result| @recommended_google_ids.include?(result["id"])}
+		if @recommended_google_ids.nil?
+			@google_results_except_recommended = @google_results
+		else
+			@google_results_except_recommended = @google_results.reject{|result| @recommended_google_ids.include?(result["id"])}
+		end
 	end
 end

@@ -4,3 +4,6 @@ $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('norm
 $("#restaurant_info").remove();
 $("#map").remove();
 $("#restaurant_review_list").remove();
+if ("<%= params[:recommended_restaurants] %>" == ''){
+	$("#recommended_restaurant_list").empty();
+}
