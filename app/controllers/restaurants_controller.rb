@@ -8,7 +8,7 @@ class RestaurantsController < ApplicationController
 		@recommended_google_ids = []
 		@encoded_search = Base64.urlsafe_encode64(params[:search])
 		if @restaurant_list.empty?
-			flash.now[:notice] = "No recommendations from friends. Try Google!"
+			flash.now[:notice] = "No friend reviews. Check out these Google reviews!"
 			search_google_from_params
 			render 'restaurants/google_search'			
 		end
