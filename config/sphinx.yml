@@ -1,6 +1,0 @@
-development:
-  morphology: stem_en
-  min_prefix_len: 4
-production:
-  morphology: stem_en
-  min_prefix_len: 4
