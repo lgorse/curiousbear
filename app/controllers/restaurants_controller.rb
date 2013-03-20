@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-	include RestaurantsHelper
+	include RestaurantsHelper, ReviewsHelper
 
 	before_filter :authenticate
 

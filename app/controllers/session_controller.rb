@@ -1,5 +1,5 @@
 class SessionController < ApplicationController
-	include UsersHelper
+	include UsersHelper, ReviewsHelper
 	
 	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
@@ -17,6 +17,7 @@ class SessionController < ApplicationController
 	
 	def home
 		@title = "Search the world, "+@current_user.first_name
+		set_wordstop_hash
 		respond_to do |format|
 			format.html
 			format.js
@@ -26,6 +27,7 @@ class SessionController < ApplicationController
 
 	
 	def logout
+		reset_reviews_cache
 		reset_user_session
 		redirect_to root_path
 	end

@@ -36,7 +36,8 @@ class ReviewsController < ApplicationController
 	def update
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
-		if @review.update_attributes(params[:review])
+		@attr = set_review_attributes(params[:review], @restaurant.id, @current_user.id)
+		if @review.update_attributes(@attr)
 			flash[:success] = "Review updated"
 		else
 			flash[:error] = @review.errors.full_messages.to_sentence

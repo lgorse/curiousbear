@@ -47,10 +47,6 @@ module RestaurantsHelper
 		address.split(", ", 2)
 	end
 
-	def search_to_keywords
-		@search.gsub(/[^A-Za-z]/, ' ')
-	end
-
 	def handle_google_http_errors
 		case @google_response["status"]
 		when "ZERO_RESULTS" then flash[:error] = "Oops! We came up empty."

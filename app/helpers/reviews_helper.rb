@@ -5,7 +5,7 @@ module ReviewsHelper
 					:user_id => user_id,
 					:rating => review[:rating].to_d,
 					:text => review[:text],
-					:keywords => review[:keywords]
+					:keywords => keywords_to_string(review[:keywords])
 		}
 
 	end
@@ -20,5 +20,43 @@ module ReviewsHelper
 
 	def average(entity)
 		entity.reviews.average(:rating).to_s
+	end
+
+	def keywords_to_string(expression)
+		get_wordstop_hash
+		select_keywords = []
+		expression.gsub(/[^A-Za-z]/, ' ').split.each {|word| select_keywords << word unless exempt_expressions(word)}
+		return select_keywords.join(", ")
+	end
+
+	def set_wordstop_hash
+		@hash = {}
+		file = File.open("#{Rails.root}/app/assets/stopwords.txt")
+		file.each do |line|
+			key = line.chomp
+			@hash[key] = ""
+		end
+		file.close
+		Rails.cache.write('wordstop', @hash)
+		Rails.cache.write('timestamp', Time.now)
+	end
+
+	def get_wordstop_hash
+		time_stamp = Rails.cache.fetch('timestamp'){Time.now}
+		if Time.now - time_stamp > 60*20
+			reset_reviews_cache
+		end
+		@hash = Rails.cache.fetch('wordstop') {set_wordstop_hash}
+	end
+
+	def exempt_expressions(word)
+		@hash.has_key?(word) || 
+		@restaurant.name.downcase.include?(word.downcase)|| 
+		@restaurant.formatted_address.downcase.include?(word.downcase)
+	end
+
+	def reset_reviews_cache
+		Rails.cache.delete('timestamp')
+		Rails.cache.delete('wordstop')
 	end
 end
