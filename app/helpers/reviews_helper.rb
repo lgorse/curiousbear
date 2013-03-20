@@ -37,16 +37,12 @@ module ReviewsHelper
 			@hash[key] = ""
 		end
 		file.close
-		Rails.cache.write('wordstop', @hash)
-		Rails.cache.write('timestamp', Time.now)
+		Rails.cache.write('wordstop', @hash, :expire_in => 20.minutes)
+		return @hash
 	end
 
 	def get_wordstop_hash
-		time_stamp = Rails.cache.fetch('timestamp'){Time.now}
-		if Time.now - time_stamp > 60*20
-			reset_reviews_cache
-		end
-		@hash = Rails.cache.fetch('wordstop') {set_wordstop_hash}
+		@hash = Rails.cache.fetch('wordstop') {set_wordstop_hash} 
 	end
 
 	def exempt_expressions(word)
@@ -56,7 +52,6 @@ module ReviewsHelper
 	end
 
 	def reset_reviews_cache
-		Rails.cache.delete('timestamp')
 		Rails.cache.delete('wordstop')
 	end
 end

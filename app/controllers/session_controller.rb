@@ -17,7 +17,6 @@ class SessionController < ApplicationController
 	
 	def home
 		@title = "Search the world, "+@current_user.first_name
-		set_wordstop_hash
 		respond_to do |format|
 			format.html
 			format.js
