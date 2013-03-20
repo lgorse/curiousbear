@@ -4,7 +4,7 @@
 	<div id = "user_info_left">
 <h3><%= @user.name %></h3>
 <p><%= pluralize(@user.reviews.count, "review") %></p>
-<p>Average rating: <%= average(@user) %></p>
+<p>Average rating: <%= number_with_precision(average(@user), :precision => 1) %></p>
 </div>
 <div id = "user_info_right">
 <% if @user.fb_pic_large %>
