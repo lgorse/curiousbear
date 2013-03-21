@@ -9,6 +9,7 @@
 <li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
 <li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
 </ul>
+<%= render 'restaurants/restaurant_reviewer_list', :venue => venue %>
 	</div>
 <div id = "restaurant_summary_right">
 
@@ -16,5 +17,6 @@
 <div><%= pluralize(venue.reviews.count, "review") %></div>
  <a onclick='postToFeed(<%= @venue_json %>); return false;' href = "#" id="share_button">Request review</a>
  <p id='msg'></p>
+
 </div>
 </li>

@@ -1,0 +1,4 @@
+<div>Reviewed by: 
+<% venue.reviews.each do |review|%>
+<%=link_to review.user.name, review.user %>
+<% end %></div>
