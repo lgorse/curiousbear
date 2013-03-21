@@ -81,6 +81,7 @@ li#restaurant_summary,#recommended_restaurant_summary{
 		width: 200px;
 		bottom: 60px;
 		margin-top: 20px;
+		
 		#share_button{
 
 		}
@@ -95,4 +96,8 @@ li#recommended_restaurant_summary{
 
 #info_name{
 	font-weight: bold;
+}
+
+#full_reviewer_list{
+	display: none;
 }

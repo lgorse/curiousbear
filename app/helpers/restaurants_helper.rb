@@ -17,6 +17,7 @@ module RestaurantsHelper
 				flash.now[:error] = "Oops!" + e.message + "! That's not good."
 			end
 	end
+
 	def parse_google_search		
 		query = URI.escape(params[:search])
 		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join("|")
@@ -116,5 +117,10 @@ module RestaurantsHelper
 		else
 			@google_results_except_recommended = @google_results.reject{|result| @recommended_google_ids.include?(result["id"])}
 		end
+	end
+
+	def reviewer_list(venue, limit_number)
+		reviewer_list = venue.reviews.limit(limit_number).collect {|review| link_to review.user.name, review.user}.join(" , ")
+		simple_format word_wrap("Reviewed by: " + reviewer_list, :line_width => 70)
 	end
 end

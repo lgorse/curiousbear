@@ -20,6 +20,7 @@ class Review < ActiveRecord::Base
   validates :user_id, :presence => true
   validates :restaurant_id, :presence => true
   validates :user_id, :uniqueness => {:scope => :restaurant_id, :message => "already reviewed this restaurant"}
+  validates_numericality_of :rating, :greater_than => 0
 
   default_scope order('rating DESC')
 

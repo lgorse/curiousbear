@@ -9,7 +9,7 @@
 <li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
 <li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
 </ul>
-<%= render 'restaurants/restaurant_reviewer_list', :venue => venue %>
+<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
 	</div>
 <div id = "restaurant_summary_right">
 

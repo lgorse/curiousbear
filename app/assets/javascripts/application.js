@@ -16,6 +16,11 @@
 //= require gmap3
 
 
-
+$(document).ready(function(){
+	$("#more_reviewers").click(function(e){
+		$("#partial_reviewer_list").remove();
+		$("#full_reviewer_list").show();
+	});
+});
 
 
