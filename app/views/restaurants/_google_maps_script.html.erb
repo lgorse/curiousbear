@@ -71,6 +71,8 @@ function map_callback(results, status) {
 //Set full profile view
 function detail_callback(place, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+
     if (place.photos){
       photo = place.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150});
       document.getElementById("restaurant_photo").src=photo;
@@ -78,8 +80,8 @@ function detail_callback(place, status) {
 
     document.getElementById("venue_name").innerHTML = place.name;
     document.getElementById("formatted_address").innerHTML = place.formatted_address;
+
     if (place.rating){
-      //alert(place.url);
       var rating = document.getElementById("google_rating");
       rating.setAttribute("href", place.url);
       rating.setAttribute("target", "_blank");
@@ -102,6 +104,10 @@ encoded_venue =  window.btoa(encodeURIComponent(JSON.stringify(venue)));
 
     document.getElementById("search_field").setAttribute("value", '<%= params[:search] %>');
     document.getElementById("venue_field").setAttribute("value", encoded_venue);
+
+
   }
 }
+
+
 </script>

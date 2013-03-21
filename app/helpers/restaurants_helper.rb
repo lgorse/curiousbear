@@ -123,4 +123,10 @@ module RestaurantsHelper
 		reviewer_list = venue.reviews.limit(limit_number).collect {|review| link_to review.user.name, review.user}.join(" , ")
 		simple_format word_wrap("Reviewed by: " + reviewer_list, :line_width => 70)
 	end
+
+	def update_google_id
+		if @venue["id"] != @restaurant.google_id
+			@restaurant.update_attributes(:google_id => @venue["id"])
+		end
+	end
 end
