@@ -1,4 +1,6 @@
 <%= render 'restaurants/review_request_script' %>
+<%= image_tag "powered-by-google-on-white.png" %>
+<%= @google_response["html_attributions"].join(", ")  %>
 <% unless @google_results.blank? %>
 <ul>
 	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_results_except_recommended, :as => :result %>
