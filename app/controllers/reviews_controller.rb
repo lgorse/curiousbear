@@ -17,10 +17,10 @@ class ReviewsController < ApplicationController
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:review][:venue])))
 		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
 		@attr = set_review_attributes(params[:review], @restaurant.id, @current_user.id)
-		if review = Review.create(@attr)
+		if @review = Review.create(@attr)
 			flash[:success] = "Review saved. Share with friends!"
 		else
-			flash[:error] = review.errors.full_messages.to_sentence
+			flash[:error] = @review.errors.full_messages.to_sentence
 		end
 		respond_to do |format|
 			format.html {redirect_to @restaurant}
@@ -40,7 +40,7 @@ class ReviewsController < ApplicationController
 		if @review.update_attributes(@attr)
 			flash[:success] = "Review updated"
 		else
-			flash[:error] = @review.errors.full_messages.to_sentence
+			flash.now[:error] = @review.errors.full_messages.to_sentence
 		end
 		respond_to do |format|
 			format.html {redirect_to @restaurant}
