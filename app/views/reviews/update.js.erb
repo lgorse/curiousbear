@@ -2,10 +2,8 @@ $(function(){
 	if ( ($("#share_review").prop('checked')) && ("<%= @review.valid? %>" == "true") ){
 		reviewToFeed("<%= @restaurant.name %>", "<%= @restaurant.id %>");
 	}else if ("<%= @review.valid? %>" == "false"){
-		alert("Rating cannot be 0");
+		$("#container").html("<%= escape_javascript(render 'reviews/review_edit') %>");
 	}else{
 		window.location = "/restaurants/<%= @restaurant.id %>";
 	}
 });
-
-

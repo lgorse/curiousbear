@@ -1,0 +1,10 @@
+<%= render 'reviews/review_share_script' %>
+<p><%= @restaurant.name %></p>
+<p><%= "Google rating: "+@restaurant.google_rating.to_s %></p>
+<%= form_for @review , :remote => true do |f|%>
+<%= render 'reviews/review_fields', :f => f, :keywords => @review.keywords %>
+<%= f.submit "Update your review", :id => "review_button" %>
+<% end %>
+<%= link_to "cancel", @restaurant %>
+<%= link_to "Delete", @review, :method => :delete, :confirm => "Are you sure?" %>
+<%= render 'reviews/share_button' %>

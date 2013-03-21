@@ -1,11 +1,1 @@
-<%= render 'reviews/review_share_script' %>
-<p><%= @venue["name"] %></p>
-<p>Google Rating: <%= @venue["google_rating"] %></p>
-
-<%= form_for @review, :remote => true do |f|%>
-<%= f.hidden_field :venue, :value => params[:venue_field] %>
-<%= render 'reviews/review_fields', :f => f, :keywords => @search %>
-<%= f.submit "Add your review", :id => "review_button" %>
-<% end %>
-<%= link_to "cancel", :back %>
-<%= render 'reviews/share_button' %>
+<%= render 'reviews/review_new' %>

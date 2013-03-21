@@ -43,7 +43,7 @@ class ReviewsController < ApplicationController
 			flash.now[:error] = @review.errors.full_messages.to_sentence
 		end
 		respond_to do |format|
-			format.html {redirect_to @restaurant}
+			format.html 
 			format.js
 		end
 	end
