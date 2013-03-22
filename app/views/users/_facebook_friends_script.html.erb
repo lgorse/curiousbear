@@ -1,15 +1,16 @@
         
     <script>
 
-    function invite(friend_id){
+    function invite(friend_id, user_name){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
 
       FB.ui({
         to: friend_id,
           method: 'send',
-          name: 'People Argue Just to Win',
-          link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+          name: user_name+' invited you to join <%= APP_NAME %>',
+          link: "http://www.bbc.co.uk",
+          description: '<b><%= APP_NAME %> lets you choose the people whose food reviews you trust, and follow their advice to find the best places for you. </b>Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.'
           });
     }
      </script>

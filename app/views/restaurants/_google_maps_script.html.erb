@@ -88,7 +88,7 @@ function detail_callback(place, status) {
       rating.innerHTML = "Google rating: "+place.rating;
     }
     name_json = {name: place.name};
-    document.getElementById("share_button").setAttribute("onclick", 'postToFeed('+JSON.stringify(name_json)+'); return false;');
+    document.getElementById("share_button").setAttribute("onclick", 'postToFeed("'+place.name+'","<%= @current_user.first_name.to_s %>"); return false;');
 
 venue = { name: place.name,
           google_id: place.id,

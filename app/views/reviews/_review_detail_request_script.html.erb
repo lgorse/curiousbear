@@ -1,15 +1,16 @@
         
     <script>
 
-    function detail(friend_id){
+    function detail(friend_id, user_name, restaurant_name, articles){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
 
       FB.ui({
         to: friend_id,
           method: 'send',
-          name: 'People Argue Just to Win',
+          name: user_name +' needs details about your review of '+ restaurant_name,
           link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+          description: '<b>'+user_name + ' trusts your food opinion and '+articles["subject"]+' needs your help.</b> Add some color to your review of <b>'+restaurant_name+'</b> and help '+articles["object"]+' decide if he should eat there.'
           });
     }
      </script>

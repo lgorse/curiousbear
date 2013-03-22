@@ -53,5 +53,13 @@ class User < ActiveRecord::Base
 		self.relationships.find_by_followed_id(followed)
 	end
 
+	def gender_article
+		if self.gender == "male"
+			articles = {"subject" => "he", "possess" => "his", "object" => "him"}
+		elsif self.gender == "female"
+			articles = {"subject" => "her", "possess" => "her", "object" => "her"}
+		end
+	end
+
 
 end

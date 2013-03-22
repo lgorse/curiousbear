@@ -1,6 +1,6 @@
 $(function(){
 	if ( ($("#share_review").prop('checked')) && ("<%= @review.valid? %>" == "true") ){
-		reviewToFeed("<%= @restaurant.name %>", "<%= @restaurant.id %>");
+		reviewToFeed("<%= @current_user.first_name %>","<%= @restaurant.name %>", "<%= @restaurant.id %>", "<%= @review.rating %>", "<%= @review.text %>");
 	}else if ("<%= @review.valid? %>" == "false"){
 		$("#container").html("<%= escape_javascript(render 'reviews/review_edit') %>");
 	}else{

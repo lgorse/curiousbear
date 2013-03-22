@@ -4,6 +4,5 @@
 <%= link_to review.user.name, review.user, :id => "reviewer" %></div>
 <div id = "review_rating">Rating: <%= review.rating %></div>
 <div id="review_text"><%= review.text %></div>
-<button id="detail_friend" onclick="detail(<%= review.user.fb_id.to_s %>)">Ask for details</button>
-
+<button id="detail_friend" onclick="detail(<%= review.user.fb_id.to_s %>, '<%= @current_user.first_name.to_s %>','<%= review.restaurant.name.to_s %>', <%= @current_user.gender_article.to_json %>)">Ask for details</button>
 </li>

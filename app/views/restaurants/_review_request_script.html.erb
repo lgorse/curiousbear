@@ -1,15 +1,15 @@
  <script> 
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
 
-      function postToFeed(venue_json) {
+      function postToFeed(restaurant_name, user_name) {
         // calling the API ...
         var obj = {
           method: 'feed',
           link: 'https://developers.facebook.com/docs/reference/dialogs/',
           picture: 'http://fbrell.com/f8.jpg',
-          name: 'Facebook Dialogs',
-          caption: 'Reference Documentation',
-          description: 'Looking for a review of <b>'+venue_json["name"]+'</b>'
+          name: 'Anyone been to '+ restaurant_name+'?',
+          caption: user_name+' needs your help',
+          description: 'How good is '+restaurant_name+'? Rate '+restaurant_name+' on <b><%= APP_NAME %></b> to help '+user_name+' decide.'
         };
 
         function callback(response) {
