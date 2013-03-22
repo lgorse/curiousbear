@@ -45,7 +45,7 @@ class RestaurantsController < ApplicationController
 		@venue = get_restaurant_from_reference
 		@lat = @venue["geometry"]["location"]["lat"]
 		@lng = @venue["geometry"]["location"]["lng"]
-		update_google_id
+		update_restaurant
 		@google_id = @restaurant.google_id
 		respond_to do |format|
 			format.html

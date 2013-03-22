@@ -124,9 +124,7 @@ module RestaurantsHelper
 		simple_format word_wrap("Reviewed by: " + reviewer_list, :line_width => 70)
 	end
 
-	def update_google_id
-		if @venue["id"] != @restaurant.google_id
-			@restaurant.update_attributes(:google_id => @venue["id"])
-		end
+	def update_restaurant
+			@restaurant.update_attributes(set_attr_from_google(@venue))
 	end
 end
