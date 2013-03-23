@@ -3,7 +3,11 @@
 	<div id="restaurant_summary_left">
 		<ul>
 	<li id="venue_name">
+		<% if @restaurant %>
+			<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
+		<% else %>
 		<%= link_to @venue[:name], :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => @encoded_venue %>
+		<% end %>
 		<%= render 'reviews/add_review' %>
 	</li>
 <li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>

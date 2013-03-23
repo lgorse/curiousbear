@@ -20,12 +20,15 @@ class ReviewsController < ApplicationController
 		@attr = set_review_attributes(params[:review], @restaurant.id, @current_user.id)
 		if @review = Review.create(@attr)
 			flash[:success] = "Review saved. Share with friends!"
+			#render :json => @review
 		else
 			flash[:error] = @review.errors.full_messages.to_sentence
 		end
+		render :json => @review.id
 		respond_to do |format|
 			format.html {redirect_to @restaurant}
-			format.js 
+			format.js {render :json => @review.id}
+			format.json {render :json => @review.id}
 		end
 	end
 

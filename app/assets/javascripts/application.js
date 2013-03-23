@@ -24,7 +24,6 @@ $(document).ready(function(){
 
 	$(".rate_restaurant").change(function(e){
 		e.preventDefault();
-		//alert($(this).closest("form").attr("action"));
 		var path = $(this).closest("form").attr("action");
 			$.ajax({
 				type: 'PUT',
@@ -37,11 +36,15 @@ $(document).ready(function(){
 	$(".new_rate_restaurant").change(function(e){
 		e.preventDefault();
 		var path = $(this).closest("form").attr("action");
-			$.ajax({
-				type: 'POST',
-				url: path,
-				data: $(this).closest("form").serialize()
-			});		
+		$.ajax({
+			type: 'POST',
+			url: path,
+			data: $(this).closest("form").serialize(),
+			success: function(response){
+				alert(response);
+
+			}
+		});		
 		
 	});
 
