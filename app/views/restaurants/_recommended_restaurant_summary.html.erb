@@ -12,7 +12,6 @@
 	<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
 </div>
 <div id = "restaurant_summary_right">
-<%= render 'reviews/buttons/rate_restaurant', :venue => venue %>
 <div id="google_rating"><%= "Average rating: "+ average(venue).to_s %></div>
 <div><%= pluralize(venue.reviews.count, "review") %></div>
  <a onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>

@@ -34,6 +34,17 @@ $(document).ready(function(){
 		
 	});
 
+	$(".new_rate_restaurant").change(function(e){
+		e.preventDefault();
+		var path = $(this).closest("form").attr("action");
+			$.ajax({
+				type: 'POST',
+				url: path,
+				data: $(this).closest("form").serialize()
+			});		
+		
+	});
+
 });
 
 

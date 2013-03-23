@@ -14,7 +14,9 @@
 	</div>
 	<div id = "restaurant_info_right">
 		<% if @restaurant %>
-		<%= render 'reviews/buttons/rate_restaurant', :venue => @restaurant %>
+		<%= render 'reviews/buttons/rate_restaurant', :venue => @restaurant, :venue_field => encode_venue_google_id(@restaurant.google_id), :search => @restaurant.keywords %>
+		<% else %>
+		<%= render 'reviews/buttons/rate_restaurant', :venue => Restaurant.find_by_google_id(@google_id), :venue_field => params[:venue_data], :search => @search %>
 		<% end %>
 		<% if @restaurant %>
 			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>

@@ -3,4 +3,11 @@
 		<%= f.label "Rating: " %>
 		<%= f.select :rating, options_for_select((1..5), :include_blank => true, :selected => review.rating), {}, {:class => "rate_restaurant"} %>
 	<% end %>
+<% else %>
+<%= form_for Review.new, :remote => true do |f| %>
+	<%= f.label "New Rating: " %>
+	<%= f.hidden_field :venue, :value => venue_field %>
+	<%= f.hidden_field :keywords, :value => search %>
+	<%= f.select :rating, options_for_select((1..5)), {:prompt => ""}, {:class => "new_rate_restaurant"} %>
+<% end %>
 <% end %>
