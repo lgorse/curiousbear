@@ -3,7 +3,7 @@ module ReviewsHelper
 	def set_review_attributes(review, restaurant_id, user_id)
 		@attr = { 	:restaurant_id => restaurant_id,
 					:user_id => user_id,
-					:rating => review[:rating].to_d,
+					:rating => review[:rating],
 					:text => review[:text],
 					:keywords => keywords_to_string(review[:keywords])
 		}
@@ -16,7 +16,7 @@ module ReviewsHelper
 	end
 
 	def average(entity)
-		entity.reviews.average(:rating).to_s
+		entity.reviews.average(:rating).to_i
 	end
 
 	def keywords_to_string(expression)

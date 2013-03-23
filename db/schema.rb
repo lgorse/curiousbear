@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130312003513) do
+ActiveRecord::Schema.define(:version => 20130322165751) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -51,13 +51,13 @@ ActiveRecord::Schema.define(:version => 20130312003513) do
   add_index "restaurants", ["google_rating"], :name => "index_restaurants_on_google_rating"
 
   create_table "reviews", :force => true do |t|
-    t.integer  "restaurant_id",                               :null => false
-    t.integer  "user_id",                                     :null => false
-    t.decimal  "rating",        :precision => 2, :scale => 1
+    t.integer  "restaurant_id", :null => false
+    t.integer  "user_id",       :null => false
+    t.integer  "rating"
     t.text     "text"
     t.string   "keywords"
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   add_index "reviews", ["restaurant_id"], :name => "index_reviews_on_restaurant_id"

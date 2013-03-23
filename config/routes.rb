@@ -16,7 +16,13 @@ Curiousbear::Application.routes.draw do
     end
    end
 
-   resources :session, :reviews 
+   resources :session
+
+   resources :reviews do
+   member do
+    put 'rate'
+   end
+ end
 
   post 'reviews/new' => 'reviews#new'
    match '/signin', :to => "session#signin"

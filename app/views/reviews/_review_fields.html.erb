@@ -1,6 +1,6 @@
 <%= render 'shared/error_messages', :object => f.object %>
 <p><%= f.label "Rating" %>
-<%= f.select :rating, (0..5).step(0.5) %></p>
+<%= f.select :rating, (1..5), :include_blank => true %></p>
 <p><%= f.label "Review" %>
 <%= f.text_area :text %></p>
 <p><%= f.label "Key Words" %>

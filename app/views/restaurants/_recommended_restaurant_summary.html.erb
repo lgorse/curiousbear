@@ -12,6 +12,9 @@
 <%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
 	</div>
 <div id = "restaurant_summary_right">
+<% if current_user_review = Review.find_by_restaurant_id_and_user_id(venue.id, @current_user.id) %>
+	<%= render 'reviews/buttons/rate_restaurant', :review => current_user_review %>
+<% end %>
 
 <div id="google_rating"><%= "Average rating: "+ average(venue).to_s %></div>
 <div><%= pluralize(venue.reviews.count, "review") %></div>

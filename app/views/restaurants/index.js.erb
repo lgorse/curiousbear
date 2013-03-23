@@ -5,3 +5,14 @@ $("#restaurant_info").remove();
 $("#map").remove();
 $("#restaurant_review_list").remove();
 $("#restaurant_list").empty();
+$(".rate_restaurant").change(function(e){
+		e.preventDefault();
+		//alert($(this).closest("form").attr("action"));
+		var path = $(this).closest("form").attr("action");
+			$.ajax({
+				type: 'PUT',
+				url: path,
+				data: $(this).closest("form").serialize()
+			});		
+		
+	});

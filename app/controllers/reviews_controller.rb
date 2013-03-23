@@ -5,6 +5,7 @@ class ReviewsController < ApplicationController
 
 	def index
 		@user = User.find(params[:user_id])
+		@current_user = User.find(session['user_id'])
 	end
 
 	def new
@@ -44,7 +45,7 @@ class ReviewsController < ApplicationController
 		end
 		respond_to do |format|
 			format.html 
-			format.js
+			format.js 
 		end
 	end
 
@@ -53,6 +54,12 @@ class ReviewsController < ApplicationController
 		@restaurant = Restaurant.find(@review.restaurant_id)
 		@review.destroy
 		redirect_to restaurant_path(@restaurant)
+	end
+
+	def rate
+		@review = Review.find(params[:id])
+		@review.update_attributes(params[:review])
+		render :nothing => true
 	end
 
 end

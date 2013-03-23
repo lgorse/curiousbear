@@ -21,6 +21,21 @@ $(document).ready(function(){
 		$("#partial_reviewer_list").remove();
 		$("#full_reviewer_list").show();
 	});
+
+	$(".rate_restaurant").change(function(e){
+		e.preventDefault();
+		//alert($(this).closest("form").attr("action"));
+		var path = $(this).closest("form").attr("action");
+			$.ajax({
+				type: 'PUT',
+				url: path,
+				data: $(this).closest("form").serialize()
+			});		
+		
+	});
+
 });
+
+
 
 
