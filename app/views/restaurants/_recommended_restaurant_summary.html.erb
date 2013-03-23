@@ -1,21 +1,18 @@
 <% set_summary_values_from_db(venue) %>
 <li id="recommended_restaurant_summary">
-	<div id="restaurant_summary_left">
+<div id="restaurant_summary_left">
 		<ul>
-	<li id="venue_name">
-		<%= link_to venue.name, restaurant_path(venue.id) %>
-		<%= render 'reviews/add_review' %>
-	</li>
-<li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
-<li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
-</ul>
-<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
-	</div>
+			<li id="venue_name">
+				<%= link_to venue.name, restaurant_path(venue.id) %>
+				<%= render 'reviews/add_review' %>
+			</li>
+			<li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
+			<li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
+		</ul>
+	<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
+</div>
 <div id = "restaurant_summary_right">
-<% if current_user_review = Review.find_by_restaurant_id_and_user_id(venue.id, @current_user.id) %>
-	<%= render 'reviews/buttons/rate_restaurant', :review => current_user_review %>
-<% end %>
-
+<%= render 'reviews/buttons/rate_restaurant', :venue => venue %>
 <div id="google_rating"><%= "Average rating: "+ average(venue).to_s %></div>
 <div><%= pluralize(venue.reviews.count, "review") %></div>
  <a onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>

@@ -14,9 +14,9 @@
 	</div>
 	<div id = "restaurant_info_right">
 		<% if @restaurant %>
-		<% if review = Review.find_by_restaurant_id_and_user_id(@restaurant.id, @current_user.id) %>
-		<%= render 'reviews/buttons/rate_restaurant', :review => review %>
+		<%= render 'reviews/buttons/rate_restaurant', :venue => @restaurant %>
 		<% end %>
+		<% if @restaurant %>
 			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
 			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>
 		<% end %>

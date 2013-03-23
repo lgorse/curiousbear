@@ -8,9 +8,7 @@
 		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
 		<li><%= review.restaurant.formatted_address %></li>
 		<li><%= review.restaurant.reviews.count %> reviews</li>	
-<% if current_user_review = Review.find_by_restaurant_id_and_user_id(review.restaurant.id, @current_user.id) %>
-<li><%= render 'reviews/buttons/rate_restaurant', :review => current_user_review %></li>
-<% end %>	
+<li><%= render 'reviews/buttons/rate_restaurant', :venue => review.restaurant %></li>	
 <% unless review.user == @current_user %>
 <li>Rating: <%= review.rating %></li>
 <% end %>
