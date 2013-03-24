@@ -13,7 +13,7 @@
 	<% end %>
 	</div>
 	<div id = "restaurant_info_right">
-		<div id = "rating_bar"><%= render 'reviews/buttons/full_profile_rate_restaurant'%></div>
+	<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => @restaurant.google_id, :search =>  @search %>
 		<% if @restaurant %>
 			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
 			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>

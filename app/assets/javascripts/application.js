@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 function update_rate_button(response, button){
 	var review_id = response["id"];
-	action_string = "/reviews/"+review_id+"/rate";
+	action_string = "/reviews/"+review_id;
 	button.attr({
 		class: "rate_restaurant",
 		id: "review_rating_"+review_id
