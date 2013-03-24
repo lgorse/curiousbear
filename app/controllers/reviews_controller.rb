@@ -16,8 +16,8 @@ class ReviewsController < ApplicationController
 	end
 
 	def create
-		if params[:venue_field]
-		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_field])))
+		if params[:venue].present?
+		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue])))
 		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
 	else
 		@restaurant = Restaurant.find(params[:review][:restaurant_id])

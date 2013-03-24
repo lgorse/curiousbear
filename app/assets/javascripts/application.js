@@ -22,33 +22,8 @@ $(document).ready(function(){
 		$("#full_reviewer_list").show();
 	});
 
-	$(".rate_restaurant").change(function(e){
-		e.preventDefault();
-		var path = $(this).closest("form").attr("action");
-			$.ajax({
-				type: 'PUT',
-				url: path,
-				data: $(this).closest("form").serialize()
-			});		
-		
-	});
-
-	$(".new_rate_restaurant").change(function(e){
-		e.preventDefault();
-		var path = $(this).closest("form").attr("action");
-		button= $(this);
-		$.ajax({
-			type: 'POST',
-			url: path,
-			data: $(this).closest("form").serialize(),
-			dataType: 'json',
-			success: function(response){
-				update_rate_button(response, button);
-
-			}
-		});		
-		
-	});
+	update_rating();
+	new_rating();
 
 });
 
@@ -71,6 +46,43 @@ function update_rate_button(response, button){
 	});
 	$("#review_keywords").remove();
 	$("#review_venue").remove();
+}
+
+function update_rating(){
+	$(".rate_restaurant").change(function(e){
+		e.preventDefault();
+		var path = $(this).closest("form").attr("action");
+			$.ajax({
+				type: 'PUT',
+				url: path,
+				data: $(this).closest("form").serialize()
+			});		
+		
+	});
+
+}
+
+function new_rating(){
+	$(".new_rate_restaurant").change(function(e){
+		alert("Hello");
+		e.preventDefault();
+		var path = $(this).closest("form").attr("action");
+		button= $(this);
+		alert($(this).closest("form").serialize());
+		$.ajax({
+			type: 'POST',
+			url: path,
+			data: $(this).closest("form").serialize(),
+			dataType: 'json',
+			success: function(response){
+				alert(response);
+				update_rate_button(response, button);
+
+			}
+		});		
+		
+	});
+
 }
 
 
