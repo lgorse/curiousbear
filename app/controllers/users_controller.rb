@@ -14,7 +14,7 @@ end
 
 def show
 	@user = User.find(params[:id])
-	@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 10)
+	@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 5)
 	respond_to do |format|
 		format.html
 		format.js
