@@ -8,7 +8,7 @@
 		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
 		<li><%= review.restaurant.formatted_address %></li>
 		<li><%= review.restaurant.reviews.count %> reviews</li>	
-<li><%= render 'reviews/buttons/rate_restaurant', :venue => review.restaurant, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>	
+<li><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>	
 <% unless review.user == @current_user %>
 <li>Rating: <%= review.rating %></li>
 <% end %>

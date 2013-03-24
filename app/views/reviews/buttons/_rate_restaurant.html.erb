@@ -1,7 +1,7 @@
-<% if venue && review = Review.find_by_restaurant_id_and_user_id(venue.id, @current_user.id) %>
-	<%= form_for review, :method => :put, :url => {:controller => :reviews, :action => :rate, :id => review},  :remote => true do |f| %>
+<% if review = Review.find_by_restaurant_id_and_user_id(restaurant_id, @current_user.id) %>
+	<%= form_for review, :method => :put, :url => {:controller => :reviews, :action => :rate, :id => review}, :remote => true do |f| %>
 		<%= f.label "Rating: " %>
-		<%= f.select :rating, options_for_select((1..5), :include_blank => true, :selected => review.rating), {}, {:class => "rate_restaurant"} %>
+		<%= f.select :rating, options_for_select((1..5), :include_blank => true, :selected => review.rating), {}, {:class => "rate_restaurant", :id => "review_rating_#{review.id.to_s}"} %>
 	<% end %>
 <% else %>
 <%= form_for Review.new, :remote => true do |f| %>

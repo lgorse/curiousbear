@@ -1,5 +1,4 @@
 <body onload = "initialize_map(<%= @lat %>, <%= @lng %>, '<%= @reference %>')">
-	
 <%= render 'restaurants/google_maps_script' %>
 <%= render 'restaurants/searchbox' %>
 <div id = "restaurant_info">
@@ -14,11 +13,7 @@
 	<% end %>
 	</div>
 	<div id = "restaurant_info_right">
-		<div id = "rating_bar"><% if @restaurant %>
-		<%= render 'reviews/buttons/rate_restaurant', :venue => @restaurant, :venue_field => encode_venue_google_id(@restaurant.google_id), :search => @restaurant.keywords %>
-		<% else %>
-		<%= render 'reviews/buttons/rate_restaurant', :venue => nil, :venue_field => params[:venue_data], :search => @search %>
-		<% end %></div>
+		<div id = "rating_bar"><%= render 'reviews/buttons/full_profile_rate_restaurant'%></div>
 		<% if @restaurant %>
 			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
 			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>

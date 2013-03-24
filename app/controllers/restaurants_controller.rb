@@ -2,8 +2,7 @@ class RestaurantsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
 	before_filter :authenticate
-	#after_filter :update_google_id, :only => [:show]
-
+	
 	def index
 		@restaurant_list = Restaurant.trust_search(params[:search], @current_user)
 		@recommended_google_ids = []
@@ -29,14 +28,16 @@ class RestaurantsController < ApplicationController
 		@reference = @venue["google_reference"]
 		@lat =  @venue["lat"]
 		@lng =  @venue["lng"]
-		@google_id = @venue["google_id"]
+		@google_id = @venue["id"]
 		@restaurant = Restaurant.find_by_google_id(@google_id)
 		respond_to do |format|
-			format.html
-			format.js
+			format.html 
+			format.js 
 		end
 
 	end
+
+
 
 	def show
 		@restaurant = Restaurant.find(params[:id])
@@ -52,6 +53,5 @@ class RestaurantsController < ApplicationController
 			format.js
 		end
 	end
-
 
 end

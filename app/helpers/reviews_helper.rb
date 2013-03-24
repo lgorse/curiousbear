@@ -56,4 +56,5 @@ module ReviewsHelper
 		google_id_json = {"google_id" => google_id}.to_json
 		encoded_google_id_json = Base64.urlsafe_encode64(URI.encode(google_id_json))
 	end
+
 end

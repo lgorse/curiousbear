@@ -127,4 +127,5 @@ module RestaurantsHelper
 	def update_restaurant
 			@restaurant.update_attributes(set_attr_from_google(@venue))
 	end
+
 end

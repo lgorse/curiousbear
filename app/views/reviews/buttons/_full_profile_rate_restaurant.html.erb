@@ -1,0 +1,6 @@
+
+<% if @restaurant %>
+		<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => encode_venue_google_id(@restaurant.google_id), :search => @restaurant.keywords %>
+		<% else %>
+		<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => nil, :venue_field => params[:venue_data], :search => @search %>
+		<% end %>
