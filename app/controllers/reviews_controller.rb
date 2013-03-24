@@ -40,8 +40,8 @@ class ReviewsController < ApplicationController
 	def update
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
-		@attr = set_review_attributes(params[:review], @restaurant.id, @current_user.id)
-		if @review.update_attributes(@attr)
+		params[:review][:keywords] = (keywords_to_string(params[:review][:keywords])) if params[:review][:keywords]
+		if @review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id))
 			flash[:success] = "Review updated"
 		else
 			flash.now[:error] = @review.errors.full_messages.to_sentence
@@ -57,12 +57,6 @@ class ReviewsController < ApplicationController
 		@restaurant = Restaurant.find(@review.restaurant_id)
 		@review.destroy
 		redirect_to restaurant_path(@restaurant)
-	end
-
-	def rate
-		@review = Review.find(params[:id])
-		@review.update_attributes(params[:review])
-		render :nothing => true
 	end
 
 end
