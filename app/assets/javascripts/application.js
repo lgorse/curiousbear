@@ -22,8 +22,7 @@ $(document).ready(function(){
 		$("#full_reviewer_list").show();
 	});
 
-	update_rating();
-	new_rating();
+	quick_rating();
 
 });
 
@@ -64,25 +63,26 @@ function update_rating(){
 
 function new_rating(){
 	$(".new_rate_restaurant").change(function(e){
-		alert("Hello");
 		e.preventDefault();
 		var path = $(this).closest("form").attr("action");
 		button= $(this);
-		alert($(this).closest("form").serialize());
 		$.ajax({
 			type: 'POST',
 			url: path,
 			data: $(this).closest("form").serialize(),
 			dataType: 'json',
 			success: function(response){
-				alert(response);
 				update_rate_button(response, button);
-
 			}
 		});		
 		
 	});
 
+}
+
+function quick_rating(){
+	update_rating();
+	new_rating();
 }
 
 

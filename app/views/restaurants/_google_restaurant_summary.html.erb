@@ -15,7 +15,7 @@
 </ul>
 	</div>
 <div id = "restaurant_summary_right">
-	
+	<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant ? @restaurant.id : nil, :venue_field => @encoded_venue, :search => @search %>
 <div id="google_rating"><%= "Google rating: "+ @venue[:google_rating].to_s %></div>
  <a onclick='postToFeed("<%= @venue[:name] %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
  <p id='msg'></p>

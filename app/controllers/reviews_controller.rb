@@ -16,8 +16,8 @@ class ReviewsController < ApplicationController
 	end
 
 	def create
-		if params[:venue].present?
-		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue])))
+		if params[:review][:venue].present?
+		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:review][:venue])))
 		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
 	else
 		@restaurant = Restaurant.find(params[:review][:restaurant_id])
@@ -46,7 +46,7 @@ class ReviewsController < ApplicationController
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
 		params[:review][:keywords] = (keywords_to_string(params[:review][:keywords])) if params[:review][:keywords]
-		if @review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id))
+		if @review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
 			flash[:success] = "Review updated"
 		else
 			flash.now[:error] = @review.errors.full_messages.to_sentence
