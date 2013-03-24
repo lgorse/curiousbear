@@ -23,25 +23,16 @@ class RestaurantsController < ApplicationController
 	end
 
 	def new	
-		@search = Base64.decode64(params[:search])
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_data])))
-		@reference = @venue["google_reference"]
-		@lat =  @venue["lat"]
-		@lng =  @venue["lng"]
-		@google_id = @venue["id"]
-		@restaurant = Restaurant.find_by_google_id(@google_id)
-		respond_to do |format|
-			format.html 
-			format.js 
-		end
-
+		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
+		redirect_to restaurant_path(@restaurant, :search => params[:search])
 	end
 
 
 
 	def show
 		@restaurant = Restaurant.find(params[:id])
-		@search = @restaurant.keywords
+		@search = Base64.decode64(params[:search]) if params[:search]
 		@reference = @restaurant.google_reference
 		@venue = get_restaurant_from_reference
 		@lat = @venue["geometry"]["location"]["lat"]

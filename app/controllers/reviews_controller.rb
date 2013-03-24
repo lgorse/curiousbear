@@ -11,12 +11,12 @@ class ReviewsController < ApplicationController
 	def new
 		@search = Base64.decode64(params[:search_field])
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_field])))
+		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
 		@review = Review.new	
 	end
 
 	def create
-		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:review][:venue])))
-		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
+		@restaurant = Restaurant.find(params[:review][:restaurant_id])
 		@attr = set_review_attributes(params[:review], @restaurant.id, @current_user.id)
 		if @review = Review.create(@attr)
 			flash[:success] = "Review saved. Share with friends!"
