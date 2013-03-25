@@ -16,6 +16,7 @@
 
 div#user_info{
 	width: 800px;
+	height: 250px;
 
 	div#user_info_left{
 		float: left;
@@ -38,7 +39,6 @@ div#user_info{
 }
 
 
-
 nav#follow_buttons{
 	position: absolute;
 	top: 200px;
@@ -56,8 +56,7 @@ nav#follow_buttons{
 }
 
 div#relationship_list{
-	position: absolute;
-	top: 250px;
+	position: relative;
 	width: 1000px;
 
 	li.user_summary{
@@ -95,6 +94,12 @@ div#relationship_list{
 			margin: auto;
 		}
 
+	}
+
+	.pagination{
+		width: auto;
+		text-align: left;
+		position: relative;
 	}
 }
 

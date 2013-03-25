@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require gmap3
-//= jquery.pageless
+//= require jquery.pageless
 
 
 $(document).ready(function(){

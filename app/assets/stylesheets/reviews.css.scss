@@ -33,41 +33,41 @@
 		
 	}
 
-
 }
 
-	
+
 
 div.user_review{
 	
 	margin-bottom: 20px;
-	height: 200px;
+	height: 300px;
 
 	#restaurant_name{
 		font-weight: bold;
 	}
 
-	.map_summary{
-		float: left;
-	width: 200px;
-	height: 200px;
-	}
-
-	#review_data{
-		float: left;
-		width: 500px;
-	}
-
 	.review_summary_left{
 		float: left;
 
-	.review_summary_photo{
-		display: block;
+
+		.review_summary_photo{
+			display: block;
+		}
+
+		#button_friend{
+			display: block;
+		}
 	}
 
-	#button_friend{
-		display: block;
+	#review_data{
+			float: left;
+			width: 200px;
+		}
+
+	.map_summary{
+		float: left;
+		width: 200px;
+		height: 200px;
 	}
-}
 
 }
