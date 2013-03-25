@@ -1,13 +1,7 @@
 class ReviewsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
-	before_filter :authenticate, :except => [:index]
-
-	def index
-		@user = User.find(params[:user_id])
-		@current_user = User.find(session['user_id'])
-		@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 5)
-	end
+	before_filter :authenticate
 
 	def new
 		@search = Base64.decode64(params[:search_field])
