@@ -1,6 +1,7 @@
 <%= render 'reviews/review_map_script' %>
 <%= render 'reviews/review_detail_request_script' %>
-<div id = "user_info">
+
+<div class = "user_info" id="<%= @user.id %>">
 	<div id = "user_info_left">
 <h3><%= @user.name %></h3>
 <p><%= pluralize(@user.reviews.count, "review") %></p>

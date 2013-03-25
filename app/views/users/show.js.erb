@@ -1,10 +1,11 @@
 $(function(){
-		
-		$('#relationship_list').pageless({ totalPages: "<%= @reviews.count %>"/5+1
+		$('#relationship_list').html('<%= escape_javascript(render "reviews/user_reviews") %>').
+		pageless({ totalPages: "<%= @reviews.count %>"/5+1
                        , url: '/reviews'
                        , loaderMsg: 'Loading more results'
                        , params: {id: "<%= params[:id] %>"}
                        , loaderMsg: "loading"
                        });
+		quick_rating();
 	});
 
