@@ -3,12 +3,12 @@
 	<div id="fb-root"></div>
 	<%= render 'layouts/facebook_app_scripts' %>
 	<nav id= "app_header_left">
-		<%= link_to 'home', home_path, :id=>"home_button" %>
-		<%= link_to 'user', user_path(@current_user), :id => "my_profile_button" %>
+		<%= link_to 'Home', home_path, :id=>"home_button" %>
+		<%= link_to 'Me', user_path(@current_user), :id => "my_profile_button" %>
 	</nav>
 	<nav id = "app_header_right">
-		<%= image_tag @current_user.fb_pic, :id => "my_small_pic", :size => "30x30" %>
-		<%= link_to "edit", edit_user_path(@current_user) , :id => "my_account_button"%>
+		<%= link_to (image_tag @current_user.fb_pic, :id => "my_small_pic", :size => "30x30"), user_path(@current_user) %>
+		<%= link_to "Edit", edit_user_path(@current_user) , :id => "my_account_button"%>
 		<button id="fb-logout" onclick="logout()">Log out</button>
 	</nav>
 	<%= render 'layouts/flash', :flash => flash %>

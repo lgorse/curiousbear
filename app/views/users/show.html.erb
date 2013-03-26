@@ -1,11 +1,13 @@
 <%= render 'reviews/review_map_script' %>
 <%= render 'reviews/review_detail_request_script' %>
-
-<div class = "user_info" id="<%= @user.id %>">
-<%= render 'user_info_left' %>
-<%= render 'user_info_right' %>
-</div>
-<div id = "user_follow_container">
-<%= render 'user_info_nav' %>
-<div id = "relationship_list"></div>
+<%= render 'restaurants/searchbox' %>
+<div id="show_holder">
+	<div class = "user_info" id="<%= @user.id %>">
+	<%= render 'user_info_left' %>
+	<%= render 'user_info_right' %>
+	</div>
+	<div id = "user_follow_container">
+	<%= render 'user_info_nav' %>
+	<div id = "relationship_list"></div>
+	</div>
 </div>

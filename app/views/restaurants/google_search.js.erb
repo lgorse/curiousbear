@@ -1,9 +1,7 @@
 $("#restaurant_list").html("<%=escape_javascript(render 'google_restaurants')%>");
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
-$("#restaurant_info").remove();
-$("#map").remove();
-$("#restaurant_review_list").remove();
+$("#show_holder").remove();
 if ("<%= params[:recommended_restaurants] %>" == ''){
 	$("#recommended_restaurant_list").empty();
 }

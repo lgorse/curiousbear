@@ -1,10 +1,6 @@
 module ReviewsHelper
 
-	def set_review_attributes(review, restaurant_id, user_id)
-		
-
-	end
-
+	
 	def set_review_google_info(review)
 		@map = {"lat" => review.restaurant.lat, "lng" => review.restaurant.lng, 
 				"reference" => review.restaurant.google_reference, "map_id" => review.id}

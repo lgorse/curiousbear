@@ -18,7 +18,7 @@ class RestaurantsController < ApplicationController
 		search_google_from_params
 		respond_to do |format|
 			format.html
-			format.js
+			format.js 
 		end
 	end
 

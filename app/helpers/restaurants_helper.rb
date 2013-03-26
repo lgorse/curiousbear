@@ -87,7 +87,7 @@ module RestaurantsHelper
 		JSON.parse(result.body)["result"]
 	end
 
-	def set_summary_values(result)
+	def set_google_restaurant_values(result)
 		@venue = set_attr_from_google(result).merge(:id => nil)
 
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(@venue.to_json))
@@ -98,7 +98,7 @@ module RestaurantsHelper
 		@restaurant = Restaurant.find_by_google_id(@google_id)
 	end
 
-	def set_summary_values_from_db(venue)
+	def set_stored_restaurant_values(venue)
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
 		@restaurant = venue
 		@parsed_address = split_formatted_address(venue.formatted_address.to_s)
