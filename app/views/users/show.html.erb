@@ -2,34 +2,10 @@
 <%= render 'reviews/review_detail_request_script' %>
 
 <div class = "user_info" id="<%= @user.id %>">
-	<div id = "user_info_left">
-<h3><%= @user.name %></h3>
-<p><%= pluralize(@user.reviews.count, "review") %></p>
-<p>Average rating: <%= number_with_precision(average(@user), :precision => 1) %></p>
-</div>
-<div id = "user_info_right">
-<% if @user.fb_pic_large %>
-<%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>
-<% end %>
-<% unless @user == @current_user %>
-	<div id="button_<%= @user.id %>", class="follow_button">
-		<% if @current_user.following?(@user.id) %>
-			<%= render 'relationships/buttons/unfollow_button', :followed_id => @user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
-		<% else %>
-			<%= render 'relationships/buttons/follow_button', :followed_id => @user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
-		<% end %>
-		</div>
-	<% end %>
-</div>
+<%= render 'user_info_left' %>
+<%= render 'user_info_right' %>
 </div>
 <div id = "user_follow_container">
-<nav id = "follow_buttons">
-<%= link_to "Reviews (#{@user.reviews.count})", user_path(@user), :id => "user_reviews_button" %>
-<%= link_to "Trusts (#{@user.following.count})", following_user_path(@user), :id => "follows_list_button", :remote => true%>
-<%= link_to "Trusted by (#{@user.followers.count})", followers_user_path(@user) , :id => "followed_list_button", :remote => true %>
-<% if @user == @current_user %>
-	<%= link_to "Add friends", facebook_friends_user_path, :id => "add_friends_button" %>
-<% end %>
-</nav>
+<%= render 'user_info_nav' %>
 <div id = "relationship_list"></div>
 </div>

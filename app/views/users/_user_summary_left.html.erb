@@ -1,0 +1,8 @@
+<div class = "user_summary_left">
+<% if user.id.nil? %>
+<%= user.name %>
+<% else %>
+<%= link_to user.name, user_path(user), :class => "user_name_link", :id => user.id %>
+<p class = "user_review_count"><%= pluralize(user.reviews.count, "review") %></p>
+<% end %>
+</div>

@@ -1,0 +1,9 @@
+<div id = "restaurant_info_right">
+<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => nil, :search =>  @search %>
+		<% if @restaurant %>
+			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
+			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>
+		<% end %>
+		<a id = "google_rating"></a>	
+		 <a href = "#" id="share_button">Request review</a>
+</div>

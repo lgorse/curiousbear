@@ -2,29 +2,11 @@
 <%= render 'restaurants/google_maps_script' %>
 <%= render 'restaurants/searchbox' %>
 <div id = "restaurant_info">
-	<div id = "restaurant_info_left">
-		<img id = "restaurant_photo"></img>
-		<div id = "venue_name"></div>
-		<div id = "formatted_address"></div>
-		<%= render 'reviews/add_review' %>	
-	<div id = "keywords"></div>
-	<% if @restaurant %>
-	<%= render 'restaurants/restaurant_reviewer_list', :venue => @restaurant, :limit => 4 %>
-	<% end %>
-	</div>
-	<div id = "restaurant_info_right">
-	<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => nil, :search =>  @search %>
-		<% if @restaurant %>
-			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
-			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>
-		<% end %>
-		<a id = "google_rating"></a>	
-		 <a href = "#" id="share_button">Request review</a>
-	</div>
+	<%= render 'restaurant_info_left' %>
+	<%= render 'restaurant_info_right' %>
 	 <p id='msg'></p>
-</div>
 	 <div class = "map" id="map"></div>
-
+</div>	 
 	 <% if @restaurant %>
 	 <%= render 'reviews/review_list' %>
 	 <% end %>
