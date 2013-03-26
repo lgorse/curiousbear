@@ -4,7 +4,6 @@ class ReviewsController < ApplicationController
 	before_filter :authenticate, :except => [:index]
 
 	def index
-	
 		@user = User.find(params[:id])
 		@current_user = User.find(session['user_id'])
 		@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 5)

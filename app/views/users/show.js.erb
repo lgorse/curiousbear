@@ -3,9 +3,9 @@ $(function(){
 	$('#relationship_list').html("<%= escape_javascript(render 'reviews/user_reviews') %>").
 	pageless({  url: '/reviews'
                        , totalPages: "<%= @user.reviews.count %>"/5+1
-                       , params: {id: "<%= params[:id] %>", page: 1}
+                       , params: {id: "<%= params[:id] %>"}
                        , loaderMsg: "loading"
-                       , currentPage: 1
+                      
                        });
 		
 		

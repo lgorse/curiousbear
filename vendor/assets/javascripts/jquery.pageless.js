@@ -60,7 +60,7 @@
     , SCROLL = 'scroll' + namespace
     , RESIZE = 'resize' + namespace
     , settings = { container: window
-                 , currentPage: 1
+                 , currentPage: 0
                  , distance: 100
                  , pagination: '.pagination'
                  , params: {}
