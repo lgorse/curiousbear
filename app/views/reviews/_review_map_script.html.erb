@@ -8,11 +8,13 @@ function initialize_map(passed) {
       var map_data = passed[i];
 
       var center = new google.maps.LatLng(map_data["lat"], map_data["lng"]);
+     
       map = new google.maps.Map(document.getElementById('map_'+map_data["map_id"]), {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: center,
         zoom: 16
       });
+
 
       var request = {
         location: center,

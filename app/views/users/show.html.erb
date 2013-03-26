@@ -24,7 +24,7 @@
 </div>
 <div id = "user_follow_container">
 <nav id = "follow_buttons">
-<%= link_to "Reviews (#{@user.reviews.count})", user_path(@user), :id => "user_reviews_button", :remote => true %>
+<%= link_to "Reviews (#{@user.reviews.count})", user_path(@user), :id => "user_reviews_button" %>
 <%= link_to "Trusts (#{@user.following.count})", following_user_path(@user), :id => "follows_list_button", :remote => true%>
 <%= link_to "Trusted by (#{@user.followers.count})", followers_user_path(@user) , :id => "followed_list_button", :remote => true %>
 <% if @user == @current_user %>

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-//click_to_user_listener();
 
 if($('#relationship_list').length){
 	$.ajax({
@@ -22,14 +21,3 @@ if($('#relationship_list').length){
 
 });
 
-/*function click_to_user_listener(){
-	$(".user_name_link").click(function(){
-		window.location = $(this).attr("href");
-		});
-
-}
-*/
-/*
-function set_data(data){
-count = data["count"];
-}*/
