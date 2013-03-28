@@ -1,24 +1,21 @@
 <% set_google_restaurant_values(result) %>
 <li id="restaurant_summary">
+<div id = "restaurant_summary_wrapper">
 	<div id="restaurant_summary_left">
-		<ul>
-	<li id="venue_name">
-		<% if @restaurant %>
-			<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
-		<% else %>
-		<%= link_to @venue[:name], :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => @encoded_venue %>
-		<% end %>
-		<%= render 'reviews/add_review' %>
-	</li>
-<li id = "venue_formatted_address"><%= @parsed_address[0]  %></li>
-<li id = "venue_formatted_address"><%= @parsed_address[1]  %></li>
-</ul>
+				<ul>
+			<li id="venue_name">
+				<% if @restaurant %>
+					<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
+				<% else %>
+				<%= link_to @venue[:name], :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => @encoded_venue %>
+				<% end %>
+				
+			</li>
+		<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0]  %></li>
+		<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1]  %></li>
+		</ul>
 	</div>
-<div id = "restaurant_summary_right">
-	<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant ? @restaurant.id : nil, :venue_field => @encoded_venue, :search => @search %>
-<div id="google_rating"><%= "Google rating: "+ @venue[:google_rating].to_s %></div>
- <a onclick='postToFeed("<%= @venue[:name] %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
- <p id='msg'></p>
+<%= render 'google_restaurant_summary_right' %>
 </div>
 </li>
 

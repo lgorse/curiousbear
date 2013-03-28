@@ -1,0 +1,15 @@
+<div id = "restaurant_info_right">
+	<ul class = "flat_list">
+	<li class = "flat_list_item"><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant ? @restaurant.id : nil, :venue_field => @encoded_venue, :search => @search %></li>
+	<li class = "flat_list_item"><%= render 'reviews/add_review' %></li>
+</ul>
+<% if @venue[:google_rating] %>
+<ul class = "flat_list">
+<li class = "flat_list_item"><a id="google_rating"><%= @venue[:google_rating].to_s %></a></li>
+<li class = "flat_list_item"><%= image_tag "/assets/google-med.png", :id => "google_logo", :size => "55x20" %></li>
+</ul>
+<% end %>
+
+ <a onclick='postToFeed("<%= @venue[:name] %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
+ <p id='msg'></p>
+</div>

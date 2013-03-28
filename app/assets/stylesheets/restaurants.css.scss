@@ -4,7 +4,7 @@
 
 #restaurant_info{
 	width: 600px;
-	height: 200px;
+	height: 250px;
 	position: relative;
 
 	div#restaurant_info_left{
@@ -12,54 +12,56 @@
 		width: 350px;
 	}
 
-	div#restaurant_info_right{
-width: 225px;
-		float: left;
+}
 
-		
-	}
+div#restaurant_info_right{
+	width: 225px;
+	float: left;
 
 	#venue_name{
 		font-weight: bold;
 	}
 
-	#formatted_address{
+	
+	.flat_list{
+		margin-bottom: 10px;
+
+		#app_stars{
+			padding-right: 10px;
+		}
+
+		#review_count{
+			font-size: 80%;
+		}
+
+		.flat_list_item{
+			display: table-cell;
+		}
+
+		#google_logo{
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+
+		.review_detail_update, .new_review_detail{
+			margin-left: 15px;
+		}
+
+	}
+
+
+	form.edit_review, .new_review{
+		margin-bottom: 10px;
+
+	}
+}
+
+.formatted_address{
+		margin-top: 10px;
 		width: 250px;
 		word-wrap: break-word;
 		font-size: 80%;
 	}
-
-
-}
-
-.flat_list{
-	margin-bottom: 10px;
-	
-	#app_stars{
-		padding-right: 10px;
-	}
-
-	#review_count{
-		font-size: 90%;
-	}
-
-	.flat_list_item{
-	display: table-cell;
-	}
-
-	#google_logo{
-		margin-left: 10px;
-			vertical-align: middle;
-		}
-
-}
-
-form.edit_review, .new_review{
-	margin-bottom: 10px;
-
-}
-
-
 
 
 ul#restaurant_review_list{
@@ -75,13 +77,22 @@ ul#restaurant_review_list{
 	height: 200px;
 }
 
-
+#recommended_restaurant_list{
+	margin-top: 30px;
+}
 
 li#restaurant_summary,#recommended_restaurant_summary{
 
-	height: 120px;
+	width: 650px;
+	height: auto;
 	position: relative;
+	border-bottom: 1px solid #C0C0C0;
 	margin-bottom: 10px;
+	padding: 10px;
+
+	div#restaurant_summary_wrapper{
+		height: 120px;
+	}
 
 
 	#restaurant_summary_left{
@@ -101,39 +112,27 @@ li#restaurant_summary,#recommended_restaurant_summary{
 				font-weight: bold;
 			}
 
-			#venue_formatted_address{
-				font-size: 80%;
-				margin-bottom: 0px;
-			}
-			
 		}
 
-	}
-
-	#google_rating{
-		
-	}
-
-	
-
-	#restaurant_summary_right{
-		float: left;
-		top: 20px;
-		width: 200px;
-		bottom: 60px;
-		margin-top: 20px;
-		
-
-
+		#address_line_01{
+	margin-top: 20px;
+}
+			
+			#address_line_02{
+				font-size: 80%;
+				margin-top: 0px;
+			}
 
 	}
+
 
 
 }
 
 li#recommended_restaurant_summary{
-	background-color: #9CE62A;
- }
+	background-color: #DFFF87;
+
+}
 
 #info_name{
 	font-weight: bold;

@@ -1,12 +1,19 @@
 <div id = "restaurant_info_right">
-<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => nil, :search =>  @search %>
-		<% if @restaurant %>
+	<ul class = "flat_list">
+		<li class = "flat_list_item">
+<%= render 'reviews/buttons/rate_restaurant', :restaurant_id => venue.id, :venue_field => nil, :search =>  @search %></li>
+<li class = "flat_list_item"><%= render 'reviews/add_review' %></li>
+</ul>
+
+		<% if venue %>
 		<ul class = "flat_list">
-			<li id = "app_stars" class = "flat_list_item"><%= APP_NAME %> rating: <%= average(@restaurant) %></li>
-			<li id = "review_count" class = "flat_list_item"><%= pluralize(@restaurant.reviews.count, "review") %></li></ul>
+			<li id = "app_stars" class = "flat_list_item"><%= APP_NAME %> rating: <%= average(venue) %></li>
+			<li id = "review_count" class = "flat_list_item"><%= pluralize(venue.reviews.count, "review") %></li></ul>
 		<% end %>
+		<% if venue.google_rating %>
 		<ul class = "flat_list">
-		<li class = "flat_list_item"><a id = "google_rating"></a></li>
-		<li class = "flat_list_item"><%= image_tag "", :id => "google_logo", :size => "55x20" %></li></ul>
-		 <a href = "#" id="share_button">Request review</a>
+		<li class = "flat_list_item"><a id = "google_rating"><%= venue.google_rating %></a></li>
+		<li class = "flat_list_item"><%= image_tag "/assets/google-med.png", :id => "google_logo", :size => "55x20" %></li></ul>
+		<% end %>
+		 <a onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
 </div>
