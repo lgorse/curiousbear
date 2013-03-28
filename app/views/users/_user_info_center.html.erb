@@ -1,0 +1,6 @@
+<div id = "user_info_center">
+	<ul class = "flat_list">
+			<li id = "app_stars" class = "flat_list_item">Average rating: <%= average(@user) %></li>
+			<li id = "review_count" class = "flat_list_item"><%= pluralize(@user.reviews.count, "review") %></li></ul>
+</div>
+

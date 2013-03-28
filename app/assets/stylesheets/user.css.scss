@@ -15,12 +15,24 @@
 }
 
 div.user_info{
-	width: auto;
-	height: 250px;
+	width: 700px;
+	height: 200px;
+	margin: 0px auto;
 
 	div#user_info_left{
 		float: left;
-		width: 600px;
+		width: 45%;
+
+		h3{
+			font-size: 120%;
+			margin-top: 40px;
+		}
+	}
+
+
+	div#user_info_center{
+		float: left;
+		width: 30%;
 	}
 
 	div#user_info_right{
@@ -38,15 +50,34 @@ div.user_info{
 
 }
 
+div#user_info_center, .user_summary_center{
+	.flat_list{
+		
+
+		.flat_list_item{
+			display: block;
+			
+			text-align: left;
+			margin-top: 10px;
+			padding-right: 0px;
+		}
+
+		#app_stars{
+			padding-right: 0px;
+		}
+	}
+
+}
+
 
 nav#follow_buttons{
-	position: absolute;
-	top: 200px;
+	position: relative;
+	
 	margin-left: 20px;
 	margin-bottom: 30px;
 
 	a{
-
+		margin: 0px 10px;
 	}
 
 	#add_friends_button{
@@ -57,44 +88,9 @@ nav#follow_buttons{
 
 div#relationship_list{
 	position: relative;
-	width: 1000px;
+	width: 800px;
 
-	li.user_summary{
-		width: 400px;
-		height: 150px;
-		position: relative;
-
-		a.user_name_link{
-			position: relative;
-			top: 25px;
-		}
-
-		.user_review_count{
-			position: relative;
-			top: 10px;
-		}
-
-		div.user_summary_left{
-			float: left;
-			width: 250px;
-		}
-
-		div.summary_right{
-			float: left;
-			margin: 0px;
-			padding: 0px;
-		}
-
-		.follow_button{
-			text-align: center;
-		}
-
-		.user_small_pic{
-			display: block;
-			margin: auto;
-		}
-
-	}
+	
 
 	.pagination{
 		width: auto;
@@ -103,3 +99,41 @@ div#relationship_list{
 	}
 }
 
+li.user_summary{
+	width: 650px;
+	height: 100px;
+	position: relative;
+	border-bottom: 1px solid #C0C0C0;
+	padding: 10px ;
+
+
+	div.user_summary_left{
+		float: left;
+		width: 40%;
+		margin-left: 20px;
+		margin-top: 30px;
+
+
+	}
+
+	div.user_summary_center{
+		float: left;
+		width: 35%
+	}
+
+	div.summary_right{
+		float: left;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.follow_button{
+		text-align: center;
+	}
+
+	.user_small_pic{
+		display: block;
+		margin: auto;
+	}
+
+}
