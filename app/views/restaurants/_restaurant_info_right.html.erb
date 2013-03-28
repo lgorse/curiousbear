@@ -1,9 +1,12 @@
 <div id = "restaurant_info_right">
 <%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant.id, :venue_field => nil, :search =>  @search %>
 		<% if @restaurant %>
-			<p><%= APP_NAME %> rating: <%= average(@restaurant) %></p>
-			<p><%= pluralize(@restaurant.reviews.count, "review") %></p>
+		<ul class = "flat_list">
+			<li id = "app_stars" class = "flat_list_item"><%= APP_NAME %> rating: <%= average(@restaurant) %></li>
+			<li id = "review_count" class = "flat_list_item"><%= pluralize(@restaurant.reviews.count, "review") %></li></ul>
 		<% end %>
-		<a id = "google_rating"></a>	
+		<ul class = "flat_list">
+		<li class = "flat_list_item"><a id = "google_rating"></a></li>
+		<li class = "flat_list_item"><%= image_tag "", :id => "google_logo", :size => "55x20" %></li></ul>
 		 <a href = "#" id="share_button">Request review</a>
 </div>

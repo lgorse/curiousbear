@@ -16,9 +16,68 @@ ul{
 	list-style-type: none;
 }
 
-html, body{
-	margin: 0px;
-	padding-top: 0px;
+.rounded-corner{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px;
 }
 
 
+#app_inner{
+	margin: 0px auto;
+
+	width: 800px;
+	height: auto;
+}
+
+
+#searchbox{
+		position: relative;
+		width: 700px;
+		margin: auto auto 50px;
+
+		input#search{
+			font-size: 110%;
+			width: 500px;
+			border: 2px solid;
+			padding: 10px 5px;
+		}
+
+		input#search_submit:hover{
+			background-color: black;
+			color: white;
+		}
+
+		input#search_submit{
+			margin-left: 3px;
+			font-size: 110%;
+			padding: 8px 20px;
+			background-color: white;
+			color: black;
+			border: 1px solid;
+
+		}
+	}
+
+
+#home_wrapper{
+	
+	#searchbox{
+		margin: 150px auto 10px;
+
+		input#search{
+			font-size: 200%;
+			
+		}
+
+		input#search_submit{
+			font-size: 200%;
+			padding: 10px 25px;
+			margin-left: 10px;
+		}
+
+		
+
+	}
+}

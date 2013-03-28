@@ -3,8 +3,20 @@
 
 header#app_header{
 	height: 65px;
-	border: black 1px;
 	position: relative;
+	font-size: 14px;
+margin: 0px auto;
+	padding-top: 0px;
+	width: 850px;
+	
+
+	a{
+		color: black;
+		font-weight: bold;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 130%;
+	}
 
 }
 
@@ -15,36 +27,46 @@ header#app_header{
 	width: auto;
 	top: 10px;
 
+	#home_button{
+		font-size: 200%;
+	}
 }
+
+.app_header_item{
+		display: table-cell;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 #app_header_right{
 	display: inline-block;
-	position: absolute;
-	width: 150px;
+	float: right;
 	left: 500px;
 	top: 10px;
 
 
-	#my_small_pic{
+	#my_profile_button{
 		vertical-align: middle;
 		padding-right: 5px;
 	}
 
-	#my_account_button{
+	#edit_profile_icon{
 		padding-left: 5px;
 		padding-right: 5px;
-
+vertical-align: middle;
 
 	}
 
 	#fb-logout{
-		
+			
+	}
+
+	#logout_icon{
+		vertical-align: middle;	
 	}
 }
 
-#container{
-	position: absolute;
-}
+
 
 .flash{
 	position: absolute;

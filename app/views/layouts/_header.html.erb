@@ -2,14 +2,13 @@
 <header id = "app_header">
 	<div id="fb-root"></div>
 	<%= render 'layouts/facebook_app_scripts' %>
-	<nav id= "app_header_left">
-		<%= link_to 'Home', home_path, :id=>"home_button" %>
-		<%= link_to 'Me', user_path(@current_user), :id => "my_profile_button" %>
-	</nav>
+	<ul id= "app_header_left">
+		<li class = "app_header_item"><%= link_to APP_NAME, home_path, :id=>"home_button" %></li>
+	</ul>
 	<nav id = "app_header_right">
-		<%= link_to (image_tag @current_user.fb_pic, :id => "my_small_pic", :size => "30x30"), user_path(@current_user) %>
-		<%= link_to "Edit", edit_user_path(@current_user) , :id => "my_account_button"%>
-		<button id="fb-logout" onclick="logout()">Log out</button>
+		<%= link_to (image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "30x30"), user_path(@current_user) %>
+		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button"%>
+		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()" %>
 	</nav>
 	<%= render 'layouts/flash', :flash => flash %>
 </header>

@@ -2,7 +2,7 @@
 <div class = "user_review">
 	<div class = "review_summary_left">
 		<img class= "review_summary_photo" id = "review_summary_photo_<%= review.id %>"></img>
-		<button id="detail_friend" onclick="detail(<%= review.user.fb_id.to_s %>, '<%= @current_user.first_name.to_s %>','<%= review.restaurant.name.to_s %>', <%= @current_user.gender_article.to_json %>)">Ask for details</button>
+		<button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= @current_user.gender_article.to_json %>)'>Ask for details</button>
 	</div>
 	<ul id = "review_data">
 		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>

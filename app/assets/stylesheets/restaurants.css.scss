@@ -3,23 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #restaurant_info{
-	margin-top: 30px;
-	
-	width: 750px;
-	height: 350px;
+	width: 600px;
+	height: 200px;
 	position: relative;
 
 	div#restaurant_info_left{
 		float: left;
+		width: 350px;
 	}
 
 	div#restaurant_info_right{
+width: 225px;
 		float: left;
 
-		#share_button{
-			position: relative;
-			display: block;
-		}
+		
 	}
 
 	#venue_name{
@@ -29,28 +26,53 @@
 	#formatted_address{
 		width: 250px;
 		word-wrap: break-word;
+		font-size: 80%;
 	}
 
 
 }
 
-#searchbox{
-	position: relative;
-	width: auto;
+.flat_list{
+	margin-bottom: 10px;
 	
+	#app_stars{
+		padding-right: 10px;
+	}
+
+	#review_count{
+		font-size: 90%;
+	}
+
+	.flat_list_item{
+	display: table-cell;
+	}
+
+	#google_logo{
+		margin-left: 10px;
+			vertical-align: middle;
+		}
+
 }
 
+form.edit_review, .new_review{
+	margin-bottom: 10px;
+
+}
+
+
+
+
 ul#restaurant_review_list{
-	position: relative;
-	width: 1000px;
+	float: left;
+	margin-top: 50px;
 }
 
 .map{
 
 	margin-left: 20px;
 	float: right;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 }
 
 
@@ -80,7 +102,7 @@ li#restaurant_summary,#recommended_restaurant_summary{
 			}
 
 			#venue_formatted_address{
-				font-size: 14px;
+				font-size: 80%;
 				margin-bottom: 0px;
 			}
 			
@@ -92,6 +114,8 @@ li#restaurant_summary,#recommended_restaurant_summary{
 		
 	}
 
+	
+
 	#restaurant_summary_right{
 		float: left;
 		top: 20px;
@@ -99,9 +123,9 @@ li#restaurant_summary,#recommended_restaurant_summary{
 		bottom: 60px;
 		margin-top: 20px;
 		
-		#share_button{
 
-		}
+
+
 	}
 
 
@@ -118,3 +142,12 @@ li#recommended_restaurant_summary{
 #full_reviewer_list{
 	display: none;
 }
+
+.reviewer_list{
+	font-size: 80%;
+	position: relative;
+	display: block;
+}
+
+
+

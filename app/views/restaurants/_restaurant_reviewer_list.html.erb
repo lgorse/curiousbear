@@ -1,4 +1,4 @@
-<div id = "partial_reviewer_list"><%= reviewer_list(venue, limit)%>
+<div id = "partial_reviewer_list" class = "reviewer_list"><%= reviewer_list(venue, limit)%>
 <%= link_to "more", "", :id => "more_reviewers", :remote => true if venue.reviews.count > limit %>
 </div>
-<div id="full_reviewer_list"><%= reviewer_list(venue, venue.reviews.count) %></div>
+<div id="full_reviewer_list" class = "reviewer_list"><%= reviewer_list(venue, venue.reviews.count) %></div>

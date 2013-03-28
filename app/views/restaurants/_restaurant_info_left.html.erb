@@ -1,10 +1,8 @@
 <div id = "restaurant_info_left">
 	<img id = "restaurant_photo"></img>
 		<div id = "venue_name"></div>
-		<div id = "formatted_address"></div>
+		 <div id = "formatted_address"></div>
 		<%= render 'reviews/add_review' %>	
 	<div id = "keywords"></div>
-	<% if @restaurant %>
-	<%= render 'restaurants/restaurant_reviewer_list', :venue => @restaurant, :limit => 4 %>
-	<% end %>
+	
 </div>

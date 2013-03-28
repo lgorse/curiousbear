@@ -1,11 +1,19 @@
 <body onload = "initialize_map(<%= @lat %>, <%= @lng %>, '<%= @reference %>')">
 <%= render 'restaurants/google_maps_script' %>
+<div class = "map" id="map"></div>
 <div id = "restaurant_info">
+	
 	<%= render 'restaurant_info_left' %>
+
 	<%= render 'restaurant_info_right' %>
-	 <p id='msg'></p>
-	 <div class = "map" id="map"></div>
+	 <p id='msg'></p>	
+
 </div>	 
+
+<% if @restaurant %>
+	<%= render 'restaurants/restaurant_reviewer_list', :venue => @restaurant, :limit => 4 %>
+	<% end %>
+
 	 <% if @restaurant %>
 	 <%= render 'reviews/review_list' %>
 	 <% end %>

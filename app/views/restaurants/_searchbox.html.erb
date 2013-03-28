@@ -1,8 +1,8 @@
 <div id = "searchbox">
 <%= render 'restaurants/review_request_script' %>
 <%= form_tag restaurants_path, :method => 'get', :remote => true, :id => 'search_form' do %>
-<%= text_field_tag :search, @search, :size => 45%>
-<%= submit_tag "Find" %>
+<%= text_field_tag :search, @search, :size => 45, :class => "rounded-corner", :placeholder => @search ||= "Search the world, #{@current_user.first_name}" %>
+<%= submit_tag "Find", :id => "search_submit", :class => "rounded-corner" %>
 <% end %>
 <div class = "flash_search"></div>
 <div id = "recommended_restaurant_list"></div>

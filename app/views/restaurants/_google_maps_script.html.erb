@@ -86,6 +86,8 @@ function detail_callback(place, status) {
       rating.setAttribute("href", place.url);
       rating.setAttribute("target", "_blank");
       rating.innerHTML = "Google rating: "+place.rating;
+      var logo = document.getElementById("google_logo");
+      logo.setAttribute("src", "/assets/google-med.png");
     }
     name_json = {name: place.name};
     document.getElementById("share_button").setAttribute("onclick", 'postToFeed("'+place.name+'","<%= @current_user.first_name.to_s %>"); return false;');
