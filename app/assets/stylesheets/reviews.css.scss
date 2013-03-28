@@ -2,73 +2,84 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#review_summary{
-	width: 550px;
-	position: relative;
 
-	.review_summary_left{
+.review_summary_left{
+	float: left;
+	margin-right: 10px;
+	width: 110px;
+	height: 150px;
+
+
+	.user_small_pic{
 		position: relative;
-		
-
-		.user_small_pic{
-			position: relative;
-			display: block;
-		}
-
-		#reviewer{
-			text-align: center;
-		}
+		display: block;
 	}
 
-	#review_rating{
-		position: relative;
+	#reviewer{
+		text-align: center;
+	}
+}
+
+.review_summary_center{
+	width: 35%;
+	float: left;
+	margin-top: 10px;
+}
+
+.review_summary_right{
+	width: 25%;
+	float: left;
+	margin-top: 10px;
+
+	#review_count{
+		margin-top: 15px;
+		font-size: 80%;
 	}
 
-	#review_text{
-		position: relative;
-		
+	li{
+		margin-top: 10px;
+	}
+
+	ul{
+		margin-top: 10px;
 	}
 
 	#detail_friend{
-		position: relative;
-		
+		margin-left: 10px;
 	}
+}
 
+.review_summary_text{
+	margin: 10px 35px 10px 10px;
+	width: 100%;
+	font-size: 90%;
+	clear: left;
 }
 
 
 
 div.user_review{
-	width: 1000px;
+	width: 800px;
 	margin-bottom: 20px;
-	height: 300px;
+	min-height: 160px;
+	padding: 5px 0px 20px;
 
 	#restaurant_name{
 		font-weight: bold;
+		font-size: 100%;
 	}
 
-	.review_summary_left{
-		float: left;
-
-
+	
 		.review_summary_photo{
 			display: block;
 		}
 
-		#button_friend{
-			display: block;
-		}
-	}
-
-	#review_data{
-			float: left;
-			width: 500px;
-		}
-
+	
+	
 	.map_summary{
 		float: left;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 	}
 
 }

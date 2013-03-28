@@ -81,7 +81,7 @@ ul#restaurant_review_list{
 	margin-top: 30px;
 }
 
-li#restaurant_summary,#recommended_restaurant_summary{
+li#restaurant_summary,#recommended_restaurant_summary, .user_review{
 
 	width: 650px;
 	height: auto;
@@ -114,15 +114,15 @@ li#restaurant_summary,#recommended_restaurant_summary{
 
 		}
 
-		#address_line_01{
-			margin-top: 20px;
-		}
+	}
 
-		#address_line_02{
-			font-size: 80%;
-			margin-top: 0px;
-		}
+	#address_line_01{
+		margin-top: 20px;
+	}
 
+	#address_line_02{
+		font-size: 80%;
+		margin-top: 0px;
 	}
 
 
