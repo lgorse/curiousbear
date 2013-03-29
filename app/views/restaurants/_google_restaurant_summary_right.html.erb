@@ -5,7 +5,11 @@
 </ul>
 <% if @venue[:google_rating] %>
 <ul class = "flat_list">
-<li class = "flat_list_item"><a id="google_rating"><%= @venue[:google_rating].to_s %></a></li>
+<li class = "flat_list_item"><div class = "stars empty">
+		<div class = "stars filled_<%= @venue[:google_rating].to_i %> google">	
+		</div>
+	</div>
+	</li>
 <li class = "flat_list_item"><%= image_tag "/assets/google-med.png", :id => "google_logo", :size => "55x20" %></li>
 </ul>
 <% end %>

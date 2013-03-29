@@ -10,19 +10,30 @@ $total: $numStars * $steps;
 	width: ($starWidth / $steps) * $n;
 }
 
-.stars{
-	background: url(/assets/star-blue.png) repeat-x top left;
+@mixin stars_values{
 	height: 30px;
 	background-size: 20px;
 	vertical-align: middle;
 	padding: 0px;
 	margin-left: 5px;
 	margin-top: 5px;
+}
+
+.stars{
+	background: url(/assets/star-blue.png) repeat-x top left;
+	@include stars_values;
 
 	&.empty{
 		background-position: $starOffset;
 		width: $numStars * $starWidth;
 	}
+
+	
+	&.google{
+		background: url(/assets/star-red.png) repeat-x top left;
+		@include stars_values;
+	}
+	
 
 	@for $i from 0 through ($total){
 		&.filled_#{$i} {@include filled($i)}

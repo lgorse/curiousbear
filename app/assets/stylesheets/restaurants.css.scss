@@ -12,20 +12,26 @@
 		width: 55%;
 
 		#venue_name{
-		font-weight: bold;
-		margin-top: 10px;
-	}
+			font-weight: bold;
+			margin-top: 10px;
+		}
 	}
 
 }
 
 div#restaurant_info_right{
-		float: left;
+	float: left;
+
+	.stars{
+		margin-left: 0px;
+	}
 
 
-li {
-	vertical-align: middle;
-}
+
+
+	li {
+		vertical-align: middle;
+	}
 
 	
 
@@ -45,7 +51,7 @@ li {
 	margin-bottom: 10px;
 
 	#app_stars{
-		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	
@@ -100,6 +106,10 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 
 	div#restaurant_summary_wrapper{
 		height: 120px;
+	}
+
+	.reviewer_list{
+		border-bottom: none;
 	}
 
 

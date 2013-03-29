@@ -7,13 +7,17 @@
 
 		<% if venue %>
 		<ul class = "flat_list">
-			<li id = "app_stars" class = "flat_list_item">Average:</li>
-			<li class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(venue) %>"></div></div></li>
+			
+			<li class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(venue).to_i %>"></div></div></li>
+			<li id = "app_stars" class = "flat_list_item">Average</li>
 			<li id = "review_count" class = "flat_list_item"><%= pluralize(venue.reviews.count, "review") %></li></ul>
 		<% end %>
 		<% if venue.google_rating %>
 		<ul class = "flat_list">
-		<li class = "flat_list_item"><a id = "google_rating"><%= venue.google_rating %></a></li>
+		<li class = "flat_list_item"><a id = "google_rating"><div class = "stars empty">
+		<div class = "stars filled_<%= venue.google_rating.to_i %> google">	
+		</div>
+	</div></a></li>
 		<li class = "flat_list_item"><%= image_tag "/assets/google-med.png", :id => "google_logo", :size => "55x20" %></li></ul>
 		<% end %>
 		 <a onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
