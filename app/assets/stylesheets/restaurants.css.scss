@@ -9,7 +9,7 @@
 
 	div#restaurant_info_left{
 		float: left;
-		width: 350px;
+		width: 55%;
 
 		#venue_name{
 		font-weight: bold;
@@ -20,9 +20,12 @@
 }
 
 div#restaurant_info_right{
-	width: 225px;
+	
 	float: left;
 
+li{
+	vertical-align: middle;
+}
 
 
 	form.edit_review, .new_review{

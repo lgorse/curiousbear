@@ -1,6 +1,7 @@
 <div class = "user_summary_center">
 	<ul class = "flat_list">
-			<li id = "app_stars" class = "flat_list_item">Average rating: <%= average(user) %></li>
-			<li id = "review_count" class = "flat_list_item"><%= pluralize(user.reviews.count, "review") %></li></ul>
+		<li class = "flat_list_item">Average:</li>
+			<li id = "app_stars" class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(@user) %>"></div></div></li></ul>
+			<ul><li id = "review_count" ><%= pluralize(user.reviews.count, "review") %></li></ul>
 </div>
 

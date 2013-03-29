@@ -1,0 +1,30 @@
+
+
+$starWidth: 20px;
+$starOffset: 0 -43px;
+$numStars: 5;
+$steps: 1;
+$total: $numStars * $steps;
+
+@mixin filled($n: 0){
+	width: ($starWidth / $steps) * $n;
+}
+
+.stars{
+	background: url(/assets/star-blue.png) repeat-x top left;
+	height: 30px;
+	background-size: 20px;
+	vertical-align: middle;
+	padding: 0px;
+	margin-left: 5px;
+	margin-top: 5px;
+
+	&.empty{
+		background-position: $starOffset;
+		width: $numStars * $starWidth;
+	}
+
+	@for $i from 0 through ($total){
+		&.filled_#{$i} {@include filled($i)}
+	}
+}

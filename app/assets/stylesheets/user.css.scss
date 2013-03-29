@@ -33,6 +33,13 @@ div.user_info{
 	div#user_info_center{
 		float: left;
 		width: 30%;
+
+		li{
+			vertical-align: middle;
+		}
+
+		
+
 	}
 
 	div#user_info_right{
@@ -51,21 +58,10 @@ div.user_info{
 }
 
 div#user_info_center, .user_summary_center{
-	.flat_list{
-		
-
-		.flat_list_item{
-			display: block;
-			
-			text-align: left;
-			margin-top: 10px;
-			padding-right: 0px;
-		}
-
-		#app_stars{
-			padding-right: 0px;
-		}
-	}
+	
+li{
+	vertical-align: middle;
+}
 
 }
 

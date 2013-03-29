@@ -7,7 +7,8 @@
 
 		<% if venue %>
 		<ul class = "flat_list">
-			<li id = "app_stars" class = "flat_list_item"><%= APP_NAME %> rating: <%= average(venue) %></li>
+			<li id = "app_stars" class = "flat_list_item">Average:</li>
+			<li class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(venue) %>"></div></div></li>
 			<li id = "review_count" class = "flat_list_item"><%= pluralize(venue.reviews.count, "review") %></li></ul>
 		<% end %>
 		<% if venue.google_rating %>

@@ -25,6 +25,8 @@
 	.review_summary_right{
 		width: auto;
 		margin-top: 0px;
+
+
 	}
 }
 
@@ -63,6 +65,7 @@
 
 	li{
 		margin-top: 10px;
+		vertical-align: middle;
 	}
 
 	ul{
@@ -106,5 +109,9 @@ div.user_review{
 		width: 150px;
 		height: 150px;
 	}
+
+	.stars{
+			margin-left: 0px;
+		}
 
 }
