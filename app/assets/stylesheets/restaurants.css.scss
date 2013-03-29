@@ -20,18 +20,23 @@
 }
 
 div#restaurant_info_right{
-	
-	float: left;
+		float: left;
 
-li{
+
+li {
 	vertical-align: middle;
 }
 
+	
 
-	form.edit_review, .new_review{
-		margin-bottom: 10px;
-
+	#review_count{
+		padding-left: 10px;
 	}
+
+	.button_to{
+		vertical-align: middle;
+	}
+
 
 }
 
@@ -43,10 +48,7 @@ li{
 		padding-right: 10px;
 	}
 
-	#review_count{
-		font-size: 80%;
-	}
-
+	
 	.flat_list_item{
 		display: table-cell;
 	}
