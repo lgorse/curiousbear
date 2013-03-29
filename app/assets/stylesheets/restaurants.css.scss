@@ -10,6 +10,11 @@
 	div#restaurant_info_left{
 		float: left;
 		width: 350px;
+
+		#venue_name{
+		font-weight: bold;
+		margin-top: 10px;
+	}
 	}
 
 }
@@ -18,9 +23,7 @@ div#restaurant_info_right{
 	width: 225px;
 	float: left;
 
-	#venue_name{
-		font-weight: bold;
-	}
+
 
 	form.edit_review, .new_review{
 		margin-bottom: 10px;
@@ -65,8 +68,8 @@ div#restaurant_info_right{
 
 
 ul#restaurant_review_list{
-	float: left;
-	margin-top: 50px;
+	
+	margin: 50px auto;
 }
 
 .map{
@@ -81,7 +84,7 @@ ul#restaurant_review_list{
 	margin-top: 30px;
 }
 
-li#restaurant_summary,#recommended_restaurant_summary, .user_review{
+li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_summary{
 
 	width: 650px;
 	height: auto;
@@ -146,6 +149,8 @@ li#recommended_restaurant_summary{
 	font-size: 80%;
 	position: relative;
 	display: block;
+	border-bottom: 1px solid #C0C0C0;
+	padding-bottom: 15px;
 }
 
 

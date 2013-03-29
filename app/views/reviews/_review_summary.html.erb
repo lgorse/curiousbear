@@ -1,8 +1,16 @@
-<li id = "review_summary">
+<li class = "review_summary">
 	<div class = "review_summary_left">
 <%= image_tag review.user.fb_pic, :class => 'user_small_pic' %>
+</div>
+<div class = "review_summary_center">
 <%= link_to review.user.name, review.user, :class => "user_name_link", :id => review.user.id %></div>
-<div id = "review_rating">Rating: <%= review.rating %></div>
-<div id="review_text"><%= review.text %></div>
-<button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= @current_user.gender_article.to_json %>)'>Ask for details</button>
+<div class = "review_summary_right">
+	<ul class = "flat_list">
+<li class = "flat_list_item">Rating: <%= review.rating %></li>
+<li class = "flat_list_item"><button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= @current_user.gender_article.to_json %>)'>Ask for details</button></li>
+</ul>
+</div>
+<% if review.text %>
+<div class = "review_summary_text"><%=simple_format word_wrap(review.text, :line_width => 90)%></div>
+<% end %>
 </li>

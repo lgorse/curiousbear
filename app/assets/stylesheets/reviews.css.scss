@@ -2,6 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.review_summary{
+	min-height: 75px;
+	margin: 0px auto;
+
+
+	.review_summary_left{
+		width: 15%;
+		height: 75px;
+
+		.user_small_pic{
+			position: relative;
+			display: block;
+		}
+
+	}
+
+	.review_summary_center{
+		width: 40%;
+	}
+
+	.review_summary_right{
+		width: auto;
+		margin-top: 0px;
+	}
+}
 
 .review_summary_left{
 	float: left;
@@ -66,13 +91,13 @@ div.user_review{
 
 	#restaurant_name{
 		font-weight: bold;
-		font-size: 100%;
+		font-size: 95%;
 	}
 
 	
-		.review_summary_photo{
-			display: block;
-		}
+	.review_summary_photo{
+		display: block;
+	}
 
 	
 	
