@@ -1,11 +1,7 @@
 <div id = "restaurant_info_right">
 	<%= render "reviews/buttons/review_input", :restaurant_id => venue.id, :venue_field => nil, :search => @search, :restaurant => venue %>
 		<% if venue %>
-		<ul class = "flat_list">
-			
-			<li class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(venue).to_i %>"></div></div></li>
-			<li id = "app_stars" class = "flat_list_item">Average</li>
-			<li id = "review_count" class = "flat_list_item"><%= pluralize(venue.reviews.count, "review") %></li></ul>
+		<%= render 'reviews/buttons/restaurant_average', :venue => venue %>
 		<% end %>
 		<% if venue.google_rating %>
 		<%= render 'reviews/buttons/google_stars', :google_rating => venue.google_rating.to_i %>

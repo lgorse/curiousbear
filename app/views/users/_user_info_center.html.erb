@@ -1,8 +1,5 @@
 <div id = "user_info_center">
-	<ul class = "flat_list">
-			<li class = "flat_list_item"><div class = "stars empty"><div class = "stars filled_<%= average(@user) %>"></div></div></li>
-		<li id = "app_stars" class = "flat_list_item">Average</li>
-	</ul>
-		<ul class = "flat_list">	<li id = "review_count" class = "flat_list_item"><%= pluralize(@user.reviews.count, "review") %></li></ul>
+	<%= render 'reviews/buttons/user_average', :user => @user %>
+	<ul><li id = "review_count"><%= pluralize(@user.reviews.count, "review") %></li></ul>
 </div>
 
