@@ -3,7 +3,7 @@
 		<li class = "flat_list_item">
 <%= render 'reviews/buttons/rate_restaurant', :restaurant_id => venue.id, :venue_field => nil, :search =>  @search %></li>
 
-<li class = "flat_list_item"><%= render 'reviews/add_review' %></li>
+<li class = "flat_list_item"><%= render 'reviews/add_review', :restaurant => venue %></li>
 </ul>
 
 		<% if venue %>

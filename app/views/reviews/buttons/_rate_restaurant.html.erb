@@ -6,7 +6,7 @@
 <%= form_for Review.new, :remote => true do |f| %>
 	<%= f.hidden_field :restaurant_id, :value => restaurant_id %>
 	<%= f.hidden_field :venue, :value => venue_field %>
-	<%= f.hidden_field :keywords, :value => search %>
+	<%= f.hidden_field :keywords, :value => search unless (search && search.start_with?("Search the world,"))%>
 	<div class = "rate_restaurant"><%= f.hidden_field :rating, :value => 0 %></div>
 <% end %>
 <% end %>

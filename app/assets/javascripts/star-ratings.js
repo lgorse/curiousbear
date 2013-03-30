@@ -19,20 +19,34 @@ if (!$(this).hasClass("checked")){
 				data: $(this).closest("form").serialize()
 			});
 		}else{
+			var star_container = $(this);
 			$.ajax({
 			type: 'POST',
 			url: path,
-			data: $(this).closest("form").serialize()
-		});	
+			data: $(this).closest("form").serialize(),
+			dataType: 'json',
+			success: function(response){
+				update_detail_button(response, star_container);
+				}
+			});	
 		}
 	});
 
 }
 	});// .each function ends here
 
-
 }
 
+function update_detail_button(response, star_element){
+	var add_button = star_element.parents(".flat_list").find(".new_review_detail");
+	var review_id = response["id"];
+	var action_string = "/reviews/"+review_id+"/edit";
+	add_button.attr({action: action_string,
+						method: 'get'						
+	});
+	add_button.find(".new_review_submit_tag").attr("value", "Say more");
+
+}
 
 
 $.fn.ratings = function(stars){

@@ -1,7 +1,7 @@
 <div id = "restaurant_info_right">
 	<ul class = "flat_list">
 	<li class = "flat_list_item"><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => @restaurant ? @restaurant.id : nil, :venue_field => @encoded_venue, :search => @search %></li>
-	<li class = "flat_list_item"><%= render 'reviews/add_review' %></li>
+	<li class = "flat_list_item"><%= render 'reviews/add_review', :restaurant => @restaurant %></li>
 </ul>
 <% if @venue[:google_rating] %>
 <ul class = "flat_list">

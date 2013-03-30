@@ -10,6 +10,7 @@ module RestaurantsHelper
 				@google_results = @google_response["results"]
 				flash.now[:notice] = "Google yielded no results. What you see is what you get!" if google_results_except_recommended.empty?
 				@encoded_search = Base64.urlsafe_encode64(params[:search])
+				@search = params[:search]
 				handle_google_http_errors
 			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,

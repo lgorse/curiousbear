@@ -12,8 +12,9 @@
 	</ul>
 	</div>
 	<div class = "review_summary_right">
-		<ul>
-			<li><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>	
+		<ul class = "flat_list">
+			<li class = "flat_list_item"><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>
+			<li class = "flat_list_item"><%= render 'add_review', :restaurant => review.restaurant %></li>
 			</ul>
 			<ul class = "flat_list">
 			<% unless review.user == @current_user %>
