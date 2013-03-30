@@ -1,14 +1,12 @@
 <% if review = Review.find_by_restaurant_id_and_user_id(restaurant_id, @current_user.id) %>
 	<%= form_for review, :method => :put, :url => {:controller => :reviews, :action => :update, :id => review}, :remote => true do |f| %>
-		<%= f.label "Your Rating: " %>
-		<%= f.select :rating, options_for_select((1..5), :include_blank => true, :selected => review.rating), {}, {:class => "rate_restaurant", :id => "review_rating_#{review.id.to_s}"} %>
+		<div class = "rate_restaurant" id = "0"><%= f.hidden_field :rating, :value => review.rating %></div>
 	<% end %>
 <% else %>
 <%= form_for Review.new, :remote => true do |f| %>
-	<%= f.label "New Rating: " %>
 	<%= f.hidden_field :restaurant_id, :value => restaurant_id %>
 	<%= f.hidden_field :venue, :value => venue_field %>
 	<%= f.hidden_field :keywords, :value => search %>
-	<%= f.select :rating, options_for_select((1..5)), {:prompt => ""}, {:class => "new_rate_restaurant"} %>
+	<div class = "rate_restaurant"><%= f.hidden_field :rating, :value => 0 %></div>
 <% end %>
 <% end %>

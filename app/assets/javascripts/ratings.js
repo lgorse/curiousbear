@@ -1,8 +1,4 @@
-$(document).ready(function(){
-	
-	quick_rating();
 
-});
 
 function update_rate_button(response, button){
 	var review_id = response["id"];

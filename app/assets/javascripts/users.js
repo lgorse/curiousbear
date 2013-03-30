@@ -10,7 +10,7 @@ if($('#relationship_list').length){
 								, totalPages: response["count"]/5+1
 								, loaderMsg: "loading"
 								, params: {id: response["id"]}
-								, complete: quick_rating
+								, complete: star_ratings
 				});
 			}
 	});		

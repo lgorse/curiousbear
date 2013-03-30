@@ -1,11 +1,47 @@
 $(function(){
-	$(".rate_restaurant").ratings(5).bind('ratingchanged', function(event, data){
-	});
+star_ratings();
 });
 
-$.fn.ratings = function(stars, initialRating){
+function star_ratings(){
+
+	$(".rate_restaurant").each(function(){
+
+if (!$(this).hasClass("checked")){
+
+
+	$(this).ratings(5).bind('ratingchanged', function(event, data){
+
+		var path = $(this).closest("form").attr("action");
+		if (data.initialRating > 0){
+			$.ajax({
+				type: 'PUT',
+				url: path,
+				data: $(this).closest("form").serialize()
+			});
+		}else{
+			$.ajax({
+			type: 'POST',
+			url: path,
+			data: $(this).closest("form").serialize()
+		});	
+		}
+	});
+
+}
+	});// .each function ends here
+
+
+}
+
+
+
+$.fn.ratings = function(stars){
 
 	var elements = this;
+	elements.toggleClass("checked");
+	var review_rating = elements.find('#review_rating');
+	var initialRating = review_rating.attr("value");
+
 
 	return this.each(function(){
 
@@ -22,6 +58,7 @@ $.fn.ratings = function(stars, initialRating){
 		containerElement.rating = initialRating;
 
 		container.css('overflow', 'auto');
+
 
 		for(var x = 0; x < stars; x++){
 
@@ -43,8 +80,10 @@ $.fn.ratings = function(stars, initialRating){
 
 		star.click(function(){
 			containerElement.rating = this.rating;
-
-			elements.triggerHandler('ratingchanged', {rating: this.rating});
+			
+			review_rating.attr("value", this.rating);
+			elements.triggerHandler('ratingchanged', {rating: this.rating,
+													initialRating: initialRating});
 		});
 
 		star.mouseenter(function(){
@@ -74,8 +113,7 @@ $.fn.ratings = function(stars, initialRating){
 
 
 		}//for loop ends here 
-
-
-
 	});
+
+
 };
