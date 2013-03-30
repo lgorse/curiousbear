@@ -1,35 +1,8 @@
 <% @map_array << set_review_google_info(review) %>
 <% parsed_address = split_formatted_address(review.restaurant.formatted_address) %>
 <div class = "user_review">
-	<div class = "review_summary_left">
-		<img class= "review_summary_photo" id = "review_summary_photo_<%= review.id %>"></img>
-	</div>
-	<div class = "review_summary_center">
-	<ul id = "review_data">
-		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
-		<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0] %></li>
-		<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1] %></li>
-	</ul>
-	</div>
-	<div class = "review_summary_right">
-		<ul class = "flat_list">
-			<li class = "flat_list_item"><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>
-			<li class = "flat_list_item"><%= render 'add_review', :restaurant => review.restaurant %></li>
-			</ul>
-			<ul class = "flat_list">
-			<% unless review.user == @current_user %>
-			<li class = "flat_list_item"><div class = "stars empty">
-		<div class = "stars filled_<%= review.rating %>">	
-		</div>
-	</div></li>
-			<li class = "flat_list_item">
-				<button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= @current_user.gender_article.to_json %>)'>Ask</button>				
-			</li>
-			<% end %></ul>
-			<ul>
-			<li id = "review_count"><%= review.restaurant.reviews.count %> reviews</li>	</ul>
-		
-	</div>
+	<%= render "reviews/summary_partials/user_review_summary_left", :review => review, :parsed_address => parsed_address %>
+	<%= render "reviews/summary_partials/user_review_summary_right", :review => review, :parsed_address => parsed_address %>
 	<div class = "map_summary" id="map_<%= review.id %>"></div>
 	<% if review.text %>
 	<div class = "review_summary_text"><%=simple_format word_wrap(review.text, :line_width => 90)%></div>

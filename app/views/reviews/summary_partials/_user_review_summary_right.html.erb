@@ -1,0 +1,18 @@
+<div class = "review_summary_right">
+	<ul class = "flat_list">
+		<li class = "flat_list_item"><%= render 'reviews/buttons/rate_restaurant', :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords %></li>
+		<li class = "flat_list_item"><%= render 'add_review', :restaurant => review.restaurant %></li>
+		</ul>
+		<ul class = "flat_list">
+		<% unless review.user == @current_user %>
+		<li class = "flat_list_item"><div class = "stars empty">
+	<div class = "stars filled_<%= review.rating %>">	
+	</div>
+</div></li>
+		<li class = "flat_list_item">
+			<button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= @current_user.gender_article.to_json %>)'>Ask</button>				
+		</li>
+		<% end %></ul>
+		<ul>
+		<li id = "review_count"><%= review.restaurant.reviews.count %> reviews</li>	</ul>
+</div>

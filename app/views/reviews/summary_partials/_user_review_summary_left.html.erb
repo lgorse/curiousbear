@@ -1,0 +1,10 @@
+<div class = "review_summary_left">
+		<img class= "review_summary_photo" id = "review_summary_photo_<%= review.id %>"></img>
+	</div>
+	<div class = "review_summary_center">
+	<ul id = "review_data">
+		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
+		<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0] %></li>
+		<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1] %></li>
+	</ul>
+</div>
