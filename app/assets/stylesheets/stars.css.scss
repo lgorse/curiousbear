@@ -26,7 +26,7 @@ $total: $numStars * $steps;
 		background-position: $starOffset;
 		width: $numStars * $starWidth;
 		background: url(/assets/star-grey.png) repeat-x top left;
-	@include stars_values;
+		@include stars_values;
 	}
 
 	
@@ -35,13 +35,27 @@ $total: $numStars * $steps;
 
 	@for $i from 0 through ($total){
 		&.filled_#{$i} {@include filled($i);
-		background: url(/assets/star-blue.png) repeat-x top left;
-		@include stars_values;
+			background: url(/assets/star-blue.png) repeat-x top left;
+			@include stars_values;
 
-		&.google{
-		background: url(/assets/star-red.png) repeat-x top left;
-		@include stars_values;
+			&.google{
+				background: url(/assets/star-red.png) repeat-x top left;
+				@include stars_values;
+			}
+		}
 	}
-	}
-	}
+}
+
+.input_stars{
+	@include stars_values;
+	margin: 0px;
+	width: 20px;
+	background-image: url(/assets/star-grey.png);
+	background-repeat: no-repeat;
+	position: relative;
+	float: left;
+}
+
+.input_stars_full{
+	background-image: url(/assets/star-blue.png);
 }
