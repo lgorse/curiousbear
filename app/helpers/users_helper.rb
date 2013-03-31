@@ -1,4 +1,5 @@
 module UsersHelper
+	require 'will_paginate/array'
 
 	def new_user_facebook
 		if params['signed_request']
@@ -26,6 +27,7 @@ module UsersHelper
 			user = User.find_by_fb_id(profile["id"])
 			user.nil? ? @facebook_friends_invite << profile : @facebook_friends_enrolled << user
 		end
+		@facebook_enrolled_collection = @facebook_friends_enrolled.paginate(:page => params[:page], :per_page => 20)
 	end
 
 	def set_attr_from_fb(profile)

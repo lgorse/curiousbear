@@ -1,10 +1,10 @@
 <%= render 'facebook_friends_script' %>
-<div id = "new_friends_container">
+<div class = "user_info" id = "<%= @current_user.id %>"></div>
 <div id = "facebook_friends">
 <ul>Facebook Friends
-<% @facebook_friends_invite.each do |profile| %>
-<%= render "users/new_user_profile_summary", :user => User.new(set_attr_from_fb(profile))%>
-<% end %>
+<%# @facebook_friends_invite.each do |profile| %>
+<%#= render "users/new_user_profile_summary", :user => User.new(set_attr_from_fb(profile))%>
+<%#end %>
 
 </ul></div>
 <div id = "facebook_friends_enrolled">
@@ -14,5 +14,4 @@
 			<%= render "users/user_profile_summary", :user => friend %>
 			<% end %>
 	</ul>
-</div>
 </div>

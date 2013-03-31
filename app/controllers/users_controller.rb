@@ -42,6 +42,20 @@ def facebook_friends
 	@user = @current_user
 	@facebook_friends = @graph.get_connections("me", "friends", :fields => "name, id, picture")
 	set_friend_lists
+	respond_to do |format|
+		format.html
+		format.js
+		format.json {render :json => {:id => @current_user.id,
+									:count => @facebook_friends.count,
+									:friends_invite => @facebook_friends_invite}}
+	end
+end
+
+def facebook_friends_invite
+	@facebook_friends = @graph.get_connections("me", "friends", :fields => "name, id, picture")
+	set_friend_lists
+	@facebook_invite_collection = @facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
+	render :partial => 'users/list_facebook_friends_invite'
 end
 
 def following
