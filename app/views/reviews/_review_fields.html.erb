@@ -1,7 +1,8 @@
 <%= render 'shared/error_messages', :object => f.object %>
-<p><%= f.label "Rating" %>
-<%= f.select :rating, (1..5), :include_blank => true %></p>
-<p><%= f.label "Review" %>
-<%= f.text_area :text %></p>
+<ul class = "flat_list">
+<li class = "flat_list_item"><%= f.label "Rating" %></li>
+	<li class = "flat_list_item"><div class = "rate_restaurant" id = "0"><%= f.hidden_field :rating, :value => rating %></div></li></ul>
+<p><%= f.label "What did you think?" %></p>
+<p><%=  f.text_area :text, :escape => true %></p>
 <p><%= f.label "Key Words" %>
 <%= f.text_field :keywords, :value => keywords %></p>

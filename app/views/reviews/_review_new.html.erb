@@ -1,11 +1,20 @@
 <%= render 'reviews/review_share_script' %>
-<p><%= @restaurant.name %></p>
-<p>Google Rating: <%= @restaurant.google_rating %></p>
-
+<div class = "review_details_info">
+<div class = "review_edit_left">
+	<p id = "venue_name"><%= @restaurant.name %></p>
+</div>
+<div class = "review_edit_right">
+	<%= render 'reviews/buttons/restaurant_average', :venue => @restaurant %>
+	<%= render 'reviews/buttons/google_stars', :google_rating => @restaurant.google_rating.to_i %>
+</div>
+</div>
+<div class = "review_details_fields">
 <%= form_for @review, :remote => true do |f|%>
 <%= f.hidden_field :restaurant_id, :value => @restaurant.id %>
-<%= render 'reviews/review_fields', :f => f, :keywords => @search %>
-<%= f.submit "Add your review", :id => "review_button" %>
+<%= render 'reviews/review_fields', :f => f, :keywords => @search, :rating => 0 %>
+<ul class = "flat_list">
+<li class = "flat_list_item">
+<%= f.submit "Publish!", :id => "review_button" %></li>
 <% end %>
-<%= link_to "cancel", restaurant_path(@restaurant, :search => params[:search_field]) %>
-<%= render 'reviews/share_button' %>
+<li class = "flat_list_item"><%= link_to "cancel", restaurant_path(@restaurant, :search => params[:search_field]) %></li>
+<li class = "flat_list_item"><%= render 'reviews/share_button' %></li></ul></div>

@@ -19,13 +19,17 @@ class ReviewsController < ApplicationController
 
 	def create
 		if params[:review][:venue].present?
-		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:review][:venue])))
-		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
-	else
-		@restaurant = Restaurant.find(params[:review][:restaurant_id])
-	end
+			@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:review][:venue])))
+			@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
+		else
+			@restaurant = Restaurant.find(params[:review][:restaurant_id])
+		end
 		params[:review][:keywords] = (keywords_to_string(params[:review][:keywords])) if params[:review][:keywords]
-		if @review = Review.create(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
+
+		if @review = Review.find_by_user_id_and_restaurant_id(@current_user.id, params[:review][:restaurant_id])
+			@review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
+			flash[:success] = "Review updated"
+		elsif @review = Review.create(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
 			flash[:success] = "Review saved. Share with friends!"
 		else
 			flash[:error] = @review.errors.full_messages.to_sentence

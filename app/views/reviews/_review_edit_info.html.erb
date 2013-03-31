@@ -1,0 +1,9 @@
+<div class = "review_details_info">
+<div class = "review_edit_left">
+	<p id = "venue_name"><%= @restaurant.name %></p>
+</div>
+<div class = "review_edit_right">
+	<%= render 'reviews/buttons/restaurant_average', :venue => @restaurant %>
+	<%= render 'reviews/buttons/google_stars', :google_rating => @restaurant.google_rating.to_i %>
+</div>
+</div>

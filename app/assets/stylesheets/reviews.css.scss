@@ -109,11 +109,52 @@ div.user_review{
 	}
 
 	.stars{
-			margin-left: 0px;
-		}
+		margin-left: 0px;
+	}
 
 }
 
 #review_count{
-		font-size: 80%;
+	font-size: 80%;
+}
+
+.review_details_info{
+	width: 600px;
+	height: 100px
+;
+
+	.review_edit_left{
+		float: left;
+		width: 50%;
 	}
+
+	.review_edit_right{
+		float: left;
+	}
+}
+
+.review_details_fields{
+	width: 500px;
+	border-top: 1px solid #C0C0C0; 
+	padding-top: 20px;
+
+	textarea{
+		min-width: 500px;
+	}
+
+	p{
+		margin-bottom: 10px;
+	}
+
+	.rate_restaurant{
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+
+	.flat_list_item{
+		padding-right: 10px;
+	}
+	
+}
+
+

@@ -5,6 +5,6 @@
 	<%= render "reviews/summary_partials/user_review_summary_right", :review => review, :parsed_address => parsed_address %>
 	<div class = "map_summary" id="map_<%= review.id %>"></div>
 	<% if review.text %>
-	<div class = "review_summary_text"><%=simple_format word_wrap(review.text, :line_width => 90)%></div>
+	<div class = "review_summary_text"><%= h word_wrap(review.text, :line_width => 90)%></div>
 	<% end %>
 </div>

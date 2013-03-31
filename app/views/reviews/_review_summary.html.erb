@@ -16,6 +16,6 @@
 </ul>
 </div>
 <% if review.text %>
-<div class = "review_summary_text"><%=simple_format word_wrap(review.text, :line_width => 90)%></div>
+<div class = "review_summary_text"><%=h word_wrap(review.text, :line_width => 90)%></div>
 <% end %>
 </li>
