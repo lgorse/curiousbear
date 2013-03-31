@@ -2,11 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+.friend_title{
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
 
 #facebook_friends{
 	float: left;
-
+	border-right: 1px solid #C0C0C0;
+	padding-right: 5px;
 	.user_summary{
 		width: 80%;
 		font-size: 80%;
@@ -25,7 +30,13 @@
 #facebook_friends_enrolled{
 	float: left;
 	width: 50%;
-	font-size: 80%;
+	margin-left: 15px;
+
+
+	
+	ul{
+		font-size: 80%;
+	}
 
 
 .user_summary{

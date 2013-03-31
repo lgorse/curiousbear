@@ -1,16 +1,17 @@
 <%= render 'facebook_friends_script' %>
 <div class = "user_info" id = "<%= @current_user.id %>"></div>
-<div id = "facebook_friends">
-<ul>Facebook Friends
-<%# @facebook_friends_invite.each do |profile| %>
-<%#= render "users/new_user_profile_summary", :user => User.new(set_attr_from_fb(profile))%>
-<%#end %>
+<div class = "new_friend_lists"></div>
 
-</ul></div>
+
+<div id = "facebook_friends">
+	<div class = "friend_title">Facebook Friends</div>
+</div>
+
+
 <div id = "facebook_friends_enrolled">
-	<ul>Friends on KweeKweg
-			<% @facebook_friends_enrolled.reject{|friend| @user.following.include?(friend)}.each do |friend| %>	
-			<% @attr = {:id => friend.id, :fb_pic => friend.fb_pic, :fb_id => friend.fb_id, :name => friend.name} %>
+<div class = "friend_title">Friends on <%= APP_NAME %></div>
+	<ul>
+			<% @facebook_friends_enrolled.each do |friend| %>	
 			<%= render "users/user_profile_summary", :user => friend %>
 			<% end %>
 	</ul>
