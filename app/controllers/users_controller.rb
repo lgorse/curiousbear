@@ -15,7 +15,6 @@ end
 def show
 	response.headers["Cache-Control"] = "no-cache, no-store, max-age=0"
 	@user = User.find(params[:id])
-	#@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 5)
 	respond_to do |format|
 		format.html 
 		format.js 

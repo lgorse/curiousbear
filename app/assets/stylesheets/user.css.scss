@@ -7,10 +7,32 @@
 #facebook_friends{
 	float: left;
 
+	.user_summary{
+		width: 80%;
+		font-size: 80%;
+
+		.user_summary_left{
+			width: 60%;
+		}
+
+		.user_summary_right{
+			width: 40%;
+		}
+	}
+
 }
 
 #facebook_friends_enrolled{
 	float: left;
+	width: 50%;
+	font-size: 80%;
+
+
+.user_summary{
+	width: 120%;
+
+}
+	
 
 }
 
