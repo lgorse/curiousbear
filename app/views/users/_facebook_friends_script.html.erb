@@ -8,9 +8,9 @@
       FB.ui({
         to: friend_id,
           method: 'send',
-          name: user_name+' invited you to join <%= APP_NAME %>',
-          link: "http://www.bbc.co.uk",
-          description: '<b><%= APP_NAME %> lets you choose the people whose food reviews you trust, and follow their advice to find the best places for you. </b>Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.'
+          name: user_name+' invited you to <%= APP_NAME %>',
+          link: "<%= Facebook::SITE_URL %>",
+          description: '<b><%= APP_NAME %>: get restaurant recommendations from your trusted circle. Share your own best eats. </b>Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.'
           });
     }
      </script>

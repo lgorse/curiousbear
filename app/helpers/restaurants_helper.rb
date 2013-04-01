@@ -7,10 +7,10 @@ module RestaurantsHelper
 					flash.now[:notice] = "No recommendations from friends. Try Google!"
 				end
 				@google_response = parse_google_search
-				@google_results = @google_response["results"]
-				flash.now[:notice] = "Google yielded no results. What you see is what you get!" if google_results_except_recommended.empty?
+				@google_results = @google_response["results"]				
 				@encoded_search = Base64.urlsafe_encode64(params[:search])
 				@search = params[:search]
+				flash.now[:notice] = "Google yielded no results. Did you type gibberish?" if google_results_except_recommended.empty?
 				handle_google_http_errors
 			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,

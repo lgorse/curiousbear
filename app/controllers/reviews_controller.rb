@@ -28,11 +28,9 @@ class ReviewsController < ApplicationController
 
 		if @review = Review.find_by_user_id_and_restaurant_id(@current_user.id, params[:review][:restaurant_id])
 			@review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
-			flash[:success] = "Review updated"
 		elsif @review = Review.create(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
-			flash[:success] = "Review saved. Share with friends!"
 		else
-			flash[:error] = @review.errors.full_messages.to_sentence
+			flash.now[:error] = @review.errors.full_messages.to_sentence
 		end
 
 		respond_to do |format|
@@ -53,7 +51,6 @@ class ReviewsController < ApplicationController
 		@restaurant = Restaurant.find(@review.restaurant_id)
 		params[:review][:keywords] = (keywords_to_string(params[:review][:keywords])) if params[:review][:keywords]
 		if @review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
-			flash[:success] = "Review updated"
 		else
 			flash.now[:error] = @review.errors.full_messages.to_sentence
 		end
