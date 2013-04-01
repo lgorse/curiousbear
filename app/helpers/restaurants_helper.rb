@@ -68,8 +68,8 @@ module RestaurantsHelper
 
 	def handle_google_http_errors
 		case @google_response["status"]
-		when "ZERO_RESULTS" then flash[:error] = "Oops! We came up empty."
-		when "OVER_QUERY_LIMIT" then flash[:error] = "We're more popular than we thought! We are over our query limit for today."
+		when "ZERO_RESULTS" then flash.now[:error] = "Oops! We came up empty."
+		when "OVER_QUERY_LIMIT" then flash.now[:error] = "We're more popular than we thought! We are over our query limit for today."
 		end
 	end
 
