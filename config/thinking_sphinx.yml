@@ -1,14 +1,16 @@
 development:
   morphology: stem_en
   min_prefix_len: 4
-  wordforms: "/home/lgorse/www/curiousbear/app/assets/english_wordforms.txt"
-  stopwords: "/home/lgorse/www/curiousbear/app/assets/stopwords.txt"
+  wordforms: "app/assets/english_wordforms.txt"
+  stopwords: "app/assets/stopwords.txt"
   enable_star: true
   mem_limit: 256M
 
 production:
   morphology: stem_en, soundex
   min_prefix_len: 4
-  wordforms: "/app/assets/english_wordforms.txt"
-  stopwords: "/app/assets/stopwords.txt"
+  wordforms: "app/assets/english_wordforms.txt"
+  stopwords: "app/assets/stopwords.txt"
   enable_star: true
+  pid_file: app/shared/tmp/searchd.pid
+  indices_location: app/shared/db/sphinx
