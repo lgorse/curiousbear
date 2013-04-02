@@ -12,6 +12,7 @@ gem 'koala'
 gem "google_places"
 gem "thinking-sphinx"
 gem "mysql2", '~> 0.3.12b5'
+gem 'flying-sphinx'
 
 
 
@@ -42,7 +43,7 @@ gem 'capybara'
 end
 
 group :production do
-gem 'flying-sphinx'
+
 end
 
 gem 'jquery-rails'
