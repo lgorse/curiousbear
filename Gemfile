@@ -12,7 +12,7 @@ gem 'koala'
 gem "google_places"
 gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
-gem 'flying-sphinx'
+gem 'flying-sphinx', '0.8.4'
 
 
 
