@@ -1,4 +1,4 @@
-<%= render 'restaurants/review_request_script' %>
+<%= render 'fb-scripts/review_request_script' %>
 <% unless @google_results.blank? %>
 <ul>
 	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_results_except_recommended, :as => :result %>

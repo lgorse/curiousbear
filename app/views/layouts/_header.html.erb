@@ -1,7 +1,7 @@
 <% if @current_user %>
 <header id = "app_header">
 	<div id="fb-root"></div>
-	<%= render 'layouts/facebook_app_scripts' %>
+	<%= render 'fb-scripts/facebook_app_scripts' %>
 	<ul id= "app_header_left">
 		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path %></li>
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path, :id=>"home_button" %></li>
