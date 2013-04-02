@@ -12,7 +12,7 @@ gem 'koala'
 gem "google_places"
 gem "thinking-sphinx"
 gem "mysql2", '~> 0.3.12b5'
-gem 'flying-sphinx'
+gem 'flying-sphinx', '0.8.4'
 
 
 # Gems used only for assets and not required
