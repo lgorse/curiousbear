@@ -7,9 +7,9 @@
       FB.ui({
         to: friend_id,
           method: 'send',
-          name: 'Give '+ user_name +' more details about '+ restaurant_name,
+          name: user_name +' needs more details about '+ restaurant_name,
            picture: 'http://fb-logo-75.png',
-          link: 'http://www.nytimes.com/',
+          link: "<%= Facebook::SITE_URL%>restaurants/"+restaurant_id,
           description: '<b>'+user_name + ' needs your help.</b> Add some color to your review of <b>'+restaurant_name+'</b> and help '+articles["object"]+' decide if he should eat there.'
           });
     }

@@ -5,7 +5,7 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          link: 'https://developers.facebook.com/docs/reference/dialogs/',
+          link: "<%= Facebook::SITE_URL%>restaurants/"+id,
            picture: 'http://fb-logo-75.png',
           name: user_name+' gave '+restaurant_name+' '+rating+' stars',
           caption: text,
