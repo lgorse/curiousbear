@@ -190,7 +190,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   factory_girl_rails
   faker
-  flying-sphinx (= 0.8.4)
+  flying-sphinx
   google_places
   jquery-rails
   koala
