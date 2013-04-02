@@ -12,7 +12,7 @@ gem 'koala'
 gem "google_places"
 gem "thinking-sphinx"
 gem "mysql2", '~> 0.3.12b5'
-gem 'flying-sphinx'
+
 
 
 # Gems used only for assets and not required
@@ -39,6 +39,10 @@ group :test do
 gem 'rspec-rails'
 gem 'factory_girl_rails'
 gem 'capybara'
+end
+
+group :production do
+gem 'flying-sphinx'
 end
 
 gem 'jquery-rails'
