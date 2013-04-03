@@ -7,9 +7,8 @@ development:
   mem_limit: 256M
 
 production:
-  morphology: stem_en, soundex
+  morphology: stem_en
   min_prefix_len: 4
   wordforms: "app/assets/english_wordforms.txt"
   stopwords: "app/assets/stopwords.txt"
   enable_star: true
-  version: '3.0.2'

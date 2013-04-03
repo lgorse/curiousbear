@@ -19,8 +19,8 @@ gem "thinking-sphinx"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+	gem 'sass-rails',   '~> 3.2.3'
+	gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -37,13 +37,20 @@ group :development do
 end
 
 group :test do
-gem 'rspec-rails'
-gem 'factory_girl_rails'
-gem 'capybara'
+	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+	gem 'capybara'
 end
 
 group :production do
-gem 'flying-sphinx'
+	gem 'pusher-client',
+	:git    => 'git://github.com/pat/pusher-ruby-client.git',
+	:branch => 'catch-io',
+	:ref    => '608cc28d1a'
+	gem 'flying-sphinx',
+	:git    => 'git://github.com/flying-sphinx/flying-sphinx.git',
+	:branch => 'master',
+	:ref    => '6dcf10b9d7'
 end
 
 gem 'jquery-rails'

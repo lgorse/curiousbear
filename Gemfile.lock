@@ -1,3 +1,27 @@
+GIT
+  remote: git://github.com/flying-sphinx/flying-sphinx.git
+  revision: 6dcf10b9d7475d775bc91e1a3c3cad9de97f33e8
+  ref: 6dcf10b9d7
+  branch: master
+  specs:
+    flying-sphinx (0.8.5)
+      faraday_middleware (~> 0.7)
+      multi_json (>= 1.0.1)
+      pusher-client (~> 0.2.2)
+      rash (~> 0.3.0)
+      riddle (>= 1.5.5)
+      thinking-sphinx
+
+GIT
+  remote: git://github.com/pat/pusher-ruby-client.git
+  revision: 608cc28d1aa832030386fbd148a3814166591904
+  ref: 608cc28d1a
+  branch: catch-io
+  specs:
+    pusher-client (0.2.2)
+      ruby-hmac (~> 0.4.0)
+      websocket (~> 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,12 +92,6 @@ GEM
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     ffi (1.6.0)
-    flying-sphinx (0.8.5)
-      faraday_middleware (~> 0.7)
-      multi_json (>= 1.0.1)
-      rash (~> 0.3.0)
-      riddle (>= 1.5.0)
-      thinking-sphinx
     google_places (0.11.0)
       httparty
     hashie (1.2.0)
@@ -144,6 +162,7 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    ruby-hmac (0.4.0)
     rubyzip (0.9.9)
     sass (3.2.7)
     sass-rails (3.2.6)
@@ -190,12 +209,13 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   factory_girl_rails
   faker
-  flying-sphinx
+  flying-sphinx!
   google_places
   jquery-rails
   koala
   mysql2 (~> 0.3.12b5)
   pg
+  pusher-client!
   rails (= 3.2.11)
   rspec-rails
   sass-rails (~> 3.2.3)
