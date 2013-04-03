@@ -12,5 +12,4 @@ production:
   wordforms: "app/assets/english_wordforms.txt"
   stopwords: "app/assets/stopwords.txt"
   enable_star: true
-  pid_file: 'app/shared/tmp/searchd.pid'
-  indices_location: 'app/shared/db/sphinx'
+  version: '3.0.2'
