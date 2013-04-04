@@ -1,4 +1,4 @@
-alert("<%= @google_response['status'] %>");
+//alert("<%= @google_response['status'] %>");
 $("#restaurant_list").html("<%=escape_javascript(render 'google_restaurants')%>");
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
