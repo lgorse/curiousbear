@@ -50,7 +50,7 @@ group :production do
 	gem 'flying-sphinx',
 	:git    => 'git://github.com/flying-sphinx/flying-sphinx.git',
 	:branch => 'master',
-	:ref    => 'a73342a8f3'
+	:ref    => 'e1395e724a'
 end
 
 gem 'jquery-rails'
