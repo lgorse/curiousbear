@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/flying-sphinx/flying-sphinx.git
-  revision: a73342a8f33df878cda6845fe749283012ff40ab
-  ref: a73342a8f3
+  revision: e1395e724afbb884ff57e9cda22148301fbafa60
+  ref: e1395e724a
   branch: master
   specs:
     flying-sphinx (0.8.5)
