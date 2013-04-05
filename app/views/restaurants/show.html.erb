@@ -1,4 +1,6 @@
 <%= render 'fb-scripts/review_detail_request_script' %>
+<meta property = "og:title" content="restaurant_page"/>
+<meta property="og:url" content="<%= Facebook::SITE_URL %>restaurants/<%= @restaurant.id%>"/>
 <%= render 'restaurants/searchbox' %>
 <div id = "show_holder">
 <%= render 'restaurants/restaurant_full_profile' %>
