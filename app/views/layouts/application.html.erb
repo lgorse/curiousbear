@@ -6,10 +6,6 @@
 	<%= javascript_include_tag "application" %>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=<%= GOOGLE_API_KEY %>&libraries=places&sensor=false"></script>
 	<%= csrf_meta_tags %>
-	<% if @restaurant %>
-	<meta property = "og:title" content="restaurant_page"/>
-	<meta property="og:url" content="<%= Facebook::SITE_URL %>restaurants/<%= @restaurant.id%>"/>
-	<% end %>
 </head>
 <body >
 

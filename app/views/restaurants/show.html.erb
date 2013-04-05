@@ -1,6 +1,13 @@
+<% if @restaurant %>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta property="fb:app_id" content="<%= Facebook::APP_ID %>" /> 
+  <meta property="og:type"   content="website" /> 
+  <meta property="og:url"    content="<%= Facebook::SITE_URL %>restaurants/<%= @restaurant.id%>" /> 
+  <meta property="og:title"  content="Sample Website" /> 
+  <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" /> 	
+	<% end %>
+
 <%= render 'fb-scripts/review_detail_request_script' %>
-<meta property = "og:title" content="restaurant_page"/>
-<meta property="og:url" content="<%= Facebook::SITE_URL %>restaurants/<%= @restaurant.id%>"/>
 <%= render 'restaurants/searchbox' %>
 <div id = "show_holder">
 <%= render 'restaurants/restaurant_full_profile' %>
