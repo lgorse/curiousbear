@@ -7,7 +7,6 @@ module RestaurantsHelper
 					flash.now[:notice] = "No recommendations from friends. Try Google!"
 				end
 				@google_response = parse_google_search
-				puts @google_response['status'] 
 				@google_results = @google_response["results"]				
 				@encoded_search = Base64.urlsafe_encode64(params[:search])
 				@search = params[:search]
