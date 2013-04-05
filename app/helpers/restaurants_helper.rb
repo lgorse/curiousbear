@@ -15,7 +15,7 @@ module RestaurantsHelper
 			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
 				URI::InvalidURIError => e
-				flash.now[:error] = "Oops!" + e.message + "! That's not good."
+				flash.now[:notice] = "Oops!" + e.message + "! That's not good."
 			end
 	end
 
@@ -68,8 +68,10 @@ module RestaurantsHelper
 
 	def handle_google_http_errors
 		case @google_response["status"]
-		when "ZERO_RESULTS" then flash.now[:error] = "Oops! We came up empty."
-		when "OVER_QUERY_LIMIT" then flash.now[:error] = "We're more popular than we thought! We are over our query limit for today."
+		when "ZERO_RESULTS" then flash.now[:notice] = "Oops! We came up empty."
+		when "OVER_QUERY_LIMIT" then flash.now[:notice] = "We're more popular than we thought! We are over our query limit for today."
+		when "INVALID_REQUEST" then flash.now[:notice] = "The request was invalid"
+		when "REQUEST_DENIED" then flash.now[:notice] = "The request was denied"
 		end
 	end
 
