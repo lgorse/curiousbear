@@ -15,7 +15,7 @@ module SessionHelper
 	def set_access_token
 		begin
 		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
-		@access_token = session['fb_cookie']["access_token"]
+		@access_token = session['fb_cookie']["access_token"] unless session['fb_cookie'].blank?
 	rescue Koala::Facebook::OAuthTokenRequestError
 		session['fb_cookie'] = nil
 		set_access_token
@@ -56,13 +56,14 @@ module SessionHelper
 	def parse_facebook_cookies
 		check_token_expiration
 		set_access_token
-		set_facebook_graph
+		set_facebook_graph if @access_token
 	end
 
 	def authenticate
-		parse_facebook_cookies
+		if parse_facebook_cookies
 		set_session
 		set_user_picture
+	end
 	end
 
 	def reset_user_session
