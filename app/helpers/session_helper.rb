@@ -14,12 +14,17 @@ module SessionHelper
 	
 	def set_access_token
 		begin
-		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
-		@access_token = session['fb_cookie']["access_token"]
-	rescue Koala::Facebook::OAuthTokenRequestError
-		session['fb_cookie'] = nil
-		set_access_token
-	end
+			session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
+			if session['fb_cookie'].blank?
+				reset_user_session
+				redirect_to_signin and return
+			else
+				@access_token = session['fb_cookie']["access_token"]
+			end
+		rescue Koala::Facebook::OAuthTokenRequestError
+			session['fb_cookie'] = nil
+			set_access_token
+		end
 
 	end
 
