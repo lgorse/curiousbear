@@ -56,7 +56,7 @@ module SessionHelper
 	def parse_facebook_cookies
 		check_token_expiration
 		set_access_token
-		set_facebook_graph
+		set_facebook_graph if @access_token
 	end
 
 	def authenticate
