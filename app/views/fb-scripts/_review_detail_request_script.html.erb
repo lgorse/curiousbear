@@ -8,7 +8,7 @@
         to: friend_id,
           method: 'send',
           name: user_name +' needs more details about '+ restaurant_name,
-          link: '<%= Facebook::SITE_URL %>',
+          link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
           description: '<b>'+user_name + ' needs your help.</b> Add some color to your review of <b>'+restaurant_name+'</b> and help '+articles["object"]+' decide if he should eat there.'
           });
     }
