@@ -16,7 +16,7 @@ module SessionHelper
 		begin
 		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
 		if session['fb_cookie'].blank?
-			redirect_to_signin
+			redirect_to_signin and return
 		else
 		@access_token = session['fb_cookie']["access_token"]
 	end
