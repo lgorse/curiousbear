@@ -19,7 +19,7 @@ class SessionController < ApplicationController
 		@title = "Search the world, "+@current_user.first_name
 		respond_to do |format|
 			format.html
-			format.js
+			format.json{render :json => "hello"}
 		end 
 		
 	end
