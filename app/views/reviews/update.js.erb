@@ -1,5 +1,4 @@
 $(function(){
-	alert("Valid stuff");
 	if ( ($("#share_review").prop('checked')) && ("<%= @review.valid? %>" == "true") ){
 		reviewToFeed("<%= @current_user.first_name %>","<%= @restaurant.name %>", "<%= @restaurant.id %>", "<%= @review.rating %>", "<%= @review.text %>");
 	}else if ("<%= @review.valid? %>" == "false"){
