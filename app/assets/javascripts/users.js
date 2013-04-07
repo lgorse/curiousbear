@@ -22,9 +22,9 @@ $(document).ready(function(){
 $.fn.button_highlight = function(clicked_id){
 	$(this).children('a').each(function(){
 		if ($(this).attr("id") == clicked_id){
-			$(this).removeClass("not_highlighted").addClass("highlighted").unbind('mouseenter mouseleave');
+			$(this).removeClass("not_highlighted highlighted").addClass("selected").unbind('mouseenter mouseleave');
 		}else{
-			$(this).removeClass("highlighted").addClass("not_highlighted").hover(function(){
+			$(this).removeClass("highlighted selected").addClass("not_highlighted").hover(function(){
 				$(this).removeClass("not_highlighted").addClass("highlighted");
 			},
 			function(){
