@@ -49,7 +49,10 @@ module SessionHelper
 
 	def set_session
 		@current_user = User.find_by_fb_id(@me['id'])
-		redirect_to register_path and return if @current_user.nil?
+		if @current_user.nil?
+			delete_user_facebook
+		redirect_to register_path and return 
+		end
 		session['user_id'] ||= @current_user.id
 	end
 
