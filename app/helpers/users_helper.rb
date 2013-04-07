@@ -28,7 +28,8 @@ module UsersHelper
 			user = User.find_by_fb_id(profile["id"])
 			user.nil? ? @facebook_friends_invite << profile : set_enrolled_fb_friend_list(user)
 		end
-		@facebook_invite_collection = @facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
+		#@facebook_invite_collection = @facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
+		@facebook_invite_collection = @facebook_friends_invite
 	end
 
 	def set_attr_from_fb(profile)
