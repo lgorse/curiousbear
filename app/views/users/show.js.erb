@@ -1,5 +1,5 @@
 $(function(){
-	
+	$("#follow_buttons").button_highlight('user_reviews_button');
 	$('#relationship_list').html("<%= escape_javascript(render 'reviews/user_reviews') %>").
 	pageless({  url: '/reviews'
                        , totalPages: "<%= @user.reviews.count %>"/5+1
