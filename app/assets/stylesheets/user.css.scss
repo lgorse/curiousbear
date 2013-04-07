@@ -99,32 +99,35 @@ div#user_info_center, .user_summary_center{
 
 nav#follow_buttons{
 	position: relative;
-	border-bottom: 1px solid #C0C0C0; 
 	margin-left: 20px;
 	height: 30px;
 	margin-bottom: 20px;
 	padding-bottom: 0px;
+	border-bottom: 1px solid #C0C0C0;
+
+	a{
+		margin-left: 10px;
+	}
 
 	a, .not_highlighted{
 		height: 20px;
 		float: left;
 		position: relative;
 		text-decoration: none;
-		border-top: 1px solid #C0C0C0;
-		border-right: 1px solid #C0C0C0;
 		padding: 5px;
-		color: black;
+		color: #343434;
 		background-color: transparent;
 
 
 	}
 
 	.highlighted, a:hover {
-		background-color: #DEDEDE;
+		text-decoration: underline;
+		
 	}
 
 	.selected{
-		background-color: #C0C0C0;
+		color: black;
 	}
 
 	
@@ -132,12 +135,12 @@ nav#follow_buttons{
 	
 
 	#user_reviews_button{
-		border-left: 1px solid #C0C0C0;
+		
 	}
 
 	#add_friends_button{
-		border-left: 1px solid #C0C0C0;
-		margin-left: 260px;
+		
+		margin-left: 250px;
 	}
 
 }
