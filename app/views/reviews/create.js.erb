@@ -1,6 +1,7 @@
 $(function(){
 	if ( ($("#share_review").prop('checked')) && ("<%= @review.valid? %>" == "true") ){
-		reviewToFeed("<%= @current_user.first_name %>","<%= @restaurant.name %>", "<%= @restaurant.id %>", "<%= @review.rating %>", "<%= @review.text %>");
+		reviewToFeed("<%= URI.encode(@current_user.first_name) %>","<%= URI.encode(@restaurant.name) %>", "<%= @restaurant.id %>",
+		 "<%= @review.rating %>");
 	}else if ("<%= @review.valid? %>" == "false"){
 		$("#container").html("<%= escape_javascript(render 'reviews/review_new') %>");
 	}else{

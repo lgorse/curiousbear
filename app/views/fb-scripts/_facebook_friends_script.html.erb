@@ -1,15 +1,16 @@
         
     <script>
 
-    function invite(friend_id, user_name){
+    function invite(friend_id, encoded_user_name){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
-
+      var user_name = decodeURI(encoded_user_name)
       FB.ui({
         to: friend_id,
           method: 'send',
           name: user_name+' invited you to <%= APP_NAME %>',
           link: "<%= Facebook::SITE_URL %>",
+          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
           description: '<b><%= APP_NAME %> brings you restaurant recommendations from your trusted circle. Share your own best eats. </b>Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.'
           });
     }
