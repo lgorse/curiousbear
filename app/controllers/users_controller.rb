@@ -45,7 +45,7 @@ def facebook_friends
 	respond_to do |format|
 		format.html
 		format.js
-		format.json {render :json => {:id => @current_user.id}	}
+		format.json {render :json => {:id => @current_user.id, :count => @facebook_friends.count}	}
 	end
 end
 
