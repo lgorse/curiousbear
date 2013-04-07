@@ -12,7 +12,7 @@
 		</div>
 	</div>
 	</li>
-<li class = "flat_list_item"><button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= @current_user.first_name.to_s %>","<%= review.restaurant.name.to_s %>", <%= review.restaurant.id %>,<%= @current_user.gender_article.to_json %>)'>Tell me more</button></li>
+<li class = "flat_list_item"><button id="detail_friend" onclick='detail(<%= review.user.fb_id.to_s %>, "<%= URI.encode(@current_user.first_name.to_s) %>","<%= URI.encode(review.restaurant.name.to_s) %>", <%= review.restaurant.id %>,<%= @current_user.gender_article.to_json %>)'>Tell me more</button></li>
 </ul>
 </div>
 <% if review.text %>
