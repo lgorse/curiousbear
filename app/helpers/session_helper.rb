@@ -14,12 +14,12 @@ module SessionHelper
 	
 	def set_access_token
 		begin
-		session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
-		@access_token = session['fb_cookie']["access_token"]
-	rescue Koala::Facebook::OAuthTokenRequestError
-		session['fb_cookie'] = nil
-		set_access_token
-	end
+			session['fb_cookie'] ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
+			@access_token = session['fb_cookie']["access_token"]
+		rescue Koala::Facebook::OAuthTokenRequestError
+			session['fb_cookie'] = nil
+			set_access_token
+		end
 
 	end
 
@@ -49,9 +49,9 @@ module SessionHelper
 
 	def set_session
 		@current_user = User.find_by_fb_id(@me['id'])
-		if @current_user.nil?
+		if @current_user.nil? #this catches the error where the user has authorized the app but somehow disappeared from our db
 			delete_user_facebook
-		redirect_to register_path and return 
+			redirect_to register_path and return 
 		end
 		session['user_id'] ||= @current_user.id
 	end
