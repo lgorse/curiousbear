@@ -1,8 +1,10 @@
  <script> 
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
 
-      function reviewToFeed(user_name, restaurant_name, id, rating) {
+      function reviewToFeed(encoded_user_name, encoded_restaurant_name, id, rating) {
         // calling the API ...
+      var user_name = decodeURI(encoded_user_name);
+      var restaurant_name = decodeURI(encoded_restaurant_name);
         var obj = {
           method: 'feed',
           link: "<%= Facebook::SITE_URL%>restaurants/"+id,
