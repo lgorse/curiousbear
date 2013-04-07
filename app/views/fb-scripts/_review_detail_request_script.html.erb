@@ -11,7 +11,7 @@
           name: user_name +' needs more details about '+ restaurant_name,
           link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
           picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          description: '<b>'+user_name + ' needs your help.</b> Add some color to your review of <b>'+restaurant_name+'</b> and help '+articles["object"]+' decide if he should eat there.'
+          description: escape('<b>'+user_name + ' needs your help.</b> Add some color to your review of <b>'+restaurant_name+'</b> and help '+articles["object"]+' decide if he should eat there.')
           });
     }
      </script>
