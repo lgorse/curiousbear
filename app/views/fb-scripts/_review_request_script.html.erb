@@ -9,7 +9,7 @@
           picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
           name: 'Anyone been to '+ restaurant_name+'?',
           caption: user_name+' needs your help',
-          description: 'How good is '+restaurant_name+'? Help '+user_name+' decide on <b><%= APP_NAME %></b>.'
+          description: unescape('How good is '+restaurant_name+'? Help '+user_name+' decide on <b><%= APP_NAME %></b>.')
         };
 
         function callback(response) {
