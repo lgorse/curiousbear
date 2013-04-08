@@ -1,0 +1,501 @@
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.7ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.7ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:56+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.7ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.6ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.7ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.8ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_list_facebook_friends_invite.html.erb (2237.2ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/facebook_friends.html.erb within layouts/application (2247.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered fb-scripts/_facebook_app_scripts.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Oink Log Entry Complete
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered layouts/_flash.html.erb (0.0ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
+2013-04-08T19:59:57+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.6ms)
+2013-04-08T19:59:57+00:00 app[web.1]: Completed 200 OK in 5907ms (Views: 2253.9ms | ActiveRecord: 1711.4ms)
+2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Oink Action: users#facebook_friends
+2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Memory usage: 272168 | PID: 2
+2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Instantiation Breakdown: Total: 692 | User: 685 | Relationship: 7
+2013-04-08T19:59:57+00:00 heroku[router]: at=info method=GET path=/users/4/facebook_friends host=powerful-woodland-3700.herokuapp.com fwd="171.66.131.200" dyno=web.1 connect=2ms service=5979ms status=200 bytes=287026
+2013-04-08T20:03:18+00:00 heroku[api]: Starting process with command `bundle exec rake index_sphinx` by scheduler@addons.heroku.com

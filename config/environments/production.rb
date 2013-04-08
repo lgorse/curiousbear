@@ -40,6 +40,8 @@ Curiousbear::Application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
   config.logger = Logger.new(STDOUT) 
 config.log_level = :info
+config.middleware.use( Oink::Middleware, :logger => Hodel3000CompliantLogger.new(STDOUT))
+
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
