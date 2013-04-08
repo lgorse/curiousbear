@@ -1,1 +1,1 @@
-Curiousbear::Application.middleware.use( Oink::Middleware, :logger => Hodel3000CompliantLogger.new(STDOUT), :instruments => :memory )
+Curiousbear::Application.middleware.use( Oink::Middleware, :logger => Hodel3000CompliantLogger.new(STDOUT))

@@ -121,6 +121,7 @@ GEM
     multi_xml (0.5.3)
     multipart-post (1.2.0)
     mysql2 (0.3.12b6)
+    newrelic_rpm (3.6.0.78)
     nokogiri (1.5.9)
     oink (0.10.1)
       activerecord
@@ -218,6 +219,7 @@ DEPENDENCIES
   jquery-rails
   koala
   mysql2 (~> 0.3.12b5)
+  newrelic_rpm
   oink
   pg
   pusher-client!
