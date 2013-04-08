@@ -96,6 +96,7 @@ GEM
       httparty
     hashie (1.2.0)
     hike (1.2.1)
+    hodel_3000_compliant_logger (0.1.1)
     httparty (0.10.2)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
@@ -121,6 +122,9 @@ GEM
     multipart-post (1.2.0)
     mysql2 (0.3.12b6)
     nokogiri (1.5.9)
+    oink (0.10.1)
+      activerecord
+      hodel_3000_compliant_logger
     pg (0.15.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -214,6 +218,7 @@ DEPENDENCIES
   jquery-rails
   koala
   mysql2 (~> 0.3.12b5)
+  oink
   pg
   pusher-client!
   rails (= 3.2.11)
