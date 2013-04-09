@@ -95,7 +95,7 @@ GEM
     google_places (0.12.0)
       httparty
     hashie (1.2.0)
-    hike (1.2.1)
+    hike (1.2.2)
     hodel_3000_compliant_logger (0.1.1)
     httparty (0.10.2)
       multi_json (~> 1.0)
@@ -126,7 +126,7 @@ GEM
     oink (0.10.1)
       activerecord
       hodel_3000_compliant_logger
-    pg (0.15.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
