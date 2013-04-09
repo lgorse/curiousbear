@@ -1,501 +1,503 @@
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.7ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.7ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:56+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.7ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.6ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.7ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.8ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.9ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (2.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_list_facebook_friends_invite.html.erb (2237.2ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.3ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_left.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]: WARNING: Can't mass-assign protected attributes: id
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered relationships/buttons/_invite_button.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/facebook_friends.html.erb within layouts/application (2247.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered fb-scripts/_facebook_app_scripts.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.5ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_user_summary_right.html.erb (0.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Oink Log Entry Complete
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered layouts/_flash.html.erb (0.0ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered users/_new_user_profile_summary.html.erb (1.1ms)
-2013-04-08T19:59:57+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.6ms)
-2013-04-08T19:59:57+00:00 app[web.1]: Completed 200 OK in 5907ms (Views: 2253.9ms | ActiveRecord: 1711.4ms)
-2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Oink Action: users#facebook_friends
-2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Memory usage: 272168 | PID: 2
-2013-04-08T19:59:57+00:00 app[web.1]: Apr 08 19:59:57 f4322443-4bea-4c9c-9042-91013e5e4d03 rails[2]: Instantiation Breakdown: Total: 692 | User: 685 | Relationship: 7
-2013-04-08T19:59:57+00:00 heroku[router]: at=info method=GET path=/users/4/facebook_friends host=powerful-woodland-3700.herokuapp.com fwd="171.66.131.200" dyno=web.1 connect=2ms service=5979ms status=200 bytes=287026
-2013-04-08T20:03:18+00:00 heroku[api]: Starting process with command `bundle exec rake index_sphinx` by scheduler@addons.heroku.com
+2013-04-09T00:43:29.199414+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='greater > great' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199414+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='greatest > great' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199414+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='greatly > great' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hied > hi' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='high s > high' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='higher > high' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='highers > high' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='highest > high' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='highlanders > highlander', stored='highlanders > highland' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='highly > high' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='him s > him' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hims > him' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hawaii > hi' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hens > h' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='her s > her' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='importing > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='imports > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='in s > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199180+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='goings > go' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199650+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='having > have' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='i s > i' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='if s > if' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='he s > he' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='in s > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='income > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='income s > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='incomer > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='incomers > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: rms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='how s > how' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='here s > here' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='incomes > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200554+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='incoming > come' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hows > how' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='his > hi' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordfo
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ifs > if' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='incs > c' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb
+4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='import s > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='importable > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='indiana > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='indies > indy', stored='indies > indie' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='infer > f' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inking > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inks > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inlet > let' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inlet s > let' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hing > h' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='importers > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='interests > interest' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='into > to' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='is > i' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inlets > let' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='it s > it' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='its > it' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='instilled > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='instilling > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200767+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='input > put' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='input s > put' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='j s > j' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='junkers > junker', stored='junkers > junk' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='juster > just' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='instills > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='intake > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='inputs > put' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ins > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='instill > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200341+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='imported > import' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='justest > just' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='justly > just' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='intake s > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201011+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='intakes > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201225+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='interest s > interest' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='liked > like' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='likes > like' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='k s > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='keep s > keep' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='keepers > keep' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='need 
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='newly > new' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='keeps > keep' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ken > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: s > need' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='needing > need' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='likest > like' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='kinder > kind' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='kindest > kind' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='needs > need' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new hampshire > nh' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='hampshire > nh', stored='hampshire > hampshire' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lings > l' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='loafers > loafer', stored='loafers > loaf' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='longed > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='kings > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201440+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='knowable > know' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/englis
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: h_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new jersey > nj' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='jersey > nj', stored='jersey > jersey' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='longest > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='longs > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='knows > know' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ks > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ks > k' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new mexico > nm' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203329+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='mexico > nm', stored='mexico > mexican' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='le s > le' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='louisiana > la' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ls > l' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='m s > m' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='let s > let' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lets > let' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='like s > like' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='l s > l' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='la s > la' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new york > ny' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new zealand > new' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='new s > new' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='least s > least' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='led > l' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='legation > legate', stored='legation > legation' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='maine > me' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='makes > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='la s > la' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='last s > last' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lasted > last' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='newer > new' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='les > le' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='less s > less' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='man s > man' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202329+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mans > man' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201655+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lastly > last' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lasts > last' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lessens > less' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mr s > mr' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mrs > mr' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='may s > may' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='may s > may' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mayer > may' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='next s > next' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='old s > old' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ms > m' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='much s > much' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mays > may' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='med > me' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='olden > old' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='older > old' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='must s > must' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='musters > must' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='musts > must' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='members > member' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mes > me' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='might s > might' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='latest s > latest' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='oldest > old' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='one s > one' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='outer > out' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ming > m' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202894+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='more s > more' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='outings > out' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='no s > no' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.201865+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='later > late' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='no s > no' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='noon s > noon' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='nos > no' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='now s > now' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='nth > n' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='numbering > number' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='o s > o' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='offed > off' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lesser > less' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.202081+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='lest > l' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='n s > n' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='offers > off' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='open s > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='openers > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='openest > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='openings > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='openly > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='opens > open' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='order s > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ordered > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ordering > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='orders > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204187+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='oregon > or' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='os > o' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203546+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='newest > new' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='places > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='placing > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='point s > point' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pointers > point' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pointing > point' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='mostly > most' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='points > point' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='present s > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presentable > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='offings > off' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='offs > off' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='oftenest > often' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='put s > put' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='puts > put' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='quits > quit' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='r s > r' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rather s > rather' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='only > on' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rebut > but' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rebuts > but' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='redid > did' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='redone > done' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ones > one' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms con
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='outs > out' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203972+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='onions > one' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='otherness > other' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='others > other' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ours > our' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='outed > out' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pens > p' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='per > p' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='peters > pete', stored='peters > pet' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='over s > over' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pings > p' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presenting > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203114+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='most s > most' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presented > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='prolongs > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pron > n' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reside > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='resided > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='prolonging > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='resides > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='residing > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='retake s > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='retaken > taken' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presenters > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reface > face' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='refaced > face' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='refaces > face' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reuse s > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reused > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reuses > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reusing > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='revs > v' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: forms contain stopwords ( wordform='renumbering > number' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='renumber > number' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='renumbers > number' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='prolonged > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='renumbered > number' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remaking > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: word
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rework > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reworked > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reworking > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reorder s > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reordered > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reordering > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reorder > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reuse > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='return s > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='returners > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='returns > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: tain stopwords ( wordform='overs > over' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='p s > p' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.203758+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='oftener > often' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204400+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='out s > out' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rightly > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='parted > part' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204700+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='philippines > philippine', stored='philippines > filipino' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205043+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='proms > m' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rights > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='room s > room' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='republicans > republican', stored='republicans > publican' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remakes > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='replaced > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seconders > second' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seconding > second' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='righting > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sawing > saw' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='parts > part' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='passions > passion', stored='passions > passe' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rems > m' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='replacing > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='roomed > room' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='roomers > room' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='returned > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='replace > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='retakes > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='secondly > second' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seconds > second' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='righter > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='says > say' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rightest > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seconded > second' ). Fix your wordforms file '/mnt/lo
+2013-04-09T00:43:29.204547+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='pen > p' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='return > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rooming > room' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rooms > room' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206121+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rs > r' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reworks > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='right s > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='see s > see' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seemed > seem' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seems > seem' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='s s > s' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sees > see' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='saws > saw' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='seers > see' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='saw s > saw' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sides > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presently > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='presents > present' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='prob > b' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remembers > member' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='replaces > place' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206425+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sen > s' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sen > s' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sens > s' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: cal/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='she s > she' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='shes > she' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='problem s > problem' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='problems > problem' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205651+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='retook > took' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='severed > sever' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='severest > sever' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='show s > show' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='showed > show' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='second s > second' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.204859+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='prolong > long' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='refacing > face' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='severing > sever' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206577+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='severs > sever' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reworkings > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='showers > show' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='showings > show' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='shows > show' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='reformations > reformation', stored='reformations > formation' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='rein s > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205193+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reins > in' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='smaller > small' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sawed > saw' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sided > side' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remade > made' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remake > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='smallest > small' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='smalls > small' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stilled > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='southerners > southerner', stored='southerners > southern' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='state s > state' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stations > state' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205347+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='remake s > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.199880+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='he s > he' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='solution > solute', stored='solution > solution' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stater > state' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='states > state' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.200112+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='hings > h' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205499+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='reorders > order' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205810+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='returning > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stillest > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stilling > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='small s > small' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='surest > sure' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='signing > sign', stored='signing > signing' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='t s > t' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206730+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='small s > small' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='take s > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='takes > take' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='tens > t' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stating > state' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thinkers > think' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordf
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: orms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='stills > still' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='today s > today' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='towards > toward' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thing s > thing' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='uncertain > certain' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='uncertainly > certain' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='there s > there' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unmade > made' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unmake > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unmakes > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='theirs > their' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='things > the' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='then s > then' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='uni > i' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unis > i' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unit > it' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unit s > it' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='units > it' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unkinder > kind' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='threes > three' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='tings > t' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unmans > man' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unsaid > said' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='theses > these' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thinking > think' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thinks > think' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unsay > say' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='surely > sure' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thoughts > thought' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='turn s > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='turners > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='turned > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wants > want' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='vs > v' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='w s > w' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='want s > want' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206271+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sames > same' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.205965+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='righted > right' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='way s > way' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='u s > u' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='undid > did' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ways > way' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='well s > well' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='whats > what' ). Fix your word
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: duplicate wordform found - skipped ( current='wilder > wilde', stored='wilder > wild' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='two s > two' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209008+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unmaking > make' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='thought s > thought' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207189+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='that s > that' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.206885+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='sos > so' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207037+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='surer > sure' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='welled > well' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='welling > well' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wells > well' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unsaying > say' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unsays > say' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='will s > will' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='three s > three' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='us > u' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='twos > two' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wens > w' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209481+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='what s > what' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='washington > wa' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unman > man' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='us s > us' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='use s > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ups > up' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='using > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='younger > young' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='youngest > young' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: forms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='v s > v' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='uses > use' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='when s > when' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='whens > when' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209325+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wanting > want' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='yours > your' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='willed > will' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207342+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='ts > t' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='where s > where' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='yous > you' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wheres > where' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='while s > while' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( w
+ordform='whiled > while' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='zings > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='whiles > while' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='zs > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: collected 32 docs, 0.0 MB
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wills > will' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wings > w' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='will s > will' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='years > year' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: collected 27 attr values
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: sorted 0.0 Mvalues, 100.0% done
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='who s > who' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='whole s > whole' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='wholes > whole' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='within s > within' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: sorted 0.0 Mhits, 100.0% done
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: total 32 docs, 8589 bytes
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: total 0.160 sec, 53649 bytes/sec, 199.88 docs/sec
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: total 129 reads, 0.005 sec, 11.4 kb/call avg, 0.0 msec/call avg
+2013-04-09T00:43:29.419826+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='who s > who' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.419505+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='whiling > while' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='worked > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: total 11 writes, 0.000 sec, 5.0 kb/call avg, 0.0 msec/call avg
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: rotating indices: successfully sent SIGHUP to searchd (pid=16068).
+2013-04-09T00:43:29.420545+00:00 app[scheduler.7382]: I, [2013-04-09T00:43:29.383363 #7]  INFO -- : Action Finished: index
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='working > work' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='woulds > would' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='x s > x' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='you s > you' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='turns > turn' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='young s > young' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.207494+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='undone > done' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='zen > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='zens > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.209177+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='unto > to' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.439268+00:00 app[scheduler.7382]: done.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='zens > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='y s > y' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420302+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='z s > z' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:29.420063+00:00 app[scheduler.7382]: WARNING: wordforms contain stopwords ( wordform='year s > year' ). Fix your wordforms file '/mnt/local/flying-sphinx/d9448aa7cfdb4258e/wordforms/english_wordforms.txt'.
+2013-04-09T00:43:30.740783+00:00 heroku[scheduler.7382]: Process exited with status 0
+2013-04-09T00:43:30.751331+00:00 heroku[scheduler.7382]: State changed from up to complete
+2013-04-09T00:46:43.874680+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=powerful-woodland-3700.herokuapp.com fwd="171.66.152.113" dyno=web.1 connect=7ms service=8ms status=304 bytes=0
+2013-04-09T00:51:30.954535+00:00 heroku[api]: Starting process with command `bundle exec oink --threshold=0 log/production-oink.log` by lgorse@mac.com
+2013-04-09T00:51:33.664399+00:00 heroku[run.2658]: Awaiting client
+2013-04-09T00:51:33.664580+00:00 heroku[run.2658]: Starting process with command `bundle exec oink --threshold=0 log/production-oink.log`
+2013-04-09T00:51:34.035543+00:00 heroku[run.2658]: State changed from starting to up
+2013-04-09T00:51:36.835449+00:00 heroku[run.2658]: Process exited with status 1
+2013-04-09T00:51:36.858094+00:00 heroku[run.2658]: State changed from up to complete
