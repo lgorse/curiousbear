@@ -29,6 +29,7 @@ Curiousbear::Application.routes.draw do
    match '/home', :to => "session#home"
    match '/logout', :to => "session#logout"
    match '/register', :to => "session#register"
+   match '/info', :to => "session#info"
    
 
 
