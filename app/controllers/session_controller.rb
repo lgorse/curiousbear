@@ -3,7 +3,7 @@ class SessionController < ApplicationController
 	
 	rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
-	before_filter :authenticate, :only=>[:home]
+	before_filter :authenticate, :only=>[:home, :info]
 	after_filter :reset_user_session, :only=>[:signin]
 	
 	def signin
@@ -32,6 +32,7 @@ class SessionController < ApplicationController
 	end
 
 	def info
+		@five_friends = @graph.get_connections("me", "friends", :fields => "picture", :limit => 5)
 		respond_to do |format|
 			format.html
 			format.js

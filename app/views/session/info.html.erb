@@ -1,6 +1,15 @@
-<p>Follow the foodies you trust</p>
-<p>Search restaurants</p>
-<p>Get your foodies' recommendations first</p>
-<p>Not enough info? Search Google!</p>
-<p>Help you're friends by adding reviews.</p>
-<p>Share, recommend, request reviews</p>
+<p>Follow the foodies you trust; add a friend now!</p>
+<%= link_to "Add friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :target => "_parent" %>
+<% @five_friends.each do |profile| %>
+<%= image_tag (profile['picture']['data']['url']), :size => '35x35' %>
+<% end %>
+<p>Search restaurants; type something now!</p>
+<%= render 'restaurants/searchbox' %>
+<p>Results will be recommendations from your trusted friends </p>
+<%= image_tag ('info/friend_review.png'), :class => 'info_review_img' %>
+<p>If you don't get enough answers there, you'll get Google results as well!</p>
+<%= image_tag ('info/google_review.png'), :class => "info_review_img" %>
+<p>Help you're friends by adding reviews. It's that simple.</p>
+<div class = "rate_restaurant"></div>
+<p>Food is all about sharing! Recommend, share and request advice!</p>
+ <a onclick='postToFeed("My favorite restaurant", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>

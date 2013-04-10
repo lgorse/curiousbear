@@ -1,9 +1,35 @@
 $(function(){
+	var search_value;
+	$(".fancybox").fancybox({
+		type : 'iframe',
+		afterLoad : function(){
+			$(".fancybox-iframe").contents().find("#search_submit").unbind("type");
+			$(".fancybox-iframe").contents().find("#search_submit").click(function(e){
+		e.preventDefault();
+		parent.$.fancybox.close();
 
-$(".fancybox").fancybox({
-       type : 'iframe'   
-    
-}).eq(0).click().stopPropagation();
-
+	});
+		},
+		beforeClose : function(){
+			search_value = $(".fancybox-iframe").contents().find('#search').val();
+		},
+		afterClose : function(){
+			if (search_value){
+			$("#search").attr("value", search_value);
+			$("#search_form").submit();
+		}
+		}
+	}).eq(0).click().stopPropagation();
 
 });
+
+function prior_to_close(){
+	alert($("#search").val());
+	search_value = $("#search").val();
+}
+
+function after_close(){
+	alert("hello");
+	return;
+
+}
