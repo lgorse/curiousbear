@@ -14,6 +14,7 @@ gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
 gem "oink"
 gem 'newrelic_rpm'
+gem 'fancybox2-rails', '~> 0.2.4'
 
 
 

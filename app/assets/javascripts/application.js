@@ -15,6 +15,7 @@
 //= require_tree .
 //= require gmap3
 //= require jquery.pageless
+//= require fancybox
 
 
 $(document).ready(function(){
