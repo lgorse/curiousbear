@@ -3,8 +3,8 @@
 	<div id="fb-root"></div>
 	<%= render 'fb-scripts/facebook_app_scripts' %>
 	<ul id= "app_header_left">
-		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path %></li>
-		<li class = "app_header_item"><%= link_to APP_NAME, home_path, :id=>"home_button" %></li>
+		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path(:welcome => params[:welcome]) %></li>
+		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
 	</ul>
 	<nav id = "app_header_right">
 		<%= link_to (image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "30x30"), user_path(@current_user) %>
