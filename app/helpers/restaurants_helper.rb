@@ -107,7 +107,7 @@ module RestaurantsHelper
 		@parsed_address = split_formatted_address(venue.formatted_address.to_s)
 		@venue_json = {"name" => venue.name}.to_json
 		@google_id = venue.google_id
-		@recommended_google_ids << venue.google_id
+		@recommended_google_ids << venue.google_id if @recommended_google_ids
 	end
 
 	def final_restaurant_attributes(venue)

@@ -31,7 +31,8 @@
 <div class = "info_header">
 <h2>3. Review places for your friends</h2></div>
 <div class = "info_section">
-<div class = "rate_restaurant"></div>
+<%# render 'restaurants/recommended_restaurant_summary', :venue => Restaurant.first %>
+<%= render 'reviews/buttons/review_input', :restaurant_id => -1, :venue_field => "", :search => "", :restaurant => nil %>
 <p>All in a single click. Click on the stars now!</p>
 <p>Your friends will need your help to know where to eat!</p>
 </div>

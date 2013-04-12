@@ -4,7 +4,7 @@ $(function(){
 		type : 'iframe',
 		afterLoad : function(){
 			$(".fancybox-iframe").contents().find("#search_submit").unbind("type");	
-			block_off_header();
+			block_off_default_clicks();
 			set_click_listeners();
 			$(".fancybox-iframe").contents().find("#search_submit").click(function(e){
 		e.preventDefault();
@@ -17,6 +17,7 @@ $(function(){
 		},
 		afterClose : function(){
 			if (search_value){
+			$("#searchbox_holder").html("<%= escape_javascript(render 'restaurants/searchbox') %>");
 			$("#search").attr("value", search_value);
 			$("#search_form").submit();
 		}
@@ -33,10 +34,12 @@ function set_click_listeners(){
 	});
 }
 
-function block_off_header(){
+function block_off_default_clicks(){
 	$(".fancybox-iframe").contents().find("#app_header").find('a').click(function(e){
 		e.preventDefault();
-
+	});
+	$(".fancybox-iframe").contents().find(".new_review_detail").click(function(e){
+		e.preventDefault();
 	});
 }
 
