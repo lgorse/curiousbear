@@ -80,9 +80,16 @@ padding: 10px 15px;
 
 	#add_friends_button{
 		margin-right: 10px;
+		vertical-align: middle;
+		display: inline;
 	}
 
 	.friend_fb_pic_small{
+		display: inline;
+		vertical-align: middle;
+	}
+
+	#my_profile_button{
 		display: inline;
 		vertical-align: middle;
 	}
