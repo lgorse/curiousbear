@@ -3,7 +3,8 @@ $(function(){
 	$(".fancybox").fancybox({
 		type : 'iframe',
 		afterLoad : function(){
-			$(".fancybox-iframe").contents().find("#search_submit").unbind("type");
+			$(".fancybox-iframe").contents().find("#search_submit").unbind("type");	
+			block_off_header();
 			set_click_listeners();
 			$(".fancybox-iframe").contents().find("#search_submit").click(function(e){
 		e.preventDefault();
@@ -31,4 +32,13 @@ function set_click_listeners(){
 		$('.fancybox-inner').height($(".fancybox-iframe").contents().find('body').height());
 	});
 }
+
+function block_off_header(){
+	$(".fancybox-iframe").contents().find("#app_header").find('a').click(function(e){
+		e.preventDefault();
+
+	});
+}
+
+
 

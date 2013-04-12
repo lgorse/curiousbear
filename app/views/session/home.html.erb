@@ -1,8 +1,9 @@
 <div id="fb-root"></div>
-<%# if params[:welcome] %>
-<%= link_to "Why am I here?#{params['new']}", info_path, :remote => true, :class => "fancybox" %>
+<% if params[:welcome] %>
+<div id = "why_am_i_here_container">
+<%= link_to "Hmmm...why am I here?#{params['new']}", info_path(:welcome => params[:welcome]), :remote => true, :class => "fancybox rounded-corner", :id => "why_am_i_here" %></div>
 
-<%# end %>
+<% end %>
 <div id = "home_wrapper"><%= render 'restaurants/searchbox' %></div>
 
 

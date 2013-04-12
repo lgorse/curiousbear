@@ -13,27 +13,60 @@ h1#title{
 	width: 70%;
 }
 
-#info_holder{
-	
+#why_am_i_here_container{
+	position: absolute;
+	margin-left: 20%;
+	top: 100px;
 
+	a{
+		text-decoration: none;	
+	background-color: #ed8b87;	
+padding: 10px 15px;
+	box-shadow: 5px 5px 5px #888;
+	color: white;
+	font-size: 120%;
+
+	}
+
+	a:hover{
+		background-color: #ea5e57;
+	}
+}
+
+#info_holder{
+
+	h3{
+		text-align: center;
+		margin: 0px auto 20px;
+		color: #e52e3b;
+		font-size: 130%;
+	}
 	h1{
 		text-align: center;
 		margin-bottom: 20px;
+		font-style: italic;
+		font-weight: normal;
 	}
 
 	h2{
 		height: 35px;
-		margin: 0px auto;		
-		width: 500px;
+		margin: 0px 50px;		
+		font-size: 120%;
 		padding-top: 20px;
+		color: #234670;
+		display: inline-block;
 	}
 
 	.info_header{
-		margin-top: 10px;
+		margin: 10px auto 0px;
 		border-top: 1px solid #C0C0C0; 
-		//width: 70%;
+		width: 70%;
 		cursor: pointer;
 
+		p{
+			display: inline-block;
+			font-style: italic;
+		}
 	}
 
 	p{
@@ -55,8 +88,7 @@ h1#title{
 	}
 
 	.info_section{
-		margin: 0px auto;
-		width: 600px;
+		margin-left: 120px;
 		display: none;
 	}
 

@@ -1,29 +1,44 @@
 <div id = "info_holder">
-	<h1>Restaurant reviews from people you trust</h1>
-	<div class = "info_header">
+<% if params[:welcome] %>
+	<h3>Because you love food!</h3>
+<% end %>
+
+	<h1>Click to find out more</h1>
+	
+<div class = "info_header">
 <h2>1. Follow the foodies you trust</h2></div>
 <div class = "info_section">
 <%= link_to "Add friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :target => "_parent" %>
 <% @five_friends.each do |profile| %>
 <%= image_tag (profile['picture']['data']['url']), :size => '35x35', :class => "friend_fb_pic_small" %>
 <% end %>
-<p>Choose trusted foodies among your Facebook friends</p></div>
+<p>Choose trusted foodies among your Facebook friends</p>
+<p>Click on the link now to find your friends!</p>
+</div>
+
 <div class = "info_header">
-<h2>2. Search for restaurant by name, cuisine, or location</h2></div>
+<h2>2. Search for a restaurant</h2></div>
 <div class = "info_section">
 <%= render 'restaurants/searchbox' %>
-<p>Your first results will be recommendations from trusted friends </p>
+<p>You can search any way you want: by name, cuisine or location.</p>
+<p>Your first results will be recommendations from trusted friends. </p>
 <%= image_tag ('info/friend_review.png'), :class => 'info_review_img' %>
-<p>If that's not enough, you can get Google reviews too !</p>
-<%= image_tag ('info/google_review.png'), :class => "info_review_img" %></div>
+<p>If you want more results, you get Google results too!</p>
+<p>Go ahead, type something in the search box!</p>
+<%= image_tag ('info/google_review.png'), :class => "info_review_img" %>
+</div>
+
 <div class = "info_header">
 <h2>3. Review places for your friends</h2></div>
 <div class = "info_section">
 <div class = "rate_restaurant"></div>
-<p>All it takes is a single click</p></div>
+<p>All in a single click. Click on the stars now!</p>
+<p>Your friends will need your help to know where to eat!</p>
+</div>
+
 <div class = "info_header">
 <h2>4. Share reviews, ask for help</h2></div>
 <div class = "info_section">
  <a onclick='postToFeed("My favorite restaurant", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
- <p>Share, recommend, ask for advice, and more!</p></div>
+ <p>Share, recommend, ask for advice, you can do it all!</p></div>
 </div>
