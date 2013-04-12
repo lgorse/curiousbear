@@ -1,4 +1,4 @@
-<%= render 'shared/error_messages', :object => f.object %>
+<div id = "errors"><%= render 'shared/error_messages', :object => f.object %></div>
 <ul class = "flat_list">
 <li class = "flat_list_item"><%= f.label "Rating" %></li>
 	<li class = "flat_list_item"><div class = "rate_restaurant" id = "0"><%= f.hidden_field :rating, :value => rating %></div></li></ul>

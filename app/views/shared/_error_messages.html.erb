@@ -1,5 +1,5 @@
 <% if object.errors.any? %>
-<div id="error_explanation">
+<div id="error_explanation" class= "rounded-corner">
 	<h3>
 		<%= pluralize(object.errors.count, "error") %>
 		prohibited this <%= object.class.to_s.underscore.humanize.downcase %> from being saved:

@@ -4,6 +4,7 @@ $(function(){
 		 "<%= @restaurant.id %>", "<%= @review.rating %>");
 	}else if ("<%= @review.valid? %>" == "false"){
 		$("#container").html("<%= escape_javascript(render 'reviews/review_edit') %>");
+			$("#errors").html("<%= escape_javascript(render 'shared/error_messages', :object => @review) %>");
 	}else{
 		window.location = "/restaurants/<%= @restaurant.id %>";
 	}

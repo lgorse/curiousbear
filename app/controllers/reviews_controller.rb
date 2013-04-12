@@ -30,7 +30,7 @@ class ReviewsController < ApplicationController
 			@review.update_attributes(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
 		elsif @review = Review.create(params[:review].merge(:restaurant_id => @restaurant.id, :user_id => @current_user.id).except(:venue))
 		else
-			flash.now[:error] = @review.errors.full_messages.to_sentence
+			render 'new'
 		end
 
 		respond_to do |format|
@@ -56,7 +56,7 @@ class ReviewsController < ApplicationController
 				format.js 
 			end
 		else
-			flash.now[:error] = @review.errors.full_messages.to_sentence
+			render 'edit'
 		end
 		
 	end

@@ -6,5 +6,5 @@
 		<% if venue.google_rating %>
 		<%= render 'reviews/buttons/google_stars', :google_rating => venue.google_rating.to_i %>
 		<% end %>
-		 <a onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
+		 <%= render 'reviews/buttons/request_review', :venue => venue %>
 </div>
