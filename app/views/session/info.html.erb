@@ -1,15 +1,29 @@
-<p>Follow the foodies you trust; add a friend now!</p>
+<div id = "info_holder">
+	<h1>Restaurant reviews from people you trust</h1>
+	<div class = "info_header">
+<h2>1. Follow the foodies you trust</h2></div>
+<div class = "info_section">
 <%= link_to "Add friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :target => "_parent" %>
 <% @five_friends.each do |profile| %>
-<%= image_tag (profile['picture']['data']['url']), :size => '35x35' %>
+<%= image_tag (profile['picture']['data']['url']), :size => '35x35', :class => "friend_fb_pic_small" %>
 <% end %>
-<p>Search restaurants; type something now!</p>
+<p>Choose trusted foodies among your Facebook friends</p></div>
+<div class = "info_header">
+<h2>2. Search for restaurant by name, cuisine, or location</h2></div>
+<div class = "info_section">
 <%= render 'restaurants/searchbox' %>
-<p>Results will be recommendations from your trusted friends </p>
+<p>Your first results will be recommendations from trusted friends </p>
 <%= image_tag ('info/friend_review.png'), :class => 'info_review_img' %>
-<p>If you don't get enough answers there, you'll get Google results as well!</p>
-<%= image_tag ('info/google_review.png'), :class => "info_review_img" %>
-<p>Help you're friends by adding reviews. It's that simple.</p>
+<p>If that's not enough, you can get Google reviews too !</p>
+<%= image_tag ('info/google_review.png'), :class => "info_review_img" %></div>
+<div class = "info_header">
+<h2>3. Review places for your friends</h2></div>
+<div class = "info_section">
 <div class = "rate_restaurant"></div>
-<p>Food is all about sharing! Recommend, share and request advice!</p>
+<p>All it takes is a single click</p></div>
+<div class = "info_header">
+<h2>4. Share reviews, ask for help</h2></div>
+<div class = "info_section">
  <a onclick='postToFeed("My favorite restaurant", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
+ <p>Share, recommend, ask for advice, and more!</p></div>
+</div>

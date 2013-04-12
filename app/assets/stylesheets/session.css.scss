@@ -12,3 +12,54 @@ h1#title{
 	height: 70%;
 	width: 70%;
 }
+
+#info_holder{
+	
+
+	h1{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	h2{
+		height: 35px;
+		margin: 0px auto;		
+		width: 500px;
+		padding-top: 20px;
+	}
+
+	.info_header{
+		margin-top: 10px;
+		border-top: 1px solid #C0C0C0; 
+		//width: 70%;
+		cursor: pointer;
+
+	}
+
+	p{
+		margin: 20px auto;
+	}
+
+	#msg, #recommended_restaurant_list, #searchbox{
+		margin: 0px;
+	}
+
+
+	#add_friends_button{
+		margin-right: 10px;
+	}
+
+	.friend_fb_pic_small{
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.info_section{
+		margin: 0px auto;
+		width: 600px;
+		display: none;
+	}
+
+
+}
+
