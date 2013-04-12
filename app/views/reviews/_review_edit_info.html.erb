@@ -1,6 +1,8 @@
 <div class = "review_details_info">
 <div class = "review_edit_left">
-	<p id = "venue_name"><%= @restaurant.name %></p>
+	<%= link_to @restaurant.name, @restaurant, :id => "venue_name" %>
+	
+	<div id = "formatted_address" class = "formatted_address"><%= @restaurant.formatted_address %></div>
 </div>
 <div class = "review_edit_right">
 	<%= render 'reviews/buttons/restaurant_average', :venue => @restaurant %>
