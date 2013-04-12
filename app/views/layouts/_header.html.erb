@@ -8,9 +8,13 @@
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
 	</ul>
 	<nav id = "app_header_right">
-		<%= link_to (image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "30x30"), user_path(@current_user) %>
-		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button"%>
-		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()" %>
+		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :title => "Add friends" %>
+		
+		<%= link_to (image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
+
+	
+		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>
+		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()", :title => "Log out" %>
 	</nav>
 	<%= render 'layouts/flash', :flash => flash %>
 </header>

@@ -3,6 +3,6 @@
 <%= link_to "Trusts (#{@user.following.count})", following_user_path(@user), :id => "follows_list_button", :remote => true %>
 <%= link_to "Trusted by (#{@user.followers.count})", followers_user_path(@user) , :id => "followed_list_button", :remote => true %>
 <% if @user == @current_user %>
-	<%= link_to "Add friends", facebook_friends_user_path, :id => "add_friends_button" %>
+	<%= link_to "+ friends", facebook_friends_user_path, :id => "add_friends_button" %>
 <% end %>
 </nav>

@@ -51,15 +51,19 @@ margin: 0px auto;
 	left: 500px;
 	top: 10px;
 
-	#help_button{
-		vertical-align: middle;
-		padding-right: 5px;
-	}
+#add_friends_button{
+	margin-right: 20px;
+}
+
 
 
 	#my_profile_button{
 		vertical-align: middle;
 		padding-right: 10px;
+	}
+
+	.show_me{
+		display: none;
 	}
 
 	#edit_profile_icon{

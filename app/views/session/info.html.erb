@@ -9,7 +9,7 @@
 <h2>1. Follow the foodies you trust</h2></div>
 <div class = "info_section">
 	<p>Choose trusted foodies among your Facebook friends</p>
-<%= link_to "Add friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :target => "_parent" %>
+<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :target => "_parent" %>
 <%= image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "35x35" %>
 <p>Pick whose food advice you trust - they're your trusted group!</p>
 <% @five_friends.each do |profile| %>
