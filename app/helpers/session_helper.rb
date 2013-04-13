@@ -24,7 +24,7 @@ module SessionHelper
 	end
 
 	def set_facebook_graph
-		@graph = Koala::Facebook::GraphAPI.new(@access_token)
+		@graph = Koala::Facebook::API.new(@access_token)
 		@me = @graph.get_object("me")
 	end
 
