@@ -4,8 +4,6 @@ class UsersController < ApplicationController
 	before_filter :authenticate, :except => [:create]
 	before_filter :new_user_facebook, :only => [:create]
 
-	caches_action :facebook_friends
-
 
 def create
 end
@@ -50,13 +48,6 @@ def facebook_friends
 		format.js
 		format.json {render :json => {:id => @current_user.id, :count => @facebook_friends.count}	}
 	end
-end
-
-def facebook_friends_invite
-	@user = @current_user
-	@facebook_friends ||= @graph.fql_query('select name, uid, pic_square from user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY name ASC')
-	@facebook_invite_collection ||= set_friend_lists
-	render :partial => 'users/list_facebook_friends_invite'
 end
 
 def following

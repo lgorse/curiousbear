@@ -2,11 +2,12 @@
 <div class = "user_info" id = "<%= @current_user.id %>"></div>
 <div class = "new_friend_lists"></div>
 
-
+<% cache('facebook_friends', :expires_in => 15.minutes) do %>
 <div id = "facebook_friends">
 	<div class = "friend_title">Facebook Friends</div>
 	<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_invite, :as => :profile %>
 </div>
+<%end %>
 
 
 
