@@ -1,3 +1,4 @@
+$("#loading").hide();
 $("#recommended_restaurant_list").html("<%=escape_javascript(render 'restaurants/recommended_restaurants')%>");
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
@@ -5,3 +6,4 @@ $("#show_holder").remove();
 $("#user_edit_wrapper").remove();
 $("#restaurant_list").empty();
 star_ratings();
+load_listener();

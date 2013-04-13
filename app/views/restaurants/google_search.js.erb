@@ -1,4 +1,5 @@
-$("#restaurant_list").html("<%=escape_javascript(render 'google_restaurants')%>");
+$("#loading").hide();
+$("#restaurant_list").show().html("<%=escape_javascript(render 'google_restaurants')%>");
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
 $("#show_holder").remove();
