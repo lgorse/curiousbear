@@ -1,5 +1,6 @@
 <ul>
-<% @facebook_invite_collection.each do |profile| %>
-<%= render "users/new_user_profile_summary", :user => User.new(set_attr_from_fb(profile))%>
-<% end %>
-</ul>
+		<% @facebook_friends_invite.each do |profile| %>
+		<%= render "users/new_user_profile_summary", :user => User.new(set_attr_from_fb(profile))%>
+		<% end %>
+		
+	</ul>

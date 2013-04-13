@@ -5,8 +5,9 @@
 
 <div id = "facebook_friends">
 	<div class = "friend_title">Facebook Friends</div>
-	<%= render 'users/list_facebook_friends_invite' %>
+	<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_invite, :as => :profile %>
 </div>
+
 
 
 <div id = "facebook_friends_enrolled">

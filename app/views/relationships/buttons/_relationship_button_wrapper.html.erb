@@ -1,0 +1,15 @@
+<% if user.id.nil? %>	
+	<div id="button_<%= user.id %>", class="follow_button">
+		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id, :current_user => @current_user %>
+	</div>
+<% else %>
+	<% unless user == @current_user %>
+	<div id="button_<%= user.id %>", class="follow_button">
+		<% if @current_user.following?(user.id) %>
+			<%= render 'relationships/buttons/unfollow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% else %>
+			<%= render 'relationships/buttons/follow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% end %>
+		</div>
+	<% end %>
+<% end %>
