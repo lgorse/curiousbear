@@ -5,7 +5,9 @@
 <% cache('facebook_friends', :expires_in => 15.minutes) do %>
 <div id = "facebook_friends">
 	<div class = "friend_title">Facebook Friends</div>
-	<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_invite, :as => :profile %>
+	<% @facebook_friends_invite.each do |profile| %>
+	<%= render 'users/new_user_profile_summary', :user => User.new(set_attr_from_fb(profile)) %>
+	<% end %>
 </div>
 <%end %>
 
@@ -14,8 +16,6 @@
 <div id = "facebook_friends_enrolled">
 <div class = "friend_title">Friends on <%= APP_NAME %></div>
 	<ul>
-			<% @facebook_friends_enrolled.each do |friend| %>	
-			<%= render "users/user_profile_summary", :user => friend %>
-			<% end %>
+		<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_enrolled, :as => :user %>
 	</ul>
 </div>

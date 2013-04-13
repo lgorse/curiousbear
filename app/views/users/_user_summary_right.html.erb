@@ -1,5 +1,5 @@
 <div class = "summary_right">
-	<%= image_tag user.fb_pic, :class => 'user_small_pic' %>
+	<%= image_tag user_photo(user), :class => 'user_small_pic' %>
 <% if user.id.nil? %>	
 	<div id="button_<%= user.id %>", class="follow_button">
 		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id, :current_user => @current_user %>

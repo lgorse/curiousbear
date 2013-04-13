@@ -31,12 +31,22 @@ module UsersHelper
 	end
 
 	def set_attr_from_fb(profile)
-@attr = {:id => nil, :fb_pic => "https://graph.facebook.com/"+profile["uid"].to_s+"/picture?type=square",
+@attr = {:id => nil, :fb_pic => profile['pic_square'],
 		 :fb_id => profile["uid"], :name => profile["name"]}
 	end
 
 	def set_enrolled_fb_friend_list(user)
 		@facebook_friends_enrolled << user unless @current_user.following?(user)
+	end
+
+	def user_photo(user)
+			user.update_attributes(:fb_pic => @graph.get_picture(user.fb_id)) unless FileTest.exist?(user.fb_pic)
+			user.fb_pic
+	end
+
+	def user_large_photo(user)
+		user.update_attributes(:fb_pic_large => @graph.get_picture(user.fb_id, :type => "normal")) unless FileTest.exist?(user.fb_pic_large)
+		user.fb_pic_large
 	end
 
 	

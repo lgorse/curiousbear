@@ -10,7 +10,7 @@
 	<nav id = "app_header_right">
 		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :title => "Add friends" %>
 		
-		<%= link_to (image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
+		<%= link_to (image_tag user_photo(@current_user), :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
 
 	
 		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>

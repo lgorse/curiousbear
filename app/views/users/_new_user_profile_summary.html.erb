@@ -1,7 +1,8 @@
-<% user = User.new(set_attr_from_fb(profile)) %>
 <li class="new_user_summary">
 	<%= image_tag user.fb_pic, :class => 'user_small_pic' %>
 	<%= render 'users/user_summary_left', :user => user %>
-<%= render 'relationships/buttons/relationship_button_wrapper', :user => user %>
-
+	<%= render 'relationships/buttons/relationship_button_wrapper', :user => user %>
+	<% unless user.id.blank? %>
+	<div class = "review_count"><%= pluralize(user.reviews.count, 'review') %></div>
+	<% end %>
 </li>
