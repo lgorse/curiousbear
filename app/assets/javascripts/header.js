@@ -1,5 +1,5 @@
 $(function(){
-	$(".add_friends_button").click(function(){
+	$(".add_friends_button").on('click', function(){
 		big_load_listener();
 	});
 });

@@ -1,6 +1,6 @@
 <div id = "searchbox_holder"></div>
 <div id = "user_edit_wrapper">
-<%= link_to 'How\'s it all work again?', info_path, :remote => true, :class => "fancybox" %>
+<%= link_to 'How\'s it all work again?', info_path, :remote => true, :class => "fancybox", :id => "why_am_i_here" %>
 <%= form_for(@current_user) do |f| %>
 <%= render 'user_edit_fields', :f => f %>
 <%= f.submit "update" %>
