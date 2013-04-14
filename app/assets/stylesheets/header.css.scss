@@ -7,7 +7,7 @@ header#app_header{
 	height: 50px;
 	position: relative;
 	font-size: 14px;
-margin: 0px auto;
+	margin: 0px auto;
 	padding-top: 0px;
 	width: 850px;
 
@@ -40,10 +40,10 @@ margin: 0px auto;
 }
 
 .app_header_item{
-		display: table-cell;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+	display: table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 #app_header_right{
 	display: inline-block;
@@ -51,9 +51,9 @@ margin: 0px auto;
 	left: 500px;
 	top: 10px;
 
-#add_friends_button{
-	margin-right: 20px;
-}
+	.add_friends_button{
+		margin-right: 20px;
+	}
 
 
 
@@ -69,12 +69,12 @@ margin: 0px auto;
 	#edit_profile_icon{
 		
 		padding-right: 10px;
-vertical-align: middle;
+		vertical-align: middle;
 
 	}
 
 	#fb-logout{
-			
+		
 	}
 
 	#logout_icon{

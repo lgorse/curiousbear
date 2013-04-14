@@ -8,7 +8,7 @@
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
 	</ul>
 	<nav id = "app_header_right">
-		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :id => "add_friends_button", :title => "Add friends" %>
+		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :class => "add_friends_button", :title => "Add friends" %>
 		
 		<%= link_to (image_tag user_photo(@current_user), :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
 
