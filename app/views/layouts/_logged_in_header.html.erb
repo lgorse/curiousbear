@@ -1,0 +1,18 @@
+<header id = "app_header">
+	<div id="fb-root"></div>
+	<%= render 'fb-scripts/facebook_app_scripts' %>
+	<ul id= "app_header_left">
+		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path(:welcome => params[:welcome]) %></li>
+		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
+	</ul>
+	<nav id = "app_header_right">
+		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :class => "add_friends_button", :title => "Add friends" %>
+		
+		<%= link_to (image_tag @current_user.user_photo(@graph), :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
+
+	
+		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>
+		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()", :title => "Log out" %>
+	</nav>
+	<%= render 'layouts/flash', :flash => flash %>
+</header>

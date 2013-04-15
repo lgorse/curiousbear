@@ -1,6 +1,10 @@
 <%= render 'fb-scripts/facebook_signin' %>
-
+<div id = "login_holder" class = "rounded-corner">
 <h1>Welcome to KweeKweg</h1>
-<div class="fb-facepile" data-max-rows="5" data-width="300"></div>
+<div class = "join_buttons">
+<%= link_to 'Why?', info_path, :class => "fancybox", :remote => true, :id => "why_am_i_here" %>
 <fb:login-button
-registration-url="../register" onlogin="login()" />
+registration-url="../register" onlogin="login()" id="login_button" login_text="Log in"/>
+</div>
+<div class="fb-facepile" data-max-rows="5" data-width="300"></div>
+</div>

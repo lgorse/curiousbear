@@ -3,7 +3,7 @@
 	<h3>Because you love food!</h3>
 <% end %>
 
-	<h1>Click to find out more</h1>
+	<h1>Food reviews from the people you trust</h1>
 	
 <div class = "info_header">
 <h2>1. Follow the foodies you trust</h2></div>
@@ -12,8 +12,8 @@
 <%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :class => "add_friends_button", :target => "_parent" %>
 <%= image_tag @current_user.fb_pic, :id => "my_profile_button", :size => "35x35" %>
 <p>Pick whose food advice you trust - they're your trusted group!</p>
-<% @five_friends.each do |profile| %>
-<%= image_tag (profile['picture']['data']['url']), :size => '35x35', :class => "friend_fb_pic_small" %>
+<% @five_friends.each do |photo| %>
+<%= image_tag (photo), :size => '35x35', :class => "friend_fb_pic_small" %>
 <% end %>
 </div>
 

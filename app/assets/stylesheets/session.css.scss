@@ -105,3 +105,38 @@ h1#title{
 
 }
 
+#login_holder{
+	width: 300px;
+	margin: 50px auto;
+	text-align: center;
+	padding: 10px;
+
+	h1{
+		text-align: center;
+		font-size: 150%;
+		vertical-align: middle;
+	}
+
+	.join_buttons{
+		width: 150px;
+		height: 30px;
+		margin: 50px auto;
+
+	#login_button{
+		vertical-align: middle;
+		height: 25px;
+		float: left;
+
+	}
+
+	#why_am_i_here{
+	float: right;
+	vertical-align: middle;
+	height: 25px;
+		
+	}
+}
+
+
+}
+
