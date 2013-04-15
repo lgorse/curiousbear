@@ -1,5 +1,5 @@
 <div id = "header_wrapper">
-<% if session['user_id'] %>
+<% if @access_token %>
 <%= render 'layouts/logged_in_header' %>
 <% else %>
 <%= render 'layouts/logged_out_header' %>
