@@ -68,6 +68,20 @@ class User < ActiveRecord::Base
 		end
 	end
 
+	def user_photo(graph)
+			self.update_attributes(:fb_pic => graph.get_picture(self.fb_id)) unless FileTest.exist?(self.fb_pic)
+			self.fb_pic
+	end
 
+	def user_large_photo(graph)
+		self.update_attributes(:fb_pic_large => graph.get_picture(self.fb_id, :type => "normal")) unless FileTest.exist?(self.fb_pic_large)
+		self.fb_pic_large
+	end
+
+def update_attributes_for_session(graph, request)
+		self.user_photo(graph)
+		self.user_large_photo(graph)
+		self.update_attributes(:ip_address => request.remote_ip)
+	end
 
 end
