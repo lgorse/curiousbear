@@ -26,7 +26,7 @@ if (!$(this).hasClass("checked")){
 			data: $(this).closest("form").serialize(),
 			dataType: 'json',
 			success: function(response){
-				update_detail_button(response, star_container);
+				update_detail_button(response, star_container).delay(100);
 				}
 			});	
 		}
