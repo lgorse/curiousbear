@@ -42,6 +42,12 @@ module SessionHelper
 		redirect_to root_path
 	end
 
+	def parse_facebook_cookies
+		check_token_expiration
+		set_access_token
+		set_facebook_graph
+	end
+
 	def set_session
 		@current_user = User.find_by_fb_id(@me['id'])
 		if @current_user.nil? #this catches the error where the user has authorized the app but somehow disappeared from our db
@@ -51,18 +57,12 @@ module SessionHelper
 		session['user_id'] ||= @current_user.id
 	end
 
-	def parse_facebook_cookies
-		check_token_expiration
-		set_access_token
-		set_facebook_graph
-	end
+	
 
 	def authenticate
 		parse_facebook_cookies
 		set_session
-		@current_user.update_attributes(:fb_pic => @graph.get_picture("me"),
-			:fb_pic_large => @graph.get_picture("me", :type => "normal"),
-			:ip_address => request.remote_ip)
+		@current_user.update_attributes_for_session(@graph, request)
 	end
 
 	def reset_user_session
