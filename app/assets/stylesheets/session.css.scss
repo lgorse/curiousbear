@@ -122,21 +122,39 @@ h1#title{
 		height: 30px;
 		margin: 50px auto;
 
-	#login_button{
-		vertical-align: middle;
-		height: 25px;
-		float: left;
+		#login_button{
+			vertical-align: middle;
+			height: 25px;
+			float: left;
 
+		}
+
+		#why_am_i_here{
+			float: right;
+			vertical-align: middle;
+			height: 25px;
+
+		}
 	}
 
-	#why_am_i_here{
-	float: right;
-	vertical-align: middle;
-	height: 25px;
-		
-	}
+
 }
 
+#register_holder{
+	width: 450px;
+	margin: 10px auto 20px;
 
+	h1,h2{
+		
+		text-align: center;
+	}
+
+	h1{
+		margin-bottom: 20px;
+	}
+
+	h2{
+		font-weight: normal;
+	}
 }
 
