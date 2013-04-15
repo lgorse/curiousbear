@@ -5,7 +5,7 @@
 #  id            :integer          not null, primary key
 #  restaurant_id :integer          not null
 #  user_id       :integer          not null
-#  rating        :decimal(2, 1)
+#  rating        :integer
 #  text          :text
 #  keywords      :string(255)
 #  created_at    :datetime         not null

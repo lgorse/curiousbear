@@ -14,10 +14,14 @@
 #  fb_pic       :string(255)
 #  fb_pic_large :string(255)
 #  price        :decimal(, )
+#  lat          :float
+#  long         :float
+#  ip_address   :string(255)
 #
 
 class User < ActiveRecord::Base
-	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name, :fb_pic, :fb_pic_large
+	extend ::Geocoder::Model::ActiveRecord
+	attr_accessible :birthday, :e_mail, :fb_id, :first_name, :gender, :name, :fb_pic, :fb_pic_large, :ip_address, :lat, :long
 
 	email_format = /[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -33,6 +37,9 @@ class User < ActiveRecord::Base
 	has_many :followers, :through => :reverse_relationships, :source => :follower
 
 	has_many :reviews, :dependent => :destroy
+
+	geocoded_by :ip_address, :latitude => :lat, :longitude => :long
+	after_validation :geocode
 
 
 	def self.set_user_attributes(signed_request)

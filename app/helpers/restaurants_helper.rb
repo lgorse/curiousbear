@@ -19,9 +19,9 @@ module RestaurantsHelper
 			end
 	end
 
-	def parse_google_search		
-		query = URI.escape(params[:search])
-		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join(URI.encode("|"))
+	def parse_google_search	
+		query = URI.escape(params[:search]) 
+		params[:local_search] ? url_params = nearby_search(query) : url_params = text_search(query)
 		url_params << "&pagetoken="+params[:next_token] if params[:next_token]
 		url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/"+url_params)
 		
@@ -32,9 +32,19 @@ module RestaurantsHelper
 		request = Net::HTTP::Get.new(url.request_uri)
 		
 		result = http.request(request)
-		JSON.parse(result.body)
-
+		JSON.parse(result.body)		
 	end
+
+	def text_search(query)
+		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&types="+GOOGLE_TYPES.join(URI.encode("|"))
+	end
+
+	def nearby_search(query)
+		url_params = "json?query="+ query + "&key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + 
+					 "&location="+@current_user.lat.to_s+"," + @current_user.long.to_s +
+					 "&radius=20"+"&types="+GOOGLE_TYPES.join(URI.encode("|"))
+	end
+
 
 	def get_details(entry)
 		url_params = "json?reference="+ entry["google_reference"] + "&key=" + GOOGLE_API_KEY + "&sensor=" + false.to_s

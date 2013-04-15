@@ -35,8 +35,12 @@ ul{
 
 #searchbox{
 		position: relative;
-		width: 700px;
+		width: 800px;
 		margin: auto auto 50px;
+
+		input[type="checkbox"]#local_search{
+			height: 20px;
+		}
 
 		input#search{
 			font-size: 110%;

@@ -90,6 +90,7 @@ GEM
       multipart-post (~> 1.1)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    geocoder (1.1.6)
     google_places (0.12.0)
       httparty
     hashie (1.2.0)
@@ -208,6 +209,7 @@ DEPENDENCIES
   faker
   fancybox2-rails (~> 0.2.4)
   flying-sphinx!
+  geocoder
   google_places
   jquery-rails
   koala

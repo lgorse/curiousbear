@@ -14,6 +14,9 @@
 #  fb_pic       :string(255)
 #  fb_pic_large :string(255)
 #  price        :decimal(, )
+#  lat          :float
+#  long         :float
+#  ip_address   :string(255)
 #
 
 require 'spec_helper'

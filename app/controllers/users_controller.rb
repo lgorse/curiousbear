@@ -66,5 +66,10 @@ def followers
 	end
 end
 
+def ip_address
+	request.remote_ip
+end
+
+
 
 end
