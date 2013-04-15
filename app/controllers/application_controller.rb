@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 	require 'open-uri'
 	include SessionHelper
 
-	
+	rescue_from NoMethodError, :with => :redirect_to_signin
 
 end
