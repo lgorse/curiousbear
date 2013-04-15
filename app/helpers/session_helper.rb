@@ -58,7 +58,6 @@ module SessionHelper
 	end
 
 	
-
 	def authenticate
 		parse_facebook_cookies
 		set_session
@@ -69,7 +68,6 @@ module SessionHelper
 		session['user_id'] = nil
 		session['fb_cookie'] = nil
 		cookies.delete(:profile_pic)
-		cookies.delete(:first_entry)
 		reset_session
 	end
 

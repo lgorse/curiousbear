@@ -1,6 +1,6 @@
 <li class = "review_summary">
 	<div class = "review_summary_left">
-<%= image_tag user_photo(review.user), :class => 'user_small_pic' %>
+<%= image_tag review.user.user_photo(@graph), :class => 'user_small_pic' %>
 </div>
 <div class = "review_summary_center">
 <%= link_to review.user.name, review.user, :class => "user_name_link", :id => review.user.id %></div>

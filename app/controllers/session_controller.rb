@@ -1,7 +1,7 @@
 class SessionController < ApplicationController
 	include UsersHelper, ReviewsHelper
 	
-	rescue_from NoMethodError, :with => :redirect_to_signin
+	#rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
 	before_filter :authenticate, :only=>[:home, :info]
 	after_filter :reset_user_session, :only=>[:signin]
