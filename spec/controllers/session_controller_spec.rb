@@ -14,6 +14,20 @@ describe SessionController do
       response.should be_success
     end
 
+    it "should render the signin template" do
+      get 'signin'
+      response.should render_template('signin')
+    end
+
   end
+
+  describe "GET 'info'" do
+
+    it "should show help menu" do
+      get :info
+     # response.should have_selector("info_holder")
+   end
+
+ end
 
 end
