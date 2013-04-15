@@ -213,4 +213,52 @@ li.user_summary{
 
 }
 
+#user_edit_wrapper{
+	width: 60%;
+	margin: 40px auto;
+	position: relative;
+
+	h1{
+		font-size: 120%;
+		text-align: center;
+		margin-bottom: 30px;
+		padding: 5px;
+	}
+
+	li{
+		margin: 10px 0px 10px 10px;
+		padding: 5px;
+	}
+	ul{
+		margin: 50px auto;
+		padding: 10px;
+		border: 1px solid #C0C0C0;
+	}
+
+	#why_am_i_here{
+		color: #234670;
+		text-decoration: none;
+		font-size: 110%;
+	}
+
+#why_am_i_here:hover{
+	text-decoration: underline;
+	color: black;
+
+}
+	.user_update_button{
+		
+	}
+
+	#unsubscribe{
+		text-decoration: none;
+		color: red;
+		font-weight: bold;
+	}
+
+	#unsubscribe:hover{
+		text-decoration: underline;
+	}
+}
+
 
