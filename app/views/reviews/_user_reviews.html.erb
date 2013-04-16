@@ -1,4 +1,3 @@
 <% @map_array = [] %>
-
 <%= render :partial => 'reviews/user_review_summary', :collection => @reviews, :as => :review %>
 <%= javascript_tag "window.onload = initialize_map(#{@map_array.to_json})" %>

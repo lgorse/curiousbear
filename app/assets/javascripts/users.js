@@ -1,27 +1,16 @@
 $(document).ready(function(){
 
 	if($('#relationship_list').length){
-		$.ajax({
-			type: 'GET',
-			url: '/users/'+$('.user_info').attr("id"),
-			dataType: 'json',
-			success: function(response){
-				$('#relationship_list').pageless({ url: '/reviews'
-					, totalPages: response["count"]/5+1
-					, loaderMsg: "loading"
-					, params: {id: response["id"]}
-					, complete: star_ratings
-				});
-			}
-		});		
-
+		var user_id = $(".user_info").attr("id");
+		var review_count = $(".user_reviews_button").attr("id");
+		render_user_reviews(review_count, user_id);
 	}
 
 });
 
 $.fn.button_highlight = function(clicked_id){
 	$(this).children('a').each(function(){
-		if ($(this).attr("id") == clicked_id){
+		if ($(this).hasClass(clicked_id)){
 			$(this).removeClass("not_highlighted highlighted").addClass("selected").unbind('mouseenter mouseleave');
 		}else{
 			$(this).removeClass("highlighted selected").addClass("not_highlighted").hover(function(){
@@ -33,6 +22,15 @@ $.fn.button_highlight = function(clicked_id){
 		}
 
 	});
+}
+
+function render_user_reviews(review_count, user_id){
+$('#relationship_list').pageless({ url: '/reviews'
+					, totalPages: review_count/5+1
+					, loaderMsg: "loading"
+					, params: {user_id: user_id}
+					, complete: star_ratings
+				});	
 }
 
 
