@@ -7,20 +7,21 @@ $(function(){
 			block_off_default_clicks();
 			set_click_listeners();
 			$(".fancybox-iframe").contents().find("#search_submit").click(function(e){
-		e.preventDefault();
-		parent.$.fancybox.close();
+				e.preventDefault();
+				parent.$.fancybox.close();
 
-	});
+			});
 		},
 		beforeClose : function(){
 			search_value = $(".fancybox-iframe").contents().find('#search').val();
 		},
 		afterClose : function(){
 			if (search_value){
-			$("#searchbox_holder").html("<%= escape_javascript(render 'restaurants/searchbox') %>");
-			$("#search").attr("value", search_value);
-			$("#search_form").submit();
-		}
+				$("#searchbox_holder").html("<%= escape_javascript(render 'restaurants/searchbox') %>");
+				$("#search").attr("value", search_value);
+				$("#user_edit_wrapper").hide();
+				$(".search_form").submit();
+			}
 		}
 	}).eq(0).click().stopPropagation();
 
