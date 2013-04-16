@@ -14,8 +14,9 @@ def edit
 end
 
 def show
-	response.headers["Cache-Control"] = "no-cache, no-store, max-age=0"
+	#response.headers["Cache-Control"] = "no-cache, no-store, max-age=0"
 	@user = User.find(params[:id])
+	@user.update_photo(@graph)
 	respond_to do |format|
 		format.html 
 		format.js 
@@ -53,6 +54,8 @@ end
 
 def following
 	@user = User.find(params[:id])
+	#@current_user = User.find(session["user_id"])
+	#@graph = session["fb_graph"]
 	respond_to do |format|
 		format.html
 		format.js
@@ -61,6 +64,8 @@ end
 
 def followers
 	@user = User.find(params[:id])
+	#@current_user = User.find(session["user_id"])
+	#@graph = session["fb_graph"]
 	respond_to do |format|
 		format.html
 		format.js

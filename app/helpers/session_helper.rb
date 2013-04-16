@@ -24,8 +24,8 @@ module SessionHelper
 	end
 
 	def set_facebook_graph
-		@graph = Koala::Facebook::API.new(@access_token)
-		@me = @graph.get_object("me")
+		session["fb_graph"] ||= Koala::Facebook::API.new(@access_token)
+		@graph = session["fb_graph"]
 	end
 
 	def check_token_expiration
@@ -49,19 +49,24 @@ module SessionHelper
 	end
 
 	def set_session
-		@current_user = User.find_by_fb_id(@me['id'])
+		session['user_id'] ||= User.find_by_fb_id(@graph.get_object("me")['id'])
+		@current_user = session["user_id"]
 		if @current_user.nil? #this catches the error where the user has authorized the app but somehow disappeared from our db
 			delete_user_facebook
 			redirect_to register_path and return 
 		end
-		session['user_id'] ||= @current_user.id
+	end
+
+	def set_remote_ip
+		@current_user.update_attributes(:ip_address => request.remote_ip) unless @current_user.ip_address == request.remote_ip
+
 	end
 
 	
 	def authenticate
 		parse_facebook_cookies
 		set_session
-		@current_user.update_attributes_for_session(@graph, request)
+		set_remote_ip
 	end
 
 	def reset_user_session
