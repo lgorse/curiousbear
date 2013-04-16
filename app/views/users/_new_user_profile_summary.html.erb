@@ -1,5 +1,5 @@
 <li class="new_user_summary">
-	<%= image_tag @current_user.fb_pic, :class => 'user_small_pic' %>
+	<%= image_tag user.get_user_small_pic(@graph), :class => 'user_small_pic' %>
 	<%= render 'users/user_summary_left', :user => user %>
 	<%= render 'relationships/buttons/relationship_button_wrapper', :user => user %>
 	<% unless user.id.blank? %>

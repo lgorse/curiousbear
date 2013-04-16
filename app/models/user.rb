@@ -73,5 +73,9 @@ class User < ActiveRecord::Base
 							   :fb_pic_large => graph.get_picture(self.fb_id, :type => "normal"))
 	end
 
+	def get_user_small_pic(graph)
+		self.fb_pic||=self.update_photo(graph)
+	end
+
 
 end
