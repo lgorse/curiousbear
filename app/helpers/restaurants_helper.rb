@@ -60,8 +60,8 @@ module RestaurantsHelper
 		google_attr = { :name => google_response["name"], 
 			:formatted_address => google_response["formatted_address"],
 			:google_rating => google_response["rating"], 
-			:google_id => google_response ["id"],
-			:google_types => google_response ["types"].join(","), 
+			:google_id => google_response["id"],
+			:google_types => google_response["types"].join(","), 
 			:google_reference => google_response ["reference"],
 			:google_price => google_response["price_level"], 
 			:lat => google_response["geometry"]["location"]["lat"].to_d,
@@ -98,14 +98,14 @@ module RestaurantsHelper
 	end
 
 	def set_google_restaurant_values(result)
-		@venue = set_attr_from_google(result).merge(:id => nil)
+		venue = set_attr_from_google(result)
+		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
+		#@venue_json = {"name" => venue[:name]}.to_json
 
-		@encoded_venue = Base64.urlsafe_encode64(URI.encode(@venue.to_json))
+		@restaurant = Restaurant.find_or_create_by_google_id(venue[:google_id], final_restaurant_attributes(venue))
 		
-		@parsed_address = split_formatted_address(@venue[:formatted_address].to_s)
-		@venue_json = {"name" => @venue[:name]}.to_json
-		@google_id = @venue[:google_id]
-		@restaurant = Restaurant.find_by_google_id(@google_id)
+		@parsed_address = split_formatted_address(venue[:formatted_address].to_s)
+		
 	end
 
 	def set_stored_restaurant_values(venue)

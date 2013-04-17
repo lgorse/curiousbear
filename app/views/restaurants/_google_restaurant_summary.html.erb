@@ -6,8 +6,7 @@
 			<li id="venue_name">
 				<% if @restaurant %>
 					<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
-				<% else %>
-				<%= link_to @venue[:name], :controller => 'restaurants', :action => 'new', :search => @encoded_search, :venue_data => @encoded_venue %>
+					<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant %>
 				<% end %>
 				
 			</li>
