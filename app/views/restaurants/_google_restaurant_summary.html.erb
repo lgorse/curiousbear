@@ -6,7 +6,6 @@
 			<li id="venue_name">
 				<% if @restaurant %>
 					<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
-					<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant %>
 				<% end %>
 				
 			</li>
