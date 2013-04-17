@@ -5,6 +5,7 @@
 		<ul>
 			<li id="venue_name">
 				<%= link_to venue.name, restaurant_path(venue.id) %>
+				<%= render 'restaurants/buttons/share_detail_button', :restaurant => venue %>
 				
 			</li>
 			<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0]  %></li>

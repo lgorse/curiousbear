@@ -1,0 +1,1 @@
+<button class = "share_restaurant_detail", onclick='share_restaurant_detail("<%= URI.encode(@current_user.first_name.to_s) %>","<%= URI.encode(restaurant.name.to_s) %>", <%= restaurant.id %>, <%= @current_user.gender_article.to_json %>)'>Ask</button>	

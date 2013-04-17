@@ -5,7 +5,6 @@ $(function(){
 });
 
 function big_load_listener(){
-	//$("#app_inner").empty().prepend('<img src = "/assets/load.gif"></img>');	
 	$("#app_inner").empty();
 	$("#big_loader").show();
 	$(window).load(function(){
