@@ -113,6 +113,14 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 		width: 50%;
 	}
 
+	a{
+		color: blue;
+	}
+
+	a:hover{
+		color: purple;
+	}
+
 
 	#restaurant_summary_left{
 		width: 400px;
