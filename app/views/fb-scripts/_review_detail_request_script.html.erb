@@ -16,18 +16,6 @@
     }
 
 
- function share_restaurant_detail(encoded_user_name, encoded_restaurant_name, restaurant_id, articles){
-      // assume we are already logged in
-      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
-      var user_name = decodeURI(encoded_user_name);
-      var restaurant_name = decodeURI(encoded_restaurant_name);
-      FB.ui({
-          method: 'send',
-          name: user_name +' wants to talk about '+ restaurant_name,
-          link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
-          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
-          });
-    }
+ 
     
      </script>
