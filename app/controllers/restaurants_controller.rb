@@ -27,7 +27,10 @@ class RestaurantsController < ApplicationController
 	def new	
 		@venue = JSON.parse(URI.decode(Base64.urlsafe_decode64(params[:venue_data])))
 		@restaurant = Restaurant.find_or_create_by_google_id(@venue["google_id"], final_restaurant_attributes(@venue))
-		redirect_to restaurant_path(@restaurant, :search => params[:search])
+		respond_to do |format|
+			format.html {redirect_to restaurant_path(@restaurant, :search => params[:search])}
+			format.js 
+		end
 	end
 
 
