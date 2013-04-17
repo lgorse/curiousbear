@@ -54,8 +54,6 @@ end
 
 def following
 	@user = User.find(params[:id])
-	#@current_user = User.find(session["user_id"])
-	#@graph = session["fb_graph"]
 	respond_to do |format|
 		format.html
 		format.js
@@ -64,8 +62,6 @@ end
 
 def followers
 	@user = User.find(params[:id])
-	#@current_user = User.find(session["user_id"])
-	#@graph = session["fb_graph"]
 	respond_to do |format|
 		format.html
 		format.js

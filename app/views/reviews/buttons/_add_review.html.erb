@@ -1,5 +1,9 @@
 <% if restaurant && review = Review.find_by_restaurant_id_and_user_id(restaurant.id, @current_user.id) %>
-<%= button_to "Say more", {:controller => 'reviews', :action => 'edit', :id => review}, {:class => "review_detail_update", :method => :get} %>
+<%= form_tag edit_review_path(review), :method => :get, :class => "review_detail_update" do %>
+<%= hidden_field_tag :search_field, params[:search] %>
+<%= submit_tag "Say more" %>
+<% end %>
+<%#= button_to "Say more", {:controller => 'reviews', :action => 'edit', :id => review}, {:class => "review_detail_update", :method => :get} %>
 	<% else %>
 <%= form_tag reviews_new_path, :method => 'post', :class => "new_review_detail" do  %>
 <%= hidden_field_tag :search_field, @encoded_search %>
