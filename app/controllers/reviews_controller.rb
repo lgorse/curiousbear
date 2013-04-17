@@ -49,6 +49,7 @@ class ReviewsController < ApplicationController
 	def edit
 		@review = Review.find(params[:id])
 		@restaurant = Restaurant.find(@review.restaurant_id)
+		@search = Base64.decode64(params[:search_field])
 	end
 
 	def update

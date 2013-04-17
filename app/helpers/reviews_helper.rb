@@ -14,7 +14,7 @@ module ReviewsHelper
 		get_wordstop_hash
 		select_keywords = []
 		expression.gsub(/[^A-Za-z]/, ' ').split.each {|word| select_keywords << word unless exempt_expressions(word)}
-		return select_keywords.join(", ")
+		return select_keywords.uniq.join(", ")
 	end
 
 	def set_wordstop_hash
