@@ -1,16 +1,16 @@
 <div class = "review_summary_right">
 	<%= render "reviews/buttons/review_input", :restaurant_id => review.restaurant.id, :venue_field => encode_venue_google_id(review.restaurant.google_id), :search => review.keywords, :restaurant => review.restaurant %>
-		<% unless review.user == @current_user %>
+	
 		<ul class = "flat_list">
 		<li class = "flat_list_item"><div class = "stars empty">
 	<div class = "stars filled_<%= review.rating %>">	
 	</div>
 </div></li>
 		<li class = "flat_list_item">
-			<%= render 'reviews/buttons/detail_button', :review => review %>			
+			<%= render 'reviews/buttons/detail_button', :review => review, :text => "Talk about it" %>			
 		</li>
 		</ul>
-		<% end %>
+		
 		<ul>
 		<li id = "review_count"><%= review.restaurant.reviews.count %> reviews</li>	</ul>
 </div>
