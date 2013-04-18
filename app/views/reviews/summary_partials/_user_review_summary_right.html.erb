@@ -7,7 +7,11 @@
 	</div>
 </div></li>
 		<li class = "flat_list_item">
-			<%= render 'reviews/buttons/detail_button', :review => review, :text => "Talk about it" %>			
+			<% if @user == @current_user %>
+			<%= render 'restaurants/buttons/share_detail_button', :restaurant => review.restaurant, :text => "Talk about it" %>
+			<% else %>
+			<%= render 'reviews/buttons/detail_button', :review => review, :text => "Ask about it" %>			
+			<% end %>
 		</li>
 		</ul>
 		
