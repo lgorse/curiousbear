@@ -24,12 +24,12 @@ GIT
 
 GIT
   remote: git://github.com/pat/ts-delayed-delta.git
-  revision: c00198285343c38b71bb3c2de59a07d73dfcd3a0
-  ref: c00198285343c38b71bb3c2de59a07d73dfcd3a0
+  revision: 1c9dc62f1cf0eef0b99f6e97648bd534ecebb484
+  ref: 1c9dc62f1c
   specs:
     ts-delayed-delta (2.0.0.pre)
       delayed_job (>= 3.0.0)
-      thinking-sphinx (>= 3.0.1)
+      thinking-sphinx (>= 3.0.0.pre)
 
 GEM
   remote: https://rubygems.org/

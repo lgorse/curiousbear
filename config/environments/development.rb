@@ -37,4 +37,8 @@ Curiousbear::Application.configure do
 
   # this allows WEBrick to handle pipe symbols in query parameters
   URI::DEFAULT_PARSER = URI::Parser.new(:UNRESERVED => URI::REGEXP::PATTERN::UNRESERVED + '|')
+
+  config.logger = Logger.new(STDOUT)
+config.logger.level = Logger.const_get(ENV['LOG_LEVEL'] ? ENV['LOG_LEVEL'].upcase : 'INFO')
+
 end

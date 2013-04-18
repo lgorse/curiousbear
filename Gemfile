@@ -16,7 +16,7 @@ gem "thinking-sphinx"
 
  gem 'ts-delayed-delta',
     :git => 'git://github.com/pat/ts-delayed-delta.git',
-    :ref => 'c00198285343c38b71bb3c2de59a07d73dfcd3a0'
+    :ref => '1c9dc62f1c'
 gem 'delayed_job_active_record'
 
 gem "oink"
