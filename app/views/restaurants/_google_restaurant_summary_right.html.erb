@@ -3,7 +3,7 @@
 <% if @restaurant.google_rating %>
 <%= render 'reviews/buttons/google_stars', :google_rating => @restaurant.google_rating.to_i %>
 <% end %>
- <a onclick='postToFeed("<%= @restaurant.name %>", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Ask friends</a>
- 	<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant, :text => "Talk" %>
+ <%= render 'reviews/buttons/request_review', :venue => @restaurant, :text => "Ask friends" %>
+ 	<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant, :text => "Ask advice" %>
  <p id='msg'></p>
 </div>

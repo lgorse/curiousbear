@@ -10,3 +10,42 @@
 #add_friends_button:hover{
 	text-decoration: underline;
 }
+
+.review_detail_update, .new_review_detail{
+
+	input{
+	font-size: 70%;
+}
+}
+
+
+
+.facebook_button{
+	color: white;
+	padding: 5px 10px;
+	font-style: bold;
+	font-weight: bold;
+	font-size: 70%;
+	background-color: blue;
+	border: 1px solid #C0C0C0;
+	text-decoration: none;
+
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 4px;
+    box-shadow: 0px;
+
+    background: #4f80b5; /* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f80b5', endColorstr='#325c99'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f80b5 ), color-stop(65%, #325c99)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #4f80b5 0%,  #325c99 65%); /* for firefox 3.6+ */
+
+
+}
+
+
+
+.share_restaurant_detail{
+	margin-left: 10px;
+}

@@ -6,6 +6,6 @@
 		<% if venue.google_rating %>
 		<%= render 'reviews/buttons/google_stars', :google_rating => venue.google_rating.to_i %>
 		<% end %>
-		 <%= render 'reviews/buttons/request_review', :venue => venue %>
-		 	<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant, :text => "Talk" %>
+		 <%= render 'reviews/buttons/request_review', :venue => venue, :text => "Tell friends" %>
+		 	<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant, :text => "Share advice" %>
 </div>

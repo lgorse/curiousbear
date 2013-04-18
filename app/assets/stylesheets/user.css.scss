@@ -24,47 +24,43 @@
 }
 
 .new_user_summary{
-		
-		font-size: 80%;
+
+	font-size: 80%;
+	height: 30px;
+	border-bottom: 1px solid #C0C0C0;
+	padding: 10px;
+	display:  block;
+
+
+	.user_small_pic{
+		float: left;
+		vertical-align: middle;
+		display:  inline-block;
 		height: 30px;
-		border-bottom: 1px solid #C0C0C0;
-		padding: 10px;
-		display:  block;
-
-
-		.user_small_pic{
-			float: left;
-			vertical-align: middle;
-			display:  inline-block;
-			height: 30px;
-			width: 30px;
-
-		}
-
-		.user_summary_left{
-			float: left;
-			vertical-align: middle;
-			display:  block;
-			margin: 8px 0px 0px 8px;
-
-		}
-
-.review_count{
-			float: right;
-			vertical-align: middle;
-			display: block;
-			margin: 5px 10px 0px 0px;
-		}
-		.follow_button{
-			float: right;
-			display:  inline-block;
-			//margin: 8px 0px 0px 8px;
-
-		}
-
-		
+		width: 30px;
 
 	}
+
+	.user_summary_left{
+		float: left;
+		vertical-align: middle;
+		display:  block;
+		margin: 8px 0px 0px 8px;
+
+	}
+
+	.review_count{
+		float: right;
+		vertical-align: middle;
+		display: block;
+		margin: 5px 10px 0px 0px;
+	}
+
+	.follow_button{
+		float: right;
+		display:  inline-block;
+	}
+}
 
 div.user_info{
 	width: 700px;
@@ -108,7 +104,7 @@ div.user_info{
 }
 
 div#user_info_center, .user_summary_center{
-	
+
 	li{
 		vertical-align: middle;
 	}
@@ -149,9 +145,9 @@ nav#follow_buttons{
 		text-decoration: underline;
 	}
 
-	
 
-	
+
+
 
 
 	.add_friends_button{
@@ -165,7 +161,7 @@ div#relationship_list{
 	position: relative;
 	width: 800px;
 
-	
+
 
 	.pagination{
 		width: auto;
@@ -241,13 +237,13 @@ li.user_summary{
 		font-size: 110%;
 	}
 
-#why_am_i_here:hover{
-	text-decoration: underline;
-	color: black;
+	#why_am_i_here:hover{
+		text-decoration: underline;
+		color: black;
 
-}
+	}
 	.user_update_button{
-		
+
 	}
 
 	#unsubscribe{
