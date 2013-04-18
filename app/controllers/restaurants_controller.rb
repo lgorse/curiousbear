@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
-	rescue_from NoMethodError, :with => :redirect_to_signin
+	#rescue_from NoMethodError, :with => :redirect_to_signin
 	before_filter :authenticate
 	
 	def index
