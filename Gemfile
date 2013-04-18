@@ -10,8 +10,15 @@ gem 'annotate'
 gem 'will_paginate'
 gem 'koala'
 gem "google_places"
+
 gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
+
+ gem 'ts-delayed-delta',
+    :git => 'git://github.com/pat/ts-delayed-delta.git',
+    :ref => 'c00198285343c38b71bb3c2de59a07d73dfcd3a0'
+gem 'delayed_job_active_record'
+
 gem "oink"
 gem 'newrelic_rpm'
 gem 'fancybox2-rails', '~> 0.2.4'
