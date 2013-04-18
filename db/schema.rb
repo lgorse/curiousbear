@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130416082042) do
+ActiveRecord::Schema.define(:version => 20130418060812) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20130416082042) do
     t.string   "phone"
     t.datetime "created_at",                                                       :null => false
     t.datetime "updated_at",                                                       :null => false
+    t.boolean  "delta",             :default => true,                              :null => false
   end
 
   add_index "restaurants", ["google_id"], :name => "index_restaurants_on_google_id"

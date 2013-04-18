@@ -24,5 +24,15 @@ class Review < ActiveRecord::Base
 
   default_scope :order => 'rating DESC, id'
 
+  after_save :set_restaurant_delta_flag
+  after_destroy :set_restaurant_delta_flag
+
+  private
+
+  def set_restaurant_delta_flag
+  	restaurant.delta = true
+  	restaurant.save
+  end
+
   
 end

@@ -1,6 +1,7 @@
-ThinkingSphinx::Index.define :restaurant, :with => :active_record do
+ThinkingSphinx::Index.define :restaurant, :with => :active_record, :delta => true do
   indexes formatted_address
   indexes :name
+  indexes :keywords
   indexes reviews.keywords, :as => :review_keywords
   indexes reviews.text, :as => :review_text
 
