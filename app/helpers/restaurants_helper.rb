@@ -65,7 +65,7 @@ module RestaurantsHelper
 			:google_reference => google_response ["reference"],
 			:google_price => google_response["price_level"], 
 			:lat => google_response["geometry"]["location"]["lat"].to_d,
-			:lng => google_response["geometry"]["location"]["lng"].to_d,
+			:lng => google_response["geometry"]["location"]["lng"].to_d
 		}
 	end
 
@@ -100,11 +100,10 @@ module RestaurantsHelper
 	def set_google_restaurant_values(result)
 		venue = set_attr_from_google(result)
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
-		
-		@venue_json = {"name" => venue[:name]}.to_json
+		#@venue_json = {"name" => venue[:name]}.to_json
 
 		@restaurant = Restaurant.find_or_create_by_google_id(venue[:google_id], final_restaurant_attributes(venue))
-
+		
 		@parsed_address = split_formatted_address(venue[:formatted_address].to_s)
 		
 	end
@@ -119,8 +118,7 @@ module RestaurantsHelper
 	end
 
 	def final_restaurant_attributes(venue)
-		venue.merge(:google_types => venue[:google_types])
-		
+		venue.merge(:google_types => venue["google_types"])
 	end
 
 	def google_results_except_recommended
