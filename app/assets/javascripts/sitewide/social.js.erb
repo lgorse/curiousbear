@@ -13,13 +13,12 @@ function share_restaurant_detail(encoded_user_name, encoded_restaurant_name, res
           });
     }
 
-    function talk_to_user(encoded_self_name, encoded_user_name, self_id, user_id, user_fb_id, articles){
+    function talk_to_user(encoded_self_name, encoded_user_name, self_id, user_id, articles){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
       var self = decodeURI(encoded_self_name);
       var user_name = decodeURI(encoded_user_name);
       FB.ui({
-        to: user_fb_id,
           method: 'send',
           name: 'Hey ' + user_name +', '+ self +' wants to talk to you',
           link: '<%= Facebook::SITE_URL %>users/'+self_id,
