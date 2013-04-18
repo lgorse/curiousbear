@@ -14,10 +14,14 @@ gem "google_places"
 gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
 
- gem 'ts-delayed-delta',
-    :git => 'git://github.com/pat/ts-delayed-delta.git',
-    :ref => 'c00198285343c38b71bb3c2de59a07d73dfcd3a0'
-gem 'delayed_job_active_record'
+gem 'redis'
+gem 'ts-resque-delta'
+ gem 'ts-sidekiq-delta',
+    :git    => 'git://github.com/pat/ts-resque-delta.git',
+    :branch => 'sidekiq',
+    :ref    => '5bae80758c'
+gem 'sidekiq'
+
 
 gem "oink"
 gem 'newrelic_rpm'

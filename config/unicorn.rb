@@ -19,6 +19,12 @@
      puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT'
    end
 
+
+  Sidekiq.configure_client do |config|
+    config.redis = { :size => 1 }
+  end
+
+
    defined?(ActiveRecord::Base) and
      ActiveRecord::Base.establish_connection
  end

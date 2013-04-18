@@ -32,7 +32,6 @@ Curiousbear::Application.routes.draw do
    match '/info', :to => "session#info"
    
 
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

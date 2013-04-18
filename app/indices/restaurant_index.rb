@@ -12,8 +12,8 @@ end
 
 def set_delta
 if Rails.env.production?
-	FlyingSphinx::DelayedDelta
+	FlyingSphinx::SidekiqDelta
 elsif Rails.env.development?
-	ThinkingSphinx::Deltas::DelayedDelta
+	ThinkingSphinx::Deltas::SidekiqDelta
 end
 end
