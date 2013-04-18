@@ -1,7 +1,16 @@
 <div class = "user_summary_left">
+	<ul>
+		<li>
 <% if user.id.nil? %>
 <%= user.name %>
 <% else %>
 <%= link_to user.name, user_path(user), :class => "user_name_link", :id => user.id %>
+</li>
+<li>
+<% unless user == @current_user %>
+<%= render 'users/buttons/talk_to_user_button', :user => user, :text => "Talk" %>
 <% end %>
+</li>
+<% end %>
+</ul>
 </div>
