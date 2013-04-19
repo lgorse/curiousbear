@@ -10,7 +10,7 @@ function share_restaurant_detail(encoded_user_name, restaurant_attributes, artic
         url: '<%=Facebook::SITE_URL %>restaurants/',
         data: venue,
         dataType: 'json',
-        success: function(response){
+        complete: function(response){
           run_facebook_button(encoded_user_name, response["id"], response["name"], articles);
         }
       }); 
@@ -20,7 +20,7 @@ function share_restaurant_detail(encoded_user_name, restaurant_attributes, artic
    function run_facebook_button(encoded_user_name, restaurant_id, encoded_restaurant_name, articles){
      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
      var user_name = decodeURI(encoded_user_name);
-
+alert(restaurant_id);
      var restaurant_name = decodeURI(encoded_restaurant_name);
     
      FB.ui({
