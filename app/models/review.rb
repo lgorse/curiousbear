@@ -30,6 +30,7 @@ class Review < ActiveRecord::Base
   private
 
   def set_restaurant_delta_flag
+    
   	restaurant.delta = true
   	restaurant.save
   end

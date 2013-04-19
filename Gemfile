@@ -15,12 +15,13 @@ gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
 
 gem 'redis'
-gem 'ts-resque-delta'
+
  gem 'ts-sidekiq-delta',
     :git    => 'git://github.com/pat/ts-resque-delta.git',
     :branch => 'sidekiq',
     :ref    => '5bae80758c'
-gem 'sidekiq'
+ 
+
 
 
 gem "oink"
