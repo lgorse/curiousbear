@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130418073204) do
+ActiveRecord::Schema.define(:version => 20130419040602) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20130418073204) do
     t.float    "lat"
     t.float    "lng"
     t.string   "google_id",                                                        :null => false
-    t.string   "google_reference"
+    t.text     "google_reference"
     t.text     "keywords"
     t.text     "google_types",      :default => "restaurant, establishment, food"
     t.string   "formatted_address"
