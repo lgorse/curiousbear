@@ -50,4 +50,12 @@ class RestaurantsController < ApplicationController
 		end
 	end
 
+	def create
+		@restaurant = Restaurant.create(final_restaurant_attributes(venue))
+		respond_to do |format|
+			format.html {redirect_to @restaurant.id}
+			format.json {render :json => {:id => @restaurant.id, :name => URI.encode(@restaurant.name)}}
+		end
+	end
+
 end
