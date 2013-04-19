@@ -7,6 +7,11 @@ function load_listener(){
 			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
 			$('#restaurant_list').hide();
 		});
+		
+		$('.google_next_button').click(function(){
+			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
+			$('#restaurant_list').hide();
+		});
 	});	
 }
 

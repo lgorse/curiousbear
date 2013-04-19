@@ -4,7 +4,7 @@
 	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_results_except_recommended, :as => :result %>
 	
 <% if @google_response["next_page_token"] %>
-<%= link_to "next", :controller => "restaurants", :action => 'google_search', :next_token => @google_response["next_page_token"], :search => params[:search], :remote => true  %>
+<%= link_to "next", google_search_restaurants_path(:next_token => @google_response["next_page_token"], :search => params[:search]),:class => "google_next_button", :remote => true  %>
 <% end %>
 <%= raw @google_response["html_attributions"].join(", ")%>
 </ul>
