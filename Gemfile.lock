@@ -13,6 +13,13 @@ GIT
       thinking-sphinx
 
 GIT
+  remote: git://github.com/imanel/websocket-ruby.git
+  revision: 2af7ef381f4d1596166f48cbfe65f94f25f176f3
+  ref: 2af7ef381f
+  specs:
+    websocket (1.0.7)
+
+GIT
   remote: git://github.com/pat/pusher-ruby-client.git
   revision: 608cc28d1aa832030386fbd148a3814166591904
   ref: 608cc28d1a
@@ -238,7 +245,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    websocket (1.0.7)
     will_paginate (3.0.4)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -275,4 +281,5 @@ DEPENDENCIES
   ts-sidekiq-delta!
   uglifier (>= 1.0.3)
   unicorn
+  websocket!
   will_paginate
