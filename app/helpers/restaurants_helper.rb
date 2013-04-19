@@ -96,9 +96,9 @@ module RestaurantsHelper
 	def set_google_restaurant_values(result)
 		venue = set_attr_from_google(result)
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
-
-		@restaurant = Restaurant.find_or_create_by_google_id(venue[:google_id], final_restaurant_attributes(venue))
-				
+		
+		@restaurant = Restaurant.new(final_restaurant_attributes(venue)) unless @restaurant = Restaurant.find_by_google_id(venue[:google_id])
+		
 		@parsed_address = split_formatted_address(venue[:formatted_address].to_s)
 		
 	end

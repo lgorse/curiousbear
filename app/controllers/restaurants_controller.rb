@@ -30,6 +30,7 @@ class RestaurantsController < ApplicationController
 		respond_to do |format|
 			format.html {redirect_to restaurant_path(@restaurant, :search => params[:search])}
 			format.js 
+			format.json {render :json => {:id => @restaurant.id, :name => URI.encode(@restaurant.name)}}
 		end
 	end
 
@@ -47,6 +48,15 @@ class RestaurantsController < ApplicationController
 		respond_to do |format|
 			format.html
 			format.js
+		end
+	end
+
+	def create
+		puts params[:lat]
+		@restaurant = Restaurant.create(final_restaurant_attributes(params[:venue]))
+		respond_to do |format|
+			format.html {redirect_to @restaurant.id}
+			format.json {render :json => {:id => @restaurant.id, :name => URI.encode(@restaurant.name)}}
 		end
 	end
 

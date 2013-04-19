@@ -1,28 +1,47 @@
 
-function share_restaurant_detail(encoded_user_name, encoded_restaurant_name, restaurant_id, articles){
+function share_restaurant_detail(encoded_user_name, restaurant_attributes, articles){
       // assume we are already logged in
-      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
-      var user_name = decodeURI(encoded_user_name);
-      var restaurant_name = decodeURI(encoded_restaurant_name);
-      FB.ui({
-          method: 'send',
-          name: user_name +' wants to talk about '+ restaurant_name,
-          link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
-          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
-          });
-    }
+      var venue = {"venue": restaurant_attributes};
+      if (restaurant_attributes["id"]){
+        run_facebook_button(encoded_user_name, restaurant_attributes["id"], restaurant_attributes["name"], articles);
+      }else{
+       $.ajax({
+        type: 'POST',
+        url: '<%=Facebook::SITE_URL %>restaurants/',
+        data: venue,
+        dataType: 'json',
+        success: function(response){
+          run_facebook_button(encoded_user_name, response["id"], response["name"], articles);
+        }
+      }); 
+     }
+   }
 
-    function talk_to_user(encoded_self_name, encoded_user_name, self_id, user_id, articles){
+   function run_facebook_button(encoded_user_name, restaurant_id, encoded_restaurant_name, articles){
+     FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
+     var user_name = decodeURI(encoded_user_name);
+
+     var restaurant_name = decodeURI(encoded_restaurant_name);
+    
+     FB.ui({
+      method: 'send',
+      name: user_name +' wants to talk about '+ restaurant_name,
+      link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
+      picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
+      description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
+    });
+   }
+
+   function talk_to_user(encoded_self_name, encoded_user_name, self_id, user_id, articles){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
       var self = decodeURI(encoded_self_name);
       var user_name = decodeURI(encoded_user_name);
       FB.ui({
-          method: 'send',
-          name: 'Hey ' + user_name +', '+ self +' wants to talk to you',
-          link: '<%= Facebook::SITE_URL %>users/'+self_id,
-          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
-          });
+        method: 'send',
+        name: 'Hey ' + user_name +', '+ self +' wants to talk to you',
+        link: '<%= Facebook::SITE_URL %>users/'+self_id,
+        picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
+        description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
+      });
     }

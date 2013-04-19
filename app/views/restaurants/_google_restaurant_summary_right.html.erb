@@ -1,5 +1,5 @@
 <div id = "restaurant_info_right">
-	<%= render "reviews/buttons/review_input", :restaurant_id => @restaurant.id, :venue_field => @encoded_venue, :search => @search, :restaurant => @restaurant %>
+	<%= render "reviews/buttons/review_input", :restaurant_id => @restaurant.id ? @restaurant.id : nil, :venue_field => @encoded_venue, :search => @search, :restaurant => @restaurant %>
 <% if @restaurant.google_rating %>
 <%= render 'reviews/buttons/google_stars', :google_rating => @restaurant.google_rating.to_i %>
 <% end %>
