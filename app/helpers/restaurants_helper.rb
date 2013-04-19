@@ -62,7 +62,6 @@ module RestaurantsHelper
 			:google_price => google_response["price_level"], 
 			:lat => google_response["geometry"]["location"]["lat"].to_d,
 			:lng => google_response["geometry"]["location"]["lng"].to_d,
-			:delta => true
 		}
 	end
 
