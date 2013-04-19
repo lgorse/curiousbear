@@ -68,7 +68,8 @@ module AssetsInitializers
   class Railtie < Rails::Railtie
     initializer "assets_initializers.initialize_rails",
                 :group => :assets do |app|
-      require "#{Rails.root}/config/initializers/koala.rb"
+      require "#{Rails.root}/config/initializers/koala.rb", 
+                "#{RAILS.root}/config/initializers/app_constants.rb"
     end
   end
 end
