@@ -14,6 +14,7 @@ gem "google_places"
 gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx"
 
+
 gem 'redis'
 
  gem 'ts-sidekiq-delta',
