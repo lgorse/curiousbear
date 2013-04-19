@@ -3,7 +3,7 @@ function share_restaurant_detail(encoded_user_name, restaurant_attributes, artic
       // assume we are already logged in
       var venue = {"venue": restaurant_attributes};
       if (restaurant_attributes["id"]){
-        run_facebook_button(encoded_user_name, restaurant_attributes["id"], restaurant_attributes["name"], articles);
+        run_facebook_button(encoded_user_name, restaurant_attributes["id"], encodeURI(restaurant_attributes["name"]), articles);
       }else{
         $.ajax({
         type: 'POST',
