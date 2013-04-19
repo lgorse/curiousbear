@@ -4,8 +4,10 @@
 	<div id="restaurant_summary_left">
 				<ul>
 			<li id="venue_name">
-				<% if @restaurant %>
-					<%= link_to @restaurant.name, restaurant_path(@restaurant.id) %>
+				<% if @restaurant.id %>
+					<%= link_to @restaurant.name, :controller => 'restaurants', :action => 'show', :id => @restaurant.id, :search => @encoded_search %>
+					<% else %>
+					<%= link_to @restaurant.name, new_restaurant_path(:search => @encoded_search, :venue_data => @encoded_venue) %>
 				<% end %>
 				
 			</li>

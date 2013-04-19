@@ -3,7 +3,7 @@
 <div class = "review_details_fields">
 <%= form_for @review, :remote => true do |f|%>
 <%= f.hidden_field :restaurant_id, :value => @restaurant.id %>
-<%= render 'reviews/review_fields', :f => f, :keywords => @search, :rating => 0 %>
+<%= render 'reviews/review_fields', :f => f, :keywords => @search.to_s, :rating => 0 %>
 <ul class = "flat_list">
 <li class = "flat_list_item">
 <%= f.submit "Publish!", :id => "review_button" %></li>
