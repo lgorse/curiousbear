@@ -39,10 +39,6 @@ module RestaurantsHelper
 	end
 
 	
-
-	
-
-
 	def get_details(entry)
 		url_params = "json?reference="+ entry["google_reference"] + "&key=" + GOOGLE_API_KEY + "&sensor=" + false.to_s
 		url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
@@ -101,8 +97,9 @@ module RestaurantsHelper
 	def set_google_restaurant_values(result)
 		venue = set_attr_from_google(result)
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
-		
+
 		@restaurant = Restaurant.find_or_create_by_google_id(venue[:google_id], final_restaurant_attributes(venue))
+		puts "HELLO"+@restaurant.attributes.to_s 
 		
 		@parsed_address = split_formatted_address(venue[:formatted_address].to_s)
 		

@@ -35,7 +35,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    ZenTest (4.9.0)
+    ZenTest (4.9.1)
     actionmailer (3.2.11)
       actionpack (= 3.2.11)
       mail (~> 2.4.4)
@@ -270,6 +270,7 @@ DEPENDENCIES
   rspec-rails
   ruby-debug19
   sass-rails (~> 3.2.3)
+  sidekiq
   thinking-sphinx
   ts-sidekiq-delta!
   uglifier (>= 1.0.3)

@@ -1,4 +1,4 @@
-ThinkingSphinx::Index.define :restaurant, :with => :active_record, :delta => :set_delta do
+ThinkingSphinx::Index.define :restaurant, :with => :active_record, :delta => ThinkingSphinx::Deltas::SidekiqDelta do
 	indexes formatted_address
 	indexes :name
 	indexes :keywords
@@ -8,12 +8,6 @@ ThinkingSphinx::Index.define :restaurant, :with => :active_record, :delta => :se
 	has reviews.user.id, :as => :reviewer_id
   #has reviews.rating, :as => :review_rating
 
+  
 end
 
-def set_delta
-	if Rails.env.production?
-		FlyingSphinx::SidekiqDelta
-	elsif Rails.env.development?
-		ThinkingSphinx::Deltas::SidekiqDelta
-	end
-end

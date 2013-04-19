@@ -22,7 +22,7 @@ gem 'redis'
     :branch => 'sidekiq',
     :ref    => '5bae80758c'
  
-
+gem 'sidekiq'
 
 
 gem "oink"
