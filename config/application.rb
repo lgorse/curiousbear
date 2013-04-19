@@ -63,3 +63,12 @@ module Curiousbear
 
   end
 end
+
+module AssetsInitializers
+  class Railtie < Rails::Railtie
+    initializer "assets_initializers.initialize_rails",
+                :group => :assets do |app|
+      require "#{Rails.root}/config/initializers/koala.rb"
+    end
+  end
+end
