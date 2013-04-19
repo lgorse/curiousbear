@@ -1,29 +1,28 @@
 
 function share_restaurant_detail(encoded_user_name, restaurant_attributes, articles){
       // assume we are already logged in
-      alert(restaurant_attributes["id"]);
+      var venue = {"venue": restaurant_attributes};
       if (restaurant_attributes["id"]){
         run_facebook_button(encoded_user_name, restaurant_attributes["id"], restaurant_attributes["name"], articles);
       }else{
        $.ajax({
         type: 'POST',
-        url: '<%=Facebook::SITE_URL %>restaurants',
-        data: restaurant_attributes,
+        url: '<%=Facebook::SITE_URL %>restaurants/',
+        data: venue,
         dataType: 'json',
         success: function(response){
-          run_facebook_button(encoded_user_name, response["id"], response["name"] articles);
+          run_facebook_button(encoded_user_name, response["id"], response["name"], articles);
         }
       }); 
      }
    }
 
-   function run_facebook_button(encoded_user_name, restaurant_id, restaurant_name, articles){
+   function run_facebook_button(encoded_user_name, restaurant_id, encoded_restaurant_name, articles){
      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
      var user_name = decodeURI(encoded_user_name);
 
      var restaurant_name = decodeURI(encoded_restaurant_name);
-     var restaurant_name = restaurant_attributes["name"];
-
+    
      FB.ui({
       method: 'send',
       name: user_name +' wants to talk about '+ restaurant_name,
