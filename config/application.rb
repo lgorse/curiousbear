@@ -69,7 +69,7 @@ module AssetsInitializers
     initializer "assets_initializers.initialize_rails",
                 :group => :assets do |app|
       require "#{Rails.root}/config/initializers/koala.rb" 
-      require "#{RAILS.root}/config/initializers/app_constants.rb"
+      require "#{Rails.root}/config/initializers/app_constants.rb"
     end
   end
 end
