@@ -1,33 +1,16 @@
 GIT
   remote: git://github.com/flying-sphinx/flying-sphinx.git
-  revision: e1395e724afbb884ff57e9cda22148301fbafa60
-  ref: e1395e724a
+  revision: 18e3d2784d2250404c7c64cbda7314bda99a3694
+  ref: 18e3d2784d
   branch: master
   specs:
     flying-sphinx (0.8.5)
       faraday_middleware (~> 0.7)
-      multi_json (>= 1.0.1)
-      pusher-client (~> 0.2.2)
+      multi_json (>= 1.3.0)
+      pusher-client (~> 0.3)
       rash (~> 0.3.0)
       riddle (>= 1.5.5)
       thinking-sphinx
-
-GIT
-  remote: git://github.com/imanel/websocket-ruby.git
-  revision: 2af7ef381f4d1596166f48cbfe65f94f25f176f3
-  ref: 2af7ef381f
-  specs:
-    websocket (1.0.7)
-
-GIT
-  remote: git://github.com/pat/pusher-ruby-client.git
-  revision: 608cc28d1aa832030386fbd148a3814166591904
-  ref: 608cc28d1a
-  branch: catch-io
-  specs:
-    pusher-client (0.2.2)
-      ruby-hmac (~> 0.4.0)
-      websocket (~> 1.0.0)
 
 GIT
   remote: git://github.com/pat/ts-resque-delta.git
@@ -154,9 +137,14 @@ GEM
       hodel_3000_compliant_logger
     pg (0.15.1)
     polyglot (0.3.3)
+    pusher-client (0.3.0)
+      ruby-hmac (~> 0.4.0)
+      websocket (~> 1.0.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-protection (1.5.0)
+      rack
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -220,11 +208,19 @@ GEM
       multi_json (~> 1)
       redis (~> 3)
       redis-namespace
+    sinatra (1.3.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.3)
+      tilt (~> 1.3, >= 1.3.3)
+    slim (1.3.8)
+      temple (~> 0.6.3)
+      tilt (~> 1.3.3)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    temple (0.6.4)
     thinking-sphinx (3.0.2)
       activerecord (>= 3.1.0)
       builder (>= 2.1.2)
@@ -245,6 +241,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    websocket (1.0.7)
     will_paginate (3.0.4)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -269,7 +266,6 @@ DEPENDENCIES
   newrelic_rpm
   oink
   pg
-  pusher-client!
   rack-timeout
   rails (= 3.2.11)
   redis
@@ -277,9 +273,10 @@ DEPENDENCIES
   ruby-debug19
   sass-rails (~> 3.2.3)
   sidekiq
-  thinking-sphinx
+  sinatra (>= 1.3.0)
+  slim
+  thinking-sphinx (= 3.0.2)
   ts-sidekiq-delta!
   uglifier (>= 1.0.3)
   unicorn
-  websocket!
   will_paginate

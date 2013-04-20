@@ -10,24 +10,6 @@ gem 'annotate'
 gem 'will_paginate'
 gem 'koala'
 gem "google_places"
-
-gem "mysql2", '~> 0.3.12b5'
-gem "thinking-sphinx"
-
-
-gem 'redis'
-
- gem 'ts-sidekiq-delta',
-    :git    => 'git://github.com/pat/ts-resque-delta.git',
-    :branch => 'sidekiq',
-    :ref    => '5bae80758c'
- 
-gem 'sidekiq'
-gem 'websocket',
-   :git => 'git://github.com/imanel/websocket-ruby.git',
-  :ref => '2af7ef381f'
-
-
 gem "oink"
 gem 'newrelic_rpm'
 gem 'fancybox2-rails', '~> 0.2.4'
@@ -35,8 +17,21 @@ gem "geocoder"
 gem 'unicorn'
 gem 'rack-timeout'
 
+gem 'redis'
+gem 'sidekiq'
+gem 'slim'
+gem 'sinatra', '>= 1.3.0', :require => nil
 
-
+gem "mysql2", '~> 0.3.12b5'
+gem "thinking-sphinx", '3.0.2'
+gem 'flying-sphinx',
+  :git    => 'git://github.com/flying-sphinx/flying-sphinx.git',
+  :branch => 'master',
+  :ref    => '18e3d2784d'
+gem 'ts-sidekiq-delta',
+  :git    => 'git://github.com/pat/ts-resque-delta.git',
+  :branch => 'sidekiq',
+  :ref    => '5bae80758c'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -63,17 +58,6 @@ group :test do
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
 	gem 'capybara'
-end
-
-group :production do
-	gem 'pusher-client',
-	:git    => 'git://github.com/pat/pusher-ruby-client.git',
-	:branch => 'catch-io',
-	:ref    => '608cc28d1a'
-	gem 'flying-sphinx',
-	:git    => 'git://github.com/flying-sphinx/flying-sphinx.git',
-	:branch => 'master',
-	:ref    => 'e1395e724a'
 end
 
 gem 'jquery-rails'

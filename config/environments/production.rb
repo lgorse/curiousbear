@@ -39,7 +39,7 @@ Curiousbear::Application.configure do
 
   # Use a different logger for distributed setups
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
-  config.logger = Logger.new(STDOUT) 
+  config.logger = Logger.new(STDOUT)
 config.log_level = :info
 config.middleware.use( Oink::Middleware, :logger => Hodel3000CompliantLogger.new(STDOUT))
 
@@ -57,7 +57,8 @@ config.middleware.use( Oink::Middleware, :logger => Hodel3000CompliantLogger.new
   # config.action_mailer.raise_delivery_errors = false
 
   # Enable threaded mode
-  # config.threadsafe!
+  config.threadsafe!
+  config.dependency_loading = true if $rails_rake_task
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found)
