@@ -2,7 +2,7 @@ development:
   morphology: stem_en
   min_prefix_len: 4
   wordforms: "app/assets/english_wordforms.txt"
-  stopwords: "app/assets/stopwords.txt"
+  # stopwords: "app/assets/stopwords.txt"
   enable_star: true
   mem_limit: 256M
 
@@ -10,6 +10,6 @@ production:
   morphology: stem_en
   min_prefix_len: 4
   wordforms: "app/assets/english_wordforms.txt"
-  stopwords: "app/assets/stopwords.txt"
+  # stopwords: "app/assets/stopwords.txt"
   enable_star: true
   version: 2.0.6
