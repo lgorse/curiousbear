@@ -14,7 +14,9 @@
 
 
 <div id = "facebook_friends_enrolled">
+	
 <div class = "friend_title">Friends on <%= APP_NAME %></div>
+
 	<ul>
 		<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_enrolled, :as => :user %>
 	</ul>

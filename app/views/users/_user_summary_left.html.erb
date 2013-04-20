@@ -7,7 +7,7 @@
 <%= link_to user.name, user_path(user), :class => "user_name_link", :id => user.id %>
 </li>
 <li>
-<% unless user == @current_user %>
+<% unless user == @current_user || params[:action] == 'facebook_friends' %>
 <%= render 'users/buttons/talk_to_user_button', :user => user, :text => "Talk" %>
 <% end %>
 </li>
