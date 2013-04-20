@@ -1,4 +1,4 @@
- worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+ worker_processes Integer(ENV["WEB_CONCURRENCY"] || 5)
  timeout 30
  preload_app true
 
@@ -24,6 +24,9 @@
     config.redis = { :size => 1 }
   end
 
+  Sidekiq.configure_server do |config|
+    config.redis = { :size => 5 }
+  end
 
    defined?(ActiveRecord::Base) and
      ActiveRecord::Base.establish_connection
