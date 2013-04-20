@@ -1,36 +1,38 @@
-Curiousbear::Application.routes.draw do
+require 'sidekiq/web'
 
-   root :to => 'session#signin'
-   
-   resources :users do
+Curiousbear::Application.routes.draw do
+  mount Sidekiq::Web => '/sidekiq'
+
+  root :to => 'session#signin'
+
+  resources :users do
     resources :relationships, :only => [:create, :destroy]
     resources :reviews, :only => [:index]
     member do
       get 'facebook_friends', :following, :followers, 'facebook_friends_invite'
     end
-   end
+  end
 
-   resources :restaurants do
+  resources :restaurants do
     collection do
       get 'google_search'
     end
-   end
+  end
 
-   resources :session
+  resources :session
 
-   resources :reviews do
-   member do
-    put 'rate'
-   end
- end
+  resources :reviews do
+    member do
+      put 'rate'
+    end
+  end
 
   post 'reviews/new' => 'reviews#new'
-   match '/signin', :to => "session#signin"
-   match '/home', :to => "session#home"
-   match '/logout', :to => "session#logout"
-   match '/register', :to => "session#register"
-   match '/info', :to => "session#info"
-   
+  match '/signin', :to => "session#signin"
+  match '/home', :to => "session#home"
+  match '/logout', :to => "session#logout"
+  match '/register', :to => "session#register"
+  match '/info', :to => "session#info"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
