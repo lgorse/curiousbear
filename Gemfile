@@ -10,14 +10,17 @@ gem 'annotate'
 gem 'will_paginate'
 gem 'koala'
 gem "google_places"
-gem 'redis'
-gem 'sidekiq'
 gem "oink"
 gem 'newrelic_rpm'
 gem 'fancybox2-rails', '~> 0.2.4'
 gem "geocoder"
 gem 'unicorn'
 gem 'rack-timeout'
+
+gem 'redis'
+gem 'sidekiq'
+gem 'slim'
+gem 'sinatra', '>= 1.3.0', :require => nil
 
 gem "mysql2", '~> 0.3.12b5'
 gem "thinking-sphinx", '3.0.2'
