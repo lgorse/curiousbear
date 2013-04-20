@@ -1,7 +1,7 @@
 require 'sidekiq/web'
 
 Curiousbear::Application.routes.draw do
-  mount Sidekiq::Web => '/sidekiq'
+  # mount Sidekiq::Web => '/sidekiq'
 
   root :to => 'session#signin'
 
