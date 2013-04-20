@@ -23,9 +23,9 @@ gem 'redis'
     :ref    => '5bae80758c'
  
 gem 'sidekiq'
-gem 'websocket',
-    :git => 'git://github.com/imanel/websocket-ruby.git',
-   :ref => '2af7ef381f'
+#gem 'websocket',
+ #   :git => 'git://github.com/imanel/websocket-ruby.git',
+ #  :ref => '2af7ef381f'
 
 
 gem "oink"
