@@ -51,7 +51,7 @@ group :development do
 	gem 'faker'
 	gem 'annotate'
 	gem 'factory_girl_rails', :require => false
-	gem 'ruby-debug19'
+	gem 'debugger'
 end
 
 group :test do

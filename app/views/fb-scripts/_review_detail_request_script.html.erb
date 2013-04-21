@@ -3,7 +3,6 @@
     function detail(friend_id, encoded_user_name, encoded_restaurant_name, restaurant_id, articles){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
-      alert($.type(restaurant_id));
       var user_name = decodeURI(encoded_user_name);
       var restaurant_name = decodeURI(encoded_restaurant_name);
       FB.ui({
