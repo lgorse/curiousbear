@@ -8,6 +8,7 @@ class SessionController < ApplicationController
 	
 	def signin
 
+
 	end
 
 	def register
@@ -16,6 +17,7 @@ class SessionController < ApplicationController
 
 	
 	def home
+		@current_user.update_photo(@graph)
 		@title = "Search the world, "+@current_user.first_name
 		respond_to do |format|
 			format.html

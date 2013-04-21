@@ -46,6 +46,7 @@ class RestaurantsController < ApplicationController
 		@lng = @venue["geometry"]["location"]["lng"]
 		update_restaurant
 		@google_id = @restaurant.google_id
+		@reviewed = @restaurant.reviews.any? {|review| review.user = @current_user}
 		respond_to do |format|
 			format.html
 			format.js

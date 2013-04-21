@@ -134,4 +134,12 @@ module RestaurantsHelper
 			@restaurant.update_attributes(set_attr_from_google(@venue))
 	end
 
+	def set_share_detail_text
+		if @reviewed
+			"Recommend"
+		else
+			"Ask around"
+		end
+	end
+
 end
