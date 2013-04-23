@@ -42,6 +42,18 @@ header#app_header{
 		font-size: 200%;
 		font-weight: bold;
 	}
+
+	.feedback_link{
+		font-size: 80%;
+		font-weight: normal;
+		color: #545454;
+		vertical-align: center;
+	}
+
+	.feedback_link:hover{
+		text-decoration: underline;
+		color: #363636;
+	}
 }
 
 .app_header_item{
@@ -85,6 +97,7 @@ header#app_header{
 	#logout_icon{
 		vertical-align: middle;	
 	}
+
 }
 
 

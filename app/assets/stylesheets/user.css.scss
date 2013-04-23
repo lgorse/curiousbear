@@ -224,6 +224,7 @@ li.user_summary{
 
 #user_edit_wrapper{
 	width: 60%;
+	height: 100%;
 	margin: 40px auto;
 	position: relative;
 
@@ -239,7 +240,7 @@ li.user_summary{
 		padding: 5px;
 	}
 	ul{
-		margin: 50px auto;
+		margin: 50px auto 30px;
 		padding: 10px;
 		border: 1px solid #C0C0C0;
 	}
@@ -261,13 +262,27 @@ li.user_summary{
 
 	#unsubscribe{
 		text-decoration: none;
-		color: red;
+		color: #ADADAD;
 		font-weight: bold;
 	}
 
 	#unsubscribe:hover{
 		text-decoration: underline;
+		color: red;
 	}
+
+	.feedback_link{
+	text-decoration: none;
+	display: block;
+	margin-bottom: 45px;
+	color: green;
 }
+
+.feedback_link:hover{
+	text-decoration: underline;
+}
+}
+
+
 
 

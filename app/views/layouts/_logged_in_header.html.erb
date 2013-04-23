@@ -4,6 +4,7 @@
 	<ul id= "app_header_left">
 		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path(:welcome => params[:welcome]) %></li>
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
+		<li class = "app_header_item"><%= link_to 'Feedback (please)', new_feedback_path, :remote => true, :class => "feedback_link fancybox" %></li>
 	</ul>
 	<nav id = "app_header_right">
 		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :class => "add_friends_button", :title => "Add friends" %>

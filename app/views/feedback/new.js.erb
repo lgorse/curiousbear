@@ -1,0 +1,14 @@
+
+$(function(){
+	$(".feedback_link, .fancybox").fancybox({
+		width: 400,
+		type : 'iframe',
+		afterLoad : function(){
+			block_off_default_clicks();
+			$(".fancybox-iframe").contents().find(".feedback_form").submit(function(e){
+				parent.$.fancybox.close();
+			});
+		}
+	}).eq(0).click().stopPropagation();
+
+});

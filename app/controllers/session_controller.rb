@@ -34,6 +34,7 @@ class SessionController < ApplicationController
 	end
 
 	def info
+		
 		if session["user_id"]
 		authenticate 
 		fb_friends = @graph.get_connections("me", "friends", :fields => "picture", :limit => 5)

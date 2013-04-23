@@ -5,4 +5,20 @@ $(function() {
 
 });
 
+function set_click_listeners(){
+	$(".fancybox-iframe").contents().find(".info_header").click(function(){
+		$(this).next(".info_section").toggle();
+		$('.fancybox-inner').height($(".fancybox-iframe").contents().find('body').height());
+	});
+}
+
+function block_off_default_clicks(){
+	$(".fancybox-iframe").contents().find("#app_header").find('a').click(function(e){
+		e.preventDefault();
+	});
+	$(".fancybox-iframe").contents().find(".new_review_detail").click(function(e){
+		e.preventDefault();
+	});
+}
+
 
