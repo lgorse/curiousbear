@@ -4,7 +4,6 @@ class FeedbackMailer < ActionMailer::Base
   default :subject => "feedback about KweeKwegg"
 
   def send_feedback(message)
-  	puts message[:body]
   	@message = message
   	mail(:from => message[:sender_email], :body => message[:body])
 
