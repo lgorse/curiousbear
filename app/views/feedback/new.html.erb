@@ -1,0 +1,8 @@
+
+<h1>Thanks for the feedback,  <%= @current_user.first_name %></h1>
+<ul class = "rounded-corner">
+<%= form_tag send_feedback_path, :method => :post do %>
+<%= hidden_field_tag :sender_email, @current_user.e_mail %>
+<li><%= text_area_tag :body, "" %></li>
+<li><%= submit_tag "Send" %></li>
+<% end %></ul>
