@@ -19,7 +19,7 @@ Curiousbear::Application.routes.draw do
     end
   end
 
-  resources :session
+  resources :session, :feedback
 
   resources :reviews do
     member do
@@ -33,7 +33,8 @@ Curiousbear::Application.routes.draw do
   match '/logout', :to => "session#logout"
   match '/register', :to => "session#register"
   match '/info', :to => "session#info"
-
+  match '/send_feedback', :to => 'feedback#send_feedback', as: 'send_feedback', :method => :post
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

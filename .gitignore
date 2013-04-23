@@ -29,6 +29,7 @@ capybara-*.html
 /public/system/*
 /coverage/
 /spec/tmp/*
+.env
 
 **.orig
 rerun.txt
