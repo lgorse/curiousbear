@@ -1,3 +1,4 @@
+
 # == Schema Information
 #
 # Table name: restaurants
@@ -29,14 +30,30 @@
 class Restaurant < ActiveRecord::Base
 	include Sidekiq::Worker
 
- attr_protected
- validates :google_id, :uniqueness => {:message => "already exists"}
- has_many :reviews, :dependent => :destroy
- 
-def self.trust_search(query, user)
-	
-	reviewer_list = user.following.collect {|friend| friend.id}
-	Restaurant.search(query, :with => {:reviewer_id => reviewer_list << user.id})
-end
+	attr_protected
+	validates :google_id, :uniqueness => {:message => "already exists"}
+	has_many :reviews, :dependent => :destroy
 
+	def self.trust_search(query, user)
+
+		reviewer_list = user.following.collect {|friend| friend.id}
+		Restaurant.search(query, :with => {:reviewer_id => reviewer_list << user.id})
+	end
+
+	def self.update_keywords
+		Restaurant.all.each do |restaurant|
+			word_array = Hash.new(0)
+			restaurant.reviews.each do |review|
+				review_keywords = review.keywords.split(',')		
+				review_keywords.each{|word| word_array[word.strip] += 1} if review_keywords.length > 0
+			end
+			if word_array.length > 0
+				word_array.sort_by{|key, value| value}.reverse!
+				puts word_array_to_string = word_array.keys[0..5].join(', ')
+				restaurant.update_attributes(:keywords => word_array_to_string)
+			end
+		end
+
+	end
+	
 end
