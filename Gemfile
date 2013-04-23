@@ -16,6 +16,7 @@ gem 'fancybox2-rails', '~> 0.2.4'
 gem "geocoder"
 gem 'unicorn'
 gem 'rack-timeout'
+gem 'mandrill-api'
 
 gem 'redis'
 gem 'sidekiq'
