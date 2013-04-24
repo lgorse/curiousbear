@@ -35,13 +35,16 @@ class Restaurant < ActiveRecord::Base
 	has_many :reviews, :dependent => :destroy
 
 	def self.trust_search(query, user)
-				
+		
+		#user = User.find(78) #This line a hack for development environment
+		#user.update_attributes(:ip_address => "128.12.187.157") #This line a hack for development environment
+		
 		reviewer_list = user.following.collect {|friend| friend.id}
 		@lat = Geocoder::Calculations.to_radians(user.lat)
 		@long = Geocoder::Calculations.to_radians(user.long)
 		Restaurant.search(query, :geo => [@lat, @long],
-								 :with => {:reviewer_id => reviewer_list << user.id, :geodist => 0.0..50000.0},
-								 :order => "rating_average DESC")
+								 :with => {:reviewer_id => reviewer_list << user.id},
+								 :order => "rating_average DESC, geodist ASC")
 	end
 
 	def self.update_keywords
