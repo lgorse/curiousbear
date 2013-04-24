@@ -1,4 +1,3 @@
-
 # == Schema Information
 #
 # Table name: restaurants
@@ -11,7 +10,7 @@
 #  lat               :float
 #  lng               :float
 #  google_id         :string(255)      not null
-#  google_reference  :string(255)
+#  google_reference  :text
 #  keywords          :text
 #  google_types      :text             default("restaurant, establishment, food")
 #  formatted_address :string(255)
@@ -25,6 +24,7 @@
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #  delta             :boolean          default(TRUE), not null
+#  average           :integer          default(0)
 #
 
 class Restaurant < ActiveRecord::Base
@@ -39,10 +39,9 @@ class Restaurant < ActiveRecord::Base
 		reviewer_list = user.following.collect {|friend| friend.id}
 		@lat = Geocoder::Calculations.to_radians(user.lat)
 		@long = Geocoder::Calculations.to_radians(user.long)
-		puts @lat
 		Restaurant.search(query, :geo => [@lat, @long],
 								 :with => {:reviewer_id => reviewer_list << user.id, :geodist => 0.0..50000.0},
-								 :order => "geodist ASC")
+								 :order => "rating_average DESC")
 	end
 
 	def self.update_keywords
@@ -59,6 +58,10 @@ class Restaurant < ActiveRecord::Base
 			end
 		end
 
+	end
+
+	def set_average
+		self.update_attributes(:average => self.reviews.average(:rating).to_i)
 	end
 	
 end

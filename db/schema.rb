@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130419040602) do
+ActiveRecord::Schema.define(:version => 20130424053816) do
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -46,11 +46,14 @@ ActiveRecord::Schema.define(:version => 20130419040602) do
     t.datetime "created_at",                                                       :null => false
     t.datetime "updated_at",                                                       :null => false
     t.boolean  "delta",             :default => true,                              :null => false
+    t.integer  "average",           :default => 0
   end
 
+  add_index "restaurants", ["average"], :name => "index_restaurants_on_average"
   add_index "restaurants", ["delta"], :name => "index_restaurants_on_delta"
   add_index "restaurants", ["google_id"], :name => "index_restaurants_on_google_id"
   add_index "restaurants", ["google_rating"], :name => "index_restaurants_on_google_rating"
+  add_index "restaurants", ["keywords"], :name => "index_restaurants_on_keywords"
 
   create_table "reviews", :force => true do |t|
     t.integer  "restaurant_id", :null => false

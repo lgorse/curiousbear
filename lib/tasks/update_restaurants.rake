@@ -4,4 +4,8 @@ namespace :restaurant do
 		Restaurant.update_keywords
 	end
 
+	task :update_average => :environment do
+		Restaurant.all.each {|restaurant| restaurant.set_average }
+	end
+
 end

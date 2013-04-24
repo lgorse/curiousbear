@@ -10,7 +10,7 @@
 #  lat               :float
 #  lng               :float
 #  google_id         :string(255)      not null
-#  google_reference  :string(255)
+#  google_reference  :text
 #  keywords          :text
 #  google_types      :text             default("restaurant, establishment, food")
 #  formatted_address :string(255)
@@ -24,6 +24,7 @@
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
 #  delta             :boolean          default(TRUE), not null
+#  average           :integer          default(0)
 #
 
 require 'spec_helper'
