@@ -29,15 +29,20 @@
 
 class Restaurant < ActiveRecord::Base
 	include Sidekiq::Worker
-
+	
 	attr_protected
 	validates :google_id, :uniqueness => {:message => "already exists"}
 	has_many :reviews, :dependent => :destroy
 
 	def self.trust_search(query, user)
-
+		user = User.find(78)
 		reviewer_list = user.following.collect {|friend| friend.id}
-		Restaurant.search(query, :with => {:reviewer_id => reviewer_list << user.id})
+		@lat = Geocoder::Calculations.to_radians(user.lat)
+		@long = Geocoder::Calculations.to_radians(user.long)
+		puts @lat
+		Restaurant.search(query, :geo => [@lat, @long],
+								 :with => {:reviewer_id => reviewer_list << user.id, :geodist => 0.0..50000.0},
+								 :order => "geodist ASC")
 	end
 
 	def self.update_keywords
