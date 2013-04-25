@@ -11,7 +11,7 @@
           name: user_name+' invited you to <%= APP_NAME %>',
           link: "<%= Facebook::SITE_URL %>",
           picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          description: unescape('<b><%= APP_NAME %> brings you restaurant recommendations from your trusted circle. Share your own best eats. </b>Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.')
+          description: unescape('<%= APP_NAME %> brings you restaurant recommendations from your trusted circle. Share your own best eats. Join '+user_name+' on <%= APP_NAME %> and share your world with the people you trust.')
           });
     }
      </script>
