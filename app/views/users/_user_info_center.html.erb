@@ -2,7 +2,7 @@
 	<%= render 'reviews/buttons/user_average', :user => @user %>
 	<ul><li id = "review_count"><%= pluralize(@user.reviews.count, "review") %></li></ul>
 	<% unless @user == @current_user %>
-	<%= render 'users/buttons/talk_to_user_button', :user => @user, :text => "Talk" %>
+	<%= render 'users/buttons/talk_to_user_button', :user => @user, :text => "Let\'s talk" %>
 	<% end %>
 </div>
 
