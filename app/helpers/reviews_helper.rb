@@ -56,4 +56,12 @@ module ReviewsHelper
 		end
 	end
 
+	def post_to_feed_text(restaurant)
+		if @current_user.has_rated?(restaurant.id)
+			"Share review"
+		else
+			"Request review"
+		end
+	end
+
 end

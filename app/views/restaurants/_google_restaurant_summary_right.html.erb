@@ -3,7 +3,7 @@
 <% if @restaurant.google_rating %>
 <%= render 'reviews/buttons/google_stars', :google_rating => @restaurant.google_rating.to_i %>
 <% end %>
- <%= render 'reviews/buttons/request_review', :venue => @restaurant, :text => "Ask friends" %>
+ <%= render 'reviews/buttons/request_review', :venue => @restaurant %>
  	<%= render 'restaurants/buttons/share_detail_button', :restaurant => @restaurant, :text => "Ask advice" %>
  <p id='msg'></p>
 </div>
