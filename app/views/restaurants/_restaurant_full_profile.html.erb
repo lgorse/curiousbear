@@ -1,4 +1,4 @@
-<body onload = "initialize_map(<%= @lat %>, <%= @lng %>, '<%= @reference %>')">
+<body onload = "initialize_map(<%= @restaurant.lat %>, <%= @restaurant.lng %>, '<%= @restaurant.google_reference %>')">
 <%= render 'restaurants/google_maps_script' %>
 <div class = "map" id="map"></div>
 <div id = "restaurant_info">

@@ -79,20 +79,6 @@ module RestaurantsHelper
 	end
 
 	
-	def get_restaurant_from_reference
-		url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+@reference
-		url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
-		
-
-		http = Net::HTTP.new(url.host, url.port)
-		http.use_ssl = true
-		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-		request = Net::HTTP::Get.new(url.request_uri)
-		
-		result = http.request(request)
-		JSON.parse(result.body)["result"]
-	end
-
 	def set_google_restaurant_values(result)
 		venue = set_attr_from_google(result)
 		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
@@ -128,10 +114,6 @@ module RestaurantsHelper
 	def reviewer_list(venue, limit_number)
 		reviewer_list = venue.reviews.limit(limit_number).collect {|review| link_to review.user.name, review.user}.join(" , ")
 		simple_format word_wrap("Reviewed by: " + reviewer_list, :line_width => 70)
-	end
-
-	def update_restaurant
-			@restaurant.update_attributes(set_attr_from_google(@venue))
 	end
 
 	def set_share_detail_text

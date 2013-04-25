@@ -1,7 +1,7 @@
 class RestaurantsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
-	rescue_from NoMethodError, :with => :redirect_to_signin
+	#rescue_from NoMethodError, :with => :redirect_to_signin
 	before_filter :authenticate
 	
 	def index
@@ -40,11 +40,7 @@ class RestaurantsController < ApplicationController
 	def show
 		@restaurant = Restaurant.find(params[:id])
 		@search = Base64.decode64(params[:search]) if params[:search]
-		@reference = @restaurant.google_reference
-		@venue = get_restaurant_from_reference
-		update_restaurant
-		@lat = @venue["geometry"]["location"]["lat"]
-		@lng = @venue["geometry"]["location"]["lng"]
+		@restaurant.update_restaurant_from_google_reference
 		@google_id = @restaurant.google_id
 		@reviewed = @restaurant.reviews.any? {|review| review.user == @current_user}
 		respond_to do |format|

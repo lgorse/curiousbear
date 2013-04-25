@@ -28,7 +28,7 @@
 #
 
 class Restaurant < ActiveRecord::Base
-		
+		include RestaurantsHelper
 	attr_protected
 	validates :google_id, :uniqueness => {:message => "already exists"}
 	has_many :reviews, :dependent => :destroy
@@ -62,8 +62,32 @@ class Restaurant < ActiveRecord::Base
 
 	end
 
+	def update_restaurant_from_google_reference
+		reference = self.google_reference
+		@venue = get_restaurant_from_reference(reference)
+		self.update_attributes(set_attr_from_google(@venue))
+	end
+
+
 	def set_average
 		self.update_attributes(:average => self.reviews.average(:rating).to_i)
 	end
+
+
+
+def get_restaurant_from_reference(reference)
+		url_params = "json?key="+ GOOGLE_API_KEY + "&sensor="+ false.to_s + "&reference="+reference
+		url = URI.parse("https://maps.googleapis.com/maps/api/place/details/"+url_params)
+		
+
+		http = Net::HTTP.new(url.host, url.port)
+		http.use_ssl = true
+		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+		request = Net::HTTP::Get.new(url.request_uri)
+		
+		result = http.request(request)
+		JSON.parse(result.body)["result"]
+	end
+
 	
 end
