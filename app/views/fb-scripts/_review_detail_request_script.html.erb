@@ -1,21 +1,33 @@
     <script>
 
-    function detail(friend_id, encoded_user_name, encoded_restaurant_name, restaurant_id, articles){
+    function detail(friend_id, encoded_user_name, encoded_restaurant_name, restaurant_id, rating, articles){
       // assume we are already logged in
       FB.init({appId: '<%= Facebook::APP_ID.to_s %>', xfbml: true, cookie: true});
       var user_name = decodeURI(encoded_user_name);
       var restaurant_name = decodeURI(encoded_restaurant_name);
-      FB.ui({
-        to: friend_id,
+      if (rating){
+        FB.ui({
+          to: friend_id,
+          method: 'send',
+          name: user_name +' wants to share details about '+ restaurant_name+ " with you",
+          link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
+          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
+          description: unescape(user_name + ' has some details about '+restaurant_name+'. Share more food recommendations with '+articles["object"]+' on <%= APP_NAME %>.')
+        });
+      }else{
+        FB.ui({
+          to: friend_id,
           method: 'send',
           name: user_name +' needs more details about '+ restaurant_name,
           link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
           picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
           description: unescape(user_name + ' needs your help. Add some color to your review of '+restaurant_name+' and help '+articles["object"]+' decide if he should eat there.')
-          });
+        });
+
+      }
     }
 
 
- 
+
     
-     </script>
+    </script>

@@ -48,4 +48,12 @@ module ReviewsHelper
 		encoded_google_id_json = Base64.urlsafe_encode64(URI.encode(google_id_json))
 	end
 
+	def define_detail_text(restaurant)
+		if @current_user.has_rated?(restaurant.id)
+			"Send details"
+		else
+			"Request details"		
+		end
+	end
+
 end

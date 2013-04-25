@@ -77,5 +77,14 @@ class User < ActiveRecord::Base
 		self.fb_pic||=self.update_photo(graph)
 	end
 
+	def has_rated?(restaurant_id)
+		self.reviews.where(:restaurant_id => restaurant_id).exists?
+	end
+
+	def rating(restaurant_id)
+		review = self.reviews.find_by_restaurant_id(restaurant_id)
+		review ? review.rating : 0
+	end
+
 
 end
