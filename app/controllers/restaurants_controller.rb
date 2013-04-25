@@ -42,11 +42,11 @@ class RestaurantsController < ApplicationController
 		@search = Base64.decode64(params[:search]) if params[:search]
 		@reference = @restaurant.google_reference
 		@venue = get_restaurant_from_reference
+		update_restaurant
 		@lat = @venue["geometry"]["location"]["lat"]
 		@lng = @venue["geometry"]["location"]["lng"]
-		update_restaurant
 		@google_id = @restaurant.google_id
-		@reviewed = @restaurant.reviews.any? {|review| review.user = @current_user}
+		@reviewed = @restaurant.reviews.any? {|review| review.user == @current_user}
 		respond_to do |format|
 			format.html
 			format.js
