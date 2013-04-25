@@ -1,30 +1,27 @@
  <script> 
-      FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
+ FB.init({appId: '<%= Facebook::APP_ID.to_s %>', status: true, cookie: true});
 
-      function postToFeed(restaurant_name, user_name, has_rated) {
+ function postToFeed(restaurant_name, user_name, has_rated) {
         // calling the API ...
-          alert(has_rated);
-        if (has_rated){
-         
-        var obj = {
-          method: 'feed',
-          link: '<%= Facebook::SITE_URL %>',
-          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          name: user_name +' has reviewed '+ restaurant_name,
-          caption: user_name+' shared a review',
-          description: unescape('Find out how '+user_name+' feels about '+restaurant_name+'. Share your own food reviews on <b><%= APP_NAME %></b>.')
-        };
-      }else{
-       
-        var obj = {
-          method: 'feed',
-          link: '<%= Facebook::SITE_URL %>',
-          picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
-          name: 'Anyone been to '+ restaurant_name+'?',
-          caption: user_name+' needs your help',
-          description: unescape('How good is '+restaurant_name+'? Help '+user_name+' decide on <b><%= APP_NAME %></b>.')
-        };
-      }
+        if (has_rated){ 
+          var obj = {
+            method: 'feed',
+            link: '<%= Facebook::SITE_URL %>',
+            picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
+            name: user_name +' has reviewed '+ restaurant_name,
+            caption: user_name+' shared a review',
+            description: unescape('Find out how '+user_name+' feels about '+restaurant_name+'. Share your own food reviews on <b><%= APP_NAME %></b>.')
+          };
+        }else{
+          var obj = {
+            method: 'feed',
+            link: '<%= Facebook::SITE_URL %>',
+            picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
+            name: 'Anyone been to '+ restaurant_name+'?',
+            caption: user_name+' needs your help',
+            description: unescape('How good is '+restaurant_name+'? Help '+user_name+' decide on <b><%= APP_NAME %></b>.')
+          };
+        }
 
         function callback(response) {
         	if (response['post_id']){
@@ -34,5 +31,5 @@
 
         FB.ui(obj, callback);
       }
-    
-    </script>
+      
+      </script>

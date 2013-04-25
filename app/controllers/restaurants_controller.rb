@@ -42,7 +42,6 @@ class RestaurantsController < ApplicationController
 		@search = Base64.decode64(params[:search]) if params[:search]
 		@restaurant.update_restaurant_from_google_reference
 		@google_id = @restaurant.google_id
-		@reviewed = @restaurant.reviews.any? {|review| review.user == @current_user}
 		respond_to do |format|
 			format.html
 			format.js

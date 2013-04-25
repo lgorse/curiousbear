@@ -116,11 +116,11 @@ module RestaurantsHelper
 		simple_format word_wrap("Reviewed by: " + reviewer_list, :line_width => 70)
 	end
 
-	def set_share_detail_text
-		if @reviewed
-			"Recommend"
+	def set_share_detail_text(restaurant)
+		if @current_user.has_rated?(restaurant)
+			"Tell a friend"
 		else
-			"Ask around"
+			"Ask a friend"
 		end
 	end
 

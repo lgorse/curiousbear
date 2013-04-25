@@ -1,1 +1,1 @@
-<button onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>", "<%= @current_user.has_rated?(venue.id) %>"); return false;' id="share_button"class = "facebook_button social"><%= post_to_feed_text(venue) %></button>
+<button onclick='postToFeed("<%= venue.name %>", "<%= @current_user.first_name %>", <%= @current_user.has_rated?(venue.id) %>); return false;' id="share_button"class = "facebook_button social"><%= post_to_feed_text(venue) %></button>
