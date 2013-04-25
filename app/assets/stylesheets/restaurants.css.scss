@@ -53,12 +53,13 @@ div#restaurant_info_right{
 	
 	.flat_list_item{
 		display: table-cell;
+		height: 100%;
 	}
 
 	#google_logo{
 		margin-left: 10px;
-		vertical-align: middle;
-
+		//vertical-align: middle;
+		height: auto;
 	}
 
 	.review_detail_update, .new_review_detail{

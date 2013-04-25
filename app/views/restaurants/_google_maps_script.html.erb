@@ -87,7 +87,8 @@ function detail_callback(place, status) {
       rating.setAttribute("target", "_blank");
      
       var logo = document.getElementById("google_logo");
-      logo.setAttribute("src", "/assets/google-med.png");
+      logo.setAttribute("href", place.url);
+      logo.setAttribute("target", "_blank");
     }
    
 venue = { name: place.name,
