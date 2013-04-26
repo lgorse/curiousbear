@@ -50,7 +50,6 @@ class RestaurantsController < ApplicationController
 	end
 
 	def create
-		puts params[:lat]
 		@restaurant = Restaurant.create(final_restaurant_attributes(params[:venue]))
 		respond_to do |format|
 			format.html {redirect_to @restaurant.id}
