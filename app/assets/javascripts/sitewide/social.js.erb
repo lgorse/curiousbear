@@ -24,7 +24,7 @@ function share_restaurant_detail(encoded_user_name, restaurant_attributes, has_r
      if (has_rated){
        FB.ui({
         method: 'send',
-        name: 'user_name +' wants to talk about '+ restaurant_name',
+        name: user_name +' wants to talk about '+ restaurant_name,
         link: '<%= Facebook::SITE_URL %>restaurants/'+restaurant_id,
         picture:"<%= Facebook::SITE_URL %>assets/fb-logo-75.png",
         description: unescape(user_name+' is using <%= APP_NAME %>, a site that lets you share and find reviews by the friends you trust.')
