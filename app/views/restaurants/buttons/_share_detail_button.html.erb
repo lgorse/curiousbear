@@ -1,2 +1,2 @@
 
-<button class = "share_restaurant_detail social facebook_button rounded-corner", onclick='share_restaurant_detail("<%= URI.encode(@current_user.first_name.to_s) %>",<%= restaurant.attributes.merge(:google_reference => "").to_json %>, <%= @current_user.has_rated?(restaurant.id) %>, <%= @current_user.gender_article.to_json %>)'><%= set_share_detail_text(restaurant) %></button>
+<button class = "share_restaurant_detail social facebook_button rounded-corner", onclick='share_restaurant_detail("<%= URI.encode(@current_user.first_name.to_s) %>",<%= restaurant.attributes.to_json %>, <%= @current_user.has_rated?(restaurant.id) %>, <%= @current_user.gender_article.to_json %>)'><%= set_share_detail_text(restaurant) %></button>
