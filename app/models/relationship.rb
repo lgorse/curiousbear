@@ -17,4 +17,13 @@ class Relationship < ActiveRecord::Base
 
   validates :follower_id, :presence => true
   validates :followed_id, :presence => true
+
+ after_commit :new_relationship_in_feed, :on => :create
+
+
+private
+
+def new_relationship_in_feed
+  FeedWorker.perform_async(self.id, TRUST)
+end
 end

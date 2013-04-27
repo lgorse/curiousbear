@@ -38,6 +38,8 @@ class User < ActiveRecord::Base
 
 	has_many :reviews, :dependent => :destroy
 
+	has_one :activity, :dependent => :destroy
+
 	geocoded_by :ip_address, :latitude => :lat, :longitude => :long
 	after_validation :geocode
 
@@ -46,45 +48,49 @@ class User < ActiveRecord::Base
 		@attr = {:name => signed_request['registration']['name'], :first_name => signed_request['registration']['first_name'],
 			:birthday => Date.strptime(signed_request['registration']['birthday'], '%m/%d/%Y'), :gender => signed_request['registration']['gender'],
 			:e_mail => signed_request['registration']['email'], :fb_id => signed_request['user_id'].to_i}
-	end
-
-	def follow!(followed_id)
-		self.relationships.create!(:followed_id => followed_id)
-	end
-
-	def unfollow!(followed)
-		self.relationships.find_by_followed_id(followed).destroy
-	end
-
-	def following?(followed)
-		self.relationships.find_by_followed_id(followed)
-	end
-
-	def gender_article
-		if self.gender == "male"
-			articles = {"subject" => "he", "possess" => "his", "object" => "him"}
-		elsif self.gender == "female"
-			articles = {"subject" => "her", "possess" => "her", "object" => "her"}
 		end
-	end
 
-	def update_photo(graph)
+		def follow!(followed_id)
+			self.relationships.create!(:followed_id => followed_id)
+		end
+
+		def unfollow!(followed)
+			self.relationships.find_by_followed_id(followed).destroy
+		end
+
+		def following?(followed)
+			self.relationships.find_by_followed_id(followed)
+		end
+
+		def gender_article
+			if self.gender == "male"
+				articles = {"subject" => "he", "possess" => "his", "object" => "him"}
+			elsif self.gender == "female"
+				articles = {"subject" => "her", "possess" => "her", "object" => "her"}
+			end
+		end
+
+		def update_photo(graph)
 			self.update_attributes(:fb_pic => graph.get_picture(self.fb_id),
-							   :fb_pic_large => graph.get_picture(self.fb_id, :type => "normal"))
+				:fb_pic_large => graph.get_picture(self.fb_id, :type => "normal"))
+		end
+
+		def get_user_small_pic(graph)
+			self.fb_pic||=self.update_photo(graph)
+		end
+
+		def has_rated?(restaurant_id)
+			self.reviews.where(:restaurant_id => restaurant_id).exists?
+		end
+
+		def rating(restaurant_id)
+			review = self.reviews.find_by_restaurant_id(restaurant_id)
+			review ? review.rating : 0
+		end
+
+		def feed
+			Activity.where(:feed_id => self.id).order('created_at DESC').limit(30)
+		end
+
+
 	end
-
-	def get_user_small_pic(graph)
-		self.fb_pic||=self.update_photo(graph)
-	end
-
-	def has_rated?(restaurant_id)
-		self.reviews.where(:restaurant_id => restaurant_id).exists?
-	end
-
-	def rating(restaurant_id)
-		review = self.reviews.find_by_restaurant_id(restaurant_id)
-		review ? review.rating : 0
-	end
-
-
-end

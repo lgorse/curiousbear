@@ -26,6 +26,7 @@ class Review < ActiveRecord::Base
 
   after_save :set_restaurant_delta_flag
   after_destroy :set_restaurant_delta_flag
+  after_commit :new_review_in_feed, :on => :create
 
   private
 
@@ -33,6 +34,10 @@ class Review < ActiveRecord::Base
     
   	restaurant.delta = true
   	restaurant.save
+  end
+
+  def new_review_in_feed
+      FeedWorker.perform_async(self.id, REVIEW)
   end
 
   

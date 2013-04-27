@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130424053816) do
+ActiveRecord::Schema.define(:version => 20130427061337) do
+
+  create_table "activities", :force => true do |t|
+    t.integer  "feed_id",    :null => false
+    t.integer  "user_id",    :null => false
+    t.integer  "activity",   :null => false
+    t.integer  "target_id"
+    t.float    "edgerank"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "activities", ["feed_id"], :name => "index_activities_on_feed_id"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"

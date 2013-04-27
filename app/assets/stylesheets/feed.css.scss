@@ -1,0 +1,42 @@
+#feed{
+	border: 1px solid black;
+	height: 100%;
+	width: 250px;
+	float: right;
+	left: 1100px;
+	position: fixed;
+	overflow-y: scroll;
+}
+
+.feed_item{
+padding: 5px;
+	
+	border-collapse: inherit;
+	display: block;
+	border-bottom: 1px solid #C0C0C0; 
+	background-color: #F6F9ED;
+
+	.feed_photo{
+		
+		display: table-cell;
+	}
+
+	.feed_content{
+		
+		display: table-cell;
+		font-size: 80%;
+		padding: 10px 5px;
+		vertical-align: top;
+	}
+
+	a{
+		text-decoration: none;
+		color: #104E8B;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	
+}
