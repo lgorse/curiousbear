@@ -1,5 +1,7 @@
 <% set_feed_activity(item) %>
-<div class = "feed_item">
+<% unless @feed_user.nil? || @feed_target.nil? %>
+<div class = "feed_item activity_<%= item.activity %>">
 <div class = "feed_photo"><%= link_to (image_tag @feed_user.get_user_small_pic(@graph), :size => "35x35"), @feed_user %></div>
 <div class = "feed_content" ><%= link_to @feed_user.name, @feed_user%><%= word_wrap(" #{@feed_activity}")%><%= link_to you_or_name, @feed_target%></div>
 </div>
+<% end %>
