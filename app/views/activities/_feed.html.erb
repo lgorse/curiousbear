@@ -1,3 +1,6 @@
 <%= render :partial => 'activities/feed_item', :collection => @current_user.feed, :as => :item %>
+<% if @current_user.feed.count < 30 %>
+<%= render 'activities/feed_placeholder' %>
+<% end %>
 
 
