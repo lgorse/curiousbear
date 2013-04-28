@@ -76,4 +76,10 @@ module SessionHelper
 		reset_session
 	end
 
+	def no_header_pages
+		(controller_name == 'session' && action_name == 'info') ||
+		(controller_name == 'feedback' && action_name == 'new')
+
+	end
+
 end

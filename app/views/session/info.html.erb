@@ -4,6 +4,8 @@
 <% end %>
 
 	<h1>Food reviews from the people you trust</h1>
+	<h4><%= APP_NAME %> harnesses your network</h4>
+	<h4>to find restaurants you'll like</h4>
 	
 <div class = "info_header">
 <h2>1. Follow the foodies you trust</h2></div>
@@ -18,27 +20,30 @@
 </div>
 
 <div class = "info_header">
-<h2>2. Search for a restaurant</h2></div>
+<h2>2. Search for a restaurant, cuisine or ambiance</h2></div>
 <div class = "info_section">
 <%= render 'restaurants/searchbox' %>
-<p>You can search any way you want: by name, cuisine or location.</p>
-<p>Your first results will be recommendations from trusted friends. </p>
-<p>If you want more results, you get Google results too!</p>
+<p><b>Your trusted circle's reviews will pop up first.</b></p>
+<p>If that's not enough, you get Google results automatically!</p>
 <p>Go ahead, type something in the search box!</p>
 </div>
 
 <div class = "info_header">
 <h2>3. Review places for your friends</h2></div>
 <div class = "info_section">
+	<p>Your friends need your advice on where to eat!</p>
+	<p><b>You can write a full review or just 'star' a restaurant with a single click</b></p>
+	<p>Click on the stars now!</p>
 <%# render 'restaurants/recommended_restaurant_summary', :venue => Restaurant.first %>
 <%= render 'reviews/buttons/review_input', :restaurant_id => -1, :venue_field => "", :search => "", :restaurant => nil %>
-<p>All in a single click. Click on the stars now!</p>
-<p>Your friends will need your help to know where to eat!</p>
 </div>
 
 <div class = "info_header">
-<h2>4. Share reviews, ask for help</h2></div>
+<h2>4. Share your experiences or ask for reviews</h2></div>
 <div class = "info_section">
- <a onclick='postToFeed("My favorite restaurant", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button">Request review</a>
- <p>Share, recommend, ask for advice, you can do it all!</p></div>
+	<p>Need more details on a review? Advice on where to eat?</p>
+	<p><b>Help is on the way!</b></p>
+	<p>With <%= APP_NAME %>, you can post your requests straight to your Facebook feed</p>
+ <a onclick='postToFeed("My favorite restaurant", "<%= @current_user.first_name %>"); return false;' href = "#" id="share_button", class = "social facebook_button">Request review</a>
+ <h1>Food is all about sharing! So what's for dinner?</h1></div>
 </div>

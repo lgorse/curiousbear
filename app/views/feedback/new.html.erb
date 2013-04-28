@@ -3,7 +3,7 @@
 <ul class = "rounded-corner">
 <%= form_tag send_feedback_path, :method => :post, :class => "feedback_form" do %>
 <%= hidden_field_tag :sender_email, @current_user.e_mail %>
-<li><%= text_area_tag :body, "", :size=> "40x20" %></li>
+<li><%= text_area_tag :body, "", :size=> "60x15" %></li>
 <li><%= submit_tag "Send" %></li>
 <% end %></ul>
 </div>
