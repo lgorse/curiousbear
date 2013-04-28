@@ -3,6 +3,9 @@ $(function(){
 	$("#why_am_i_here").fancybox({
 		type : 'iframe',
 		afterLoad : function(){
+			$(".fancybox-iframe").contents().find("#app_inner").css({
+				"margin-top" : '15px'
+			});	
 			$(".fancybox-iframe").contents().find("#search_submit").unbind("type");	
 			block_off_default_clicks();
 			set_click_listeners();
