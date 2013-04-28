@@ -20,23 +20,12 @@ module UsersHelper
 		response = http.request(request)
 	end
 
-	def set_friend_lists
-		@facebook_friends_invite = []
-		@facebook_friends_enrolled = []
-		@facebook_friends.each do |profile|
-			user = User.find_by_fb_id(profile["uid"]) unless profile["uid"] == @current_user.id
-			user.nil? ? @facebook_friends_invite << profile : set_enrolled_fb_friend_list(user)
-		end
-		@facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
-	end
-
+	
 	def set_attr_from_fb(profile)
 @attr = {:id => nil, :fb_pic => profile['pic_square'],
 		 :fb_id => profile["uid"], :name => profile["name"]}
 	end
 
-	def set_enrolled_fb_friend_list(user)
-		@facebook_friends_enrolled << user unless @current_user.following?(user)
-	end
+	
 	
 end

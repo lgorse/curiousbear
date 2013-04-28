@@ -92,5 +92,28 @@ class User < ActiveRecord::Base
 			Activity.where(:feed_id => self.id).order('created_at DESC').limit(30)
 		end
 
+		def fb_friends_from_graph(graph)
+			Rails.cache.fetch('fb_friends_graph'){set_friends_list_from_graph(graph)}
+		end
+
+		def fb_friends_list(facebook_friends)
+			Rails.cache.fetch('fb_friends_list'){set_friends_list(facebook_friends)}
+
+		end
+
+
+		def set_friends_list_from_graph(graph)
+			facebook_friends = graph.fql_query('select uid, name, pic_square from user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY name ASC')
+		end
+
+		def set_friends_list(facebook_friends)
+			facebook_friends_invite = []
+			facebook_friends_enrolled = []
+			facebook_friends.each do |profile|
+				user = User.find_by_fb_id(profile["uid"]) unless profile["uid"] == self.id
+				user.nil? ? facebook_friends_invite << profile : facebook_friends_enrolled << user unless self.following?(user)
+			end
+			[facebook_friends_invite, facebook_friends_enrolled]
+		end
 
 	end

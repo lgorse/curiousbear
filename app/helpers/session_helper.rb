@@ -57,15 +57,16 @@ module SessionHelper
 		end
 	end
 
+
 	def set_remote_ip
 		@current_user.update_attributes(:ip_address => request.remote_ip) unless @current_user.ip_address == request.remote_ip
 
 	end
 
-	
 	def authenticate
 		parse_facebook_cookies
 		set_session
+			
 		set_remote_ip
 	end
 

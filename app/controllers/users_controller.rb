@@ -42,9 +42,9 @@ end
 def facebook_friends
 	@title = "Follow your friends"
 	@user = @current_user
-	@facebook_friends = @graph.fql_query('select uid, name, pic_square from user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY name ASC')
-	
-	set_friend_lists
+	@facebook_friends = @current_user.fb_friends_from_graph(@graph)
+	@facebook_friends_invite, @facebook_friends_enrolled = @current_user.fb_friends_list(@facebook_friends)
+	@facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
 	respond_to do |format|
 		format.html
 		format.js

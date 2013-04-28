@@ -34,6 +34,9 @@ gem 'ts-sidekiq-delta',
   :branch => 'sidekiq',
   :ref    => '5bae80758c'
 
+
+gem 'dalli'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
