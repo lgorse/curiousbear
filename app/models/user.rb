@@ -98,7 +98,6 @@ class User < ActiveRecord::Base
 
 		def fb_friends_list(facebook_friends)
 			Rails.cache.fetch('fb_friends_list'){set_friends_list(facebook_friends)}
-
 		end
 
 

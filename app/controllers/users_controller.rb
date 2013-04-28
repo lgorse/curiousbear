@@ -44,6 +44,9 @@ def facebook_friends
 	@user = @current_user
 	@facebook_friends = @current_user.fb_friends_from_graph(@graph)
 	@facebook_friends_invite, @facebook_friends_enrolled = @current_user.fb_friends_list(@facebook_friends)
+	@stats =  Rails.cache.stats.first.last
+	puts 'HITS: ' + @stats['get_hits']
+	puts 'MISSES: ' + @stats['get_misses']
 	@facebook_friends_invite.paginate(:page => params[:page], :per_page => 20)
 	respond_to do |format|
 		format.html
