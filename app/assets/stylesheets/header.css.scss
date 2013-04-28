@@ -1,7 +1,11 @@
 
 div#header_wrapper{
 	border-bottom: 1px solid #C0C0C0;
-
+position: fixed;
+width: 100%;
+top: 0px;
+z-index: 20;
+background: white;
 	box-shadow: 5px 1px 5px #888;
 	-moz-box-shadow: 5px 1px 5px #888;
 	-webkit-box-shadow: 5px 1px 5px #888;
@@ -9,6 +13,7 @@ div#header_wrapper{
 
 header#app_header{
 	height: 50px;
+
 	position: relative;
 	font-size: 14px;
 	margin: 0px auto;

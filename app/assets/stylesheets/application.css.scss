@@ -13,9 +13,12 @@
  *= require_tree .
  */
 
+ $center_width: 800px;
+
 ul{
 	list-style-type: none;
 }
+
 
 .rounded-corner{
     -moz-border-radius: 10px;
@@ -26,10 +29,15 @@ ul{
 
 
 #app_inner{
-	margin: 20px 250px 0px;
-position: absolute;
+	margin: 75px 100px 0px -400px;
+	left: 50%;
+	float: left;
+position: relative;
 	width: 800px;
+	min-width: 800px;
 	height: 100%;
+	z-index: 0;
+	background-color: white;
 }
 
 
