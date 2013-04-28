@@ -132,6 +132,7 @@ GEM
     mandrill-api (1.0.24)
       excon (~> 0.16.0)
       json (~> 1.7.7)
+    memcachier (0.0.2)
     middleware (0.1.0)
     mime-types (1.22)
     multi_json (1.7.2)
@@ -263,6 +264,7 @@ DEPENDENCIES
   jquery-rails
   koala
   mandrill-api
+  memcachier
   mysql2 (~> 0.3.12b5)
   newrelic_rpm
   oink
