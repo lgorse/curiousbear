@@ -1,0 +1,5 @@
+<div class = "recommendation_wrapper">
+	<%= render :partial => 'session/reviewer_item', :collection => @reviewers, :as => :reviewer, :locals => {:text => "Has lots of reviews"} %>
+	<%= render :partial => 'session/reviewer_item', :collection => @popular, :as => :reviewer, :locals => {:text => "Has lots of followers"} %>
+	<%= render :partial => 'session/restaurant_item', :collection => @best_restaurants, :as => :restaurant, :locals => {:text => "Has high ratings"} %>
+	</div>

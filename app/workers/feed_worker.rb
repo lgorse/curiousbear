@@ -1,6 +1,6 @@
 class FeedWorker
 	include Sidekiq::Worker
-	sidekiq_options :retry => 3
+	sidekiq_options :retry => 5
 
 	def perform(id, type)
 		case type

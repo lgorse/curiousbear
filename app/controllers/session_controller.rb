@@ -19,6 +19,9 @@ class SessionController < ApplicationController
 	def home
 		@current_user.update_photo(@graph)
 		@title = "Search the world, "+@current_user.first_name
+		@best_restaurants = Restaurant.top_5_by_rating
+	@reviewers = User.top_5_by_reviews
+	@popular = User.top_5_by_followers
 		respond_to do |format|
 			format.html
 			format.js

@@ -1,0 +1,37 @@
+.suggestion_holder, .suggestion_restaurant{
+	border: 1px solid #C0C0C0;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	font-size: 80%;
+	height: 100px;
+
+	#app_stars{
+		display: none;
+	}
+}
+.suggestion_holder{
+	
+	.suggestion_pic{
+		margin-right: 5px;
+	}
+
+	.suggestion_text{
+		float: right;
+		display: inline;
+		vertical-align: top;
+		position: relative;
+		top: -45px;
+		
+	}
+
+	p{
+		margin-bottom: 5px;
+	}
+
+
+}
+
+.suggestion_restaurant{
+
+}

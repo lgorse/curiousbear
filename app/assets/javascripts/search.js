@@ -5,7 +5,7 @@ function load_listener(){
 	$(function(){
 		$('.search_form').submit(function(){
 			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
-			$('#restaurant_list, #show_holder').hide();
+			$('#restaurant_list, #show_holder, .recommendation_wrapper').hide();
 			//$('#show_holder').hide();
 		});
 		
