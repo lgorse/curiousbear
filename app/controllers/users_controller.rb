@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	include UsersHelper, ReviewsHelper
 
-rescue_from NoMethodError, :with => :redirect_to_signin, :only => [:facebook_friends]
+	rescue_from NoMethodError, :with => :redirect_to_signin, :only => [:facebook_friends]
 	before_filter :authenticate, :except => [:create]
 	before_filter :new_user_facebook, :only => [:create]
 
