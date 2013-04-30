@@ -90,5 +90,9 @@ def get_restaurant_from_reference(reference)
 		JSON.parse(result.body)["result"]
 	end
 
+	def self.top_5_by_rating
+		Restaurant.order('restaurants.average DESC').limit(5)
+	end
+
 	
 end

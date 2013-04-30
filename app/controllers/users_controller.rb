@@ -17,6 +17,9 @@ def show
 	#response.headers["Cache-Control"] = "no-cache, no-store, max-age=0"
 	@user = User.find(params[:id])
 	@user.update_photo(@graph)
+	@best_restaurants = Restaurant.top_5_by_rating
+	@reviewers = User.top_5_by_reviews
+	@popular = User.top_5_by_followers
 	respond_to do |format|
 		format.html 
 		format.js 

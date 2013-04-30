@@ -115,4 +115,15 @@ class User < ActiveRecord::Base
 			[facebook_friends_invite, facebook_friends_enrolled]
 		end
 
+		def self.top_5_by_reviews
+			User.joins('left join reviews on reviews.user_id = users.id').
+			select('users.*, count(reviews.id) as reviews_count').
+			group('users.id').order('reviews_count DESC').
+			limit(5)
+		end
+
+		def self.top_5_by_followers
+			User.order('(select count(1) from relationships inner join users on relationships.follower_id = users.id where users.id = relationships.followed_id)').limit(5)
+		end
+
 	end
