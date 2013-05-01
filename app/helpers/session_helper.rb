@@ -76,6 +76,7 @@ module SessionHelper
 		session['fb_cookie'] = nil
 		cookies.delete(:profile_pic)
 		reset_session
+		Rails.cache.clear
 	end
 
 	def no_header_pages
