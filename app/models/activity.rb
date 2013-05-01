@@ -20,13 +20,12 @@ class Activity < ActiveRecord::Base
 		relationship = Relationship.find(relationship_id)
 		user = User.find(relationship.follower_id)
 		feed_recipients = user.followers
-		#feed_recipients << User.find(relationship.followed_id) 
 		feed_recipients.each do |follower|
 			Activity.create(:feed_id => follower.id, :user_id => relationship.follower.id, :target_id => relationship.followed.id, :activity => TRUST)
 		end
 		unless relationship.followed_id == relationship.follower_id
-			User.find(relationship.followed_id) do |user|
-				Activity.create(:feed_id => user.id, :user_id => relationship.follower.id, :target_id => relationship.followed.id, :activity => TRUST)
+			User.find(relationship.followed_id) do |followed_user|
+				Activity.create(:feed_id => followed_user.id, :user_id => relationship.follower.id, :target_id => relationship.followed.id, :activity => TRUST)
 			end
 		end
 	end
