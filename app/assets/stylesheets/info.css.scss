@@ -1,19 +1,38 @@
+#home_wrapper{
+
+	#why_am_i_here_container{
+		top: -60px;
+		position: absolute;
+	}
+}
+
+.user_info{
+
+	#why_am_i_here_container{
+		top: 0px;
+		position: relative;
+		margin: 30px auto 0px;
+	}
+}
+
 #why_am_i_here_container{
-	position: absolute;
-	margin-left: 20%;
-	top: -60px;
+	
+	margin-left: 30%;
+	font-size: 80%;
+	
 	
 
 	a{
+		
 		text-decoration: none;	
 		background-color: #ed8b87;	
-		padding: 10px 15px;
+		padding: 5px 10px;
 		color: white;
 		font-size: 120%;
 		//margin-bottom: 15px;
 		box-shadow: 5px 5px 5px #888;
 		-moz-box-shadow: 5px 5px 5px #888;
-		-webkit-box-shadow: 5px 5px 5px #888;
+		-webkit-box-shadow: 2px 2px 2px #888;
 
 	}
 

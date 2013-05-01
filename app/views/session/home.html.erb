@@ -1,10 +1,11 @@
 <div id="fb-root"></div>
-<% if params[:welcome] %>
-<div id = "why_am_i_here_container">
-<%= link_to "Wait...why am I here again?#{params['new']}", info_path(:welcome => params[:welcome]), :remote => true, :class => "fancybox rounded-corner", :id => "why_am_i_here" %></div>
 
-<% end %>
-<div id = "home_wrapper"><%= render 'restaurants/searchbox' %>
+<div id = "home_wrapper">
+<%# if params[:welcome] %>
+<div id = "why_am_i_here_container">
+<%= link_to "How it works", info_path(:welcome => params[:welcome]), :remote => true, :class => "fancybox rounded-corner", :id => "why_am_i_here" %></div>
+<%# end %>
+	<%= render 'restaurants/searchbox' %>
 <%= render 'session/recommendations' %>
 </div>
 

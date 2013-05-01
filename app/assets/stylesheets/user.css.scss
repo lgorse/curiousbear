@@ -8,11 +8,24 @@
 	font-weight: bold;
 }
 
+.facebook_friends_explanation{
+	width: 600px;
+	position: relative;
+	height: 175px;
+	margin: 10px 5% 20px;
+	border: solid 2px #C0C0C0;
+
+	.user_info{
+		height: 0px;
+		width: auto;
+	}
+
+}
+
 #facebook_friends{
 	float: left;
 	border-right: 1px solid #C0C0C0;
-	padding-right: 5px;
-	
+	padding-right: 5px;	
 }
 
 #facebook_friends_enrolled{
@@ -69,7 +82,19 @@
 div.user_info{
 	width: 700px;
 	height: 200px;
-	margin: 0px auto;
+	margin: 15px auto;
+	text-align: center;
+
+	
+
+	h1{
+		margin-bottom: 15px;
+	}
+
+	h2{
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
 
 	div#user_info_left{
 		float: left;

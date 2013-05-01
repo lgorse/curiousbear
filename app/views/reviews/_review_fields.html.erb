@@ -5,4 +5,5 @@
 <p><%= f.label "What did you think?" %></p>
 <p><%=  f.text_area :text, :escape => true %></p>
 <p><%= f.label "Key Words" %>
+<% keywords ||= " " %>
 <%= f.text_field :keywords, :value => keywords_to_string(keywords << " "+@search.to_s) %></p>

@@ -1,6 +1,8 @@
+<% set_stored_restaurant_values(restaurant) %>
 <div class = "suggestion_restaurant rounded-corner">
 <div class = "suggestion_text">
 <p>	<%= link_to restaurant.name, restaurant %></p>
 	<p><%= text %></p></div>
 <%= render 'reviews/buttons/restaurant_average', :venue => restaurant %>
+<%= render 'reviews/buttons/review_input', :restaurant_id => restaurant.id, :venue_field => nil, :search => " ", :restaurant => restaurant %>
 </div>
