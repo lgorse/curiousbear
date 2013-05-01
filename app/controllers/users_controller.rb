@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	include UsersHelper, ReviewsHelper
 
-	#rescue_from NoMethodError, :with => :redirect_to_signin, :only => [:facebook_friends]
+	rescue_from NoMethodError, :with => :redirect_to_signin, :only => [:facebook_friends]
 	before_filter :authenticate, :except => [:create]
 	before_filter :new_user_facebook, :only => [:create]
 
@@ -41,6 +41,7 @@ def destroy
 end
 
 def facebook_friends
+	@current_user.update_photo(@graph) unless @current_user.fb_pic
 	@title = "Follow your friends"
 	@user = @current_user
 	@facebook_friends = @current_user.fb_friends_from_graph(@graph)

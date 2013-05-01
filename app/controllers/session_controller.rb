@@ -1,7 +1,7 @@
 class SessionController < ApplicationController
 	include UsersHelper, ReviewsHelper
 	
-	#rescue_from NoMethodError, :with => :redirect_to_signin
+	rescue_from NoMethodError, :with => :redirect_to_signin
 	rescue_from Koala::Facebook::AuthenticationError, :with => :logout
 	before_filter :authenticate, :only=>[:home]
 	after_filter :reset_user_session, :only=>[:signin]
@@ -17,7 +17,7 @@ class SessionController < ApplicationController
 
 	
 	def home
-		
+		@current_user.update_photo(@graph)
 		@title = "Search the world, "+@current_user.first_name
 		@best_restaurants = Restaurant.top_5_by_rating
 	@reviewers = User.top_5_by_reviews

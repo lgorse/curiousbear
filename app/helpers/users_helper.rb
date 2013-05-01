@@ -6,7 +6,9 @@ module UsersHelper
 			signed_request = params['signed_request']
 			@signed_request = decode_data(signed_request)
 			@current_user_attributes = User.set_user_attributes(@signed_request)
+			#debugger
 			@current_user = User.where(:fb_id => @signed_request['user_id'].to_i).first_or_create!(@current_user_attributes)
+
 			redirect_to root_path(:id => @current_user.id,:welcome => true)
 		end
 	end
