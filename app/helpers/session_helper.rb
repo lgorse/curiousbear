@@ -55,6 +55,7 @@ module SessionHelper
 			delete_user_facebook
 			redirect_to register_path and return 
 		end
+		@current_user.update_photo(@graph)
 	end
 
 

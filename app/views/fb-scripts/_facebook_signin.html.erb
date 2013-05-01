@@ -6,7 +6,7 @@
   	FB.login(function(response) {
   		if (response.authResponse) {
   				if ('<%= params["welcome"] %>'== 'true'){
-				window.top.location = "../home?welcome=<%= params['welcome'] %>";
+				window.top.location = "../<%= params['id'] %>/facebook_friends?welcome=<%= params['welcome'] %>";
   			}else{
   				window.top.location = "../home";
   			} 
@@ -29,7 +29,9 @@
   	FB.getLoginStatus(function(response) {
   		if (response.status === 'connected') {
   			if ('<%= params["welcome"] %>'== 'true'){
-				window.top.location = "../home?welcome=<%= params['welcome'] %>";
+         big_load_listener();
+            $('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
+				window.top.location = "../users/<%= params['id'] %>/facebook_friends?welcome=<%= params['welcome'] %>";
   			}else{
   				window.top.location = "../home";
   			}
