@@ -1,6 +1,6 @@
 
 $(function(){
-	$(".feedback_link").fancybox({
+	$(".feedback_link, .fancybox").fancybox({
 		type : 'iframe',
 		afterLoad : function(){
 			$(".fancybox-iframe").contents().find(".feedback_link").remove();

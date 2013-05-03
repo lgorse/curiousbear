@@ -4,7 +4,7 @@
 	<ul id= "app_header_left">
 		<li class = 'app_header_item'><%= link_to (image_tag '/assets/logo.png', :id => 'logo'), home_path(:welcome => params[:welcome]) %></li>
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
-		<li class = "app_header_item"><%= link_to 'Feedback (please)', new_feedback_path, :remote => true, :class => "feedback_link", :id => "feedback_link" %></li>
+		<li class = "app_header_item"><%= link_to 'Feedback (please)', new_feedback_path, :class => "feedback_link fancybox", :remote => true %></li>
 	</ul>
 	<%# unless no_header_pages %>
 	<nav id = "app_header_right">
@@ -13,7 +13,7 @@
 		<%= link_to (image_tag @current_user.get_user_small_pic(@graph), :id => "my_profile_button", :size => "35x35"), user_path(@current_user), :title => "Me" %>
 
 	
-		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "40x40"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>
+		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "30x30"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>
 		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()", :title => "Log out" %>
 	</nav>
 	<%# end %>

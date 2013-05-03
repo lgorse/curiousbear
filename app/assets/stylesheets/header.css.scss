@@ -18,7 +18,7 @@ header#app_header{
 	font-size: 14px;
 	margin: 0px auto;
 	padding-top: 0px;
-	width: 850px;
+	width: 950px;
 
 
 	a{
@@ -27,6 +27,10 @@ header#app_header{
 		vertical-align: middle;
 		text-decoration: none;
 		font-size: 130%;
+	}
+
+	a:hover{
+		opacity: 0.65;
 	}
 
 	#logo{
@@ -41,7 +45,7 @@ header#app_header{
 	margin-left: 10px;
 	position: absolute;
 	width: auto;
-	top: 10px;
+	margin-top: 5px;
 
 	#home_button{
 		font-size: 200%;
@@ -71,7 +75,7 @@ header#app_header{
 	display: inline-block;
 	float: right;
 	left: 500px;
-	top: 10px;
+	margin-top: 5px;
 
 	.add_friends_button{
 		margin-right: 20px;
@@ -89,10 +93,13 @@ header#app_header{
 	}
 
 	#edit_profile_icon{
-		
 		padding-right: 10px;
 		vertical-align: middle;
 
+	}
+
+	#logout_icon:hover img{
+		opacity: 50%;
 	}
 
 	#fb-logout{
