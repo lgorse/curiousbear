@@ -1,6 +1,6 @@
 <% set_stored_restaurant_values(venue) %>
-<li id="recommended_restaurant_summary">
-	<div id = "restaurant_summary_wrapper">
+<li id="recommended_restaurant_summary" class= "rounded-corner">
+	
 <div id="restaurant_summary_left">
 		<ul>
 			<li id="venue_name">
@@ -8,11 +8,12 @@
 			</li>
 			<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0]  %></li>
 			<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1]  %></li>
+			<li class = "distance formatted_address"><%= pluralize(Geocoder::Calculations.to_miles(venue.distance/1000).round(1), 'miles') %> away</li>
 		</ul>
 	
 </div>
 <%= render 'restaurants/restaurant_info_right', :venue => venue %>
-</div>
+
 <%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
 <p id='msg'></p>
 </li>

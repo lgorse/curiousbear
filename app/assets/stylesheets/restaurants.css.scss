@@ -16,14 +16,7 @@
 		}
 	}
 
-}
-
-
-#venue_name{
-	font-weight: bold;
-}
-
-div#restaurant_info_right{
+	div#restaurant_info_right{
 	float: left;
 
 
@@ -33,6 +26,15 @@ div#restaurant_info_right{
 
 
 }
+
+}
+
+
+#venue_name{
+	font-weight: bold;
+}
+
+
 
 
 .flat_list{
@@ -44,10 +46,6 @@ div#restaurant_info_right{
 
 	li{
 		vertical-align: middle;
-	}
-
-	#app_stars{
-		padding-left: 10px;
 	}
 
 	
@@ -93,22 +91,67 @@ ul#restaurant_review_list{
 	height: 200px;
 }
 
-#recommended_restaurant_list{
+#recommended_restaurant_list, #restaurant_list{
 	margin-top: 30px;
+	width: 300px;
+	float: left;
+}
+
+#recommended_restaurant_list{
+margin-left: -60px;
+}
+
+#restaurant_list{
+	
+	margin-left: 60px;
+}
+
+li#restaurant_summary,#recommended_restaurant_summary{
+	width: 300px;
+
+	#restaurant_summary_left{
+		width: 275px;
+		margin-bottom: 5px;
+		
+
+		ul{
+			padding: 0px;
+			position: relative;
+			width: 400px;
+
+			li{
+				margin-bottom: 5px;
+			}
+
+			#venue_name{
+				font-weight: bold;
+				font-size: 90%;
+			}
+
+		}
+
+	}
+
+	#restaurant_info_right{
+		width: 300px;
+	}
+
+
+}
+
+li.user_review, .review_summary{
+	width: 650px;
 }
 
 li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_summary{
 
-	width: 650px;
 	height: auto;
 	position: relative;
 	border-bottom: 1px solid #C0C0C0;
 	margin-bottom: 10px;
 	padding: 10px;
 
-	div#restaurant_summary_wrapper{
-		height: 120px;
-	}
+	
 
 	.reviewer_list{
 		border-bottom: none;
@@ -123,43 +166,23 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 		color: purple;
 	}
 
-
-	#restaurant_summary_left{
-		width: 400px;
-		float: left;
-
-		ul{
-			padding: 0px;
-			position: relative;
-			width: 400px;
-
-			li{
-				margin-bottom: 5px;
-			}
-
-			#venue_name{
-				font-weight: bold;
-			}
-
-		}
-
-	}
-
 	#address_line_01{
 		margin-top: 20px;
 	}
 
 	#address_line_02{
-		font-size: 80%;
 		margin-top: 0px;
 	}
 
-
+	.distance{
+		font-weight: bold;
+	}
 
 }
 
 li#recommended_restaurant_summary{
-	background-color: #DFFF87;
+	//background-color: #CCE2F1;
+	border: 1px solid #C0C0C0;
 
 }
 
