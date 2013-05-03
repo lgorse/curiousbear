@@ -35,7 +35,7 @@ class Restaurant < ActiveRecord::Base
 
 	def self.trust_search(query, user)
 		
-		#user = User.find(78) #This line a hack for development environment
+		#user = User.find(101) #This line a hack for development environment
 		#user.update_attributes(:ip_address => "128.12.187.157") #This line a hack for development environment
 		#MUST CHANGE THE ABOVE EVERY TIME I PUSH TO PRODUCTION
 		
@@ -44,7 +44,8 @@ class Restaurant < ActiveRecord::Base
 		@long = Geocoder::Calculations.to_radians(user.long)
 		Restaurant.search(query, :geo => [@lat, @long],
 								 :with => {:reviewer_id => reviewer_list << user.id},
-								 :order => "rating_average DESC, geodist ASC")
+								 :order => "geodist ASC, rating_average DESC",
+								 :field_weights => {:geo => 3})
 	end
 
 	def self.update_keywords
