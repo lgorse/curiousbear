@@ -263,20 +263,14 @@ li.user_summary{
 	ul{
 		margin: 50px auto 30px;
 		padding: 10px;
-		border: 1px solid #C0C0C0;
+		border: 2px solid #C0C0C0;
 	}
 
-	#why_am_i_here{
-		color: #234670;
-		text-decoration: none;
-		font-size: 110%;
+	#why_am_i_here_container{
+		margin-left: 34%;
 	}
 
-	#why_am_i_here:hover{
-		text-decoration: underline;
-		color: black;
 
-	}
 	.user_update_button{
 
 	}
@@ -295,7 +289,7 @@ li.user_summary{
 	.feedback_link{
 	text-decoration: none;
 	display: block;
-	margin-bottom: 45px;
+	
 	color: green;
 }
 

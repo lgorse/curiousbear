@@ -2,13 +2,15 @@
 <div id = "user_edit_wrapper">
 	<h1>Edit your profile</h1>
 	
-<%= link_to 'How\'s it all work again?', info_path, :remote => true, :class => "fancybox", :id => "why_am_i_here" %>
+<%= render 'session/info_button' %>
 <ul class = "rounded-corner">
 <%= form_for(@current_user) do |f| %>
 <li><%= render 'user_edit_fields', :f => f %>
 <%= f.submit "update", :class => "user_update_button" %>
 <% end %></li>
 </ul>
-<%= link_to 'Give Feedback (It\'s a gift!)', new_feedback_path, :class => "feedback_link fancybox", :remote => true %>
-<%= link_to 'Unsubscribe (noooo!)', @current_user, :method => :delete, :confirm => "Is this really goodbye?", :id => "unsubscribe"  %>
+<ul class = "rounded-corner">
+<%= link_to 'Give Feedback (It\'s a gift!)', new_feedback_path, :class => "feedback_link fancybox", :remote => true %></ul>
+<ul class = "rounded-corner"><%= link_to 'Unsubscribe (noooo!)', @current_user, :method => :delete, :confirm => "Is this really goodbye?", :id => "unsubscribe"  %>
+</ul>
 </div>

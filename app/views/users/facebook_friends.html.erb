@@ -4,17 +4,10 @@
 	<h1>Welcome, <%= @current_user.first_name %>! Pick your foodie trusted circle</h1>
 	<h2>The more you pick, the better we'll match you with <b>great places to eat.</b></h2>
 	<h2>If your trusted friends aren't on <%= APP_NAME %> yet, send them an invite!</h2>
-	<div id = "why_am_i_here_container">
-<%= link_to "How it works", info_path(:welcome => params[:welcome]), :remote => true, :class => "fancybox rounded-corner", :id => "why_am_i_here" %></div>
+	<%= render 'session/info_button' %>
 </div>
 		
 </div>
-
-
-
-	
-
-
 
 
 
