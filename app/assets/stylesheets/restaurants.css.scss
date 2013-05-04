@@ -110,6 +110,16 @@ ul#restaurant_review_list{
 
 #recommended_restaurant_list{
 margin-left: -60px;
+
+.no_recommended_restaurant_title{
+	text-align: center;
+	border: 1px solid #C0C0C0;
+	padding: 15px;
+	h2{
+	font-weight: normal;
+	margin-bottom: 10px;
+	}
+}
 }
 
 #restaurant_list{

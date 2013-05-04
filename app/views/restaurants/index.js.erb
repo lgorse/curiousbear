@@ -1,5 +1,5 @@
 $("#loading").hide();
-$("#recommended_restaurant_list").html("<%=escape_javascript(render 'restaurants/recommended_restaurants')%>");
+$("#recommended_restaurant_list").show().html("<%=escape_javascript(render 'restaurants/recommended_restaurants')%>");
 $("#restaurant_list").show().html("<%= escape_javascript(render 'restaurants/google_restaurants') %>");
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
