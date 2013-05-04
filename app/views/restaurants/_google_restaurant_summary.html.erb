@@ -1,21 +1,22 @@
-<% set_google_restaurant_values(result) %>
+<% 	@encoded_venue = Base64.urlsafe_encode64(URI.encode(restaurant.attributes.to_json)) %>
+<% parsed_address = split_formatted_address(restaurant.formatted_address) %>
 <li id="restaurant_summary">
 
 	<div id="restaurant_summary_left">
 				<ul>
 			<li id="venue_name">
-				<% if @restaurant.id %>
-					<%= link_to @restaurant.name, :controller => 'restaurants', :action => 'show', :id => @restaurant.id, :search => @encoded_search %>
+				<% if restaurant.id %>
+					<%= link_to restaurant.name, :controller => 'restaurants', :action => 'show', :id => restaurant.id, :search => @encoded_search %>
 					<% else %>
-					<%= link_to @restaurant.name, new_restaurant_path(:search => @encoded_search, :venue_data => @encoded_venue) %>
+					<%= link_to restaurant.name, new_restaurant_path(:search => @encoded_search, :venue_data => @encoded_venue) %>
 				<% end %>
 				
 			</li>
-		<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0]  %></li>
-		<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1]  %></li>
+		<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0]  %></li>
+		<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1]  %></li>
 		</ul>
 	</div>
-<%= render 'google_restaurant_summary_right' %>
+<%= render 'google_restaurant_summary_right', :restaurant => restaurant %>
 
 </li>
 

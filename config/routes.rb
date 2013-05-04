@@ -13,11 +13,7 @@ Curiousbear::Application.routes.draw do
     end
   end
 
-  resources :restaurants do
-    collection do
-      get 'google_search'
-    end
-  end
+  resources :restaurants 
 
   resources :session, :feedback
 
@@ -34,6 +30,7 @@ Curiousbear::Application.routes.draw do
   match '/register', :to => "session#register"
   match '/info', :to => "session#info"
   match '/send_feedback', :to => 'feedback#send_feedback', as: 'send_feedback', :method => :post
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

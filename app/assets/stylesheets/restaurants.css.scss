@@ -96,9 +96,14 @@ ul#restaurant_review_list{
 	width: 300px;
 	float: left;
 
-	.search_title{
+	.google_restaurant_title{
 		text-align: center;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
+	}
+
+	.recommended_restaurant_title{
+		text-align: center;
+		margin-bottom: 40px;
 	}
 	
 }
@@ -174,7 +179,7 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 
 	.reviewer_list{
 		border-bottom: none;
-		width: 50%;
+		width: 100%;
 	}
 
 	a{

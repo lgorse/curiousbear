@@ -2,18 +2,19 @@ module RestaurantsHelper
 
 	def search_google_from_params
 		begin
-				
 				@google_response = parse_google_search
 				@google_results = @google_response["results"]				
-				@encoded_search = Base64.urlsafe_encode64(params[:search])
-				@search = params[:search]
 				flash.now[:notice] = "Google yielded no results. Did you type gibberish?" if google_results_except_recommended.empty?
-				handle_google_http_errors
+				handle_google_http_errors(@google_response)
+				@google_restaurant_list = @google_results_except_recommended.map {|venue|  set_google_restaurant_values(venue)}.paginate(:page => params[:page])
+				
 			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,
 				URI::InvalidURIError => e
 				flash.now[:notice] = "Oops!" + e.message + "! That's not good."
 			end
+			
+
 	end
 
 	def parse_google_search	
@@ -66,8 +67,8 @@ module RestaurantsHelper
 		address.split(", ", 2)
 	end
 
-	def handle_google_http_errors
-		case @google_response["status"]
+	def handle_google_http_errors(response)
+		case response["status"]
 		when "ZERO_RESULTS" then flash.now[:notice] = "Oops! We came up empty."
 		when "OVER_QUERY_LIMIT" then flash.now[:notice] = "We're more popular than we thought! We are over our query limit for today."
 		when "INVALID_REQUEST" then flash.now[:notice] = "The request was invalid"
@@ -78,12 +79,8 @@ module RestaurantsHelper
 	
 	def set_google_restaurant_values(result)
 		venue = set_attr_from_google(result)
-		@encoded_venue = Base64.urlsafe_encode64(URI.encode(venue.to_json))
-		
-		@restaurant = Restaurant.new(final_restaurant_attributes(venue)) unless @restaurant = Restaurant.find_by_google_id(venue[:google_id])
-		
-		@parsed_address = split_formatted_address(venue[:formatted_address].to_s)
-		
+		restaurant = Restaurant.new(final_restaurant_attributes(venue))	
+		#@parsed_address = split_formatted_address(venue[:formatted_address].to_s)	
 	end
 
 	def set_stored_restaurant_values(venue)
@@ -92,7 +89,7 @@ module RestaurantsHelper
 		@parsed_address = split_formatted_address(venue.formatted_address.to_s)
 		@venue_json = {"name" => venue.name}.to_json
 		@google_id = venue.google_id
-		@recommended_google_ids << venue.google_id if @recommended_google_ids
+		
 	end
 
 	def final_restaurant_attributes(venue)

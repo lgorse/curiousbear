@@ -1,14 +1,13 @@
 <%= render 'fb-scripts/review_request_script' %>
-<h2 class = "search_title">What Google recommends</h2>
-<% unless @google_results.blank? %>
-<div class = "google_restaurant_top_line">
+<div class = "google_restaurant_title">
+<h2 >What Google recommends</h2>
 <%= image_tag "powered-by-google-on-white.png", :class => "powered_by_google" %>
-<% if @google_response["next_page_token"] %>
-<%= link_to "next", google_search_restaurants_path(:next_token => @google_response["next_page_token"], :search => params[:search]),:class => "google_next_button", :remote => true  %>
-<% end %>
+
 </div>
-<ul>
-	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_results_except_recommended, :as => :result %>
+
+<% unless @google_results.blank? %>
+<ul class = "google_restaurant_list">
+	<%= render :partial => 'restaurants/google_restaurant_summary', :collection => @google_restaurant_list, :as => :restaurant %>
 </ul>
 <%= raw @google_response["html_attributions"].join(", ")%>
 <% end %>

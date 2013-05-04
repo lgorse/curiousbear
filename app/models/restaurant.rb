@@ -48,6 +48,7 @@ class Restaurant < ActiveRecord::Base
 								 :field_weights => {:geo => 3})
 	end
 
+
 	def self.update_keywords
 		Restaurant.all.each do |restaurant|
 			word_array = Hash.new(0)

@@ -1,24 +1,18 @@
 class RestaurantsController < ApplicationController
 	include RestaurantsHelper, ReviewsHelper
 
-	rescue_from NoMethodError, :with => :redirect_to_signin
+	#rescue_from NoMethodError, :with => :redirect_to_signin
 	before_filter :authenticate
+
 	
 	def index
+		Rails.cache.delete('google_back_num')
 		@restaurant_list = Restaurant.trust_search(params[:search], @current_user)
 		@recommended_google_ids = []
+		@restaurant_list.each {|restaurant| @recommended_google_ids << restaurant.google_id}
 		@encoded_search = Base64.urlsafe_encode64(params[:search])
 		@search = params[:search]
-		search_google_from_params
-		#render 'restaurants/google_search'			
-	end
-
-	def google_search
-		search_google_from_params
-		respond_to do |format|
-			format.html
-			format.js 
-		end
+		search_google_from_params	
 	end
 
 	def new	
@@ -53,5 +47,6 @@ class RestaurantsController < ApplicationController
 			format.json {render :json => {:id => @restaurant.id, :name => URI.encode(@restaurant.name)}}
 		end
 	end
+
 
 end
