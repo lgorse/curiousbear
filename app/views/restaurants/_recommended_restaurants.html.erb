@@ -1,6 +1,6 @@
+<h2 class = "search_title">What your friends recommend</h2>
 <% unless @restaurant_list.blank? %>
 <ul>
 	<%= render :partial => 'restaurants/recommended_restaurant_summary', :collection => @restaurant_list, :as => :venue %>
 </ul>
 <% end %>
-<%= render 'restaurants/google_find' %>

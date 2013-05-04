@@ -1,9 +1,12 @@
-<ul class = "feed_placeholder">
-	<li>
-	Man, this feed is pretty sparse.</li>
+<div class = "feed_placeholder">
+	<ul class = "feed_explain">
+	<li>The more friends you trust,</li>
+	<li><b>the more reviews you'll see!</b></li>
 	<li>Get active!</li>
+</ul>
+<ul class = "feed_prompt">
 	<li><%= link_to "Find your Facebook friends", facebook_friends_user_path(:id => session['user_id']), :class => "add_friends_button" %></li>
-	<li>or</li>
+	<p>or</p>
 	<li><%= link_to "Review a restaurant!", home_path(:welcome => params[:welcome]), :class => "home_button" %></li>
 
 </ul>

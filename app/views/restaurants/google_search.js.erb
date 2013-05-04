@@ -3,8 +3,6 @@ $("#restaurant_list").show().html("<%=escape_javascript(render 'google_restauran
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
 $("#show_holder").remove();
-if ("<%= params[:recommended_restaurants] %>" == ''){
-	$("#recommended_restaurant_list").empty();
-}
+
 star_ratings();
 load_listener();

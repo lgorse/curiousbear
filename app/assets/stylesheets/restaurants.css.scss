@@ -95,6 +95,12 @@ ul#restaurant_review_list{
 	margin-top: 30px;
 	width: 300px;
 	float: left;
+
+	.search_title{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	
 }
 
 #recommended_restaurant_list{
@@ -102,8 +108,21 @@ margin-left: -60px;
 }
 
 #restaurant_list{
+	float: right;
+	margin-right: 15px;
+
+	.google_restaurant_top_line{
+		font-size: 80%;
+		vertical-align: center;
+	}
+
+	.google_next_button{
+		float: right;
+		margin-right: 50px;
+
+	}
+
 	
-	margin-left: 60px;
 }
 
 li#restaurant_summary,#recommended_restaurant_summary{

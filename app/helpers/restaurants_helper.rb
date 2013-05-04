@@ -2,10 +2,7 @@ module RestaurantsHelper
 
 	def search_google_from_params
 		begin
-				@recommended_google_ids = params[:recommended_restaurants]
-				if @recommended_google_ids.nil?
-					flash.now[:notice] = "No recommendations from friends. Try Google!"
-				end
+				
 				@google_response = parse_google_search
 				@google_results = @google_response["results"]				
 				@encoded_search = Base64.urlsafe_encode64(params[:search])
