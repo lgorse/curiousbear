@@ -6,7 +6,7 @@ module RestaurantsHelper
 				@google_results = @google_response["results"]				
 				flash.now[:notice] = "Google yielded no results. Did you type gibberish?" if google_results_except_recommended.empty?
 				handle_google_http_errors(@google_response)
-				@google_restaurant_list = @google_results_except_recommended.map {|venue|  set_google_restaurant_values(venue)}.paginate(:page => params[:page])
+				@google_restaurant_list = @google_results_except_recommended.map {|venue|  set_google_restaurant_values(venue)}
 				
 			rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
 				Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError,

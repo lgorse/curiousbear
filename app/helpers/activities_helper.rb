@@ -4,7 +4,7 @@ def set_feed_activity(item)
 	case item.activity
 	when TRUST
 		@feed_user = User.find_by_id(item.user_id)
-		@feed_activity = "is following "
+		@feed_activity = "trusts "
 		@feed_target = User.find_by_id(item.target_id)
 		when REVIEW
 			@feed_user = User.find_by_id(item.user_id)

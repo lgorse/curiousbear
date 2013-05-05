@@ -1,10 +1,11 @@
 <ul class = "flat_list">
 	<li class = "flat_list_item"><a id = "google_rating">
 		<div class = "stars empty">
-		<div class = "stars filled_<%= google_rating %> google">
+		<div class = "stars filled_<%= restaurant.google_rating.to_i %> google">
 		</div>
 			</div>
 		</a>
 	</li>
 		<li class = "flat_list_item"><%= link_to (image_tag "/assets/google-med.png", :size => "55x20"), "", :id => "google_logo" %></li>
 </ul>
+

@@ -59,6 +59,7 @@
 
 	#review_count{
 		margin-top: 15px;
+
 	}
 
 	li{
@@ -120,6 +121,16 @@ div.user_review{
 
 #review_count{
 	font-size: 80%;
+	
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+}
 }
 
 .review_details_info{
@@ -158,8 +169,15 @@ div.user_review{
 	.flat_list_item{
 		padding-right: 10px;
 	}
+
+	.rating{
+		font-weight: bold;
+		font-size: 110%;
+	}
 	
 }
+
+
 
 #error_explanation{
 	h3{

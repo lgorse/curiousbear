@@ -1,1 +1,1 @@
-<%= button_to "unfollow", {:controller => :relationships, :action => :destroy, :current_user_id => current_user_id, :id => followed_id, :user_id => user_id}, :method => :delete,:class => "unfollow_button", :remote => true, :form_class => "unfollow_form"%>
+<%= button_to "untrust", {:controller => :relationships, :action => :destroy, :current_user_id => current_user_id, :id => followed_id, :user_id => user_id}, :method => :delete,:class => "unfollow_button", :remote => true, :form_class => "unfollow_form"%>

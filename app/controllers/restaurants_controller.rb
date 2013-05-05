@@ -8,7 +8,7 @@ class RestaurantsController < ApplicationController
 	def index
 		Rails.cache.delete('google_back_num')
 		@restaurant_list = Restaurant.trust_search(params[:search], @current_user)
-		flash[:notice] = "No friend reviews yet, but check out these Google results"
+		flash[:notice] = "No friend reviews yet, but check out these Google results" if @restaurant_list.blank?
 		@recommended_google_ids = []
 		@restaurant_list.each {|restaurant| @recommended_google_ids << restaurant.google_id}
 		@encoded_search = Base64.urlsafe_encode64(params[:search])

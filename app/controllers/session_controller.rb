@@ -19,9 +19,10 @@ class SessionController < ApplicationController
 	def home
 		@current_user.update_photo(@graph)
 		@title = "Search the world, "+@current_user.first_name
-		@best_restaurants = Restaurant.top_5_by_rating
-	@reviewers = User.top_5_by_reviews
-	@popular = User.top_5_by_followers
+		@best_restaurants = Restaurant.top_5_by_rating(@current_user)
+	
+	@popular = @current_user.top_5_by_followers
+	@reviewers = @current_user.top_5_by_reviews.reject{|user| @popular.include?(user)}
 		respond_to do |format|
 			format.html
 			format.js

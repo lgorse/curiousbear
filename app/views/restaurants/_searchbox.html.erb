@@ -1,7 +1,7 @@
 <div id = "searchbox">
 <%= render 'fb-scripts/review_request_script' %>
 <%= form_tag restaurants_path, :method => 'get', :remote => true, :class => 'search_form' do %>
-<%= text_field_tag :search, @search, :size => 45, :class => "rounded-corner", :placeholder => @search ||= GREETING_01 + " #{@current_user.first_name}" %>
+<%= text_field_tag :search, @search, :size => 45, :class => "rounded-corner", :placeholder => @search ||= GREETING_01 + " #{@current_user.first_name}?" %>
 <%= submit_tag "Find", :id => "search_submit", :class => "rounded-corner" %>
 <% end %>
 <div class = "flash_search"></div>

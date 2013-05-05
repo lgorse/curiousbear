@@ -38,6 +38,8 @@ class User < ActiveRecord::Base
 
 	has_many :reviews, :dependent => :destroy
 
+	has_many :restaurants, :through => :reviews
+
 	has_one :activity, :dependent => :destroy
 
 	geocoded_by :ip_address, :latitude => :lat, :longitude => :long
@@ -115,15 +117,18 @@ class User < ActiveRecord::Base
 			[facebook_friends_invite, facebook_friends_enrolled]
 		end
 
-		def self.top_5_by_reviews
-			User.joins('left join reviews on reviews.user_id = users.id').
+		def top_5_by_reviews
+			
+			User.joins('left join reviews on reviews.user_id = users.id').where('users.id != ?', self.id).
 			select('users.*, count(reviews.id) as reviews_count').
 			group('users.id').order('reviews_count DESC').
 			limit(5)
 		end
 
-		def self.top_5_by_followers
-			User.order('(select count(1) from relationships inner join users on relationships.follower_id = users.id where users.id = relationships.followed_id)').limit(5)
+		def top_5_by_followers
+			User.order('(select count(1) from relationships inner join users on relationships.follower_id = users.id where users.id = relationships.followed_id)').
+			where('users.id != ?', self.id).
+			limit(5)
 		end
 
 	end

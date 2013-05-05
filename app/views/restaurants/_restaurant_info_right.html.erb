@@ -4,7 +4,7 @@
 		<%= render 'reviews/buttons/restaurant_average', :venue => venue %>
 		<% end %>
 		<% if venue.google_rating %>
-		<%= render 'reviews/buttons/google_stars', :google_rating => venue.google_rating.to_i %>
+		<%= render 'reviews/buttons/google_stars', :restaurant => venue %>
 		<% end %>
 		 <%= render 'reviews/buttons/request_review', :venue => venue %>
 

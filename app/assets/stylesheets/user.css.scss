@@ -73,8 +73,7 @@
 		margin: 5px 10px 0px 0px;
 	}
 
-	.follow_button{
-		float: right;
+	.follow_button{	
 		display:  inline-block;
 	}
 }
@@ -126,9 +125,6 @@ div.user_info{
 		display: block;
 	}
 
-	.follow_button{
-		text-align: center;
-	}
 
 }
 
@@ -142,46 +138,7 @@ div#user_info_center, .user_summary_center{
 }
 
 
-nav#follow_buttons{
-	position: relative;
-	margin-left: 20px;
-	height: 30px;
-	margin-bottom: 20px;
-	padding-bottom: 0px;
-	border-bottom: 1px solid #C0C0C0;
 
-	a{
-		margin-left: 10px;
-	}
-
-	a, .not_highlighted{
-		height: 20px;
-		float: left;
-		position: relative;
-		text-decoration: none;
-		padding: 5px;
-		color: #343434;
-		background-color: transparent;
-
-
-	}
-
-	.highlighted, a:hover {
-		text-decoration: underline;
-	}
-
-	.selected{
-		color: black;
-		text-decoration: underline;
-	}
-
-
-	.add_friends_button{
-		color: black;
-		margin-left: 210px;
-	}
-
-}
 
 div#relationship_list{
 	position: relative;
@@ -227,14 +184,11 @@ li.user_summary{
 	}
 
 	div.summary_right{
-		float: left;
+		
 		margin: 0px;
 		padding: 0px;
 	}
 
-	.follow_button{
-		text-align: center;
-	}
 
 	.user_small_pic{
 		display: block;

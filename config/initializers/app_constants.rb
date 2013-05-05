@@ -1,5 +1,5 @@
 APP_NAME = "Kweekweg"
-GREETING_01 = "Find a restaurant,"
+GREETING_01 = "Hungry,"
 
 
 #Activity constants
