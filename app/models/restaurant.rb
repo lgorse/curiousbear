@@ -36,8 +36,8 @@ class Restaurant < ActiveRecord::Base
 
 	def self.trust_search(query, user)
 		
-		user = User.find(101) #This line a hack for development environment
-		user.update_attributes(:ip_address => "128.12.187.157") #This line a hack for development environment
+		#user = User.find(101) #This line a hack for development environment
+		#user.update_attributes(:ip_address => "128.12.187.157") #This line a hack for development environment
 		#MUST CHANGE THE ABOVE EVERY TIME I PUSH TO PRODUCTION
 		
 		reviewer_list = user.following.collect {|friend| friend.id}
