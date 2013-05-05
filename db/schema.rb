@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130427061337) do
+ActiveRecord::Schema.define(:version => 20130505070406) do
 
   create_table "activities", :force => true do |t|
     t.integer  "feed_id",    :null => false
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20130427061337) do
     t.datetime "updated_at",                                                       :null => false
     t.boolean  "delta",             :default => true,                              :null => false
     t.integer  "average",           :default => 0
+    t.string   "google_url"
   end
 
   add_index "restaurants", ["average"], :name => "index_restaurants_on_average"

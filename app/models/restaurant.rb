@@ -25,6 +25,7 @@
 #  updated_at        :datetime         not null
 #  delta             :boolean          default(TRUE), not null
 #  average           :integer          default(0)
+#  google_url        :string(255)
 #
 
 class Restaurant < ActiveRecord::Base

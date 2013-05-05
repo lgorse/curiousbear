@@ -78,9 +78,7 @@ module RestaurantsHelper
 
 	
 	def set_google_restaurant_values(result)
-		venue = set_attr_from_google(result)
-		restaurant = Restaurant.new(final_restaurant_attributes(venue))	
-		#@parsed_address = split_formatted_address(venue[:formatted_address].to_s)	
+		Restaurant.new(final_restaurant_attributes(set_attr_from_google(result)))		
 	end
 
 	def set_stored_restaurant_values(venue)
