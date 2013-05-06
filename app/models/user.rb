@@ -122,13 +122,13 @@ class User < ActiveRecord::Base
 			User.joins('left join reviews on reviews.user_id = users.id').where('users.id != ?', self.id).
 			select('users.*, count(reviews.id) as reviews_count').
 			group('users.id').order('reviews_count DESC').
-			limit(5)
+			reject{|user| self.following.include?(user)}.first(5)
 		end
 
 		def top_5_by_followers
 			User.order('(select count(1) from relationships inner join users on relationships.follower_id = users.id where users.id = relationships.followed_id)').
 			where('users.id != ?', self.id).
-			limit(5)
+			reject{|user| self.following.include?(user)}.first(5)
 		end
 
 	end
