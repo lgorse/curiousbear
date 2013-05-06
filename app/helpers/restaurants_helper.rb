@@ -110,9 +110,9 @@ module RestaurantsHelper
 
 	def set_share_detail_text(restaurant)
 		if @current_user.has_rated?(restaurant)
-			"Tell a friend"
+			"Message"
 		else
-			"Ask a friend"
+			"Message"
 		end
 	end
 
