@@ -25,8 +25,12 @@ if (!$(this).hasClass("checked")){
 			url: path,
 			data: $(this).closest("form").serialize(),
 			dataType: 'json',
+			beforeSend: function(){
+				var add_button = star_container.parents(".flat_list").find(".new_review_detail");
+				add_button.attr('disabled', true);
+			},
 			success: function(response){
-				update_detail_button(response, star_container).delay(100);
+				update_detail_button(response, star_container);
 				}
 			});	
 		}
