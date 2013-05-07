@@ -31,10 +31,10 @@ ul{
 #app_inner{
 	margin: 75px 100px 0px -400px;
 	left: 50%;
-	//float: left;
+	
 position: relative;
-	width: 800px;
-	min-width: 800px;
+	width: $center_width;
+	min-width: $center_width;
 	height: 100%;
 	z-index: 0;
 	background-color: white;
@@ -45,7 +45,7 @@ position: relative;
 		position: relative;
 		width: 700px;
 		height: 75px;
-		margin: auto auto 50px;
+		margin: auto auto 20px;
 
 
 		input#search{

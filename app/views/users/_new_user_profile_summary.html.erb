@@ -1,10 +1,11 @@
+
 <li class="new_user_summary">
-	
+
 	<%= image_tag user.get_user_small_pic(@graph), :class => 'user_small_pic' %>
 	<%= render 'users/user_summary_left', :user => user %>
 	<% unless user.id.blank? %>
 	<div class = "review_count"><%= pluralize(user.reviews.count, 'review') %></div>
 	<% end %>
 	<%= render 'relationships/buttons/relationship_button_wrapper', :user => user %>
-	
+
 </li>

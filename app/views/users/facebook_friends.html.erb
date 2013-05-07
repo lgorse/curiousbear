@@ -1,12 +1,11 @@
 <%= render 'fb-scripts/facebook_friends_script' %>
-	<div class = "facebook_friends_explanation rounded-corner">
-		<div class = "user_info" id = "<%= @current_user.id %>">
-	<h1>Welcome, <%= @current_user.first_name %>! Pick your foodie trusted circle</h1>
-	<h2>The more friends you pick, the more <b>great places to eat</b> you'll find</h2>
-	<h2>If your trusted friends aren't on <%= APP_NAME %> yet, send them an invite!</h2>
-	<%= render 'session/info_button' %>
-</div>
+<%= render 'restaurants/searchbox' %>
+	<div class = "facebook_friends_explanation rounded-corner" id = "<%= @current_user.id %>">
 		
+			
+	<h2><b>Trust</b> the friends who like the same food as you.</h2>
+	<h2>Then <b>search</b> for a place to eat.</h2>	
+	<%= render 'session/info_button' %>
 </div>
 
 
@@ -14,7 +13,9 @@
 <div class = "new_friend_lists"></div>
 <% cache('facebook_friends', :expires_in => 15.minutes) do %>
 <div id = "facebook_friends">
-	<div class = "friend_title">Facebook Friends</div>
+	<div class = "friend_title">
+		<h2>Facebook Friends</h2>
+	<h3>Invite more friends to get better search results</h3></div>
 	<% @facebook_friends_invite.each do |profile| %>
 	<%= render 'users/new_user_profile_summary', :user => User.new(set_attr_from_fb(profile)) %>
 	<% end %>
@@ -25,7 +26,9 @@
 
 <div id = "facebook_friends_enrolled">
 	
-<div class = "friend_title">Friends on <%= APP_NAME %></div>
+<div class = "friend_title">
+	<h2>Friends on <%= APP_NAME %></h2>
+<h3>More trusted friends mean better search results</h3></div>
 
 	<ul>
 		<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_enrolled, :as => :user %>

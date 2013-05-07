@@ -6,28 +6,37 @@
 	}
 }
 
-.user_info{
 
-	#why_am_i_here_container{
-		top: 0px;
-		position: relative;
-		margin: 30px auto 0px;
-	}
-}
 
 #why_am_i_here_container{
 	
 	margin-left: 35%;
 	font-size: 80%;
+
+	a{
+			text-decoration: none;
+			color: #1F5967;
+		font-size: 120%;
+			margin-left: 0px;
+			background-color: none;
+			background: none;
+			box-shadow: none;
+			padding: 0px;
+		}
+
+		a:hover{
+			text-decoration: underline;
+		}
+
 	
-	a.rounded-corner{
+	/*a.rounded-corner{
 	$radius: 5px;
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
     border-radius: $radius;
-}
+}*/
 
-	a{
+	/*a{
 		
 		text-decoration: none;	
 		background-color: #FFCC99;
@@ -45,7 +54,7 @@
 	a:hover{
 		background-color: #FFD8B3;
 		//color: #1F5967;
-	}
+	}*/
 }
 
 

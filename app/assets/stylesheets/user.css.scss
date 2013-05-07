@@ -4,255 +4,270 @@
 
 .friend_title{
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	font-weight: bold;
+
+	h3{
+		margin: 10px 0px;
+		font-weight: normal;
+		font-size: 90%;
+	}
 }
 
 .facebook_friends_explanation{
-	width: 600px;
+	width: 400px;
+	border: 1px solid #C0C0C0;
 	position: relative;
-	height: 175px;
-	margin: 10px 5% 20px;
-	border: solid 2px #C0C0C0;
-
-	.user_info{
-		height: 0px;
-		width: auto;
-	}
-
-}
-
-#facebook_friends{
-	float: left;
-	border-right: 1px solid #C0C0C0;
-	padding-right: 5px;	
-}
-
-#facebook_friends_enrolled{
-	float: left;
-	width: 50%;
-	margin-left: 15px;
-
-
-	.talk_to_user{
-		//display:none;
-	}
-
-}
-
-.new_user_summary{
-
-	font-size: 80%;
-	height: 30px;
-	border-bottom: 1px solid #C0C0C0;
-	padding: 10px;
-	display:  block;
-
-
-	.user_small_pic{
-		float: left;
-		vertical-align: middle;
-		display:  inline-block;
-		height: 30px;
-		width: 30px;
-
-	}
-
-	.user_summary_left{
-		float: left;
-		vertical-align: middle;
-		display:  block;
-		margin: 8px 0px 0px 8px;
-
-	}
-
-	.review_count{
-		float: right;
-		vertical-align: middle;
-		display: block;
-		margin: 5px 10px 0px 0px;
-	}
-
-	.follow_button{	
-		display: inline-block;
-		float: right;
-		margin-right: 5px;
-	}
-}
-
-div.user_info{
-	width: 700px;
-	height: 200px;
-	margin: 15px auto;
-	text-align: center;
+	margin: 10px 15% 65px;
 
 	
-
-	h1{
-		margin-bottom: 15px;
-	}
+	padding: 2%;
 
 	h2{
-		font-weight: normal;
-		margin-bottom: 10px;
-	}
 
-	div#user_info_left{
-		float: left;
-		width: 40%;
-
-		h3{
-			font-size: 120%;
-			margin-top: 40px;
+			font-weight: normal;
+			text-align: left;
+			margin-bottom: 10px;
 		}
+	
+	#why_am_i_here_container{
+		margin-left: 0px;
+		position: relative;
+		
+		
+	}
+}
+
+	#facebook_friends{
+		float: left;
+		border-right: 1px solid #C0C0C0;
+		padding-right: 5px;	
+	}
+
+	#facebook_friends_enrolled{
+		float: left;
+		width: 50%;
+		margin-left: 15px;
+
+
+
 	}
 
 
-	div#user_info_center{
-		float: left;
-		width: 30%;
 
-		li{
+	.new_user_summary{
+
+		font-size: 80%;
+		height: 30px;
+		border-bottom: 1px solid #C0C0C0;
+		padding: 10px;
+		display:  block;
+
+
+		.user_small_pic{
+			float: left;
 			vertical-align: middle;
+			display:  inline-block;
+			height: 30px;
+			width: 30px;
+
 		}
 
-	}
+		.user_summary_left{
+			float: left;
+			vertical-align: middle;
+			display:  block;
+			margin: 8px 0px 0px 8px;
 
-	div#user_info_right{
-		position: relative;
-		float: left;
-	}
-
-	#user_large_pic{
-		display: block;
-	}
-
-
-}
-
-div#user_info_center, .user_summary_center{
-
-	li{
-		vertical-align: middle;
-		margin-bottom: 15px;
-	}
-
-}
-
-
-
-
-div#relationship_list{
-	position: relative;
-	width: 800px;
-
-
-
-	.pagination{
-		width: auto;
-		text-align: left;
-		position: relative;
-	}
-}
-
-li.user_summary{
-	width: 650px;
-	height: 100px;
-	position: relative;
-	border-bottom: 1px solid #C0C0C0;
-	padding: 10px ;
-
-
-	div.user_summary_left{
-		float: left;
-		width: 40%;
-		margin-left: 20px;
-		margin-top: 10px;
-
-		.user_name_link{
-			font-size: 90%;
 		}
 
-		li{
+		.review_count{
+			float: right;
+			vertical-align: middle;
+			display: block;
+			margin: 5px 10px 0px 0px;
+		}
+
+		.follow_button{	
+			display: inline-block;
+			float: right;
+			margin-right: 5px;
+		}
+	}
+
+	div.user_info{
+		width: 700px;
+		height: 200px;
+		margin: 15px auto;
+		text-align: center;
+
+
+
+		h1{
 			margin-bottom: 15px;
 		}
 
+		h2{
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+
+		div#user_info_left{
+			float: left;
+			width: 40%;
+
+			h3{
+				font-size: 120%;
+				margin-top: 40px;
+			}
+		}
+
+
+		div#user_info_center{
+			float: left;
+			width: 30%;
+
+			li{
+				vertical-align: middle;
+			}
+
+		}
+
+		div#user_info_right{
+			position: relative;
+			float: left;
+		}
+
+		#user_large_pic{
+			display: block;
+		}
+
 
 	}
 
-	div.user_summary_center{
-		float: left;
-		width: 35%
-	}
+	div#user_info_center, .user_summary_center{
 
-	div.summary_right{
-		
-		margin: 0px;
-		padding: 0px;
-	}
-
-
-	.user_small_pic{
-		display: block;
-		margin: auto;
-	}
-
-}
-
-#user_edit_wrapper{
-	width: 60%;
-	height: 100%;
-	margin: 40px auto;
-	position: relative;
-
-	h1{
-		font-size: 120%;
-		text-align: center;
-		margin-bottom: 30px;
-		padding: 5px;
-	}
-
-	li{
-		margin: 10px 0px 10px 10px;
-		padding: 5px;
-	}
-	ul{
-		margin: 50px auto 30px;
-		padding: 10px;
-		border: 2px solid #C0C0C0;
-	}
-
-	#why_am_i_here_container{
-		margin-left: 34%;
-	}
-
-
-	.user_update_button{
+		li{
+			vertical-align: middle;
+			margin-bottom: 15px;
+		}
 
 	}
 
-	#unsubscribe{
-		text-decoration: none;
-		color: #ADADAD;
-		font-weight: bold;
+
+
+
+	div#relationship_list{
+		position: relative;
+		width: 800px;
+
+
+
+		.pagination{
+			width: auto;
+			text-align: left;
+			position: relative;
+		}
 	}
 
-	#unsubscribe:hover{
-		text-decoration: underline;
-		color: red;
+	li.user_summary{
+		width: 650px;
+		height: 100px;
+		position: relative;
+		border-bottom: 1px solid #C0C0C0;
+		padding: 10px ;
+
+
+		div.user_summary_left{
+			float: left;
+			width: 40%;
+			margin-left: 20px;
+			margin-top: 10px;
+
+			.user_name_link{
+				font-size: 90%;
+			}
+
+			li{
+				margin-bottom: 15px;
+			}
+
+
+		}
+
+		div.user_summary_center{
+			float: left;
+			width: 35%
+		}
+
+		div.summary_right{
+
+			margin: 0px;
+			padding: 0px;
+		}
+
+
+		.user_small_pic{
+			display: block;
+			margin: auto;
+		}
+
 	}
 
-	.feedback_link{
-	text-decoration: none;
-	display: block;
-	
-	color: green;
-}
+	#user_edit_wrapper{
+		width: 60%;
+		height: 100%;
+		margin: 40px auto;
+		position: relative;
 
-.feedback_link:hover{
-	text-decoration: underline;
-}
-}
+		h1{
+			font-size: 120%;
+			text-align: center;
+			margin-bottom: 30px;
+			padding: 5px;
+		}
+
+		li{
+			margin: 10px 0px 10px 10px;
+			padding: 5px;
+		}
+		ul{
+			margin: 50px auto 30px;
+			padding: 10px;
+			border: 2px solid #C0C0C0;
+		}
+
+		#why_am_i_here_container{
+			margin-left: 34%;
+		}
+
+
+		.user_update_button{
+
+		}
+
+		#unsubscribe{
+			text-decoration: none;
+			color: #ADADAD;
+			font-weight: bold;
+		}
+
+		#unsubscribe:hover{
+			text-decoration: underline;
+			color: red;
+		}
+
+		.feedback_link{
+			text-decoration: none;
+			display: block;
+
+			color: green;
+		}
+
+		.feedback_link:hover{
+			text-decoration: underline;
+		}
+	}
 
 
 
