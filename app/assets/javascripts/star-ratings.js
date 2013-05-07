@@ -20,17 +20,18 @@ if (!$(this).hasClass("checked")){
 			});
 		}else{
 			var star_container = $(this);
+			var add_review_form = star_container.parents(".flat_list").find(".new_review_detail");
 			$.ajax({
 			type: 'POST',
 			url: path,
 			data: $(this).closest("form").serialize(),
 			dataType: 'json',
 			beforeSend: function(){
-				var add_button = star_container.parents(".flat_list").find(".new_review_detail");
-				add_button.attr('disabled', true);
+				add_review_form.find(".new_review_submit_tag").prop('disabled', true);
 			},
 			success: function(response){
-				update_detail_button(response, star_container);
+				
+				update_detail_button(response, add_review_form);
 				}
 			});	
 		}
@@ -41,14 +42,16 @@ if (!$(this).hasClass("checked")){
 
 }
 
-function update_detail_button(response, star_element){
-	var add_button = star_element.parents(".flat_list").find(".new_review_detail");
+function update_detail_button(response, review_form){
 	var review_id = response["id"];
 	var action_string = "/reviews/"+review_id+"/edit";
-	add_button.attr({action: action_string,
+	review_form.attr({action: action_string,
 						method: 'get'						
 	});
-	add_button.find(".new_review_submit_tag").attr("value", "Say more");
+	review_form.find(".new_review_submit_tag").attr({
+		value: "Say more",
+		disabled: false
+	});
 
 }
 
