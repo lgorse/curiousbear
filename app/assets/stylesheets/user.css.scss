@@ -82,8 +82,9 @@
 		}
 
 		.review_count{
-			float: right;
+			
 			vertical-align: middle;
+			text-align: right;
 			display: block;
 			margin: 5px 10px 0px 0px;
 		}
@@ -91,7 +92,7 @@
 		.follow_button{	
 			display: inline-block;
 			float: right;
-			margin-right: 5px;
+			margin: 0px 5px 0px 10px;
 		}
 	}
 
@@ -119,6 +120,7 @@
 			h3{
 				font-size: 120%;
 				margin-top: 40px;
+				text-align: left;
 			}
 		}
 
