@@ -97,5 +97,11 @@ def get_restaurant_from_reference(reference)
 		Restaurant.order('restaurants.average DESC').where('restaurants.average > 0').reject{|restaurant| user.restaurants.include?(restaurant)}.first(5)
 	end
 
+	def price_as_dollar
+		price = ""
+		self.google_price.times{|i| price << "$"}
+		price
+	end
+
 	
 end

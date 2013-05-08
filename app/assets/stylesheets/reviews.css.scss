@@ -124,8 +124,12 @@ div.user_review{
 		padding: 5px;
 
 		
-		.formatted_address{
+		.formatted_address, .google_price{
 			font-size: 70%;
+		}
+
+		.google_price{
+			margin-top: 10px;
 		}
 	}
 

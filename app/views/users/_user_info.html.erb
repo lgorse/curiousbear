@@ -1,0 +1,24 @@
+	<% if @user.fb_pic_large %>
+<%= image_tag @user.fb_pic_large, :id => "user_large_pic" %>
+<% end %>
+
+<h3><%= @user.name %></h3>
+
+<% unless @user == @current_user %>
+<ul class = "flat_list">
+
+	<li class = "flat_list_item">
+	<div id="button_<%= @user.id %>", class="follow_button">
+		<% if @current_user.following?(@user.id) %>
+			<%= render 'relationships/buttons/unfollow_button', :followed_id => @user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% else %>
+			<%= render 'relationships/buttons/follow_button', :followed_id => @user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% end %>
+		</div>
+	</li>
+
+<li class = "flat_list_item">
+	<%= render 'users/buttons/talk_to_user_button', :user => @user, :text => "Talk" %></li>
+	
+</ul>
+	<% end %>
