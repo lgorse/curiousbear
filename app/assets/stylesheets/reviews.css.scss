@@ -19,7 +19,7 @@
 	}
 
 	.review_summary_center{
-		width: 40%;
+		width: 45%;
 	}
 
 	.review_summary_right{
@@ -54,7 +54,7 @@
 }
 
 .review_summary_right{
-	width: 30%;
+	width: 25%;
 	float: left;
 	margin-top: 10px;
 
@@ -82,36 +82,62 @@
 }
 
 .review_summary_text{
-	margin: 10px 35px 10px 10px;
-	width: 100%;
-	font-size: 90%;
+	margin: 0px 35px 0px 10px;
+	//width: 100%;
+	font-size: 80%;
 	clear: left;
+
+	.review_detail_update{
+		display: inline-block;
+		margin-left: 10px;
+		font-size: 120%;
+	}
+
+	
 }
 
 
 
 div.user_review{
-	width: 800px;
-	margin-bottom: 20px;
+	
 	min-height: 160px;
 	padding: 5px 0px 20px;
 
 	#restaurant_name{
 		font-weight: bold;
+		font-size: 80%;
+	}
+
+	.review_summary_left{
+
+		#review_count{
+			
+			margin: 10px 5px;
+		}
+
+		.review_summary_photo{
+			display: block;
+		}
+	}
+
+	.review_summary_center{
+		padding: 5px;
+
+		
+		.formatted_address{
+			font-size: 70%;
+		}
+	}
+
+	.review_summary_text{
+		margin-left: 110px;
 		font-size: 90%;
 	}
-
-	
-	.review_summary_photo{
-		display: block;
-	}
-
-	
 	
 	.map_summary{
 		float: left;
-		width: 150px;
-		height: 150px;
+		width: 125px;
+		height: 125px;
 	}
 
 	.stars{
@@ -120,24 +146,29 @@ div.user_review{
 
 }
 
+.rating_text{
+	font-size: 80%;
+	margin-left: 10px;
+}
+
 #review_count{
 	font-size: 80%;
 	
-a{
-	color: black;
-	text-decoration: none;
-}
+	a{
+		color: black;
+		text-decoration: none;
+	}
 
-a:hover{
-	text-decoration: underline;
-	color: black;
-}
+	a:hover{
+		text-decoration: underline;
+		color: black;
+	}
 }
 
 .review_details_info{
 	width: 600px;
 	height: 100px
-;
+	;
 
 	.review_edit_left{
 		float: left;

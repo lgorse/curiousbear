@@ -28,6 +28,11 @@ module UsersHelper
 		 :fb_id => profile["uid"], :name => profile["name"]}
 	end
 
+	def short_restaurant_list(user, limit_number)
+		reviewer_list = user.reviews.limit(limit_number).collect {|review| link_to review.restaurant.name, review.restaurant}.join(" , ")
+		simple_format word_wrap("Likes: " + reviewer_list)
+	end
+
 	
 	
 end

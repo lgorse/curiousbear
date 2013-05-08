@@ -7,14 +7,9 @@
 	</div>
 </div></li>
 		<li class = "flat_list_item">
-			<% if @user == @current_user %>
-			<%= render 'restaurants/buttons/share_detail_button', :restaurant => review.restaurant, :text => "Talk about it" %>
-			<% else %>
-			<%= render 'reviews/buttons/detail_button', :review => review %>			
-			<% end %>
+			<p class = "rating_text"><%= "Rating" %></p>
 		</li>
 		</ul>
 		
-		<ul>
-		<li id = "review_count"><%= review.restaurant.reviews.count %> reviews</li>	</ul>
+		
 </div>

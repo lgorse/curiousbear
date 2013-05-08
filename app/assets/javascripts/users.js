@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	if($('#relationship_list').length){
-		var user_id = $(".user_info").attr("id");
+		var user_id = $(".user_bar").attr("id");
 		var review_count = $(".user_reviews_button").attr("id");
 		render_user_reviews(review_count, user_id);
 	}
@@ -9,7 +9,7 @@ $(document).ready(function(){
 });
 
 $.fn.button_highlight = function(clicked_id){
-	$(this).children('a').each(function(){
+	$(this).find('a').each(function(){
 		if ($(this).hasClass(clicked_id)){
 			$(this).removeClass("not_highlighted highlighted").addClass("selected").unbind('mouseenter mouseleave');
 		}else{

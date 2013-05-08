@@ -1,16 +1,19 @@
 <div class = "user_summary_left">
-	<ul>
-		<li>
-<% if user.id.nil? %>
-<%= user.name %>
+	<%= link_to (image_tag user.get_user_small_pic(@graph)), user,  :class => 'user_small_pic' %>
+
+<% if user.id.nil? %>	
+	<div id="button_<%= user.id %>", class="follow_button">
+		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id, :current_user => @current_user %>
+	</div>
 <% else %>
-<%= link_to user.name, user_path(user), :class => "user_name_link", :id => user.id %>
-</li>
-<li>
-<% unless user == @current_user || params[:action] == 'facebook_friends' %>
-<%= render 'users/buttons/talk_to_user_button', :user => user, :text => "Let\'s talk" %>
+	<% unless user == @current_user %>
+	<div id="button_<%= user.id %>", class="follow_button">
+		<% if @current_user.following?(user.id) %>
+			<%= render 'relationships/buttons/unfollow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% else %>
+			<%= render 'relationships/buttons/follow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
+		<% end %>
+		</div>
+	<% end %>
 <% end %>
-</li>
-<% end %>
-</ul>
 </div>

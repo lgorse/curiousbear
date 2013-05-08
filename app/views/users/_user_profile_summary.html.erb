@@ -1,5 +1,7 @@
-<li class="user_summary">
+<li class="user_summary rounded-corner">
+	<div class = "user_summary_top">
 <%= render 'user_summary_left', :user => user %>
-<%= render 'user_summary_center', :user => user %>
 <%= render 'user_summary_right', :user => user %>
+</div>
+<%= render 'user_summary_bottom', :user => user %>
 </li>

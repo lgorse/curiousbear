@@ -1,12 +1,10 @@
 <%= render 'reviews/review_map_script' %>
 <%= render 'fb-scripts/review_detail_request_script' %>
 <%= render 'restaurants/searchbox' %>
-<div id = "show_holder">
-<div class = "user_info" id="<%= @user.id %>">
-	<%= render 'user_info_left' %>
-	<%= render 'user_info_center' %>
-	<%= render 'user_info_right' %>
-	</div>
-	<%= render 'user_info_nav' %>
-	<div id = "relationship_list"><%= render 'reviews/user_reviews' %></div>
+
+<div class = "user_bar" id="<%= @user.id %>">
+<%= render 'users/user_info' %>
+<%= render 'user_info_nav' %>
 </div>
+	
+	<div id = "relationship_list"><%= render 'reviews/user_reviews' %></div>

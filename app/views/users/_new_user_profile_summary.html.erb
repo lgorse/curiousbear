@@ -2,7 +2,12 @@
 <li class="new_user_summary">
 
 	<%= image_tag user.get_user_small_pic(@graph), :class => 'user_small_pic' %>
-	<%= render 'users/user_summary_left', :user => user %>
+	
+	<% if user.id.nil? %>
+<p class = "user_name_link"><%= user.name %></p>
+<% else %>
+<%= link_to user.name, user_path(user), :class => "user_name_link", :id => user.id %>
+<% end %>
 	
 	<%= render 'relationships/buttons/relationship_button_wrapper', :user => user %>
 	<% unless user.id.blank? %>

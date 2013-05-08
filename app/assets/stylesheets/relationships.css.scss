@@ -3,21 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-nav#follow_buttons{
+#follow_buttons{
 	position: relative;
-	margin-left: 20px;
-	height: 30px;
-	margin-bottom: 20px;
-	padding-bottom: 0px;
-	border-bottom: 1px solid #C0C0C0;
 
-	a{
-		margin-left: 10px;
+	li{
+		margin-bottom: 15px;
 	}
+
 
 	a, .not_highlighted{
 		height: 20px;
-		float: left;
+		
 		position: relative;
 		text-decoration: none;
 		padding: 5px;
@@ -39,11 +35,15 @@ nav#follow_buttons{
 
 	.add_friends_button{
 		color: black;
-		margin-left: 210px;
+		
+		
 	}
 
 }
 
 .follow_button{
 		text-align: center;
+
+		
+		
 	}

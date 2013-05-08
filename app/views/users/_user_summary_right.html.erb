@@ -1,18 +1,10 @@
-<div class = "summary_right">
-	<%= image_tag user.get_user_small_pic(@graph), :class => 'user_small_pic' %>
-<% if user.id.nil? %>	
-	<div id="button_<%= user.id %>", class="follow_button">
-		<%= render 'relationships/buttons/invite_button', :fb_id => user.fb_id, :current_user => @current_user %>
-	</div>
-<% else %>
-	<% unless user == @current_user %>
-	<div id="button_<%= user.id %>", class="follow_button">
-		<% if @current_user.following?(user.id) %>
-			<%= render 'relationships/buttons/unfollow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
-		<% else %>
-			<%= render 'relationships/buttons/follow_button', :followed_id => user.id, :current_user_id => @current_user.id, :user_id => @user.id %>
-		<% end %>
-		</div>
-	<% end %>
-<% end %>
+<div class = "user_summary_right">
+
+	<ul>
+		<li class = "review_count" ><%= pluralize(user.reviews.count, "review") %></li>
+<li class = "follower_count"><%= pluralize(user.followers.count, "follower") %></li>
+
+	</ul>
+	
 </div>
+

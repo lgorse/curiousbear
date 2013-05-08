@@ -117,6 +117,8 @@ class User < ActiveRecord::Base
 			[facebook_friends_invite, facebook_friends_enrolled]
 		end
 
+		
+
 		def top_5_by_reviews
 			
 			User.joins('left join reviews on reviews.user_id = users.id').where('users.id != ?', self.id).

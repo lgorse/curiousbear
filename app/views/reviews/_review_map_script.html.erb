@@ -72,6 +72,8 @@ function initialize_map(passed) {
               if (place.photos){
                 photo = place.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100});
                 document.getElementById('review_summary_photo_'+id).src=photo;
+              }else{
+                document.getElementById('review_summary_photo_'+id).src='/assets/fb-logo-75.png';
               }
               }  
           });
