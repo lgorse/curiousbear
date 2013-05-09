@@ -118,7 +118,7 @@ class User < ActiveRecord::Base
 		end
 
 		def common_friends(user)
-			(self.following && user.following).count
+			(self.following & user.following).count
 		end
 
 		
