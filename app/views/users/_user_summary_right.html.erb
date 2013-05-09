@@ -3,6 +3,8 @@
 	<ul>
 		<li class = "review_count" ><%= pluralize(user.reviews.count, "review") %></li>
 <li class = "follower_count"><%= pluralize(user.followers.count, "follower") %></li>
+<li class = "common_friends"><%= user.following.count.to_s + " following" %></li>
+
 
 	</ul>
 	

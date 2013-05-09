@@ -1,0 +1,20 @@
+<div id = "restaurant_info_center">
+	<%= link_to @restaurant.name, @restaurant, :id => "restaurant_name" %>
+	<ul id = "review_data">
+		
+		<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0] %></li>
+		<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1] %></li>
+		<li class = "google_price">
+		<% if @restaurant.google_price %>
+		<%= "Price: " + @restaurant.price_as_dollar %>
+		<% else %>
+		<%= "Price: "%><i><%= "No data" %></i>
+		<% end %></li>
+		<li class = "keywords">
+			<%= "Keywords: " + @restaurant.keywords.to_s %>
+		</li>
+		<li class = "reviewers"><% if @restaurant %>
+	<%= render 'restaurants/restaurant_reviewer_list', :venue => @restaurant, :limit => 4 %>
+	<% end %></li>
+	</ul>
+</div>

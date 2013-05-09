@@ -7,7 +7,7 @@
 	</div>
 </div></li>
 		<li class = "flat_list_item">
-			<p class = "rating_text"><%= "Rating" %></p>
+			<p id = "review_count"><%= pluralize(review.restaurant.reviews.count, "review")%></p>
 		</li>
 		</ul>
 		

@@ -3,16 +3,60 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #restaurant_info{
-	width: 800px;
+	width: 900px;
 	height: 250px;
 	position: relative;
+	border-bottom: 1px solid #C0C0C0;
 
 	div#restaurant_info_left{
 		float: left;
-		width: 55%;
+		max-width: 120px;
 
-		#venue_name{
+		img{
+			max-width: 120px;
+		}
+		
+
+	}
+
+	div#restaurant_info_center{
+		float: left;
+		height: 250px;
+		width: 38%;
+		margin-left: 25px;
+
+		ul{
+			margin: 15px 0px 0px 10px;
+		}
+
+		li{
 			margin-top: 10px;
+		}
+
+		#address_line_02{
+			margin-top: 0px;
+		}
+
+		#restaurant_name{
+			
+			text-align: center;
+			font-weight: bold;
+			text-decoration: none;
+			color: black;
+		}
+
+		#restaurant_name:hover{
+			text-decoration: underline;
+		}
+
+		
+
+		.formatted_address, .google_price, .keywords{
+			font-size: 80%;
+		}
+
+		.reviewers{
+			margin-top: 20px;
 		}
 	}
 
@@ -27,12 +71,17 @@
 
 	}
 
+	.map{
+
+		margin-left: 30px;
+		float: left;
+		width: 200px;
+		height: 200px;
+	}
+
 }
 
 
-#venue_name{
-	font-weight: bold;
-}
 
 
 
@@ -79,17 +128,10 @@
 
 
 ul#restaurant_review_list{
-	
-	margin: 50px auto;
+	margin: 20px auto;
 }
 
-.map{
 
-	margin-left: 20px;
-	float: right;
-	width: 200px;
-	height: 200px;
-}
 
 #recommended_restaurant_list, #restaurant_list{
 	margin-top: 30px;
@@ -97,10 +139,10 @@ ul#restaurant_review_list{
 	float: left;
 
 
-		a#google_logo{
-			pointer-events: none;
-			cursor: default;
-		}
+	a#google_logo{
+		pointer-events: none;
+		cursor: default;
+	}
 	
 
 	.google_restaurant_title{
@@ -185,8 +227,9 @@ li.user_review, .review_summary{
 	width: 650px;
 }
 
-li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_summary{
 
+
+li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_summary{
 	height: auto;
 	position: relative;
 	border-bottom: 1px solid #C0C0C0;
@@ -200,26 +243,20 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 		width: 100%;
 	}
 
-	a{
-		color: blue;
-	}
-
-	a:hover{
-		color: purple;
-	}
-
-	#address_line_01{
-		margin-top: 15px;
-	}
-
-	#address_line_02{
-		margin-top: 0px;
-	}
+	
 
 	.distance{
 		font-weight: bold;
 	}
 
+}
+
+#address_line_01{
+	margin-top: 15px;
+}
+
+#address_line_02{
+	margin-top: 0px;
 }
 
 li#recommended_restaurant_summary{
@@ -240,7 +277,7 @@ li#recommended_restaurant_summary{
 	font-size: 80%;
 	position: relative;
 	display: block;
-	border-bottom: 1px solid #C0C0C0;
+	
 	padding-bottom: 15px;
 }
 

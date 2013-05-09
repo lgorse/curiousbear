@@ -1,0 +1,16 @@
+<div class = "review_summary_text">
+		<% if review.text %>
+		<%= h word_wrap("\""+review.text+ "\"", :line_width => 90) %>
+	<% else %>
+	<% if review.user == @current_user %>
+	<i><%= "Add some details to your review:" %></i>
+	<%= render "reviews/buttons/add_review", :restaurant => review.restaurant %>
+
+	<% else %>
+	<i><%= "#{review.user.first_name} didn\'t provide details about this place. Ask #{review.user.gender_article["object"]}: " %></i>
+<%= render 'reviews/buttons/detail_button', :review => review %>
+
+	<% end %>
+
+	<% end %>
+	</div>

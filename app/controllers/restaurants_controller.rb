@@ -34,6 +34,7 @@ class RestaurantsController < ApplicationController
 		@search = Base64.decode64(params[:search]) if params[:search]
 		@restaurant.update_restaurant_from_google_reference
 		@google_id = @restaurant.google_id
+		@parsed_address = split_formatted_address(@restaurant.formatted_address)
 		respond_to do |format|
 			format.html
 			format.js

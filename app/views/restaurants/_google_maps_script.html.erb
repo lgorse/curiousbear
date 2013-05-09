@@ -76,10 +76,9 @@ function detail_callback(place, status) {
     if (place.photos){
       photo = place.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150});
       document.getElementById("restaurant_photo").src=photo;
-    }  
-
-    document.getElementById("venue_name").innerHTML = place.name;
-    document.getElementById("formatted_address").innerHTML = place.formatted_address;
+    }else{
+      document.getElementById('restaurant_photo').src='/assets/fb-logo-75.png';
+    }
 
     if (place.rating){
       var rating = document.getElementById("google_rating");

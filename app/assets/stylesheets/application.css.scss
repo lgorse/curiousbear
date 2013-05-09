@@ -15,8 +15,17 @@
 
  $center_width: 1000px;
 
-ul{
+ul, li{
 	list-style-type: none;
+}
+
+a{
+	color: #104E8B;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
 }
 
 

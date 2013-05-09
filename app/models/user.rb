@@ -117,6 +117,10 @@ class User < ActiveRecord::Base
 			[facebook_friends_invite, facebook_friends_enrolled]
 		end
 
+		def common_friends(user)
+			(self.following && user.following).count
+		end
+
 		
 
 		def top_5_by_reviews
