@@ -50,7 +50,6 @@
 .review_summary_center{
 	width: 35%;
 	float: left;
-	margin-top: 10px;
 }
 
 .review_summary_right{
@@ -106,13 +105,14 @@ div.user_review{
 	#restaurant_name{
 		font-weight: bold;
 		font-size: 80%;
+
 	}
 
 	.review_summary_left{
 
 		#review_count{
 			
-			margin: 10px 5px;
+			margin: 10px 0px;
 		}
 
 		.review_summary_photo{
@@ -124,11 +124,15 @@ div.user_review{
 		padding: 5px;
 
 		
-		.formatted_address, .google_price{
+		.formatted_address, .google_price, .keywords{
 			font-size: 70%;
 		}
 
-		.google_price{
+		ul{
+			margin-top: -5px;
+		}
+
+		li{
 			margin-top: 10px;
 		}
 	}
