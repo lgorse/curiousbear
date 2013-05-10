@@ -16,12 +16,13 @@ class SessionController < ApplicationController
 	end
 
 	
+	#Note the second User.find according to session => otherwise there is a dump format
+	# error in the app, only on the home controller action
 	def home
 		@current_user.update_photo(@graph)
-		@title = "Search the world, "+@current_user.first_name
 		@best_restaurants = Restaurant.top_5_by_rating(@current_user)
-	@popular = @current_user.top_5_by_followers
-	@reviewers = @current_user.top_5_by_reviews.reject{|user| @popular.include?(user)}
+		@shared_friends = User.find(session['user_id']).top_5_by_shared_friends
+	@popular = @current_user.top_5_by_followers.reject{|user| @shared_friends.include?(user)}
 		respond_to do |format|
 			format.html
 			format.js

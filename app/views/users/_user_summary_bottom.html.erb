@@ -12,6 +12,6 @@
 	<p><%= "Ask #{user.gender_article["object"]} where #{user.gender_article["subject"]}\'s been!" %></p>
 	<% end %>
 
-	<p class = "common_friends"><%= "You share "%><%= link_to pluralize(user.common_friends(@current_user), "trusted friends"), user %></p>
+	<p class = "common_friends"><%= "You share "%><%= link_to pluralize(@current_user.common_friends(user), "trusted friends"), user %></p>
 
 </div>

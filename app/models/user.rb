@@ -121,10 +121,13 @@ class User < ActiveRecord::Base
 			(self.following & user.following).count
 		end
 
-		
-
-		def top_5_by_reviews
+		def top_5_by_shared_friends
 			
+			following.sort_by{|user| common_friends(user)}.reverse.first(5)
+		end
+
+
+		def top_5_by_reviews	
 			User.joins('left join reviews on reviews.user_id = users.id').where('users.id != ?', self.id).
 			select('users.*, count(reviews.id) as reviews_count').
 			group('users.id').order('reviews_count DESC').

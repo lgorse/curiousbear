@@ -6,7 +6,7 @@
 		<li class = "app_header_item"><%= link_to APP_NAME, home_path(:welcome => params[:welcome]), :id=>"home_button" %></li>
 		<li class = "app_header_item"><%= link_to 'Feedback (please)', new_feedback_path, :class => "feedback_link fancybox", :remote => true %></li>
 	</ul>
-	<%# unless no_header_pages %>
+	
 	<nav id = "app_header_right">
 		<%= link_to "+ friends", facebook_friends_user_path(:id => @current_user.id), :class => "add_friends_button", :title => "Add friends" %>
 		
@@ -14,8 +14,8 @@
 
 	
 		<%= link_to (image_tag "ship-wheel.png", :id => "edit_profile_icon", :size => "30x30"), edit_user_path(@current_user) , :id => "my_account_button", :title => "my account" %>
-		<%= link_to (image_tag "logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()", :title => "Log out" %>
+		<%= link_to (image_tag "/assets/header/logout.png", :size => "25x35", :id => "logout_icon"), '#', :id => "fb-logout", :onclick => "logout()", :title => "Log out" %>
 	</nav>
-	<%# end %>
+	
 	<%= render 'layouts/flash', :flash => flash %>
 </header>

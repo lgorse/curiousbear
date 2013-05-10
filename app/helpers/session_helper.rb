@@ -50,7 +50,7 @@ module SessionHelper
 
 	def set_session
 		session['user_id'] ||= User.find_by_fb_id(@graph.get_object("me")['id'])
-		@current_user = session["user_id"]
+		@current_user = session['user_id']
 		if @current_user.nil? #this catches the error where the user has authorized the app but somehow disappeared from our db
 			delete_user_facebook
 			redirect_to register_path and return 
@@ -67,7 +67,6 @@ module SessionHelper
 	def authenticate
 		parse_facebook_cookies
 		set_session
-			
 		set_remote_ip
 	end
 
