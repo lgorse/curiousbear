@@ -123,7 +123,8 @@ class User < ActiveRecord::Base
 
 		def top_5_by_shared_friends
 			
-			following.sort_by{|user| common_friends(user)}.reverse.first(5)
+			 best_friend_list = following.sort_by{|user| common_friends(user)}.reverse.first(5)
+			 best_friend_list.map{|user|(user.following - following).reject{|user| following?(user) || user == self}}.flatten
 		end
 
 

@@ -94,7 +94,7 @@ def get_restaurant_from_reference(reference)
 	end
 
 	def self.top_5_by_rating(user)
-		Restaurant.order('restaurants.average DESC').where('restaurants.average > 0').reject{|restaurant| user.restaurants.include?(restaurant)}.first(5)
+		Restaurant.order('restaurants.average DESC').where('restaurants.average > 3').reject{|restaurant| user.restaurants.include?(restaurant)}.first(5)
 	end
 
 	def price_as_dollar
