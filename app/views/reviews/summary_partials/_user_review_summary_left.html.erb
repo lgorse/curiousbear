@@ -8,12 +8,7 @@
 		<li><%= link_to review.restaurant.name, review.restaurant, :id => "restaurant_name" %></li>
 		<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0] %></li>
 		<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1] %></li>
-		<li class = "google_price">
-		<% if review.restaurant.google_price %>
-		<%= "Price: " + review.restaurant.price_as_dollar %>
-		<% else %>
-		<%= "Price: "%><i><%= "No data" %></i>
-		<% end %></li>
+		<%= render 'restaurants/data/price', :restaurant => review.restaurant %>
 		<li class = "keywords">
 			<%= "Keywords: " + review.restaurant.keywords.to_s %>
 		</li>

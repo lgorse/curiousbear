@@ -4,12 +4,7 @@
 		
 		<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0] %></li>
 		<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1] %></li>
-		<li class = "google_price">
-		<% if @restaurant.google_price %>
-		<%= "Price: " + @restaurant.price_as_dollar %>
-		<% else %>
-		<%= "Price: "%><i><%= "No data" %></i>
-		<% end %></li>
+		<%= render 'restaurants/data/price', :restaurant => @restaurant %>
 		<%= render 'restaurants/data/keywords', :restaurant => @restaurant %>
 		<li class = "reviewers">
 			<% if @restaurant %>
