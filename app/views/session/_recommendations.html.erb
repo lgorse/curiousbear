@@ -1,7 +1,7 @@
 <div class = "recommendation_wrapper">
 	<div class = "recommendation_title">
 		<h2>Places and people you may like</h2></div>
-		<%= render :partial => 'session/restaurant_item', :collection => @best_restaurants, :as => :restaurant, :locals => {:text => "Has high ratings"} %>
+		<%= render :partial => 'restaurants/suggested/restaurant_suggested', :collection => @best_restaurants, :as => :restaurant, :locals => {:text => "Has high ratings"} %>
 	<%= render :partial => 'users/user_profile_summary', :collection => @shared_friends, :as => :user %>
 	<%= render :partial => 'users/user_profile_summary', :collection => @popular, :as => :user %>
 

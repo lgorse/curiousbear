@@ -3,68 +3,103 @@
 	height: 100%;
 }
 
-	.recommendation_title{
-		width: 100%;
-		margin-bottom: 10px;
-		border-bottom: 1px solid #C0C0C0;
+.recommendation_title{
+	width: 100%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #C0C0C0;
 
-		h2{
-			width: 250px;
-			padding-bottom: 10px;
-			font-weight: normal;
-		}
-
+	h2{
+		width: 250px;
+		padding-bottom: 10px;
+		font-weight: normal;
 	}
 
+}
 
-.suggestion_user, .suggestion_restaurant{
+
+.suggestion_restaurant{
 	border: 1px solid #C0C0C0;
+	width: 210px;
+	height: 240px;
 	float: left;
-	margin: 10px;
-	padding: 5px;
-	font-size: 80%;
-	height: 100px;
+	margin: 5px;
+	padding: 10px;
+	font-size: 90%;
+
 
 	#app_stars{
 		display: none;
 	}
 
-	.suggestion_text{
-		//float: right;
-		display: inline;
-		vertical-align: top;
+	.reviewer_list{
+		padding: 0px;
+	}
+	.suggested_restaurant_top{
+		width: 100%;
+		height: 110px;
+		margin-bottom: 10px;
+
+		.restaurant_name{
+			margin-bottom: 5px;
+		}
+
+
+		.suggested_restaurant_left{
+			float: left;
+			width: 75px;
+
+			img{
+				max-width: 75px;
+				max-height: 50px;
+				margin-top: 5px;
+			}
+		}
+
+		.suggested_restaurant_right{
+			float: left;
+			padding-left: 20px;
+			font-size: 70%;
+
+			.map_suggested{
+				right: 0px;
+				width: 100px;
+				height: 50px;
+
+			}
+
+			ul{
+				margin-top: 5px;
+
+				li{
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	.suggested_restaurant_bottom{
+		
 		position: relative;
+
+.reviewer_list{
+	line-height: 120%;
+}
+.keywords{
+	font-size: 80%;
+	margin-bottom: 10px;
+line-height: 120%;
+
+}
+		ul.flat_list{
+			margin: 0px 0px 3px;
+
+
+		}
+		
 	}
 
 	p{
 		margin-bottom: 5px;
 	}
 }
-.suggestion_user{
-
-	.suggested_user_left{
-		float: left;
-		min-width: 60px;
-	}
-	
-	.suggestion_pic{
-		margin: 0px auto;
-		display: block;	
-	}
-	
-	.suggestion_text{
-		float: right;
-		
-		
-		
-	}
-}
 
 
-.suggestion_restaurant{
-min-width: 200px;
-
-ul.flat_list{
-	margin-bottom: 0px;
-}
-}

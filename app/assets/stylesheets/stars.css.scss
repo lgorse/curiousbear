@@ -11,7 +11,7 @@ $total: $numStars * $steps;
 }
 
 @mixin stars_values{
-	height: 30px;
+	height: 25px;
 	background-size: $starWidth;
 	vertical-align: middle;
 	padding: 0px;

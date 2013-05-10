@@ -163,8 +163,8 @@ div#relationship_list{
 
 .user_summary{
 	border: 1px solid #C0C0C0;
-	width: 190px;
-	height: 175px;
+	width: 200px;
+	height: 230px;
 	float: left;
 	margin: 5px;
 	padding: 15px;
@@ -183,9 +183,9 @@ div#relationship_list{
 		.user_small_pic{
 
 			img{
-			display: block;
-			margin: 0px auto 5px;
-		}
+				display: block;
+				margin: 0px auto 5px;
+			}
 		}
 
 	}
@@ -204,27 +204,27 @@ div#relationship_list{
 
 	div.summary_bottom{
 
-p{
-	margin: 10px auto;
-}
+		p{
+			margin: 10px auto;
+		}
 		
 		
 	}
 	a.user_name_link{
-			color: black;
-			font-weight: bold;
-			
-		}
+		color: black;
+		font-weight: bold;
+
+	}
 
 
-		a:hover{
-			text-decoration: underline;
-		}
+	a:hover{
+		text-decoration: underline;
+	}
 
-		a{
-			color: #104E8B;
-			text-decoration: none;
-		}
+	a{
+		color: #104E8B;
+		text-decoration: none;
+	}
 	
 }
 

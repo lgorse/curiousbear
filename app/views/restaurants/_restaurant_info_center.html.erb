@@ -10,10 +10,9 @@
 		<% else %>
 		<%= "Price: "%><i><%= "No data" %></i>
 		<% end %></li>
-		<li class = "keywords">
-			<%= "Keywords: " + @restaurant.keywords.to_s %>
-		</li>
-		<li class = "reviewers"><% if @restaurant %>
+		<%= render 'restaurants/data/keywords', :restaurant => @restaurant %>
+		<li class = "reviewers">
+			<% if @restaurant %>
 	<%= render 'restaurants/restaurant_reviewer_list', :venue => @restaurant, :limit => 4 %>
 	<% end %></li>
 	</ul>
