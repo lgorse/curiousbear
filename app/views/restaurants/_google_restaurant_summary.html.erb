@@ -1,22 +1,45 @@
 <% 	@encoded_venue = Base64.urlsafe_encode64(URI.encode(restaurant.attributes.to_json)) %>
 <% parsed_address = split_formatted_address(restaurant.formatted_address) %>
-<li id="restaurant_summary">
+<li id="google_restaurant_summary">
 
-	<div id="restaurant_summary_left">
-				<ul>
+	<div id="google_restaurant_summary_left">
+		<ul>
 			<li id="venue_name">
 				<% if restaurant.id %>
-					<%= link_to restaurant.name, :controller => 'restaurants', :action => 'show', :id => restaurant.id, :search => @encoded_search %>
-					<% else %>
-					<%= link_to restaurant.name, new_restaurant_path(:search => @encoded_search, :venue_data => @encoded_venue) %>
+				<%= link_to restaurant.name, :controller => 'restaurants', :action => 'show', :id => restaurant.id, :search => @encoded_search %>
+				<% else %>
+				<%= link_to restaurant.name, new_restaurant_path(:search => @encoded_search, :venue_data => @encoded_venue) %>
 				<% end %>
 				
 			</li>
-		<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0]  %></li>
-		<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1]  %></li>
+			<li id = "address_line_01" class = "formatted_address"><%= parsed_address[0]  %></li>
+			<li id = "address_line_02" class = "formatted_address"><%= parsed_address[1]  %></li>
+			<%= render "restaurants/data/price", :restaurant => restaurant %>
 		</ul>
+
+		<%= render "reviews/buttons/review_input", :restaurant_id => restaurant.id ? restaurant.id : nil, :venue_field => @encoded_venue, :search => @search, :restaurant => restaurant %>
+		<% if restaurant.google_rating %>
+		<%= render 'reviews/buttons/google_stars', :restaurant => restaurant %>
+		<% end %>
+		<%= render 'reviews/buttons/request_review', :venue => restaurant %>
+		<%= render 'restaurants/buttons/share_detail_button', :restaurant => restaurant %>
+		<p id='msg'></p>
 	</div>
-<%= render 'google_restaurant_summary_right', :restaurant => restaurant %>
+	<div id = "google_restaurant_summary_right">
+		<div class = "image_holder">
+				<img class = "suggested_restaurant_photo  %>" id = "<%= restaurant.google_reference %>"></img>
+
+			</div>
+			<div class = "restaurant_lat", id = "<%= restaurant.lat %>"></div>
+		<div class = "restaurant_lng", id = "<%= restaurant.lng %>"></div>
+		
+		<div class = "map_suggested" id="map_<%= restaurant.google_reference %>"></div>
+			
+	</div>
+
+
+
+
 
 </li>
 

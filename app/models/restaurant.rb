@@ -103,5 +103,9 @@ def get_restaurant_from_reference(reference)
 		price
 	end
 
+	def first_review
+		self.reviews.order{|review| review.rating}.reverse.first
+	end
+
 	
 end

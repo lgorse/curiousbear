@@ -97,6 +97,10 @@
 		vertical-align: middle;
 	}
 
+	img{
+		vertical-align: middle;
+	}
+
 	
 	.flat_list_item{
 		display: table-cell;
@@ -104,14 +108,14 @@
 	}
 
 	#google_logo{
-		margin-left: 10px;
-		//vertical-align: middle;
-		height: auto;
+		
+		vertical-align: bottom;
+		height: 20;
+		width: 55;
 	}
 
 	.review_detail_update, .new_review_detail{
 		margin-left: 10px;
-		
 		vertical-align: middle;
 	}
 
@@ -137,7 +141,7 @@ ul#restaurant_review_list{
 
 #recommended_restaurant_list, #restaurant_list{
 	margin-top: 30px;
-	width: 300px;
+	width: 500px;
 	float: left;
 
 
@@ -192,51 +196,14 @@ ul#restaurant_review_list{
 
 }
 
-li#restaurant_summary,#recommended_restaurant_summary{
-	width: 300px;
-
-	#restaurant_summary_left{
-		width: 275px;
-		margin-bottom: 5px;
-		
-
-		ul{
-			padding: 0px;
-			position: relative;
-			width: 400px;
-
-			li{
-				margin-bottom: 5px;
-			}
-
-			#venue_name{
-				font-weight: bold;
-				font-size: 90%;
-			}
-
-		}
-
-	}
-
-	#restaurant_info_right{
-		width: 300px;
-	}
-
-
-}
 
 li.user_review, .review_summary{
-	width: 650px;
-}
-
-
-
-li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_summary{
 	height: auto;
 	position: relative;
 	border-bottom: 1px solid #C0C0C0;
 	margin-bottom: 10px;
 	padding: 10px;
+	width: 650px;
 
 	
 
@@ -245,13 +212,8 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 		width: 100%;
 	}
 
-	
-
-	.distance{
-		font-weight: bold;
-	}
-
 }
+
 
 #address_line_01{
 	margin-top: 15px;
@@ -261,9 +223,139 @@ li#restaurant_summary,#recommended_restaurant_summary, .user_review, .review_sum
 	margin-top: 0px;
 }
 
+#google_restaurant_summary, #recommended_restaurant_summary{
+
+
+}
+
+li#google_restaurant_summary{
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #C0C0C0;
+	width: 100%;
+	height: 200px;
+
+	#venue_name{
+		font-weight: bold;
+		font-size: 90%;
+	}
+	.button_to{
+		vertical-align: middle;
+	}
+
+	
+	.google_price{
+		width: 50%;
+		font-size: 80%;
+		margin: 10px auto 15px 0px;
+	}
+	
+
+	#google_restaurant_summary_left, #google_restaurant_summary_right{
+		float: left;
+		width: 50%;
+	}
+
+	.image_holder{
+		height: 150px;
+	}
+
+	img{
+		max-width: 125px;
+		max-height: 125px;
+
+		margin: auto 0px auto 15px;
+	}
+
+	ul{
+		margin-top: 2px;
+	}
+}
+
+
+
+
 li#recommended_restaurant_summary{
 	//background-color: #CCE2F1;
 	border: 1px solid #C0C0C0;
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	margin-bottom: 15px;
+
+	#restaurant_top{
+		height: 240px;
+	}
+
+	#restaurant_bottom{
+		height: 75px;
+	}
+
+	.distance{
+		font-weight: bold;
+	}
+
+	#venue_name{
+		margin-bottom: 10px;
+		font-weight: bold;
+
+	}
+
+	.google_price{
+		width: 50%;
+		font-size: 80%;
+		margin: 15px auto auto 15px;
+	}
+
+	.sample_review{
+		font-size: 90%;
+	}
+
+	.keywords{
+		font-size: 80%;
+		margin-bottom: 10px;
+		line-height: 120%;
+	}
+
+	.reviewer_list{
+		margin-top: 10px;
+		height: auto;
+	}
+
+	#review_full_text{
+		display: none;
+	}
+
+	#restaurant_summary_lower_left, #restaurant_summary_lower_right{
+		height: 75px;
+		width: 50%;
+		float: left;
+	}
+
+	#restaurant_summary_upper_left, #restaurant_summary_upper_right{
+		float: left;
+		width: 50%;
+	}
+
+
+	.image_holder{
+		height: 150px;
+	}
+
+	img{
+		max-width: 150px;
+		max-height: 150px;
+
+		margin: auto 0px auto 15px;
+	}
+
+	.map_suggested{
+		
+		
+		width: 175px;
+		height: 150px;
+
+	}
 
 }
 
@@ -278,7 +370,7 @@ li#recommended_restaurant_summary{
 .reviewer_list{
 	font-size: 80%;
 	position: relative;
-	display: block;
+	//display: block;
 	
 	padding-bottom: 15px;
 }

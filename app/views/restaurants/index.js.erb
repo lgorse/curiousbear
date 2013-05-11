@@ -1,10 +1,19 @@
+
 $("#loading").hide();
 $("#recommended_restaurant_list").show().html("<%=escape_javascript(render 'restaurants/recommended_restaurants')%>");
 $("#restaurant_list").show().html("<%= escape_javascript(render 'restaurants/google_restaurants') %>");
+
 $('html, body').animate({ scrollTop: 0 }, 5);
 $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('normal');
 $("#show_holder").remove();
 $("#user_edit_wrapper").remove();
 
+$(function(){
+$(".suggested_restaurant_photo").each(function(){
+
+			$(this).add_restaurant_photo($(this).attr("id"));
+		});
+	show_full_sample_review_listener();
 star_ratings();
 load_listener();
+});

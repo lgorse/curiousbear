@@ -1,19 +1,51 @@
 <% set_stored_restaurant_values(venue) %>
 <li id="recommended_restaurant_summary" class= "rounded-corner">
-	
-<div id="restaurant_summary_left">
-		<ul>
-			<li id="venue_name">
+	<div id = "restaurant_top">
+	<div id="venue_name">
 				<%= link_to venue.name, restaurant_path(venue.id) %>
-			</li>
+			</div>
+			
+<div id="restaurant_summary_upper_left">
+	<div class = "image_holder">
+				<img class = "suggested_restaurant_photo  %>" id = "<%= venue.google_reference %>"></img>
+			</div>
+			<%= render "restaurants/data/price", :restaurant => venue %>
+	
+</div>
+<div id = "restaurant_summary_upper_right">
+	<div class = "restaurant_lat", id = "<%= venue.lat %>"></div>
+		<div class = "restaurant_lng", id = "<%= venue.lng %>"></div>
+		
+		<div class = "map_suggested" id="map_<%= venue.google_reference %>"></div>
+
+		<ul>
+			
 			<li id = "address_line_01" class = "formatted_address"><%= @parsed_address[0]  %></li>
 			<li id = "address_line_02" class = "formatted_address"><%= @parsed_address[1]  %></li>
 			<li class = "distance formatted_address"><%= pluralize(Geocoder::Calculations.to_miles(venue.distance/1000).round(1), 'miles') %> away</li>
 		</ul>
-	
-</div>
-<%= render 'restaurants/restaurant_info_right', :venue => venue %>
 
-<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
-<p id='msg'></p>
+</div>
+</div>
+
+	<%= render 'restaurants/restaurant_reviewer_list', :venue => venue, :limit => 4 %>
+	<%= render 'restaurants/data/keywords', :restaurant => venue %>
+
+	<div id = "restaurant_bottom">
+<div id = "restaurant_summary_lower_left">
+	<%= render "reviews/buttons/review_input", :restaurant_id => venue.id, :venue_field => nil, :search => @search, :restaurant => venue %>
+		<% if venue %>
+		<%= render 'reviews/buttons/restaurant_average', :venue => venue %>
+		<% end %>
+</div>
+
+<div id = "restaurant_summary_lower_right">
+	<%= render 'reviews/buttons/request_review', :venue => venue %>
+
+		 	<%= render 'restaurants/buttons/share_detail_button', :restaurant => venue %>
+
+</div>
+</div>
+<%= render 'restaurants/data/sample_review', :venue => venue %>
+
 </li>

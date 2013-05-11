@@ -1,0 +1,11 @@
+<% quoted_review = venue.first_review %>
+<div id = "review_sample_text" class = "sample_review">
+	<% if quoted_review.text %>
+	<%= link_to "#{quoted_review.user.first_name} ", quoted_review.user %><%= truncate("wrote: \" #{quoted_review.text} \"", :length => 120, :omission => "#{link_to "...", "#", :class => 'incomplete_review_link' }").html_safe %>
+	<% else %>
+	<i><%= "Want more details? Ask #{quoted_review.user.first_name} to improve his review!" %></i>
+	<% end %>
+</div>
+<div id = "review_full_text" class = "sample_review">
+	<%= link_to "#{quoted_review.user.first_name} ", quoted_review.user %><%= "wrote: \" #{quoted_review.text} \""%>
+	</div>
