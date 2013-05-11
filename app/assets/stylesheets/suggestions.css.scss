@@ -1,17 +1,32 @@
 
 .recommendation_wrapper{
 	height: 100%;
+
+	
+
+	.recommended_restaurants{
+		float: left;
+		width:50%;
+	}
+
+	.recommended_users{
+		float: left;
+		width: 50%;
+	}
 }
 
 .recommendation_title{
 	width: 100%;
+	height: 30px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #C0C0C0;
 
 	h2{
-		width: 250px;
+		
 		padding-bottom: 10px;
-		font-weight: normal;
+		font-weight: normal;float: left;
+			display: inline;
+			width: 50%;
 	}
 
 }
