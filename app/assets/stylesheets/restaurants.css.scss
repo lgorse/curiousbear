@@ -258,6 +258,7 @@ li#google_restaurant_summary{
 
 	.image_holder{
 		height: 150px;
+		display: none;
 	}
 
 	img{
@@ -265,6 +266,12 @@ li#google_restaurant_summary{
 		max-height: 125px;
 
 		margin: auto 0px auto 15px;
+	}
+
+	.map_suggested{
+		width: 175px;
+		height: 175px;
+
 	}
 
 	ul{
@@ -350,8 +357,6 @@ li#recommended_restaurant_summary{
 	}
 
 	.map_suggested{
-		
-		
 		width: 175px;
 		height: 150px;
 
