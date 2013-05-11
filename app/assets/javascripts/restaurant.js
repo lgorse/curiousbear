@@ -41,7 +41,9 @@ $.fn.add_restaurant_photo = function(restaurant_reference){
 				photo = place.photos[0].getUrl({'maxWidth': 150, 'maxHeight': 150});
 				$(image).attr("src", photo);
 			}else{
-				$(image).attr("src", '/assets/fb-logo-75.png');
+				$(image).attr("src", '/assets/fb-logo-75.png').css({
+					'width' : '100px'
+				});
 
 			}
 

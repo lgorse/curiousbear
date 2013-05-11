@@ -1,5 +1,6 @@
 <%= render 'fb-scripts/facebook_friends_script' %>
 <%= render 'restaurants/searchbox' %>
+<div class = "facebook_friends_wrapper">
 	<div class = "facebook_friends_explanation rounded-corner" id = "<%= @current_user.id %>">
 		
 			
@@ -33,4 +34,6 @@
 	<ul>
 		<%= render :partial => 'users/new_user_profile_summary', :collection => @facebook_friends_enrolled, :as => :user %>
 	</ul>
+</div>
+
 </div>

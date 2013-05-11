@@ -8,7 +8,7 @@ $(".flash_search").html('<%= escape_javascript(flash[:notice]) %>').fadeIn('norm
 $("#show_holder").remove();
 $("#user_edit_wrapper").remove();
 
-$(function(){
+
 $(".suggested_restaurant_photo").each(function(){
 
 			$(this).add_restaurant_photo($(this).attr("id"));
@@ -16,4 +16,3 @@ $(".suggested_restaurant_photo").each(function(){
 	show_full_sample_review_listener();
 star_ratings();
 load_listener();
-});
