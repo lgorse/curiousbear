@@ -1,4 +1,8 @@
 $(function(){
-$("#relationship_list").html("<%= escape_javascript(render reviews/user_reviews) %>")
+	$("#follow_buttons").button_highlight('user_reviews_button');
+
+$("#relationship_list").html("<%= escape_javascript(render 'reviews/user_reviews') %>");
+render_user_reviews();
+star_ratings();
 
 });

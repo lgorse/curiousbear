@@ -38,8 +38,8 @@ a:hover{
 
 
 #app_inner{
-	margin: 75px auto 0px 150px;
-	//left: 50%;
+	margin: 75px auto 0px -550px;
+	left: 50%;
 	
 position: relative;
 	width: $center_width;
@@ -54,7 +54,7 @@ position: relative;
 		position: relative;
 		width: 1000px;
 		height: 75px;
-		margin: auto auto 20px;
+		margin: auto auto 20px 20%;
 
 
 		input#search{
@@ -80,7 +80,7 @@ position: relative;
 		}
 
 		#loading{
-			margin: 10px auto;
+			margin: 10px 30%;
 			width: 10px;
 			display: none;
 		}
@@ -90,7 +90,7 @@ position: relative;
 #home_wrapper{
 	
 	#searchbox{
-		margin: 150px auto 10px;
+		margin: 150px auto 10px 20%;
 
 		input#search{
 			font-size: 200%;

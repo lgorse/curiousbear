@@ -7,6 +7,7 @@ class ReviewsController < ApplicationController
 		@user = User.find(params[:user_id])
 		@current_user = User.find(session['user_id'])
 		@reviews = @user.reviews.paginate(:page => params[:page], :per_page => 5)
+		puts "I HAVE THE REVIEWS"
 		respond_to do |format|
 			format.html {render :partial => 'reviews/user_reviews'}
 			format.js 

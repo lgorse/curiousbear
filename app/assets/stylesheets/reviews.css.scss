@@ -118,6 +118,10 @@ div.user_review{
 		width: 110px;
 		height: 150px;
 
+		img{
+			padding-top: 30px;
+		}
+
 
 
 		.user_small_pic{
@@ -148,6 +152,10 @@ div.user_review{
 			font-size: 70%;
 		}
 
+		#address_line_02{
+			margin-bottom: 10px;
+		}
+
 		ul{
 			margin-top: -5px;
 		}
@@ -158,6 +166,7 @@ div.user_review{
 	}
 
 	.review_summary_right{
+		margin-right: 5px;
 		.rating_text{
 			font-size: 80%;
 			vertical-align: center;

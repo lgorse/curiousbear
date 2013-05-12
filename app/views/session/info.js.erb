@@ -2,10 +2,14 @@ $(function(){
 	var search_value;
 	$(".why_am_i_here_button").fancybox({
 		type : 'iframe',
+		
+		autoResize : true,
 		autoSize : true,
+		minHeight : 450,
 		helpers: {
-			overlay: {locked: false}
+			overlay: {locked: true}
 		},
+
 		afterLoad : function(){
 				$(".fancybox-iframe").contents().find(".feedback_link").remove();
 				$(".fancybox-iframe").contents().find("#app_header_right").remove();

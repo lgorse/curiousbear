@@ -1,8 +1,8 @@
 <div class = "user_summary_right">
 	<ul>
-		<li class = "review_count" ><%= pluralize(user.reviews.count, "review") %></li>
-<li class = "follower_count"><%= "Trusted by " + pluralize(user.followers.count, "kwegger") %></li>
-<li class = "common_friends"><%= "Trusts "%> <%= pluralize(user.following.count, "kwegger") %></li>
+		<li class = "review_count" ><%= link_to pluralize(user.reviews.count, "review"), :controller => 'users', :action => 'show', :id => user.id, :page_request => 'reviews' %></li>
+<li class = "follower_count"><%= "Trusted by "%><%=link_to pluralize(user.followers.count, "kwegger"), :controller => 'users', :action => 'show', :id => user.id, :page_request => 'trusted' %></li>
+<li class = "following_count"><%= "Trusts "%><%= link_to pluralize(user.following.count, "kwegger"), :controller => 'users', :action => 'show', :id => user.id, :page_request => 'trusts' %></li>
 
 
 	</ul>

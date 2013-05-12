@@ -6,5 +6,16 @@
 <%= render 'users/user_info' %>
 <%= render 'user_info_nav' %>
 </div>
+<% case params[:page_request] %>
+		<% when 'trusted' %>
+		<div class = "page_request", id = "trusted"></div>
+		<% when 'trusts' %>
+		<div class = "page_request", id = "trusting"></div>
+		<% else %>
+		<div class = "page_request", id = "reviews"></div>
+		
+		<% end %>
 	
-	<div id = "relationship_list"><%= render 'reviews/user_reviews' %></div>
+	<div id = "relationship_list">
+	
+	</div>

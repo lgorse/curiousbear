@@ -2,7 +2,7 @@
 	<% if @user == @current_user %>
 	<li><%= link_to "+ Add friends", facebook_friends_user_path, :class => "add_friends_button" %></li>
 <% end %>
-<li><%= link_to "Reviews (#{@user.reviews.count})", @user, :id => @user.reviews.count, :class => "selected user_reviews_button" %></li>
+<li><%= link_to "Reviews (#{@user.reviews.count})", reviews_path(:user_id => @user.id), :id => @user.reviews.count, :class => "selected user_reviews_button", :remote => true %></li>
 <li><%= link_to "Trusts (#{@user.following.count})", following_user_path(@user), :class => "follows_list_button", :remote => true %></li>
 <li><%= link_to "Trusted by (#{@user.followers.count})", followers_user_path(@user) , :class => "followed_list_button", :remote => true %></li>
 
