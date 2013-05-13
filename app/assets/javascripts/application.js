@@ -35,7 +35,7 @@ load_listener();
 function load_listener(){
 		$('.search_form').submit(function(){
 			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
-			$('#restaurant_list, #show_holder, .recommendation_wrapper, #recommended_restaurant_list, .facebook_friends_wrapper, #relationship_list').hide();
+			$('#restaurant_list, #show_holder, .recommendation_wrapper, #recommended_restaurant_list, .facebook_friends_wrapper, #relationship_list, .user_bar').hide();
 			//$('#show_holder').hide();
 		});
 		
