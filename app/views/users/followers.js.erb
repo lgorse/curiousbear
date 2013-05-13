@@ -1,6 +1,7 @@
 $(function(){
+	$("#loading").hide();
 	$("#follow_buttons").button_highlight('followed_list_button');
-	$("#relationship_list").html("<%= escape_javascript(render 'followers') %>");
+	$("#relationship_list").show().html("<%= escape_javascript(render 'followers') %>");
 			
 });
 

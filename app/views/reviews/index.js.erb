@@ -1,7 +1,7 @@
 $(function(){
+	$("#loading").hide();
 	$("#follow_buttons").button_highlight('user_reviews_button');
-
-$("#relationship_list").html("<%= escape_javascript(render 'reviews/user_reviews') %>");
+$("#relationship_list").show().html("<%= escape_javascript(render 'reviews/user_reviews') %>");
 render_user_reviews();
 star_ratings();
 

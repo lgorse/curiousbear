@@ -18,17 +18,37 @@
 //= require fancybox
 
 
-$(document).ready(function(){
+$(function(){
 	$("#more_reviewers").click(function(e){
 		$("#partial_reviewer_list").remove();
 		$("#full_reviewer_list").show();
 	});
 
-
+load_listener();
 });
 
 
 
+
+
+
+function load_listener(){
+		$('.search_form').submit(function(){
+			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
+			$('#restaurant_list, #show_holder, .recommendation_wrapper, #recommended_restaurant_list, .facebook_friends_wrapper, #relationship_list').hide();
+			//$('#show_holder').hide();
+		});
+		
+		$('.google_next_button').click(function(){
+			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
+			$('#restaurant_list').hide();
+		});	
+
+		$('.user_reviews_button, .followed_list_button, .follows_list_button').click(function(){
+			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
+			$('#relationship_list').hide();
+		});
+}
 
 
 

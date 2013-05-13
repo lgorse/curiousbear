@@ -79,12 +79,15 @@ position: relative;
 
 		}
 
-		#loading{
-			margin: 10px 30%;
-			width: 10px;
-			display: none;
-		}
 	}
+
+	#loading{
+			margin: 200px 35%;
+			width: 20px;
+			display: none;
+			position: absolute;
+		}
+
 
 
 #home_wrapper{
