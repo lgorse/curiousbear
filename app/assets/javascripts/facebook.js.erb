@@ -1,5 +1,5 @@
 function postTrust(user_id){
-	alert("<%= Facebook::SITE_URL %>user_scrape?facebook_user="+user_id);
+
 	FB.api(
   'me/kweekwegg:trust',
   'post',
@@ -8,7 +8,7 @@ function postTrust(user_id){
     //user: "http://samples.ogp.me/371640646273751"
   },
   function(response) {
-    alert(response.id);
+    
   }
 );
 }
