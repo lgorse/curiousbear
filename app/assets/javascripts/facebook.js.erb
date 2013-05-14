@@ -1,10 +1,9 @@
 function postTrust(user_id){
-alert("<%= Facebook::SITE_URL %>users/"+user_id+"?facebook_user="+user_id);
 	FB.api(
   'me/kweekwegg:trust',
   'post',
   {
-  	user: "<%= Facebook::SITE_URL %>users/"+user_id+"?facebook_user="+user_id
+  	user: "<%= Facebook::SITE_URL %>users/5"
     //user: "http://samples.ogp.me/371640646273751"
   },
   function(response) {
