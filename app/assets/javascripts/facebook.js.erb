@@ -4,7 +4,7 @@ function postTrust(user_id){
   'me/kweekwegg:trust',
   'post',
   {
-  	user: "<%= Facebook::SITE_URL %>user_scrape?facebook_user="+user_id
+  	user: "<%= Facebook::SITE_URL %>users/"+user_id+"?facebook_user="+user_id
     //user: "http://samples.ogp.me/371640646273751"
   },
   function(response) {
