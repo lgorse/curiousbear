@@ -1,7 +1,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# kweekwegg: http://ogp.me/ns/fb/kweekwegg#">
   <meta property="fb:app_id" content="<%= Facebook::APP_ID %>" /> 
   <meta property="og:type"   content="kweekwegg:user" /> 
-  <meta property="og:url"    content="Put your own URL to the object here" /> 
+  <meta property="og:url"    content="<%= Facebook::SITE_URL %>users/<%= @user.id %>" /> 
   <meta property="og:title"  content="<%= @user.first_name %>" /> 
   <meta property="og:image"  content="https://fbstatic-a.akamaihd.net/images/devsite/attachment_blank.png" /> 
 <%= render 'reviews/review_map_script' %>
