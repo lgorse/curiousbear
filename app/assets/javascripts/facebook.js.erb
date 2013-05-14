@@ -1,0 +1,12 @@
+function postTrust(user_id){
+	FB.api(
+  'me/kweekwegg:trust',
+  'post',
+  {
+    user: "<%= Facebook::SITE_URL %>"+user_id
+  },
+  function(response) {
+    alert(response.id);
+  }
+);
+}
