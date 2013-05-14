@@ -84,4 +84,9 @@ module SessionHelper
 
 	end
 
+	def to_login
+		render 'session/signin'
+
+	end
+
 end

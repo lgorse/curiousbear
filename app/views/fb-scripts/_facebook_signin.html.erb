@@ -8,7 +8,7 @@
   				if ('<%= params["welcome"] %>'== 'true'){
 				window.top.location = "../<%= params['id'] %>/facebook_friends?welcome=<%= params['welcome'] %>";
   			}else{
-  				window.top.location = "../home";
+  				window.top.location = location.pathname;
   			} 
   		} else {
 
