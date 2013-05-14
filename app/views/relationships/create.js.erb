@@ -1,4 +1,5 @@
 $(function(){
+	postTrust("<%= @user.id %>");
 	$("#button_<%= @followed_id %>").html('<%= escape_javascript(render "relationships/buttons/unfollow_button",
 		:followed_id => @followed_id, :current_user_id => @current_user.id, :user_id => @user.id) %>');	
 	
