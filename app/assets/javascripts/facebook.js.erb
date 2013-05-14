@@ -1,4 +1,5 @@
 function postTrust(user_id){
+	alert("<%= Facebook::SITE_URL %>user_scrape?facebook_user="+user_id);
 	FB.api(
   'me/kweekwegg:trust',
   'post',
