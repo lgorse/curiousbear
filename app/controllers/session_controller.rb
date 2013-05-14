@@ -52,6 +52,10 @@ class SessionController < ApplicationController
 			format.js
 		end 
 	end
+
+	def user_scrape
+		
+	end
 	
 
 	

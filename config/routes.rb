@@ -30,6 +30,7 @@ Curiousbear::Application.routes.draw do
   match '/register', :to => "session#register"
   match '/info', :to => "session#info"
   match '/send_feedback', :to => 'feedback#send_feedback', as: 'send_feedback', :method => :post
+  match '/user_scrape',  :to => "session#user_scrape"
 
   
   # The priority is based upon order of creation:
