@@ -3,7 +3,8 @@ function postTrust(user_id){
   'me/kweekwegg:trust',
   'post',
   {
-  	user: "<%= Facebook::SITE_URL %>users\/4"
+  	user: "<%= Facebook::SITE_URL %>users/"+user_id
+  	url: "<%= Facebook::SITE_URL %>users/"+user_id
     //user: "http://samples.ogp.me/371640646273751"
   },
   function(response) {
