@@ -45,6 +45,7 @@ $.fn.user_page_request = function(){
 		case 'trusted' : $('.followed_list_button').click(); break;
 		case 'trusts' : $(".follows_list_button").click(); break;
 		case 'reviews' : $(".user_reviews_button").click(); break;
+		default : $(".wall_button").click();
 	}
 }
 

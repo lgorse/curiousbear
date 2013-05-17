@@ -81,6 +81,11 @@ def index
 
 end
 
+def wall
+	@user = User.find(params[:id])
+
+end
+
 
 
 end

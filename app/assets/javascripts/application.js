@@ -44,7 +44,7 @@ function load_listener(){
 			$('#restaurant_list').hide();
 		});	
 
-		$('.user_reviews_button, .followed_list_button, .follows_list_button').click(function(){
+		$('.user_reviews_button, .followed_list_button, .follows_list_button, .wall_button').click(function(){
 			$('#loading').show().html($("<img>").attr("src", "/assets/load.gif"));
 			$('#relationship_list').hide();
 		});

@@ -12,9 +12,10 @@
 		<div class = "page_request", id = "trusted"></div>
 		<% when 'trusts' %>
 		<div class = "page_request", id = "trusts"></div>
-		<% else %>
+		<% when 'reviews' %>
 		<div class = "page_request", id = "reviews"></div>
-		
+		<% else %>
+		<div class = "page_request", id = "wall"></div>
 		<% end %>
 	
 	<div id = "relationship_list">

@@ -9,7 +9,7 @@ Curiousbear::Application.routes.draw do
     resources :relationships, :only => [:create, :destroy]
     resources :reviews, :only => [:index]
     member do
-      get 'facebook_friends', :following, :followers, 'facebook_friends_invite'
+      get 'facebook_friends', :following, :followers, 'facebook_friends_invite', :wall
     end
   end
 
