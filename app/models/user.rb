@@ -42,8 +42,15 @@ class User < ActiveRecord::Base
 
 	has_one :activity, :dependent => :destroy
 
+	has_one :wall, :dependent => :destroy
+
+	has_many :posts, :dependent => :destroy
+
 	geocoded_by :ip_address, :latitude => :lat, :longitude => :long
 	after_validation :geocode
+
+	after_create :create_wall
+	after_update :create_wall
 
 
 	def self.set_user_attributes(signed_request)
@@ -139,6 +146,12 @@ class User < ActiveRecord::Base
 			User.order('(select count(1) from relationships inner join users on relationships.follower_id = users.id where users.id = relationships.followed_id)').
 			where('users.id != ?', self.id).
 			reject{|user| self.following.include?(user)}.first(5)
+		end
+
+		private
+
+		def create_wall
+			Wall.create(:user_id => self.id) unless Wall.find_by_user_id(self.id)
 		end
 
 	end

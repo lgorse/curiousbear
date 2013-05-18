@@ -1,0 +1,6 @@
+$(function(){
+	$("#loading").hide();
+	$("#follow_buttons").button_highlight('wall_button');
+	$("#relationship_list").show().html("<%= escape_javascript(render 'wall') %>");
+			
+});

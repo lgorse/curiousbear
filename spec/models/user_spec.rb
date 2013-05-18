@@ -162,6 +162,11 @@ describe User do
 			@review = Review.create(@review_attr)
 			@user.reviews.should be_present 
 		end
+
+		it "should have a wall" do
+			@user.wall.should be_present
+
+		end
 	end
 
   

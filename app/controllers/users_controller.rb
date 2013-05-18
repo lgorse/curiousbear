@@ -83,7 +83,7 @@ end
 
 def wall
 	@user = User.find(params[:id])
-
+	@wall = @user.wall
 end
 
 

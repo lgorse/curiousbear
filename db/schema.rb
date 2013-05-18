@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130505070406) do
+ActiveRecord::Schema.define(:version => 20130517231449) do
 
   create_table "activities", :force => true do |t|
     t.integer  "feed_id",    :null => false
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(:version => 20130505070406) do
   end
 
   add_index "activities", ["feed_id"], :name => "index_activities_on_feed_id"
+
+  create_table "posts", :force => true do |t|
+    t.integer  "user_id",         :null => false
+    t.text     "post_text"
+    t.text     "recommendations"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "posts", ["user_id"], :name => "index_posts_on_user_id"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -109,5 +119,13 @@ ActiveRecord::Schema.define(:version => 20130505070406) do
   end
 
   add_index "users", ["fb_id"], :name => "index_users_on_fb_id"
+
+  create_table "walls", :force => true do |t|
+    t.integer  "user_id",    :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "walls", ["user_id"], :name => "index_walls_on_user_id"
 
 end
